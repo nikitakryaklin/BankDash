@@ -1,0 +1,72 @@
+/* [project]/src/components/UI/TableBlock/TableBlock.module.scss.module.css [app-client] (css) */
+.TableBlock-module-scss-module__b7f_bG__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > :first-child {
+  border-bottom: 1px solid #e6eff5;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > thead > tr {
+  border-bottom: 1px solid #e6eff5;
+  height: 35px;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > thead > tr > td {
+  vertical-align: top;
+  color: var(--text-color);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr {
+  border-bottom: 1px solid #e6eff5;
+  height: 60px;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td {
+  color: var(--black);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: .8px;
+  overflow: hidden;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  white-space: nowrap;
+  height: 35px;
+  transition: background, color, border, var(--transition);
+  background: none;
+  border-radius: 25px;
+  padding: 0 clamp(0rem, 2.53521vw - .59419rem, 1.6875rem);
+  font-size: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  font-weight: 400;
+}
+
+@media (any-hover: hover) {
+  .TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button:hover {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+@media (any-hover: none) {
+  .TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button:active {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tfoot {
+  color: var(--red);
+  vertical-align: bottom;
+  height: 35px;
+}
+
+/*# sourceMappingURL=src_components_UI_TableBlock_TableBlock_module_scss_module_css_f9ee138c._.single.css.map*/

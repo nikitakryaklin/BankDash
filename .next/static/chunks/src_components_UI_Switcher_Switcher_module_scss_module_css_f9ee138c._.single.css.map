@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/Switcher/Switcher.module.scss.module.css"],"sourcesContent":[".wrapper{width:clamp(2.75rem,2.485915493rem + 1.1267605634vw,3.5rem);height:clamp(1.5rem,1.3679577465rem + 0.5633802817vw,1.875rem);border-radius:25px;background-color:var(--grey);display:flex;align-items:center;padding:0 3px;cursor:pointer;transition:background var(--transition)}.wrapper>span{display:block;width:48%;border-radius:100px;aspect-ratio:1/1;background-color:var(--white);transition:transform .15s ease-in}.isActive{background-color:var(--light-green)}.isActive>span{transform:translateX(110%)}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;AAAyR;;;;;;;;;AAA2I;;;;AAA8C"}}]
+}

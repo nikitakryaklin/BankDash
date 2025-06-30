@@ -1,0 +1,48 @@
+@use "@/styles/helpers" as *;
+
+.widget {
+  min-width: rem(230);
+  width: 100%;
+  max-width: rem(350);
+}
+
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: fluid(20, 10);
+}
+
+.listElement {
+  & > div {
+    max-width: 50%;
+  }
+}
+
+@media (width <= 768px) {
+  .listElement {
+    & > :nth-child(2) {
+      display: none;
+    }
+
+    & > :nth-child(3) {
+      display: none;
+    }
+
+    & > :last-child {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (width <= 520px) {
+  .listElement {
+    & > div {
+      max-width: 90%;
+      padding: 0 !important;
+    }
+
+    & > :last-child {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  width: 100%;
+  & > form {
+    display: flex;
+    width: 100%;
+    gap: fluid(30, 16);
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  & > h3 {
+    @include fluid-text(17, 14);
+    color: var(--title);
+    font-weight: 500;
+    margin-bottom: fluid(19, 13);
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: fluid(21, 12);
+    margin-bottom: rem(18);
+
+    & > div {
+      flex-shrink: 0;
+    }
+
+    & > p {
+      font-weight: 400;
+      @include fluid-text(16, 13);
+    }
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (width <= 520px) {
+  .wrapper {
+    & > form {
+      flex-direction: column;
+    }
+  }
+}

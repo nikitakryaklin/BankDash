@@ -1,0 +1,168 @@
+@use "@/styles/helpers" as *;
+
+.header {
+  padding: 0 rem(40);
+  height: var(--headerHeight);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+
+.wrapper > h2 {
+  color: var(--title);
+  @include fluid-text(28, 20);
+  font-weight: 600;
+  margin: 0;
+
+  & > span {
+    display: block;
+  }
+}
+
+.controles,
+.search {
+  display: flex;
+}
+
+.controles {
+  align-items: center;
+  gap: max(rem(20), 2vw);
+}
+
+.item,
+.search {
+  background-color: var(--background);
+  max-height: rem(50);
+  height: max(rem(40), 3.125vw);
+}
+
+.item {
+  max-width: rem(50);
+  min-width: rem(40);
+  width: max(rem(40), 3.125vw);
+  border: none;
+  border-radius: 100px;
+  & > img {
+    margin: 0 auto;
+  }
+}
+
+.search {
+  border-radius: 100px;
+  padding: 0 clamp(rem(20), 1.5vw, rem(25));
+  gap: rem(15);
+  & > input {
+    color: var(--text-color);
+    background-color: transparent;
+    overflow: hidden;
+    outline: none;
+    border: none;
+
+    &::placeholder {
+      color: var(--text-color);
+      font-size: rem(14);
+    }
+  }
+}
+
+.text {
+  display: contents;
+}
+.wrapper {
+  display: contents;
+}
+
+.searchWrapper {
+  display: none;
+}
+
+.burger {
+  display: none;
+  width: rem(40);
+  height: rem(40);
+  border: none;
+  background-color: transparent;
+
+  & > span {
+    margin: 5 auto;
+    display: block;
+    margin-bottom: 4px;
+    width: 18px;
+    border-radius: 15px;
+    height: 2px;
+    background-color: var(--title);
+  }
+}
+
+.avatar > img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.isActive {
+  position: relative;
+  z-index: 15;
+  :nth-child(2) {
+    display: none;
+  }
+
+  :first-child {
+    rotate: -45deg;
+    margin-bottom: -5px;
+  }
+
+  :last-child {
+    rotate: 45deg;
+    margin-top: 3px;
+  }
+}
+
+// @media (max-width: 992px) {
+//     .search {
+//         display: none;
+//     }
+// }
+
+@media (width <= 1024px) {
+  .header {
+    height: 150px;
+    flex-direction: column;
+    width: 100%;
+    gap: rem(10);
+    padding: rem(20) rem(40);
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // & > h2 {
+    //     justify-self: center;
+    //     margin: 0 auto;
+    // }
+  }
+
+  .text {
+    display: none;
+  }
+
+  .searchWrapper {
+    width: 100%;
+    display: block;
+    & > .search {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .burger {
+    display: block;
+  }
+}

@@ -1,0 +1,30 @@
+/* [project]/src/components/screens/settings/Security/Security.module.scss.module.css [app-client] (css) */
+.Security-module-scss-module__-TEjka__wrapper > h3 {
+  color: var(--title);
+  margin-top: 0;
+  margin-bottom: clamp(.8125rem, .680458rem + .56338vw, 1.1875rem);
+  font-size: clamp(.875rem, .808979rem + .28169vw, 1.0625rem);
+  font-weight: 500;
+}
+
+.Security-module-scss-module__-TEjka__wrapper > div {
+  align-items: center;
+  gap: clamp(.75rem, .551937rem + .84507vw, 1.3125rem);
+  margin-bottom: 1.125rem;
+  display: flex;
+}
+
+.Security-module-scss-module__-TEjka__wrapper > div > div {
+  flex-shrink: 0;
+}
+
+.Security-module-scss-module__-TEjka__wrapper > div > p {
+  font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
+  font-weight: 400;
+}
+
+.Security-module-scss-module__-TEjka__wrapper > form > :not(:last-child) {
+  margin-bottom: clamp(1rem, .867958rem + .56338vw, 1.375rem);
+}
+
+/*# sourceMappingURL=1ab64_components_screens_settings_Security_Security_module_scss_module_css_f9ee138c._.single.css.map*/

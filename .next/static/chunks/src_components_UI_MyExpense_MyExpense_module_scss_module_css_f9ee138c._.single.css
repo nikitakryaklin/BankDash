@@ -1,0 +1,18 @@
+/* [project]/src/components/UI/MyExpense/MyExpense.module.scss.module.css [app-client] (css) */
+@media (width > 768px) {
+  .MyExpense-module-scss-module__L0uFrq__wrapper {
+    width: 100%;
+    min-width: 231px;
+    max-width: 3700px;
+    height: max(215px, 20vw);
+    max-height: 282px;
+  }
+}
+
+@media (width <= 768px) {
+  .MyExpense-module-scss-module__L0uFrq__wrapper {
+    aspect-ratio: 1 / .7;
+  }
+}
+
+/*# sourceMappingURL=src_components_UI_MyExpense_MyExpense_module_scss_module_css_f9ee138c._.single.css.map*/

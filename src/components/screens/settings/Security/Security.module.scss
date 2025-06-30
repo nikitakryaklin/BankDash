@@ -1,0 +1,33 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  & > h3 {
+    @include fluid-text(17, 14);
+    color: var(--title);
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: fluid(19, 13);
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: fluid(21, 12);
+    margin-bottom: rem(18);
+
+    & > div {
+      flex-shrink: 0;
+    }
+
+    & > p {
+      font-weight: 400;
+      @include fluid-text(16, 13);
+    }
+  }
+
+  & > form {
+    & > :not(:last-child) {
+      margin-bottom: fluid(22, 16);
+    }
+  }
+}

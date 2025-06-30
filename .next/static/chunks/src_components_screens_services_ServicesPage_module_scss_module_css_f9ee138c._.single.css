@@ -1,0 +1,39 @@
+/* [project]/src/components/screens/services/ServicesPage.module.scss.module.css [app-client] (css) */
+.ServicesPage-module-scss-module__wKQ3_W__widget {
+  width: 100%;
+  min-width: 14.375rem;
+  max-width: 21.875rem;
+}
+
+.ServicesPage-module-scss-module__wKQ3_W__listWrapper {
+  flex-direction: column;
+  gap: clamp(.625rem, .40493rem + .938967vw, 1.25rem);
+  display: flex;
+}
+
+.ServicesPage-module-scss-module__wKQ3_W__listElement > div {
+  max-width: 50%;
+}
+
+@media (width <= 768px) {
+  .ServicesPage-module-scss-module__wKQ3_W__listElement > :nth-child(2), .ServicesPage-module-scss-module__wKQ3_W__listElement > :nth-child(3) {
+    display: none;
+  }
+
+  .ServicesPage-module-scss-module__wKQ3_W__listElement > :last-child {
+    margin: 0 auto;
+  }
+}
+
+@media (width <= 520px) {
+  .ServicesPage-module-scss-module__wKQ3_W__listElement > div {
+    max-width: 90%;
+    padding: 0 !important;
+  }
+
+  .ServicesPage-module-scss-module__wKQ3_W__listElement > :last-child {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_components_screens_services_ServicesPage_module_scss_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,62 @@
+/* [project]/src/components/UI/Invoice/Invoice.module.scss.module.css [app-client] (css) */
+.Invoice-module-scss-module__L8zbsW__wrapper {
+  width: 100%;
+  max-width: 350px;
+  height: clamp(17.25rem, 14.279rem + 12.6761vw, 25.6875rem);
+}
+
+.Invoice-module-scss-module__L8zbsW__invoice_card {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  display: flex;
+}
+
+.Invoice-module-scss-module__L8zbsW__invice {
+  gap: 5px;
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+
+.Invoice-module-scss-module__L8zbsW__icon {
+  background-color: #dcfaf8;
+  border-radius: 12px;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  display: flex;
+}
+
+.Invoice-module-scss-module__L8zbsW__icon > svg {
+  margin: 0 auto;
+}
+
+.Invoice-module-scss-module__L8zbsW__info {
+  flex-grow: 1;
+}
+
+.Invoice-module-scss-module__L8zbsW__info > h3 {
+  color: var(--title);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 75%;
+  margin: 0;
+  font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.Invoice-module-scss-module__L8zbsW__info > p {
+  color: var(--text-color);
+  margin: 0;
+  font-size: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+}
+
+.Invoice-module-scss-module__L8zbsW__amount {
+  color: var(--text-color);
+  margin: 0;
+  font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
+}
+
+/*# sourceMappingURL=src_components_UI_Invoice_Invoice_module_scss_module_css_f9ee138c._.single.css.map*/

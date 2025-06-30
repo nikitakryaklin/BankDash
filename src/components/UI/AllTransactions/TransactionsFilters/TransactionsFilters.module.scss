@@ -1,0 +1,50 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  margin-bottom: fluid(25, 7);
+  border-bottom: 1px solid var(--borderLine);
+}
+
+.button {
+  border: none;
+  margin: 0;
+  height: rem(30);
+  padding-bottom: fluid(10, 8);
+  padding: 0 10px 5px;
+  font-size: rem(14);
+  position: relative;
+  color: var(--text-color);
+  background-color: transparent;
+  transition: color var(--transition);
+
+  &.isActive {
+    color: var(--primery);
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      background-color: var(--primery);
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      animation-name: before;
+      animation-duration: 0.15s;
+    }
+  }
+}
+
+@keyframes before {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/screens/transactions/transactionsPage.module.scss.module.css"],"sourcesContent":[".wrapper{width:100%;display:grid;gap:24px 30px;grid-template-columns:1fr 1fr 1fr}.wrapper :first-child{grid-column:1/3}.wrapper :last-child{grid-column:1/4}@media(width <= 768px){.wrapper :first-child{grid-column:1/4}.wrapper :nth-child(2){grid-column:1/4}}"],"names":[],"mappings":"AAAA;;;;;;;AAAiF;;;;AAAsC;;;;AAAqC;EAAuB"}}]
+}

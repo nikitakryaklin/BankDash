@@ -1,0 +1,113 @@
+/* [project]/src/components/UI/AllTransactions/TransactionsCard/TransactionsCard.module.scss.module.css [app-client] (css) */
+.TransactionsCard-module-scss-module___HDVYa__wrapper {
+  height: 270px;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__wrapper > :not(:last-child) {
+  border-bottom: 1px solid var(--borderLine);
+}
+
+.TransactionsCard-module-scss-module___HDVYa__header > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 30px;
+  overflow: hidden;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__header, .TransactionsCard-module-scss-module___HDVYa__transactionsElement {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__header :first-child, .TransactionsCard-module-scss-module___HDVYa__transactionsElement :first-child {
+  width: 20%;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__header :nth-child(2), .TransactionsCard-module-scss-module___HDVYa__transactionsElement :nth-child(2) {
+  text-align: center;
+  width: 15%;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__header :nth-child(3), .TransactionsCard-module-scss-module___HDVYa__transactionsElement :nth-child(3), .TransactionsCard-module-scss-module___HDVYa__header :nth-child(4), .TransactionsCard-module-scss-module___HDVYa__transactionsElement :nth-child(4) {
+  width: 15%;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__header :nth-child(5), .TransactionsCard-module-scss-module___HDVYa__transactionsElement :nth-child(5) {
+  width: 20%;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__header :nth-child(6), .TransactionsCard-module-scss-module___HDVYa__transactionsElement :nth-child(6), .TransactionsCard-module-scss-module___HDVYa__header :last-child, .TransactionsCard-module-scss-module___HDVYa__transactionsElement :last-child {
+  width: 15%;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__header {
+  height: 35px;
+  color: var(--text-color);
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement {
+  align-items: center;
+  height: 65px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title {
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  display: flex;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 70%;
+  overflow: hidden;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  overflow: hidden;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > button {
+  color: var(--title);
+  border: 1px solid var(--title);
+  letter-spacing: 1px;
+  height: 45px;
+  transition: background, color, border, var(--transition);
+  background-color: #0000;
+  border-radius: 150px;
+  font-size: .9375rem;
+  font-weight: 400;
+}
+
+@media (any-hover: hover) {
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > button:hover {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+@media (any-hover: none) {
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > button:active {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+.TransactionsCard-module-scss-module___HDVYa__green {
+  color: var(--green);
+}
+
+.TransactionsCard-module-scss-module___HDVYa__red {
+  color: var(--red);
+}
+
+/*# sourceMappingURL=73eb3_TransactionsCard_TransactionsCard_module_scss_module_css_f9ee138c._.single.css.map*/

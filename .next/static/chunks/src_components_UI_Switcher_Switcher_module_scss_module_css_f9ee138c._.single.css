@@ -1,0 +1,31 @@
+/* [project]/src/components/UI/Switcher/Switcher.module.scss.module.css [app-client] (css) */
+.Switcher-module-scss-module__0PMf5W__wrapper {
+  background-color: var(--grey);
+  cursor: pointer;
+  width: clamp(2.75rem, 2.48592rem + 1.12676vw, 3.5rem);
+  height: clamp(1.5rem, 1.36796rem + .56338vw, 1.875rem);
+  transition: background var(--transition);
+  border-radius: 25px;
+  align-items: center;
+  padding: 0 3px;
+  display: flex;
+}
+
+.Switcher-module-scss-module__0PMf5W__wrapper > span {
+  aspect-ratio: 1;
+  background-color: var(--white);
+  border-radius: 100px;
+  width: 48%;
+  transition: transform .15s ease-in;
+  display: block;
+}
+
+.Switcher-module-scss-module__0PMf5W__isActive {
+  background-color: var(--light-green);
+}
+
+.Switcher-module-scss-module__0PMf5W__isActive > span {
+  transform: translateX(110%);
+}
+
+/*# sourceMappingURL=src_components_UI_Switcher_Switcher_module_scss_module_css_f9ee138c._.single.css.map*/

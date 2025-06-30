@@ -1,0 +1,54 @@
+/* [project]/src/components/UI/cardBlock/cardBlock.module.scss.module.css [app-client] (css) */
+.cardBlock-module-scss-module__YQ7LJa__wrapper {
+  max-width: 730px;
+  height: max(215px, 20vw);
+  max-height: 282px;
+}
+
+.cardBlock-module-scss-module__YQ7LJa__header {
+  justify-content: space-between;
+  margin-bottom: max(.75rem, 1.125vw);
+  display: flex;
+}
+
+.cardBlock-module-scss-module__YQ7LJa__header > p, .cardBlock-module-scss-module__YQ7LJa__header a {
+  color: var(--title);
+  margin: 0;
+  font-size: clamp(.875rem, .830986rem + .187793vw, 1rem);
+  text-decoration: none;
+}
+
+.cardBlock-module-scss-module__YQ7LJa__header > h2 {
+  margin: 0;
+}
+
+.cardBlock-module-scss-module__YQ7LJa__cards {
+  border-radius: 25px;
+  gap: 30px;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.cardBlock-module-scss-module__YQ7LJa__noCard, .cardBlock-module-scss-module__YQ7LJa__oneCard {
+  text-align: center;
+  background-color: #fff;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.cardBlock-module-scss-module__YQ7LJa__noCard > p, .cardBlock-module-scss-module__YQ7LJa__oneCard > p {
+  color: var(--title);
+  margin: 0 auto;
+  font-size: clamp(.875rem, .830986rem + .187793vw, 1rem);
+}
+
+.cardBlock-module-scss-module__YQ7LJa__oneCard {
+  border-radius: 20px;
+  max-width: 350px;
+}
+
+/*# sourceMappingURL=src_components_UI_cardBlock_cardBlock_module_scss_module_css_f9ee138c._.single.css.map*/

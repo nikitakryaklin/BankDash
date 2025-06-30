@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/RecentTransaction/TransactionItem/TransactionItem.module.scss.module.css"],"sourcesContent":[".wrapper{width:100%;display:flex;gap:max(0.5rem,1vw);align-items:center}.wrapper>p{margin:auto;margin-right:0;font-size:clamp(0.875rem,0.8309859155rem + 0.1877934272vw,1rem);font-weight:500;color:var(--green)}.icon{display:flex;border-radius:100px;width:max(2.5rem,3.5vw);max-width:3.4375rem;height:max(2.5rem,3.5vw);max-height:3.4375rem}.icon>svg{align-self:center;margin:0 auto;width:50%;height:50%}.info>h4{font-size:clamp(0.875rem,0.8309859155rem + 0.1877934272vw,1rem);font-size:0.8125rem;font-weight:500;color:var(--black);margin:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.info>p{font-size:clamp(0.8125rem,0.7684859155rem + 0.1877934272vw,0.9375rem);font-size:0.8125rem;color:var(--text-color);margin:0;white-space:nowrap}.main_info{margin:0 auto;width:60%;display:flex;justify-content:space-around}.main_info>p{margin-bottom:0}@media(width <= 420px){.main_info{display:none}}@media(width <= 588px){.main_info :last-child{display:none}}"],"names":[],"mappings":"AAAA;;;;;;;AAAwE;;;;;;;AAAyI;;;;;;;;;AAAiI;;;;;;;AAA+D;;;;;;;;;;AAAmM;;;;;;;AAAsJ;;;;;;;AAA6E;;;;AAA6B;EAAuB;;;;;AAAyB;EAAuB"}}]
+}

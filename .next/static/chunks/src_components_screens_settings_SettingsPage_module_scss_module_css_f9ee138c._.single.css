@@ -1,0 +1,114 @@
+/* [project]/src/components/screens/settings/SettingsPage.module.scss.module.css [app-client] (css) */
+.SettingsPage-module-scss-module__QJqy9W__settings_wrapper {
+  flex-direction: column;
+  max-height: 80%;
+  display: flex;
+  height: auto !important;
+  padding: clamp(1.5625rem, 1.45246rem + .469484vw, 1.875rem) clamp(1.25rem, 1.02993rem + .938967vw, 1.875rem) !important;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__header {
+  width: 100%;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__header > ul {
+  border-bottom: 1px solid var(--background);
+  gap: clamp(1.375rem, .494718rem + 3.75587vw, 3.875rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__header > ul > li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 33%;
+  overflow: hidden;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__header_item {
+  color: #000;
+  transition: color var(--transition);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__isHeaderActive {
+  color: var(--primery);
+  transition: color var(--transition);
+  z-index: 1;
+  position: relative;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__isHeaderActive:after {
+  content: "";
+  background-color: var(--primery);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 3px;
+  animation-name: SettingsPage-module-scss-module__QJqy9W__before;
+  animation-duration: .15s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes SettingsPage-module-scss-module__QJqy9W__before {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.SettingsPage-module-scss-module__QJqy9W__main {
+  margin: clamp(1.5625rem, 1.01232rem + 2.34742vw, 3.125rem) 0 clamp(1.25rem, 1.02993rem + .938967vw, 1.875rem);
+  display: flex;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__footer {
+  align-self: end;
+  gap: 1.25rem;
+  width: auto;
+  display: flex;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__footer > button {
+  color: var(--white);
+  border: none;
+  border-radius: clamp(.5625rem, .430458rem + .56338vw, .9375rem);
+  width: clamp(8.125rem, 6.80458rem + 5.6338vw, 11.875rem);
+  height: clamp(2.5rem, 2.27993rem + .938967vw, 3.125rem);
+}
+
+.SettingsPage-module-scss-module__QJqy9W__footer .SettingsPage-module-scss-module__QJqy9W__save {
+  background-color: var(--primery);
+}
+
+.SettingsPage-module-scss-module__QJqy9W__footer .SettingsPage-module-scss-module__QJqy9W__logOut {
+  background-color: var(--red);
+}
+
+.SettingsPage-module-scss-module__QJqy9W__isPanding {
+  background-color: var(--text-color) !important;
+}
+
+@media (width <= 520px) {
+  .SettingsPage-module-scss-module__QJqy9W__footer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .SettingsPage-module-scss-module__QJqy9W__footer > button {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=src_components_screens_settings_SettingsPage_module_scss_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,95 @@
+/* [project]/src/components/loayout/aside/aside.module.scss.module.css [app-client] (css) */
+.aside-module-scss-module__k8vOkq__aside {
+  border-right: .0625rem solid var(--borderLine);
+  background-color: var(--white);
+  width: 250px;
+  min-width: 220px;
+  height: 100vh;
+}
+
+.aside-module-scss-module__k8vOkq__aside > .aside-module-scss-module__k8vOkq__logo {
+  height: var(--headerHeight);
+  align-items: center;
+  display: flex;
+}
+
+.aside-module-scss-module__k8vOkq__aside > .aside-module-scss-module__k8vOkq__logo > img {
+  margin: 0 auto;
+}
+
+.aside-module-scss-module__k8vOkq__nav {
+  width: 100%;
+}
+
+.aside-module-scss-module__k8vOkq__link {
+  color: var(--greyB1);
+  transition: color var(--transition);
+  align-items: center;
+  gap: 1.25rem;
+  height: 3.125rem;
+  padding-left: 1.875rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+}
+
+.aside-module-scss-module__k8vOkq__link:hover {
+  color: var(--primery);
+}
+
+.aside-module-scss-module__k8vOkq__link:not(:last-child) {
+  margin-bottom: clamp(.625rem, .0748239rem + 2.34742vw, 2.1875rem);
+}
+
+.aside-module-scss-module__k8vOkq__isActive {
+  color: var(--primery);
+  position: relative;
+}
+
+.aside-module-scss-module__k8vOkq__isActive :before {
+  content: "";
+  background-color: var(--primery);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: .3125rem;
+  height: 3.125rem;
+  animation-name: aside-module-scss-module__k8vOkq__before;
+  animation-duration: .15s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes aside-module-scss-module__k8vOkq__before {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (width <= 1024px) {
+  .aside-module-scss-module__k8vOkq__logo > img {
+    opacity: 0;
+  }
+
+  .aside-module-scss-module__k8vOkq__aside {
+    background-color: var(--white);
+    z-index: 10;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.aside-module-scss-module__k8vOkq__isBurger {
+  display: block;
+}
+
+/*# sourceMappingURL=src_components_loayout_aside_aside_module_scss_module_css_f9ee138c._.single.css.map*/

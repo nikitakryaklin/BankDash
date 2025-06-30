@@ -1,0 +1,73 @@
+/* [project]/src/components/screens/settings/EditProfile/EditProfile.module.scss.module.css [app-client] (css) */
+.EditProfile-module-scss-module__o651CW__wrapper {
+  gap: 3.125rem;
+  width: 100%;
+  display: flex;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar {
+  border-radius: 100px;
+  min-width: clamp(6.875rem, 6.43486rem + 1.87793vw, 8.125rem);
+  height: clamp(6.875rem, 6.43486rem + 1.87793vw, 8.125rem);
+  position: relative;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar > img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar > button {
+  background-color: var(--primery);
+  border: none;
+  border-radius: 100px;
+  align-items: center;
+  width: 22%;
+  height: 22%;
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar > button > svg {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > form {
+  gap: 1.5625rem;
+  width: 100%;
+  display: flex;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > form > div {
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+}
+
+@media (width <= 768px) {
+  .EditProfile-module-scss-module__o651CW__wrapper {
+    flex-direction: column;
+    gap: clamp(1.5625rem, 1.34243rem + .938967vw, 2.1875rem);
+  }
+
+  .EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar {
+    margin: 0 auto;
+  }
+}
+
+@media (width <= 520px) {
+  .EditProfile-module-scss-module__o651CW__wrapper > form {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=35525_screens_settings_EditProfile_EditProfile_module_scss_module_css_f9ee138c._.single.css.map*/

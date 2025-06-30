@@ -1,0 +1,113 @@
+@use "@/styles/helpers" as *;
+
+.settings_wrapper {
+  height: auto !important;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: fluid(30, 25) fluid(30, 20) !important;
+}
+
+.header {
+  width: 100%;
+
+  > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: fluid(62, 22);
+    border-bottom: 1px solid var(--background);
+
+    & > li {
+      max-width: 33%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.header_item {
+  margin: 0;
+  padding: 5px 10px;
+  @include fluid-text(16, 13);
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  transition: color var(--transition);
+}
+
+.isHeaderActive {
+  color: var(--primery);
+  position: relative;
+  transition: color var(--transition);
+  z-index: 1;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--primery);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    animation-name: before;
+    animation-duration: 0.15s;
+  }
+}
+
+@keyframes before {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.main {
+  margin: fluid(50, 25) 0 fluid(30, 20);
+  display: flex;
+}
+
+.footer {
+  width: auto;
+  align-self: end;
+  display: flex;
+  gap: rem(20);
+
+  > button {
+    border: none;
+    color: var(--white);
+    width: fluid(190, 130);
+    height: fluid(50, 40);
+    border-radius: fluid(15, 9);
+  }
+
+  .save {
+    background-color: var(--primery);
+  }
+
+  .logOut {
+    background-color: var(--red);
+  }
+}
+
+.isPanding {
+  background-color: var(--text-color) !important;
+}
+
+@media (width <= 520px) {
+  .footer {
+    flex-direction: column;
+    width: 100%;
+
+    > button {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* [project]/src/components/screens/settings/Preferences/Preferences.module.scss.module.css [app-client] (css) */
+.Preferences-module-scss-module__Dfp8_q__wrapper {
+  width: 100%;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > form {
+  gap: clamp(1rem, .691901rem + 1.31455vw, 1.875rem);
+  width: 100%;
+  display: flex;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > form > div {
+  width: 100%;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > h3 {
+  color: var(--title);
+  margin-bottom: clamp(.8125rem, .680458rem + .56338vw, 1.1875rem);
+  font-size: clamp(.875rem, .808979rem + .28169vw, 1.0625rem);
+  font-weight: 500;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > div {
+  align-items: center;
+  gap: clamp(.75rem, .551937rem + .84507vw, 1.3125rem);
+  margin-bottom: 1.125rem;
+  display: flex;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > div > div {
+  flex-shrink: 0;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > div > p {
+  font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
+  font-weight: 400;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > :last-child {
+  margin-bottom: 0;
+}
+
+@media (width <= 520px) {
+  .Preferences-module-scss-module__Dfp8_q__wrapper > form {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=35525_screens_settings_Preferences_Preferences_module_scss_module_css_f9ee138c._.single.css.map*/

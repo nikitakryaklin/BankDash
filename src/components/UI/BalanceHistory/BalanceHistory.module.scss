@@ -1,0 +1,14 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  height: max(254px, 21vw);
+  max-height: 323px;
+  width: 100%;
+  max-width: 730px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

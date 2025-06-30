@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/screens/settings/Security/Security.module.scss.module.css"],"sourcesContent":[".wrapper>h3{font-size:clamp(0.875rem,0.8089788732rem + 0.2816901408vw,1.0625rem);color:var(--title);font-weight:500;margin-top:0;margin-bottom:clamp(0.8125rem,0.6804577465rem + 0.5633802817vw,1.1875rem)}.wrapper>div{display:flex;align-items:center;gap:clamp(0.75rem,0.5519366197rem + 0.8450704225vw,1.3125rem);margin-bottom:1.125rem}.wrapper>div>div{flex-shrink:0}.wrapper>div>p{font-weight:400;font-size:clamp(0.8125rem,0.7464788732rem + 0.2816901408vw,1rem)}.wrapper>form>:not(:last-child){margin-bottom:clamp(1rem,0.8679577465rem + 0.5633802817vw,1.375rem)}"],"names":[],"mappings":"AAAA;;;;;;;;AAA2M;;;;;;;AAAkI;;;;AAA+B;;;;;AAAgG"}}]
+}

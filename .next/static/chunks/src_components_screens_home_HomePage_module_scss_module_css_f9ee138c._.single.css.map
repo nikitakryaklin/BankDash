@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/screens/home/HomePage.module.scss.module.css"],"sourcesContent":[".wrapper{width:100%;height:100%;display:grid;grid-template-columns:3fr 2fr 3fr;grid-template-rows:auto;gap:24px 30px}.wrapper :first-child{grid-column:1/3}.wrapper :nth-child(3){grid-column:1/3}.wrapper :last-child{grid-column:2/4}.card_fild{display:flex;flex-direction:column;gap:20;height:100%}.card{width:100%;min-height:254px;height:20.1875vw;max-height:323px;background-color:var(--white);border-radius:25px}@media(width <= 768px){.wrapper{grid-template-columns:1fr 1fr;white-space:wrap}.wrapper :first-child{grid-column:1/3;order:1}.wrapper :nth-child(2){order:2}.wrapper :nth-child(3){grid-column:1/3;order:4}.wrapper :nth-child(4){order:3}.wrapper :nth-child(5){grid-column:1/3;order:5}.wrapper :last-child{grid-column:1/3;order:6}}@media(width <= 520px){.wrapper :nth-child(2){order:2;grid-column:1/3;margin:0 auto}.wrapper :nth-child(4){order:3;grid-column:1/3;margin:0 auto}}"],"names":[],"mappings":"AAAA;;;;;;;;;AAAqH;;;;AAA6E;;;;AAAqC;;;;;;;AAAiE;;;;;;;;;AAAqH;EAAuB;;;;;EAAwD;;;;;EAA8C;;;;EAA+B;;;;;EAA+C;;;;EAA+B;;;;;EAA+C;;;;;;AAA8C;EAAuB;;;;;;EAA6D"}}]
+}

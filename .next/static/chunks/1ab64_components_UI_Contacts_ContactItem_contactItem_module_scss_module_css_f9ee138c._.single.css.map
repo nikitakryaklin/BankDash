@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/Contacts/ContactItem/contactItem.module.scss.module.css"],"sourcesContent":[".wrapper{min-height:120px;display:flex;flex-direction:column;align-items:center;text-align:center;min-width:80px;transition:transform var(--transition);cursor:pointer;user-select:none}.wrapper>img{object-fit:cover;width:70px;height:70px;border-radius:100px}@media(any-hover: hover){.wrapper:hover{transform:translateY(-5)}}@media(any-hover: none){.wrapper:active{transform:translateY(-5)}}.isFirst{box-shadow:4px 4px 18px -2px rgba(231,228,232,.8);border-radius:25px;background-color:var(--background);cursor:pointer}.isActive{background-color:var(--background);border-radius:25px}.name{font-size:clamp(0.875rem,0.8309859155rem + 0.1877934272vw,1rem)}.role{font-size:clamp(0.8125rem,0.7684859155rem + 0.1877934272vw,0.9375rem);color:var(--text-color)}.name,.role{max-width:max(45px,4vw);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;AAAwL;;;;;;;AAAyE;EAAyB;;;;;AAAyC;EAAwB;;;;;AAA0C;;;;;;;AAAgI;;;;;AAAgE;;;;AAAsE;;;;;AAAoG"}}]
+}

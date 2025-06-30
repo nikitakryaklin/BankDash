@@ -1,0 +1,31 @@
+/* [project]/src/components/screens/managementPage/TrancactionsManagement/TransactionsManagement.module.scss.module.css [app-client] (css) */
+.TransactionsManagement-module-scss-module__D8AefG__title {
+  color: var(--title);
+  margin-bottom: .3125rem;
+  font-size: clamp(.875rem, .830986rem + .187793vw, 1rem);
+}
+
+.TransactionsManagement-module-scss-module__D8AefG__title_last {
+  margin-top: clamp(.625rem, .514965rem + .469484vw, .9375rem);
+}
+
+.TransactionsManagement-module-scss-module__D8AefG__button {
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primery);
+  border: none;
+  border-radius: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  width: clamp(9.375rem, 8.93486rem + 1.87793vw, 10.625rem);
+  height: clamp(1.875rem, 1.65493rem + .938967vw, 2.5rem);
+  margin-top: clamp(.9375rem, .827465rem + .469484vw, 1.25rem);
+}
+
+.TransactionsManagement-module-scss-module__D8AefG__isPanding {
+  background-color: var(--text-color) !important;
+}
+
+.TransactionsManagement-module-scss-module__D8AefG__isError {
+  color: var(--red);
+}
+
+/*# sourceMappingURL=dbd3a_TrancactionsManagement_TransactionsManagement_module_scss_module_css_f9ee138c._.single.css.map*/

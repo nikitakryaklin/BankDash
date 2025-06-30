@@ -1,0 +1,111 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  height: 270px;
+  & > :not(:last-child) {
+    border-bottom: 1px solid var(--borderLine);
+  }
+}
+
+.header {
+  > p {
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.header,
+.transactionsElement {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  :first-child {
+    width: 20%;
+  }
+
+  :nth-child(2) {
+    width: 15%;
+    text-align: center;
+  }
+
+  :nth-child(3) {
+    width: 15%;
+  }
+
+  :nth-child(4) {
+    width: 15%;
+  }
+
+  :nth-child(5) {
+    width: 20%;
+  }
+
+  :nth-child(6) {
+    width: 15%;
+  }
+
+  :last-child {
+    width: 15%;
+  }
+}
+
+.header {
+  height: 35px;
+  color: var(--text-color);
+}
+
+.transactionsElement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  height: 65px;
+  > .trans_title {
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    > p {
+      width: 70%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  > p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  > button {
+    color: var(--title);
+    background-color: transparent;
+    border: 1px solid var(--title);
+    border-radius: 150px;
+    font-size: rem(15);
+    height: 45px;
+    font-weight: 400;
+    letter-spacing: 1;
+    transition: background, color, border, var(--transition);
+
+    @include hover {
+      border: none;
+      background-color: #539bff;
+      color: var(--background);
+    }
+  }
+}
+
+.green {
+  color: var(--green);
+}
+
+.red {
+  color: var(--red);
+}

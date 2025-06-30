@@ -1,0 +1,254 @@
+@use '@/styles/helpers' as *;
+
+.cardBlock {
+  width: 100%;
+
+  & > div {
+    width: 100% !important;
+    max-width: fluid(1150, 40);
+  }
+}
+
+@media (width <= 1024px) {
+  .cardBlock {
+    & > div {
+      max-width: none;
+    }
+  }
+}
+
+.statistic {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: fluid(25, 21);
+  margin: fluid(25, 21) 0;
+
+  & > .expense {
+    & > div {
+      display: flex;
+      justify-content: center;
+      width: fluid(350, 231);
+      aspect-ratio: 1 / 0.9;
+      padding: 20px;
+    }
+  }
+}
+
+.addCard_wrapper {
+  display: grid;
+  grid-template-columns: 2fr 0.9fr;
+  gap: fluid(25, 21);
+}
+
+.cardList {
+  & > div {
+    overflow-x: scroll;
+    background-color: transparent;
+    padding: 0;
+    max-height: 350px;
+
+    & > div {
+      margin-bottom: fluid(20, 15);
+    }
+  }
+}
+
+.CardList_item {
+  container-type: inline-size;
+  container-name: cardList;
+
+  & > div {
+    // max-width: 30%;
+    & > h3,
+    p {
+      max-width: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+@container cardList (width <= 350px) {
+  .CardList_item {
+    & > :first-child {
+      display: none;
+    }
+  }
+}
+
+@container cardList (width <= 240px) {
+  .CardList_item {
+    & > :last-child {
+      display: none;
+    }
+  }
+}
+
+@container cardList (width <= 140px) {
+  .CardList_item {
+    & > div {
+      max-width: 110% !important;
+    }
+
+    & > :nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+.form {
+  & > p {
+    color: var(--text-color);
+    @include fluid-text(16, 12);
+    margin: 0 0 fluif(30, 10);
+    max-width: 95%;
+  }
+
+  & > form {
+    & > div {
+      width: 100%;
+      display: flex;
+      gap: fluid(30, 15);
+      margin-bottom: fluid(35, 10);
+
+      & > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: fluid(35, 10);
+
+        & > div {
+          width: 100%;
+        }
+      }
+    }
+
+    > button {
+      background-color: var(--primery);
+      border: none;
+      color: var(--white);
+      width: fluid(160, 120);
+      height: fluid(50, 40);
+      border-radius: fluid(15, 9);
+      margin-bottom: fluid(25, 10);
+    }
+  }
+}
+
+.disabled {
+  background-color: var(--text-color) !important;
+}
+
+.settings {
+  & > div {
+    padding: fluid(20, 15);
+    height: auto !important;
+  }
+}
+
+.addCard {
+  & > div {
+    padding: fluid(20, 15);
+    height: auto !important;
+  }
+}
+
+.settings_item {
+  width: 100%;
+  display: flex;
+  gap: fluid(20, 10);
+  height: fluid(60, 45);
+  align-items: center;
+
+  & > .icon {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    // min-width: rem(45);
+    border-radius: fluid(20, 12);
+    display: flex;
+    align-items: center;
+
+    & > svg {
+      margin: 0 auto;
+    }
+  }
+
+  & > .info {
+    width: 100%;
+    & > h3 {
+      margin: 0;
+      @include fluid-text(16, 14);
+      font-weight: 500;
+      white-space: nowrap;
+      max-width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & > p {
+      margin: 0;
+      @include fluid-text(15, 11);
+      color: var(--text-color);
+      white-space: nowrap;
+      max-width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: fluid(20, 15);
+  }
+}
+
+.radioBlock {
+  justify-content: space-between;
+  flex-wrap: nowrap !important;
+  margin-bottom: 0 !important;
+
+  & > p {
+    display: none;
+  }
+
+  & > label {
+    height: rem(40);
+    width: 46%;
+  }
+}
+
+@media (width <= 768px) {
+  .statistic {
+    display: flex;
+    flex-direction: column-reverse;
+
+    & > .expense {
+      width: 100%;
+      & > div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+
+  .addCard_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width <= 520px) {
+  .form {
+    & > form {
+      & > div {
+        flex-direction: column;
+      }
+
+      & > button {
+        width: 100%;
+      }
+    }
+  }
+}

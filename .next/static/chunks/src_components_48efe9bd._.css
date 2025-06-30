@@ -1,0 +1,447 @@
+/* [project]/src/components/screens/settings/SettingsPage.module.scss.module.css [app-client] (css) */
+.SettingsPage-module-scss-module__QJqy9W__settings_wrapper {
+  flex-direction: column;
+  max-height: 80%;
+  display: flex;
+  height: auto !important;
+  padding: clamp(1.5625rem, 1.45246rem + .469484vw, 1.875rem) clamp(1.25rem, 1.02993rem + .938967vw, 1.875rem) !important;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__header {
+  width: 100%;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__header > ul {
+  border-bottom: 1px solid var(--background);
+  gap: clamp(1.375rem, .494718rem + 3.75587vw, 3.875rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__header > ul > li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 33%;
+  overflow: hidden;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__header_item {
+  color: #000;
+  transition: color var(--transition);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__isHeaderActive {
+  color: var(--primery);
+  transition: color var(--transition);
+  z-index: 1;
+  position: relative;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__isHeaderActive:after {
+  content: "";
+  background-color: var(--primery);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 3px;
+  animation-name: SettingsPage-module-scss-module__QJqy9W__before;
+  animation-duration: .15s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes SettingsPage-module-scss-module__QJqy9W__before {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.SettingsPage-module-scss-module__QJqy9W__main {
+  margin: clamp(1.5625rem, 1.01232rem + 2.34742vw, 3.125rem) 0 clamp(1.25rem, 1.02993rem + .938967vw, 1.875rem);
+  display: flex;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__footer {
+  align-self: end;
+  gap: 1.25rem;
+  width: auto;
+  display: flex;
+}
+
+.SettingsPage-module-scss-module__QJqy9W__footer > button {
+  color: var(--white);
+  border: none;
+  border-radius: clamp(.5625rem, .430458rem + .56338vw, .9375rem);
+  width: clamp(8.125rem, 6.80458rem + 5.6338vw, 11.875rem);
+  height: clamp(2.5rem, 2.27993rem + .938967vw, 3.125rem);
+}
+
+.SettingsPage-module-scss-module__QJqy9W__footer .SettingsPage-module-scss-module__QJqy9W__save {
+  background-color: var(--primery);
+}
+
+.SettingsPage-module-scss-module__QJqy9W__footer .SettingsPage-module-scss-module__QJqy9W__logOut {
+  background-color: var(--red);
+}
+
+.SettingsPage-module-scss-module__QJqy9W__isPanding {
+  background-color: var(--text-color) !important;
+}
+
+@media (width <= 520px) {
+  .SettingsPage-module-scss-module__QJqy9W__footer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .SettingsPage-module-scss-module__QJqy9W__footer > button {
+    width: 100%;
+  }
+}
+
+
+/* [project]/src/components/loayout/CardWrapper/CardWrapper.module.scss.module.css [app-client] (css) */
+.CardWrapper-module-scss-module__tpMZxq__wrapper {
+  background-color: var(--white);
+  border-radius: 25px;
+  width: 100%;
+  height: 85%;
+  padding: max(.9375rem, 1.5vw);
+}
+
+
+/* [project]/src/components/UI/Switcher/Switcher.module.scss.module.css [app-client] (css) */
+.Switcher-module-scss-module__0PMf5W__wrapper {
+  background-color: var(--grey);
+  cursor: pointer;
+  width: clamp(2.75rem, 2.48592rem + 1.12676vw, 3.5rem);
+  height: clamp(1.5rem, 1.36796rem + .56338vw, 1.875rem);
+  transition: background var(--transition);
+  border-radius: 25px;
+  align-items: center;
+  padding: 0 3px;
+  display: flex;
+}
+
+.Switcher-module-scss-module__0PMf5W__wrapper > span {
+  aspect-ratio: 1;
+  background-color: var(--white);
+  border-radius: 100px;
+  width: 48%;
+  transition: transform .15s ease-in;
+  display: block;
+}
+
+.Switcher-module-scss-module__0PMf5W__isActive {
+  background-color: var(--light-green);
+}
+
+.Switcher-module-scss-module__0PMf5W__isActive > span {
+  transform: translateX(110%);
+}
+
+
+/* [project]/src/components/screens/settings/Preferences/Preferences.module.scss.module.css [app-client] (css) */
+.Preferences-module-scss-module__Dfp8_q__wrapper {
+  width: 100%;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > form {
+  gap: clamp(1rem, .691901rem + 1.31455vw, 1.875rem);
+  width: 100%;
+  display: flex;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > form > div {
+  width: 100%;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > h3 {
+  color: var(--title);
+  margin-bottom: clamp(.8125rem, .680458rem + .56338vw, 1.1875rem);
+  font-size: clamp(.875rem, .808979rem + .28169vw, 1.0625rem);
+  font-weight: 500;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > div {
+  align-items: center;
+  gap: clamp(.75rem, .551937rem + .84507vw, 1.3125rem);
+  margin-bottom: 1.125rem;
+  display: flex;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > div > div {
+  flex-shrink: 0;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > div > p {
+  font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
+  font-weight: 400;
+}
+
+.Preferences-module-scss-module__Dfp8_q__wrapper > :last-child {
+  margin-bottom: 0;
+}
+
+@media (width <= 520px) {
+  .Preferences-module-scss-module__Dfp8_q__wrapper > form {
+    flex-direction: column;
+  }
+}
+
+
+/* [project]/src/components/UI/fild/fild.module.scss.module.css [app-client] (css) */
+.fild-module-scss-module__u8qaRG__title {
+  color: var(--black);
+  width: 100%;
+  margin: 0 0 7px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.fild-module-scss-module__u8qaRG__input {
+  background-color: var(--white);
+  min-width: 11.25rem;
+  max-width: 100%;
+  height: 2.5rem;
+  transition: border var(--transition);
+  border: .0625rem solid #dfeaf2;
+  border-radius: 15px;
+  align-items: center;
+  padding-inline: .9375rem;
+  display: flex;
+}
+
+.fild-module-scss-module__u8qaRG__input > input {
+  width: 97%;
+  color: var(--text-color);
+  background-color: #0000;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.fild-module-scss-module__u8qaRG__input > input::placeholder {
+  color: var(--text-color);
+}
+
+.fild-module-scss-module__u8qaRG__input > .fild-module-scss-module__u8qaRG__avatar {
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  width: 100%;
+  display: flex;
+}
+
+.fild-module-scss-module__u8qaRG__input > .fild-module-scss-module__u8qaRG__avatar > input {
+  display: none;
+}
+
+.fild-module-scss-module__u8qaRG__input > .fild-module-scss-module__u8qaRG__avatar > p {
+  color: var(--text-color);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.fild-module-scss-module__u8qaRG__input > .fild-module-scss-module__u8qaRG__avatar :last-child {
+  text-overflow: ellipsis;
+  max-width: 50%;
+  font-size: .75rem;
+  overflow: hidden;
+}
+
+.fild-module-scss-module__u8qaRG__input:has(input:focus) {
+  border-color: var(--text-color);
+}
+
+.fild-module-scss-module__u8qaRG__input:has(input:focus) > input::placeholder {
+  color: var(--text-color) !important;
+}
+
+.fild-module-scss-module__u8qaRG__selector {
+  background-color: var(--white);
+  height: clamp(1.875rem, 1.65493rem + .938967vw, 2.5rem);
+  color: var(--text-color);
+  transition: color, background, border var(--transition);
+  border: .0625rem solid #dfeaf2;
+  border-radius: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  justify-content: center;
+  align-items: center;
+  padding: 10px clamp(.625rem, .514965rem + .469484vw, .9375rem);
+  font-size: clamp(.75rem, .705986rem + .187793vw, .875rem);
+  font-weight: 400;
+  display: flex;
+}
+
+.fild-module-scss-module__u8qaRG__selector:hover {
+  border: .0625rem solid var(--text-color);
+  color: var(--text-color);
+}
+
+.fild-module-scss-module__u8qaRG__selector:has(input:checked) {
+  color: var(--white);
+  background-color: var(--primery);
+  border-color: var(--white);
+}
+
+.fild-module-scss-module__u8qaRG__isError {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.fild-module-scss-module__u8qaRG__error > .fild-module-scss-module__u8qaRG__title, .fild-module-scss-module__u8qaRG__error p {
+  color: var(--red);
+}
+
+.fild-module-scss-module__u8qaRG__error p {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: .875rem;
+}
+
+.fild-module-scss-module__u8qaRG__error > .fild-module-scss-module__u8qaRG__input {
+  border-color: var(--red);
+}
+
+.fild-module-scss-module__u8qaRG__error > .fild-module-scss-module__u8qaRG__input > input::placeholder, .fild-module-scss-module__u8qaRG__error > .fild-module-scss-module__u8qaRG__input > input, .fild-module-scss-module__u8qaRG__error > .fild-module-scss-module__u8qaRG__input > label > p {
+  color: var(--red);
+}
+
+
+/* [project]/src/components/screens/settings/Security/Security.module.scss.module.css [app-client] (css) */
+.Security-module-scss-module__-TEjka__wrapper > h3 {
+  color: var(--title);
+  margin-top: 0;
+  margin-bottom: clamp(.8125rem, .680458rem + .56338vw, 1.1875rem);
+  font-size: clamp(.875rem, .808979rem + .28169vw, 1.0625rem);
+  font-weight: 500;
+}
+
+.Security-module-scss-module__-TEjka__wrapper > div {
+  align-items: center;
+  gap: clamp(.75rem, .551937rem + .84507vw, 1.3125rem);
+  margin-bottom: 1.125rem;
+  display: flex;
+}
+
+.Security-module-scss-module__-TEjka__wrapper > div > div {
+  flex-shrink: 0;
+}
+
+.Security-module-scss-module__-TEjka__wrapper > div > p {
+  font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
+  font-weight: 400;
+}
+
+.Security-module-scss-module__-TEjka__wrapper > form > :not(:last-child) {
+  margin-bottom: clamp(1rem, .867958rem + .56338vw, 1.375rem);
+}
+
+
+/* [project]/src/components/screens/settings/EditProfile/EditProfile.module.scss.module.css [app-client] (css) */
+.EditProfile-module-scss-module__o651CW__wrapper {
+  gap: 3.125rem;
+  width: 100%;
+  display: flex;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar {
+  border-radius: 100px;
+  min-width: clamp(6.875rem, 6.43486rem + 1.87793vw, 8.125rem);
+  height: clamp(6.875rem, 6.43486rem + 1.87793vw, 8.125rem);
+  position: relative;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar > img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar > button {
+  background-color: var(--primery);
+  border: none;
+  border-radius: 100px;
+  align-items: center;
+  width: 22%;
+  height: 22%;
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar > button > svg {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > form {
+  gap: 1.5625rem;
+  width: 100%;
+  display: flex;
+}
+
+.EditProfile-module-scss-module__o651CW__wrapper > form > div {
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+}
+
+@media (width <= 768px) {
+  .EditProfile-module-scss-module__o651CW__wrapper {
+    flex-direction: column;
+    gap: clamp(1.5625rem, 1.34243rem + .938967vw, 2.1875rem);
+  }
+
+  .EditProfile-module-scss-module__o651CW__wrapper > .EditProfile-module-scss-module__o651CW__avatar {
+    margin: 0 auto;
+  }
+}
+
+@media (width <= 520px) {
+  .EditProfile-module-scss-module__o651CW__wrapper > form {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+/* [project]/src/components/UI/Loader/Loader.module.scss.module.css [app-client] (css) */
+.Loader-module-scss-module__ae0pTq__loader {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.Loader-module-scss-module__ae0pTq__loader > svg {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  animation: 1s ease-in-out infinite Loader-module-scss-module__ae0pTq__spin;
+}
+
+@keyframes Loader-module-scss-module__ae0pTq__spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*# sourceMappingURL=src_components_48efe9bd._.css.map*/

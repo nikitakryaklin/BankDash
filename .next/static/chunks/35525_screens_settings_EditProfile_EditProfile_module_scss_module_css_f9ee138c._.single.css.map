@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/screens/settings/EditProfile/EditProfile.module.scss.module.css"],"sourcesContent":[".wrapper{width:100%;display:flex;gap:3.125rem}.wrapper>.avatar{min-width:clamp(6.875rem,6.4348591549rem + 1.8779342723vw,8.125rem);height:clamp(6.875rem,6.4348591549rem + 1.8779342723vw,8.125rem);border-radius:100px;position:relative}.wrapper>.avatar>img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;border-radius:100px}.wrapper>.avatar>button{width:22%;height:22%;border-radius:100px;border:none;background-color:var(--primery);position:absolute;display:flex;align-items:center;right:0;bottom:15}.wrapper>.avatar>button>svg{margin:0 auto;width:100%;height:100%}.wrapper>form{width:100%;display:flex;gap:1.5625rem}.wrapper>form>div{display:flex;flex-direction:column;gap:20px;width:100%}@media(width <= 768px){.wrapper{flex-direction:column;gap:clamp(1.5625rem,1.3424295775rem + 0.9389671362vw,2.1875rem)}.wrapper>.avatar{margin:0 auto}}@media(width <= 520px){.wrapper>form{flex-direction:column;gap:20px}}"],"names":[],"mappings":"AAAA;;;;;;AAA8C;;;;;;;AAA4L;;;;;;;;AAAkG;;;;;;;;;;;;;AAAiL;;;;;;AAAiE;;;;;;AAAoD;;;;;;;AAAyE;EAAuB;;;;;EAA+F;;;;;AAAgC;EAAuB"}}]
+}

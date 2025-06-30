@@ -1,0 +1,110 @@
+@use "@/styles/helpers" as *;
+
+.isActive {
+  background: linear-gradient(136deg, #4c49ed 0%, #0a06f4 100%);
+
+  & > .info {
+    & > .bottom,
+    .top {
+      & > div > .dscr {
+        color: rgba(#fff, 0.9);
+      }
+      & > div > .values {
+        color: #fff;
+      }
+
+      & > .icon > svg > path {
+        fill: white;
+      }
+    }
+  }
+
+  & > .number {
+    border: none;
+
+    & > .cardNumber {
+      color: rgba(#fff, 0.9);
+    }
+
+    & > svg > circle {
+      fill: rgba(#fff, 0.9);
+    }
+  }
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 3/2;
+  border-radius: 25px !important;
+  font-family: "lato";
+  font-weight: 500;
+}
+
+.info {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 25px 25px 35px 25px;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  margin-bottom: 10px;
+}
+
+.bottom {
+  width: 90%;
+}
+
+.values {
+  color: var(--title);
+  @include fluid-text(15, 13);
+}
+
+.dscr {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+.icon > svg > path {
+  fill: #000;
+}
+
+.number {
+  height: 30%;
+  width: 100%;
+  border-top: 1px solid #dfeaf2;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+
+  & > svg > circle {
+    fill: rgba(#9199af, 0.5);
+  }
+}
+
+.cardNumber {
+  margin: 0;
+  @include fluid-text(22, 16);
+  color: var(--title);
+
+  > svg > circle {
+    fill: rgba($color: #fff, $alpha: 0.5);
+  }
+}

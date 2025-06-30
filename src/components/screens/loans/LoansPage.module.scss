@@ -1,0 +1,11 @@
+@use "@/styles/helpers" as *;
+
+.page {
+  width: 100%;
+}
+
+.widget {
+  max-width: 265px;
+  width: 100%;
+  min-width: 167px;
+}

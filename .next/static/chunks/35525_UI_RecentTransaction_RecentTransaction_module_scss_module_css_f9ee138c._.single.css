@@ -1,0 +1,17 @@
+/* [project]/src/components/UI/RecentTransaction/RecentTransaction.module.scss.module.css [app-client] (css) */
+.RecentTransaction-module-scss-module__mRszra__wrapper {
+  width: 100%;
+  max-width: 3700px;
+  height: max(215px, 20vw);
+  max-height: 282px;
+}
+
+.RecentTransaction-module-scss-module__mRszra__card {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+}
+
+/*# sourceMappingURL=35525_UI_RecentTransaction_RecentTransaction_module_scss_module_css_f9ee138c._.single.css.map*/

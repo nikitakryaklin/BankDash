@@ -1,0 +1,152 @@
+/* [project]/src/components/UI/Widget/Widget.module.scss.module.css [app-client] (css) */
+.Widget-module-scss-module__N2daNW__wrapper {
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  height: clamp(5.3125rem, 4.54225rem + 3.28639vw, 7.5rem);
+  padding: 1.5625rem .9375rem;
+}
+
+.Widget-module-scss-module__N2daNW__content {
+  width: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(.625rem, .514965rem + .469484vw, .9375rem);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Widget-module-scss-module__N2daNW__content > div > h3 {
+  color: var(--text-color);
+  margin: 0 0 clamp(.25rem, .183979rem + .28169vw, .4375rem);
+  font-size: clamp(.75rem, .661972rem + .375587vw, 1rem);
+  font-weight: 400;
+}
+
+.Widget-module-scss-module__N2daNW__content > div > p {
+  color: var(--black);
+  margin: 0;
+  font-size: clamp(.75rem, .661972rem + .375587vw, 1rem);
+  font-weight: 600;
+}
+
+.Widget-module-scss-module__N2daNW__icon {
+  aspect-ratio: 1;
+  border-radius: 100px;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.Widget-module-scss-module__N2daNW__icon > svg {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+
+/* [project]/src/components/screens/loans/LoansPage.module.scss.module.css [app-client] (css) */
+.LoansPage-module-scss-module__FYed5q__page {
+  width: 100%;
+}
+
+.LoansPage-module-scss-module__FYed5q__widget {
+  width: 100%;
+  min-width: 167px;
+  max-width: 265px;
+}
+
+
+/* [project]/src/components/loayout/CardWrapper/CardWrapper.module.scss.module.css [app-client] (css) */
+.CardWrapper-module-scss-module__tpMZxq__wrapper {
+  background-color: var(--white);
+  border-radius: 25px;
+  width: 100%;
+  height: 85%;
+  padding: max(.9375rem, 1.5vw);
+}
+
+
+/* [project]/src/components/UI/TableBlock/TableBlock.module.scss.module.css [app-client] (css) */
+.TableBlock-module-scss-module__b7f_bG__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > :first-child {
+  border-bottom: 1px solid #e6eff5;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > thead > tr {
+  border-bottom: 1px solid #e6eff5;
+  height: 35px;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > thead > tr > td {
+  vertical-align: top;
+  color: var(--text-color);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr {
+  border-bottom: 1px solid #e6eff5;
+  height: 60px;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td {
+  color: var(--black);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: .8px;
+  overflow: hidden;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  white-space: nowrap;
+  height: 35px;
+  transition: background, color, border, var(--transition);
+  background: none;
+  border-radius: 25px;
+  padding: 0 clamp(0rem, 2.53521vw - .59419rem, 1.6875rem);
+  font-size: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  font-weight: 400;
+}
+
+@media (any-hover: hover) {
+  .TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button:hover {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+@media (any-hover: none) {
+  .TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button:active {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tfoot {
+  color: var(--red);
+  vertical-align: bottom;
+  height: 35px;
+}
+
+
+/* [project]/src/components/UI/widgetWrapper/widgetWrapper.module.scss.module.css [app-client] (css) */
+.widgetWrapper-module-scss-module__tdWzNq__wrapper {
+  gap: 1.5625rem;
+  max-width: 1150px;
+  margin-bottom: .9375rem;
+  display: flex;
+  overflow: scroll;
+}
+
+
+/*# sourceMappingURL=src_components_7ea32f60._.css.map*/

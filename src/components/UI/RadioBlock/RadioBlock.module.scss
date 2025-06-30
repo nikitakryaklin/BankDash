@@ -1,0 +1,22 @@
+@use '@/styles/helpers' as *;
+
+.title {
+  color: var(--title);
+  @include fluid-text(16, 14);
+  margin-bottom: rem(5);
+}
+
+.wrapper {
+  display: flex;
+  gap: fluid(20, 15);
+  flex-wrap: wrap;
+  margin-bottom: fluid(15, 10);
+  & > p {
+    font-size: rem(12);
+    align-self: center;
+  }
+}
+
+.isError {
+  color: var(--red);
+}

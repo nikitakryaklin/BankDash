@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/Contacts/addContact/addContact.module.scss.module.css"],"sourcesContent":[".wrraper{width:100%;height:100%}.header{display:flex;align-items:center;gap:1rem;margin-bottom:5px;justify-content:center;align-items:center}.header>h3{color:var(--title);margin:0;margin-right:90px;flex-grow:1;text-align:center}.header>button{display:contents;border:none;color:var(--text-color);background:none;cursor:pointer;white-space:nowrap}.form{width:80%;margin:0 auto;display:flex;flex-direction:column;gap:5px}.form>div{width:100%;margin:0 auto}.form>button{border:none;color:#fff;background-color:var(--primery);width:50%;margin:0 auto;border-radius:25px;cursor:pointer;white-space:nowrap}"],"names":[],"mappings":"AAAA;;;;;AAAgC;;;;;;;;AAA6G;;;;;;;AAAuF;;;;;;;;;AAAsH;;;;;;;;AAAyE;;;;;AAAmC"}}]
+}

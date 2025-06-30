@@ -1,0 +1,9 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  max-width: 1150px;
+  overflow: scroll;
+  display: flex;
+  gap: rem(25);
+  margin-bottom: rem(15);
+}

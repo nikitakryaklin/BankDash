@@ -1,0 +1,84 @@
+/* [project]/src/components/screens/investments/InvestmentsPage.module.scss.module.css [app-client] (css) */
+.InvestmentsPage-module-scss-module__ahKUDa__page {
+  width: 100%;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__widget_wrapper {
+  justify-content: space-between;
+  gap: clamp(.9375rem, .607394rem + 1.40845vw, 1.875rem);
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__widget_wrapper > div {
+  width: 100%;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper {
+  gap: clamp(.9375rem, .607394rem + 1.40845vw, 1.875rem);
+  min-height: 256px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper > div {
+  width: 100%;
+  max-width: 50%;
+  height: clamp(16rem, 14.3935rem + 6.85446vw, 20.5625rem);
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper {
+  grid-template-columns: 1.5fr 1fr;
+  gap: clamp(.9375rem, .607394rem + 1.40845vw, 1.875rem);
+  margin-bottom: 25px;
+  display: grid;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper > div {
+  width: 100%;
+  height: clamp(16rem, 14.3935rem + 6.85446vw, 20.5625rem);
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper_list {
+  flex-direction: column;
+  row-gap: clamp(.625rem, .514965rem + .469484vw, .9375rem);
+  width: 100%;
+  max-height: 84%;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__tbody > tr {
+  border: none !important;
+  height: clamp(2rem, 1.77993rem + .938967vw, 2.625rem) !important;
+}
+
+@media (width <= 768px) {
+  .InvestmentsPage-module-scss-module__ahKUDa__widget_wrapper, .InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper {
+    flex-direction: column;
+  }
+
+  .InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper > div {
+    max-width: 100%;
+  }
+
+  .InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 568px) {
+  .InvestmentsPage-module-scss-module__ahKUDa__listElement {
+    gap: 20px;
+  }
+
+  .InvestmentsPage-module-scss-module__ahKUDa__listElement > :not(:first-child, :last-child) {
+    display: none;
+  }
+
+  .InvestmentsPage-module-scss-module__ahKUDa__listElement > :last-child {
+    width: max(60px, 20%);
+  }
+}
+
+/*# sourceMappingURL=1ab64_components_screens_investments_InvestmentsPage_module_scss_module_css_f9ee138c._.single.css.map*/

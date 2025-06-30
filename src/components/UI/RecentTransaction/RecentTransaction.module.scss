@@ -1,0 +1,20 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  height: max(215px, 20vw);
+  max-height: 282px;
+  width: 100%;
+  max-width: 3700px;
+}
+
+.card {
+  // background-color: #fff;
+  width: 100%;
+  max-width: 370px;
+  // height: 85%;
+  // border-radius: 25px;
+  // padding: max(rem(15), 1.5vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

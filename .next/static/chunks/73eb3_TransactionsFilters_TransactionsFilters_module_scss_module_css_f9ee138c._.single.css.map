@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/AllTransactions/TransactionsFilters/TransactionsFilters.module.scss.module.css"],"sourcesContent":[".wrapper{display:flex;gap:25px;width:100%;margin-bottom:clamp(0.4375rem,0.0413732394rem + 1.6901408451vw,1.5625rem);border-bottom:1px solid var(--borderLine)}.button{border:none;margin:0;height:1.875rem;padding-bottom:clamp(0.5rem,0.4559859155rem + 0.1877934272vw,0.625rem);padding:0 10px 5px;font-size:0.875rem;position:relative;color:var(--text-color);background-color:rgba(0,0,0,0);transition:color var(--transition)}.button.isActive{color:var(--primery)}.button.isActive::after{content:\"\";width:100%;height:3px;bottom:0;left:0;position:absolute;background-color:var(--primery);border-top-right-radius:15px;border-top-left-radius:15px;animation-name:before;animation-duration:.15s}@keyframes before{from{opacity:0}to{opacity:1}}"],"names":[],"mappings":"AAAA;;;;;;;;AAA8J;;;;;;;;;;;;AAAsQ;;;;AAAsC;;;;;;;;;;;;;;AAAkO"}}]
+}

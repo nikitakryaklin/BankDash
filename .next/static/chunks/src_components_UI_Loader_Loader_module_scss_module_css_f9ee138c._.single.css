@@ -1,0 +1,21 @@
+/* [project]/src/components/UI/Loader/Loader.module.scss.module.css [app-client] (css) */
+.Loader-module-scss-module__ae0pTq__loader {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.Loader-module-scss-module__ae0pTq__loader > svg {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  animation: 1s ease-in-out infinite Loader-module-scss-module__ae0pTq__spin;
+}
+
+@keyframes Loader-module-scss-module__ae0pTq__spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=src_components_UI_Loader_Loader_module_scss_module_css_f9ee138c._.single.css.map*/

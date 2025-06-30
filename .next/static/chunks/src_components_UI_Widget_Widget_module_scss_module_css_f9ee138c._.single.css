@@ -1,0 +1,47 @@
+/* [project]/src/components/UI/Widget/Widget.module.scss.module.css [app-client] (css) */
+.Widget-module-scss-module__N2daNW__wrapper {
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  height: clamp(5.3125rem, 4.54225rem + 3.28639vw, 7.5rem);
+  padding: 1.5625rem .9375rem;
+}
+
+.Widget-module-scss-module__N2daNW__content {
+  width: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(.625rem, .514965rem + .469484vw, .9375rem);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Widget-module-scss-module__N2daNW__content > div > h3 {
+  color: var(--text-color);
+  margin: 0 0 clamp(.25rem, .183979rem + .28169vw, .4375rem);
+  font-size: clamp(.75rem, .661972rem + .375587vw, 1rem);
+  font-weight: 400;
+}
+
+.Widget-module-scss-module__N2daNW__content > div > p {
+  color: var(--black);
+  margin: 0;
+  font-size: clamp(.75rem, .661972rem + .375587vw, 1rem);
+  font-weight: 600;
+}
+
+.Widget-module-scss-module__N2daNW__icon {
+  aspect-ratio: 1;
+  border-radius: 100px;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.Widget-module-scss-module__N2daNW__icon > svg {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=src_components_UI_Widget_Widget_module_scss_module_css_f9ee138c._.single.css.map*/

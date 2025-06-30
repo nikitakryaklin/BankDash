@@ -1,0 +1,73 @@
+/* [project]/src/components/UI/Modal/Modal.module.scss.module.css [app-client] (css) */
+.Modal-module-scss-module__XZkUgG__wrapper {
+  backdrop-filter: blur(5px);
+  background-color: #718ebf80;
+  width: 100vw;
+  height: 100vh;
+  padding: clamp(5.3125rem, 4.98239rem + 1.40845vw, 6.25rem) 0 100px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Modal-module-scss-module__XZkUgG__modal {
+  background-color: var(--background);
+  border-radius: 25px;
+  flex-direction: column;
+  width: 85%;
+  min-width: 250px;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  padding: clamp(.9375rem, .71743rem + .938967vw, 1.5625rem);
+  display: flex;
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button {
+  background-color: var(--white);
+  width: 44px;
+  height: 44px;
+  transition: background var(--transition);
+  border: none;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  position: relative;
+  box-shadow: 3px 3px 10px 3px #f5f7fa;
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button > span {
+  background-color: var(--text-color);
+  width: 55%;
+  height: 2px;
+  transition: width var(--transition);
+  border-radius: 25px;
+  display: block;
+  position: absolute;
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button > :first-child {
+  transform: rotate(45deg);
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button > :last-child {
+  transform: rotate(-45deg);
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button:hover {
+  background-color: var(--text-color);
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button:hover > span {
+  background-color: var(--background);
+}
+
+.Modal-module-scss-module__XZkUgG__body {
+  width: 100%;
+  margin-top: -44px;
+}
+
+/*# sourceMappingURL=src_components_UI_Modal_Modal_module_scss_module_css_f9ee138c._.single.css.map*/

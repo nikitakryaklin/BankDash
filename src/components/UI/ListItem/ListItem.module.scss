@@ -1,0 +1,81 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  width: 100%;
+  height: fluid(90, 69);
+  background-color: var(--white);
+  border-radius: fluid(20, 10);
+  display: flex;
+  align-items: center;
+  padding: 0 fluid(15, 12);
+  gap: fluid(20, 12);
+  > button {
+    color: var(--text-color);
+    background: none;
+    border: 1px solid var(--text-color);
+    height: 40%;
+    white-space: nowrap;
+    border-radius: 50px;
+    @include fluid-text(15, 12);
+    font-weight: 400;
+    padding: 0 fluid(31, 5);
+
+    transition: background, color, border, var(--transition);
+
+    @include hover {
+      border: none;
+      background-color: #539bff;
+      color: var(--background);
+    }
+  }
+}
+
+.icon {
+  height: fluid(60, 45);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  border-radius: fluid(20, 12);
+
+  > svg {
+    margin: 0 auto;
+  }
+}
+
+.info {
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+
+  // & > :not(:first-child) {
+  //     // text-align: end;
+  //     // background-color: red;
+  // }
+
+  > div {
+    // width: 100%;
+    padding-right: 15px;
+    > h3,
+    > p {
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+    }
+
+    > h3 {
+      white-space: nowrap;
+      color: var(--black);
+      @include fluid-text(16, 14);
+      font-weight: 500;
+    }
+
+    > p {
+      white-space: nowrap;
+      color: var(--text-color);
+      @include fluid-text(15, 12);
+      font-weight: 400;
+    }
+  }
+}

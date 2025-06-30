@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/screens/services/ServicesPage.module.scss.module.css"],"sourcesContent":[".widget{min-width:14.375rem;width:100%;max-width:21.875rem}.listWrapper{display:flex;flex-direction:column;gap:clamp(0.625rem,0.4049295775rem + 0.9389671362vw,1.25rem)}.listElement>div{max-width:50%}@media(width <= 768px){.listElement>:nth-child(2){display:none}.listElement>:nth-child(3){display:none}.listElement>:last-child{margin:0 auto}}@media(width <= 520px){.listElement>div{max-width:90%;padding:0 !important}.listElement>:last-child{display:none}}"],"names":[],"mappings":"AAAA;;;;;;AAA2D;;;;;;AAA6G;;;;AAA+B;EAAuB;;;;EAAgF;;;;;AAAwC;EAAuB;;;;;EAAoD"}}]
+}

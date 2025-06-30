@@ -1,0 +1,15 @@
+/* [project]/src/components/UI/BalanceHistory/BalanceHistory.module.scss.module.css [app-client] (css) */
+.BalanceHistory-module-scss-module__Qe6GUW__wrapper {
+  width: 100%;
+  max-width: 730px;
+  height: max(254px, 21vw);
+  max-height: 323px;
+}
+
+.BalanceHistory-module-scss-module__Qe6GUW__card {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_components_UI_BalanceHistory_BalanceHistory_module_scss_module_css_f9ee138c._.single.css.map*/

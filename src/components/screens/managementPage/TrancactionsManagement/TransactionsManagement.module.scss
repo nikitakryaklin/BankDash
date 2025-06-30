@@ -1,0 +1,30 @@
+@use '@/styles/helpers' as *;
+
+.title {
+  color: var(--title);
+  @include fluid-text(16, 14);
+  margin-bottom: rem(5);
+}
+
+.title_last {
+  margin-top: fluid(15, 10);
+}
+
+.button {
+  border: none;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primery);
+  width: fluid(170, 150);
+  height: fluid(40, 30);
+  border-radius: fluid(15, 12);
+  margin-top: fluid(20, 15);
+}
+
+.isPanding {
+  background-color: var(--text-color) !important;
+}
+
+.isError {
+  color: var(--red);
+}

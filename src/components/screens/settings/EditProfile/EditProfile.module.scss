@@ -1,0 +1,75 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  gap: rem(50);
+
+  > .avatar {
+    min-width: fluid(130, 110);
+    height: fluid(130, 110);
+    border-radius: 100px;
+    position: relative;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 100px;
+    }
+
+    & > button {
+      width: 22%;
+      height: 22%;
+      border-radius: 100px;
+      border: none;
+      background-color: var(--primery);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      right: 0;
+      bottom: 15;
+
+      & > svg {
+        margin: 0 auto;
+        // width: 15px;
+        // height: 15px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  & > form {
+    width: 100%;
+    display: flex;
+    gap: rem(25);
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .wrapper {
+    flex-direction: column;
+    gap: fluid(35, 25);
+
+    & > .avatar {
+      margin: 0 auto;
+    }
+  }
+}
+@media (width <= 520px) {
+  .wrapper {
+    & > form {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

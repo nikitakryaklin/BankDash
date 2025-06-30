@@ -1,0 +1,70 @@
+@use '@/styles/helpers' as *;
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(113, 142, 191, 0.5);
+  padding: fluid(100, 85) 0 100px 0;
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  padding: fluid(25, 15);
+  max-width: 1200px;
+  width: 85%;
+  min-width: 250px;
+  background-color: var(--background);
+  height: 500px;
+  border-radius: 25px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  > button {
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: var(--white);
+    border: none;
+    box-shadow: 3px 3px 10px 3px #f5f7fa;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    transition: background var(--transition);
+
+    & > span {
+      position: absolute;
+      display: block;
+      width: 55%;
+      border-radius: 25px;
+      background-color: var(--text-color);
+      height: 2px;
+      transition: width var(--transition);
+    }
+
+    & > :first-child {
+      transform: rotate(45deg);
+    }
+    & > :last-child {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      background-color: var(--text-color);
+      > span {
+        background-color: var(--background);
+      }
+    }
+  }
+}
+
+.body {
+  margin-top: -44px;
+  width: 100%;
+}

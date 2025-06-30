@@ -1,0 +1,61 @@
+/* [project]/src/components/UI/Contacts/ContactItem/contactItem.module.scss.module.css [app-client] (css) */
+.contactItem-module-scss-module__kXDFFW__wrapper {
+  text-align: center;
+  min-width: 80px;
+  min-height: 120px;
+  transition: transform var(--transition);
+  cursor: pointer;
+  user-select: none;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.contactItem-module-scss-module__kXDFFW__wrapper > img {
+  object-fit: cover;
+  border-radius: 100px;
+  width: 70px;
+  height: 70px;
+}
+
+@media (any-hover: hover) {
+  .contactItem-module-scss-module__kXDFFW__wrapper:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (any-hover: none) {
+  .contactItem-module-scss-module__kXDFFW__wrapper:active {
+    transform: translateY(-5px);
+  }
+}
+
+.contactItem-module-scss-module__kXDFFW__isFirst {
+  background-color: var(--background);
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 4px 4px 18px -2px #e7e4e8cc;
+}
+
+.contactItem-module-scss-module__kXDFFW__isActive {
+  background-color: var(--background);
+  border-radius: 25px;
+}
+
+.contactItem-module-scss-module__kXDFFW__name {
+  font-size: clamp(.875rem, .830986rem + .187793vw, 1rem);
+}
+
+.contactItem-module-scss-module__kXDFFW__role {
+  color: var(--text-color);
+  font-size: clamp(.8125rem, .768486rem + .187793vw, .9375rem);
+}
+
+.contactItem-module-scss-module__kXDFFW__name, .contactItem-module-scss-module__kXDFFW__role {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: max(45px, 4vw);
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=1ab64_components_UI_Contacts_ContactItem_contactItem_module_scss_module_css_f9ee138c._.single.css.map*/

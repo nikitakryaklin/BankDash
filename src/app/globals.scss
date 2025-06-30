@@ -1,0 +1,40 @@
+@use '@/styles/main';
+@use '@/styles/helpers' as *;
+
+@import 'nprogress/nprogress.css';
+
+body {
+  background-color: var(--white);
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'arial';
+  font-weight: 400;
+}
+
+.main {
+  width: 100%;
+}
+
+h2 {
+  margin: 0;
+  @include fluid-text(22, 16);
+  font-weight: 600;
+  color: var(--title);
+  margin-bottom: max(rem(12), 1.125vw);
+}
+
+#nprogress {
+  z-index: 9999 !important;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0; /* скрываем */
+  cursor: pointer;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

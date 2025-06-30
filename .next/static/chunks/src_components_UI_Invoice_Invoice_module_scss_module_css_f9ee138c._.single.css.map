@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/Invoice/Invoice.module.scss.module.css"],"sourcesContent":[".wrapper{width:100%;max-width:350px;height:clamp(17.25rem,14.2790492958rem + 12.676056338vw,25.6875rem)}.invoice_card{display:flex;gap:15px;flex-direction:column;justify-content:space-between}.invice{width:100%;height:45px;display:flex;gap:5px}.icon{border-radius:12px;height:45px;width:45px;display:flex;align-items:center;background-color:#dcfaf8}.icon>svg{margin:0 auto}.info{flex-grow:1}.info>h3{margin:0;font-size:clamp(0.8125rem,0.7464788732rem + 0.2816901408vw,1rem);font-weight:500;color:var(--title);max-width:75%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.info>p{margin:0;font-size:clamp(0.75rem,0.6839788732rem + 0.2816901408vw,0.9375rem);color:var(--text-color)}.amount{margin:0;font-size:clamp(0.8125rem,0.7464788732rem + 0.2816901408vw,1rem);color:var(--text-color)}"],"names":[],"mappings":"AAAA;;;;;;AAAwG;;;;;;;AAAwF;;;;;;;AAAoD;;;;;;;;;AAAyG;;;;AAAwB;;;;AAAkB;;;;;;;;;;;AAA8L;;;;;;AAA6G"}}]
+}

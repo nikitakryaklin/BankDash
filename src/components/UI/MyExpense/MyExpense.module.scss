@@ -1,0 +1,19 @@
+@use "@/styles/helpers" as *;
+
+@media (width > 768px) {
+  .wrapper {
+    min-width: 231px;
+    height: max(215px, 20vw);
+    max-height: 282px;
+    width: 100%;
+    max-width: 3700px;
+  }
+}
+
+@media (width <= 768px) {
+  .wrapper {
+    aspect-ratio: 1 / 0.7;
+    // max-width: 688px;
+    // width: fluid-text(688, 325);
+  }
+}

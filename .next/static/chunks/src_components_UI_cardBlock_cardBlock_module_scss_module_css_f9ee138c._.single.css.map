@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/cardBlock/cardBlock.module.scss.module.css"],"sourcesContent":[".wrapper{height:max(215px,20vw);max-height:282px;max-width:730px}.header{display:flex;justify-content:space-between;margin-bottom:max(0.75rem,1.125vw)}.header>p,.header a{margin:0;color:var(--title);font-size:clamp(0.875rem,0.8309859155rem + 0.1877934272vw,1rem);text-decoration:none}.header>h2{margin:0}.cards{width:100%;height:85%;display:flex;overflow-y:scroll;border-radius:25px;gap:30px}.noCard,.oneCard{text-align:center;display:flex;align-items:center;width:100%;height:100%;background-color:#fff}.noCard>p,.oneCard>p{margin:0 auto;color:var(--title);font-size:clamp(0.875rem,0.8309859155rem + 0.1877934272vw,1rem)}.oneCard{border-radius:20px;max-width:350px}"],"names":[],"mappings":"AAAA;;;;;;AAAiE;;;;;;AAAsF;;;;;;;AAAqI;;;;AAAoB;;;;;;;;;AAAwF;;;;;;;;;AAAgH;;;;;;AAAsH"}}]
+}

@@ -1,0 +1,15 @@
+/* [project]/src/components/UI/WeeklyActivity/WeeklyActivity.module.scss.module.css [app-client] (css) */
+.WeeklyActivity-module-scss-module__WGEfja__wrapper {
+  width: 100%;
+  max-width: 730px;
+  height: max(285px, 23vw);
+  max-height: 367px;
+}
+
+.WeeklyActivity-module-scss-module__WGEfja__card {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_components_UI_WeeklyActivity_WeeklyActivity_module_scss_module_css_f9ee138c._.single.css.map*/

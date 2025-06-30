@@ -1,0 +1,66 @@
+@use "@/styles/helpers" as *;
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  > :first-child {
+    border-bottom: 1px solid #e6eff5;
+    // background-color: red;
+  }
+  & > thead {
+    & > tr {
+      border-bottom: 1px solid #e6eff5;
+      height: 35px;
+      > td {
+        vertical-align: top;
+        color: var(--text-color);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  & > tbody {
+    > tr {
+      border-bottom: 1px solid #e6eff5;
+      height: 60px;
+
+      > td {
+        color: var(--black);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        letter-spacing: 0.8;
+        // border-bottom: 1px solid  #E6EFF5;
+      }
+    }
+
+    > tr > td > button {
+      color: var(--text-color);
+      background: none;
+      border: 1px solid var(--text-color);
+      height: 35px;
+      white-space: nowrap;
+      border-radius: 25px;
+      @include fluid-text(15, 12);
+      font-weight: 400;
+      padding: 0 fluid(27, 0);
+
+      transition: background, color, border, var(--transition);
+
+      @include hover {
+        border: none;
+        background-color: #539bff;
+        color: var(--background);
+      }
+    }
+  }
+
+  & > tfoot {
+    color: var(--red);
+    height: 35px;
+    vertical-align: bottom;
+  }
+}

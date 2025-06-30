@@ -1,0 +1,54 @@
+.wrraper {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+
+  > h3 {
+    color: var(--title);
+    margin: 0;
+    margin-right: 90px;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  > button {
+    display: contents;
+    border: none;
+    color: var(--text-color);
+    background: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & > div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  > button {
+    border: none;
+    color: white;
+    background-color: var(--primery);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 25px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+}

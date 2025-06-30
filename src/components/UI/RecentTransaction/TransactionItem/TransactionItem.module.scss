@@ -1,0 +1,77 @@
+@use "@/styles/helpers" as *;
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  gap: max(rem(8), 1vw);
+  align-items: center;
+
+  & > p {
+    margin: auto;
+    margin-right: 0;
+    @include fluid-text(16, 14);
+    font-weight: 500;
+    color: var(--green);
+  }
+}
+
+.icon {
+  display: flex;
+  border-radius: 100px;
+  width: max(rem(40), 3.5vw);
+  max-width: rem(55);
+  height: max(rem(40), 3.5vw);
+  max-height: rem(55);
+
+  & > svg {
+    align-self: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.info {
+  & > h4 {
+    @include fluid-text(16, 14);
+    font-size: rem(13);
+    font-weight: 500;
+    color: var(--black);
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  & > p {
+    @include fluid-text(15, 13);
+    font-size: rem(13);
+    color: var(--text-color);
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.main_info {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  > p {
+    margin-bottom: 0;
+  }
+}
+
+@media (width <= 420px) {
+  .main_info {
+    display: none;
+  }
+}
+
+@media (width <= 588px) {
+  .main_info {
+    :last-child {
+      display: none;
+    }
+  }
+}
