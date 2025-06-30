@@ -1,1 +1,19 @@
-{}
+{
+  "[project]/src/components/screens/credit/CreditPageForm.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/screens/credit/CreditPageForm.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_components_UI_3f077264._.css",
+      "static/chunks/node_modules_62c4fb29._.js",
+      "static/chunks/src_f94e28af._.js",
+      "static/chunks/src_components_screens_credit_CreditPageForm_tsx_da01c87f._.js"
+    ]
+  },
+  "[project]/src/components/screens/credit/CardBankStatistics/CardBankStatistics.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/screens/credit/CardBankStatistics/CardBankStatistics.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_97acc635._.js",
+      "static/chunks/src_1ffb1354._.js",
+      "static/chunks/src_components_screens_credit_CardBankStatistics_CardBankStatistics_tsx_da01c87f._.js"
+    ]
+  }
+}

@@ -3,7 +3,7 @@ import { ICard } from '@/types/User.type'
 import { NotEnougtData } from '@/components/UI/NotEnougtData/NotEnougtData'
 import { useBankСalculator } from './useBankСalculator'
 
-export const CardBankStatistics = ({ cards }: { cards: ICard[] }) => {
+const CardBankStatistics = ({ cards }: { cards: ICard[] }) => {
   if (!cards) {
     return <NotEnougtData />
   }
@@ -15,3 +15,5 @@ export const CardBankStatistics = ({ cards }: { cards: ICard[] }) => {
     </>
   )
 }
+
+export default CardBankStatistics

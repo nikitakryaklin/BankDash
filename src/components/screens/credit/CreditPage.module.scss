@@ -42,7 +42,7 @@
 }
 
 .cardList {
-  & > div {
+  & > .CardList_wrapper {
     overflow-x: scroll;
     background-color: transparent;
     padding: 0;
@@ -99,6 +99,7 @@
 }
 
 .form {
+  min-height: fluid(420, 300);
   & > p {
     color: var(--text-color);
     @include fluid-text(16, 12);

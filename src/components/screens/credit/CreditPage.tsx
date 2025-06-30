@@ -1,13 +1,9 @@
 'use client'
 
-import CardBlock from '@/components/UI/cardBlock/cardBlock'
 import styles from './CreditPage.module.scss'
 import { NotEnougtData } from '@/components/UI/NotEnougtData/NotEnougtData'
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
-import Fild from '@/components/UI/fild/fild'
 import { CARD_SETTINGS_DATA } from './CreditPage.data'
-import { useCreateCard } from './useCreateCard'
-import clsx from 'clsx'
 import { Loader } from '@/components/UI/Loader/loader'
 import { useUser } from '@/hooks/useUser'
 import { ListItem } from '@/components/UI/ListItem/ListItem'
@@ -15,17 +11,21 @@ import { ListItemElement } from '@/components/UI/ListItem/ListItem.element'
 import { ICard } from '@/types/User.type'
 import { getColorByIndex } from '@/utiles/getColorByIndex'
 import { getCardValues } from '@/utiles/getCardValues'
-import { RadioBlock } from '@/components/UI/RadioBlock/RadioBlock'
-import { getValidateError } from '@/utiles/getValidateError'
-import { CircleChart } from '@/components/UI/Chart/Circle/Circle-chart'
-import { CardBankStatistics } from './CardBankStatistics/CardBankStatistics'
+import dynamic from 'next/dynamic'
+
+const DynamicCardBankStatistics = dynamic(
+  () => import('./CardBankStatistics/CardBankStatistics'),
+  { ssr: false, loading: () => <Loader color="val(--test-color)" /> }
+)
+const DynamicCreditPageForm = dynamic(() => import('./CreditPageForm'), {
+  ssr: false,
+  loading: () => <Loader color="val(--test-color)" />,
+})
 
 const CreditPage = () => {
   const user = useUser()
 
   const cards = user.data?.cards
-
-  const { formSubmit, isPending, register, errors } = useCreateCard()
 
   return (
     <div>
@@ -33,15 +33,14 @@ const CreditPage = () => {
         <div className={styles.expense}>
           <h2>Bank Statistics</h2>
           <CardWrapper>
-            <CardBankStatistics cards={cards} />
-            {/* <NotEnougtData /> */}
+            <DynamicCardBankStatistics cards={cards} />
           </CardWrapper>
         </div>
         <div className={styles.cardList}>
           <h2>Card List</h2>
-          <CardWrapper>
-            {cards !== undefined &&
-              cards.map((el: ICard, index: number) => (
+          {cards !== undefined && (
+            <CardWrapper className={styles.CardList_wrapper}>
+              {cards.map((el: ICard, index: number) => (
                 <ListItem
                   className={styles.CardList_item}
                   key={el.id}
@@ -87,74 +86,20 @@ const CreditPage = () => {
                   <ListItemElement title={'Bank'} text={el.bank + ' Bank'} />
                 </ListItem>
               ))}
-            {cards === undefined && <NotEnougtData />}
-          </CardWrapper>
+            </CardWrapper>
+          )}
+          {cards === undefined && (
+            <CardWrapper>
+              <NotEnougtData />
+            </CardWrapper>
+          )}
         </div>
       </div>
       <div className={styles.addCard_wrapper}>
         <div className={styles.addCard}>
           <h2>Add New Card</h2>
           <CardWrapper className={styles.form}>
-            <p>
-              Credit Card generally means a plastic card issued by Scheduled
-              Commercial Banks assigned to a Cardholder, with a credit limit,
-              that can be used to purchase goods and services on credit or
-              obtain cash advances.
-            </p>
-            <form onSubmit={formSubmit()} className={styles.form1}>
-              <div>
-                <div>
-                  <RadioBlock
-                    title={errors.type?.message || 'Card Type'}
-                    className={styles.radioBlock}
-                    error={errors.type?.message}
-                    values={[
-                      { id: 'Credit', text: 'Credit' },
-                      { id: 'Debit', text: 'Debit' },
-                    ]}
-                    name={'type'}
-                    register={register}
-                  />
-                  <Fild
-                    type="number"
-                    placeholder="**** **** **** ****"
-                    title={errors.number?.message || 'Card Number'}
-                    error={errors.number?.message}
-                    maxLength={18}
-                    {...register('number', {
-                      ...getValidateError('Card number', true, 16, 18),
-                    })}
-                  />
-                </div>
-                <div>
-                  <Fild
-                    title={errors.bank?.message || 'Bank'}
-                    placeholder="My Bank"
-                    error={errors.bank?.message}
-                    {...register('bank', {
-                      ...getValidateError('Bank', true),
-                    })}
-                  />
-                  <Fild
-                    type="date"
-                    title={errors.period?.message || 'Expiration Date'}
-                    placeholder="25 January 2025"
-                    error={errors.period?.message}
-                    {...register('period', {
-                      ...getValidateError('Period'),
-                    })}
-                  />
-                </div>
-              </div>
-              <button
-                type="submit"
-                disabled={isPending}
-                className={clsx(isPending && styles.disabled)}
-              >
-                {isPending === false && 'Add Card'}
-                {isPending && <Loader color="#fff" />}
-              </button>
-            </form>
+            <DynamicCreditPageForm />
           </CardWrapper>
         </div>
         <div className={styles.settings}>
