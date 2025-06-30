@@ -5,10 +5,7 @@ import styles from './CreditPage.module.scss'
 import { NotEnougtData } from '@/components/UI/NotEnougtData/NotEnougtData'
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import Fild from '@/components/UI/fild/fild'
-import {
-  BANK_CARDS_STATISTICS_DATA,
-  CARD_SETTINGS_DATA,
-} from './CreditPage.data'
+import { CARD_SETTINGS_DATA } from './CreditPage.data'
 import { useCreateCard } from './useCreateCard'
 import clsx from 'clsx'
 import { Loader } from '@/components/UI/Loader/loader'
@@ -21,6 +18,7 @@ import { getCardValues } from '@/utiles/getCardValues'
 import { RadioBlock } from '@/components/UI/RadioBlock/RadioBlock'
 import { getValidateError } from '@/utiles/getValidateError'
 import { CircleChart } from '@/components/UI/Chart/Circle/Circle-chart'
+import { CardBankStatistics } from './CardBankStatistics/CardBankStatistics'
 
 const CreditPage = () => {
   const user = useUser()
@@ -33,9 +31,9 @@ const CreditPage = () => {
     <div>
       <div className={styles.statistic}>
         <div className={styles.expense}>
-          <h2>Card Expense Statistics</h2>
+          <h2>Bank Statistics</h2>
           <CardWrapper>
-            <CircleChart chartData={BANK_CARDS_STATISTICS_DATA} />
+            <CardBankStatistics cards={cards} />
             {/* <NotEnougtData /> */}
           </CardWrapper>
         </div>

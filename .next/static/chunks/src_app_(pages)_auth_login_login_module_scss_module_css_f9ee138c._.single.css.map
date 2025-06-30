@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/(pages)/auth/login/login.module.scss.module.css"],"sourcesContent":[".page{width:100%;height:100%;padding-top:150px;background-color:var(--background)}.form{margin:0 auto;display:flex;flex-direction:column;gap:20px;background-color:#f5f7fa;background-color:red;border-radius:1.25rem;width:30%;height:auto;min-width:250px;padding:5%;background-color:var(--white)}.form>h2{margin:0;text-align:center;font-size:clamp(1.25rem,1.073943662rem + 0.7511737089vw,1.75rem);color:var(--title);font-weight:600}.form>button{align-self:center}.form>p{text-align:center;font-size:14;font-weight:400;color:var(--title);cursor:pointer}"],"names":[],"mappings":"AAAA;;;;;;;AAAkF;;;;;;;;;;;;;;AAAmN;;;;;;;;AAAwI;;;;AAA+B"}}]
+}

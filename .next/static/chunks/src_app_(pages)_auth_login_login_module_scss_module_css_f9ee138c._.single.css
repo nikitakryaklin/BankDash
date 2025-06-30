@@ -1,0 +1,43 @@
+/* [project]/src/app/(pages)/auth/login/login.module.scss.module.css [app-client] (css) */
+.login-module-scss-module__dev02q__page {
+  background-color: var(--background);
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+}
+
+.login-module-scss-module__dev02q__form {
+  background-color: red;
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  min-width: 250px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5%;
+  display: flex;
+}
+
+.login-module-scss-module__dev02q__form > h2 {
+  text-align: center;
+  color: var(--title);
+  margin: 0;
+  font-size: clamp(1.25rem, 1.07394rem + .751174vw, 1.75rem);
+  font-weight: 600;
+}
+
+.login-module-scss-module__dev02q__form > button {
+  align-self: center;
+}
+
+.login-module-scss-module__dev02q__form > p {
+  text-align: center;
+  color: var(--title);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=src_app_%28pages%29_auth_login_login_module_scss_module_css_f9ee138c._.single.css.map*/

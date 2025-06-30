@@ -79,13 +79,3 @@ export const CARD_SETTINGS_DATA = [
     text: 'Withdraw without any card',
   },
 ]
-
-export const BANK_CARDS_STATISTICS_DATA = {
-  labels: ['AMB Bank', 'DBL Bank', 'MPS Bank', 'BRC Bank'],
-  datasets: [30, 15, 35, 20],
-  backgroundColor: ['#16DBCC', '#FF82AC', '#FFBB38', '#4C78FF'],
-  border: 0,
-  cutout: '50',
-  label: 'In a %',
-  padding: 15,
-}
