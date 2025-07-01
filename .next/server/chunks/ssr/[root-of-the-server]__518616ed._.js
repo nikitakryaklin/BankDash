@@ -300,7 +300,26 @@ class Transactions {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
             });
-            // checkResponse(result)
+            if (result.ok) {
+                return result.json();
+            } else {
+                const errorMessage = result.text();
+                throw new Error('ошибка запроса ' + errorMessage);
+            }
+        } catch (error) {
+            console.log(error, ' - ошибка запроса транзакции');
+            throw error;
+        }
+    }
+    async getByDate(numbers, date) {
+        try {
+            const result = await fetch(this.URL + `?${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers)}&filters[createdAt][$gte]=${date}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${localStorage.getItem('token')}`
+                }
+            });
             if (result.ok) {
                 return result.json();
             } else {
@@ -529,7 +548,6 @@ const useManagementForm = ()=>{
     const { createTransactionMutation } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionMutation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransactionMutation"])();
     const { createBalanceMutation } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useBalanceMutation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useBalanceMutation"])();
     const submitForm = (data)=>{
-        console.log(data);
         createBalanceMutation.mutate({
             type: data.type,
             amount: Number(data.amount),

@@ -1,19 +1,19 @@
-import { transactionsService } from "@/service/transaction.service";
-import { IUser } from "@/types/User.type";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { transactionsService } from '@/service/transaction.service'
+import { IUser } from '@/types/User.type'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
 
 export const useTransactionsAll = (
   user: IUser,
   page: number,
-  filter: string,
+  filter: string
 ) => {
-  const result: string[] = [];
-  user?.cards?.map((card) => result.push(card.number));
+  const result: string[] = []
+  user?.cards?.map((card) => result.push(card.number))
 
   const { data, isLoading, isSuccess } = useQuery({
-    queryKey: ["transactionsAll", page, filter],
+    queryKey: ['transactions', page, filter],
     queryFn: () => transactionsService.getAll(result, page, filter),
-  });
+  })
 
-  return { data, isLoading, isSuccess };
-};
+  return { data, isLoading, isSuccess }
+}

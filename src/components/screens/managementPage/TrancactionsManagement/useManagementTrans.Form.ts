@@ -17,7 +17,6 @@ export const useManagementForm = () => {
   const { createBalanceMutation } = useBalanceMutation()
 
   const submitForm: SubmitHandler<IManagementTransForm> = (data) => {
-    console.log(data)
     createBalanceMutation.mutate({
       type: data.type,
       amount: Number(data.amount),

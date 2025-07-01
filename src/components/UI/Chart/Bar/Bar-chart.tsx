@@ -16,7 +16,6 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 export const BarChart = ({ chartData }: { chartData: IChartBar }) => {
   const { options, data } = useBarChartData({ ...chartData })
 
-  console.log(data)
   return (
     <>
       {/* @ts-ignore */}

@@ -18,7 +18,30 @@ class Transactions {
           },
         }
       )
-      // checkResponse(result)
+      if (result.ok) {
+        return result.json()
+      } else {
+        const errorMessage = result.text()
+        throw new Error('ошибка запроса ' + errorMessage)
+      }
+    } catch (error) {
+      console.log(error, ' - ошибка запроса транзакции')
+      throw error
+    }
+  }
+  async getByDate(numbers: string[], date: string) {
+    try {
+      const result = await fetch(
+        this.URL +
+          `?${getArray('card', 'number', numbers)}&filters[createdAt][$gte]=${date}`,
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${localStorage.getItem('token')}`,
+          },
+        }
+      )
       if (result.ok) {
         return result.json()
       } else {

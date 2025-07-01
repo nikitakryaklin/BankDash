@@ -15,11 +15,11 @@ import dynamic from 'next/dynamic'
 
 const DynamicCardBankStatistics = dynamic(
   () => import('./CardBankStatistics/CardBankStatistics'),
-  { ssr: false, loading: () => <Loader color="val(--test-color)" /> }
+  { ssr: false, loading: () => <Loader /> }
 )
 const DynamicCreditPageForm = dynamic(() => import('./CreditPageForm'), {
   ssr: false,
-  loading: () => <Loader color="val(--test-color)" />,
+  loading: () => <Loader />,
 })
 
 const CreditPage = () => {
