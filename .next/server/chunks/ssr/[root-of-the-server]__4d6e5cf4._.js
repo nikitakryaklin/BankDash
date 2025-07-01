@@ -892,6 +892,7 @@ var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
     "CONSTANTS": (()=>CONSTANTS),
+    "DAYS": (()=>DAYS),
     "TRANSACTIONS": (()=>TRANSACTIONS)
 });
 const CONSTANTS = {
@@ -906,6 +907,15 @@ const CONSTANTS = {
     settings: '/settings',
     transactions: '/transactions'
 };
+const DAYS = [
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thu',
+    'Fri',
+    'Sat',
+    'Sun'
+];
 const TRANSACTIONS = {
     type: {
         incoming: 'incoming',

@@ -185,14 +185,21 @@ __turbopack_context__.s({
     "useTransactionsByDate": (()=>useTransactionsByDate)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$service$2f$transaction$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/service/transaction.service.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getDateByDays$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utiles/getDateByDays.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/useQuery.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-client] (ecmascript)");
 var _s = __turbopack_context__.k.signature();
 ;
 ;
-const useTransactionsByDate = (user, date)=>{
+;
+const useTransactionsByDate = (day)=>{
     _s();
+    const user = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQueryClient"])().getQueryData([
+        'user'
+    ]);
     const result = [];
     user?.cards?.forEach((card)=>result.push(card.number));
+    const date = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getDateByDays$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getDateByDays"])(day);
     const { data, isLoading, isSuccess } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"])({
         queryKey: [
             'transactions',
@@ -211,8 +218,9 @@ const useTransactionsByDate = (user, date)=>{
         isSuccess
     };
 };
-_s(useTransactionsByDate, "u3NwUtvZkyl03u4wNWTUHfEOiSQ=", false, function() {
+_s(useTransactionsByDate, "vosioXjoI9OioFjMIW35OSYCK7U=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQueryClient"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"]
     ];
 });
@@ -306,8 +314,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$MyExpense$2f$MyExpense$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/MyExpense/MyExpense.module.scss.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/NotEnougtData/NotEnougtData.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Chart$2f$Bar$2f$Bar$2d$chart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Chart/Bar/Bar-chart.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getDateByDays$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utiles/getDateByDays.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTransactionsByDate.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$MyExpense$2f$useMyExpenseCalculator$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/MyExpense/useMyExpenseCalculator.ts [app-client] (ecmascript)");
 ;
@@ -319,18 +325,13 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-;
-;
 const MyExpense = ()=>{
     _s();
-    const user = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQueryClient"])().getQueryData([
-        'user'
-    ]);
-    const { data: transactions, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionsByDate"])(user, (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getDateByDays$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getDateByDays"])(7));
+    const { data: transactions, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionsByDate"])(7);
     if (!transactions && !isLoading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
             fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-            lineNumber: 21,
+            lineNumber: 17,
             columnNumber: 12
         }, this);
     }
@@ -342,7 +343,7 @@ const MyExpense = ()=>{
                 children: "My Expense"
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-                lineNumber: 28,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -350,24 +351,23 @@ const MyExpense = ()=>{
                     chartData: MY_EXPENSE_DATA
                 }, void 0, false, {
                     fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-                    lineNumber: 30,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-                lineNumber: 29,
+                lineNumber: 25,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-        lineNumber: 27,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 };
-_s(MyExpense, "r5+Ag1odlb0TysTdxB2Ft2kVfb8=", false, function() {
+_s(MyExpense, "RB3Wq5DYjeeMopW1sMhPPTt/xO4=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQueryClient"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionsByDate"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$MyExpense$2f$useMyExpenseCalculator$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMyExpenseCalculator"]
     ];

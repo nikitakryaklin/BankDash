@@ -11,11 +11,7 @@ import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useMyExpenseCalculator } from './useMyExpenseCalculator'
 
 const MyExpense = () => {
-  const user = useQueryClient().getQueryData(['user']) as IUser
-  const { data: transactions, isLoading } = useTransactionsByDate(
-    user,
-    getDateByDays(7)
-  )
+  const { data: transactions, isLoading } = useTransactionsByDate(7)
 
   if (!transactions && !isLoading) {
     return <NotEnougtData />

@@ -1,1 +1,10 @@
-{}
+{
+  "[project]/src/components/UI/BalanceHistory/BalanceHistory.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/UI/BalanceHistory/BalanceHistory.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_components_UI_BalanceHistory_BalanceHistory_module_scss_module_ab26f163.css",
+      "static/chunks/src_1bb03321._.js",
+      "static/chunks/src_components_UI_BalanceHistory_BalanceHistory_tsx_f8bb6b54._.js"
+    ]
+  }
+}

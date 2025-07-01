@@ -8,27 +8,32 @@ import WeeklyActivity from '@/components/UI/WeeklyActivity/WeeklyActivity'
 import ExpenseStatistics from '@/components/UI/ExpenseStatistics/ExpenseStatistics'
 import Contacts from '@/components/UI/Contacts/Contacts'
 import BalanceHistory from '@/components/UI/BalanceHistory/BalanceHistory'
+import dynamic from 'next/dynamic'
+import { Loader } from '@/components/UI/Loader/loader'
+
+const DynamicBalanceHistory = dynamic(
+  () => import('@/components/UI/BalanceHistory/BalanceHistory'),
+  { ssr: false, loading: () => <Loader /> }
+)
 
 const HomePage = () => {
   const { isLogin } = useAuth()
   const { isLoading } = useUser()
 
+  if (isLoading) {
+    return <Loader />
+  }
+
   return (
     <>
-      {!isLoading ? (
-        <>
-          <div className={styles.wrapper}>
-            <CardBlock buttomText="See All" />
-            <RecentTransaction />
-            <WeeklyActivity />
-            <ExpenseStatistics />
-            <Contacts />
-            <BalanceHistory />
-          </div>
-        </>
-      ) : (
-        <>Loading....</>
-      )}
+      <div className={styles.wrapper}>
+        <CardBlock buttomText="See All" />
+        <RecentTransaction />
+        <WeeklyActivity />
+        <ExpenseStatistics />
+        <Contacts />
+        <DynamicBalanceHistory />
+      </div>
     </>
   )
 }

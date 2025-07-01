@@ -1,6 +1,7 @@
 import { IChartLine } from '@/types/Chart.interface'
 import { getCardValues } from '@/utiles/getCardValues'
 import { getToolTip } from '@/utiles/getToolTip'
+import { callback } from 'chart.js/helpers'
 //
 
 export function useLineChartData(DATA: IChartLine) {
@@ -22,8 +23,16 @@ export function useLineChartData(DATA: IChartLine) {
         },
         ticks: {
           color: '#718ebf',
+          autoSkip: false,
           maxTicksLimit: 7,
           drawTicks: false,
+          // @ts-ignore
+          callback(value, index, ticks) {
+            // @ts-ignore
+            const label = this.getLabelForValue(value)
+            // @ts-ignore
+            return index === this.chart.data.labels.indexOf(label) ? label : ''
+          },
         },
       },
       y: {

@@ -11,6 +11,8 @@ export const CONSTANTS = {
   transactions: '/transactions',
 }
 
+export const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
 export const TRANSACTIONS = {
   type: {
     incoming: 'incoming',

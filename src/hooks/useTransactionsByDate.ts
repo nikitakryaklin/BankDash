@@ -1,10 +1,15 @@
 import { transactionsService } from '@/service/transaction.service'
 import { IUser } from '@/types/User.type'
+import { getDateByDays } from '@/utiles/getDateByDays'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 
-export const useTransactionsByDate = (user: IUser, date: string) => {
+export const useTransactionsByDate = (day: number) => {
+  const user = useQueryClient().getQueryData(['user']) as IUser
+
   const result: string[] = []
   user?.cards?.forEach((card) => result.push(card.number))
+
+  const date = getDateByDays(day)
 
   const { data, isLoading, isSuccess } = useQuery({
     queryKey: ['transactions', 'byDate'],
