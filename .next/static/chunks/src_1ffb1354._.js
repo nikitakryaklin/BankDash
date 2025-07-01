@@ -137,32 +137,19 @@ function useBankСalculator({ cards }) {
     _s();
     const BANK_CARDS_STATISTICS_DATA = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA]": ()=>{
-            let data = [];
-            console.log('hey');
+            let data = {};
             cards.forEach({
                 "useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA]": (el)=>{
                     const bank = el.bank + ' Bank';
-                    const dataElement = data.find({
-                        "useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA].dataElement": (label)=>label.bank === bank
-                    }["useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA].dataElement"]);
-                    if (!dataElement) {
-                        data.push({
-                            bank: bank,
-                            value: 1
-                        });
+                    if (!data[bank]) {
+                        data[bank] = 1;
                     } else {
-                        dataElement.value++;
+                        data[bank]++;
                     }
                 }
             }["useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA]"]);
-            const labels = [];
-            const datasets = [];
-            data.forEach({
-                "useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA]": (el)=>{
-                    labels.push(el.bank);
-                    datasets.push(el.value);
-                }
-            }["useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA]"]);
+            const labels = Object.keys(data);
+            const datasets = Object.values(data);
             const colors = [
                 '#16DBCC',
                 '#FF82AC',
@@ -173,7 +160,7 @@ function useBankСalculator({ cards }) {
                 labels: labels,
                 datasets: datasets,
                 backgroundColor: labels.map({
-                    "useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA]": (_, i)=>colors[i % labels.length]
+                    "useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA]": (_, i)=>colors[i % colors.length]
                 }["useBankСalculator.useMemo[BANK_CARDS_STATISTICS_DATA]"]),
                 border: 0,
                 cutout: '50',
