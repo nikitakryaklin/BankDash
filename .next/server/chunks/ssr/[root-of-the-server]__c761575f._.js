@@ -1524,7 +1524,7 @@ const WEEKLY_ACTIVITY_DATA = {
     ],
     datasets: [
         {
-            label: 'Dataset 1',
+            label: 'Debit',
             data: [
                 1,
                 2,
@@ -1544,7 +1544,7 @@ const WEEKLY_ACTIVITY_DATA = {
             hoverBorderColor: '#fff'
         },
         {
-            label: 'Dataset 2',
+            label: 'credit',
             data: [
                 1,
                 2,

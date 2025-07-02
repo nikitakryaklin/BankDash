@@ -7,7 +7,7 @@ export const WEEKLY_ACTIVITY_DATA: IChartBar = {
   labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
   datasets: [
     {
-      label: 'Dataset 1',
+      label: 'Expenses',
       data: [1, 2, 3, 4, 5, 6, 7].reverse(),
       backgroundColor: '#1814F3',
       borderRadius: 25,
@@ -19,7 +19,7 @@ export const WEEKLY_ACTIVITY_DATA: IChartBar = {
       hoverBorderColor: '#fff',
     },
     {
-      label: 'Dataset 2',
+      label: 'Replenishments',
       data: [1, 2, 3, 4, 5, 6, 7],
       backgroundColor: '#16DBCC',
       borderRadius: 25,
@@ -30,5 +30,4 @@ export const WEEKLY_ACTIVITY_DATA: IChartBar = {
       hoverBackgroundColor: '#16DBCC',
     },
   ],
-  // padding: 0
 }

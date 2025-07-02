@@ -1,5 +1,5 @@
 export const BALANCE_HISTORY_DATA = {
-  scale: 0.4,
+  scale: 0.5,
   XGrid: false,
   label: '',
   pointBorderWidth: 0,

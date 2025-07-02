@@ -286,8 +286,8 @@ var _s = __turbopack_context__.k.signature();
 const useUserBalance = ()=>{
     _s();
     const { data } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"])();
-    const cards = data.cards;
-    const balance = cards.reduce((sum, { balance })=>Number(balance) + sum, 0);
+    const cards = data?.cards;
+    const balance = cards?.reduce((sum, { balance })=>Number(balance) + sum, 0);
     return {
         balance
     };

@@ -11,7 +11,7 @@ import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useMyExpenseCalculator } from './useMyExpenseCalculator'
 
 const MyExpense = () => {
-  const { data: transactions, isLoading } = useTransactionsByDate(7)
+  const { data: transactions, isLoading } = useTransactionsByDate()
 
   if (!transactions && !isLoading) {
     return <NotEnougtData />

@@ -4,7 +4,8 @@ import { useBarChartData } from './useBarChartData'
 import {
   Chart as ChartJS,
   CategoryScale,
-  LinearScale,
+  // LinearScale,
+  LogarithmicScale,
   BarElement,
   Title,
   Tooltip,
@@ -12,7 +13,15 @@ import {
 } from 'chart.js'
 import { Bar } from 'react-chartjs-2'
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
+ChartJS.register(
+  CategoryScale,
+  // LinearScale,
+  LogarithmicScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+)
 export const BarChart = ({ chartData }: { chartData: IChartBar }) => {
   const { options, data } = useBarChartData({ ...chartData })
 

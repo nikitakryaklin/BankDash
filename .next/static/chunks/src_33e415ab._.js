@@ -899,16 +899,9 @@ function useLineChartData(DATA) {
                 },
                 ticks: {
                     color: '#718ebf',
-                    autoSkip: false,
+                    autoSkip: true,
                     maxTicksLimit: 7,
-                    drawTicks: false,
-                    // @ts-ignore
-                    callback (value, index, ticks) {
-                        // @ts-ignore
-                        const label = this.getLabelForValue(value);
-                        // @ts-ignore
-                        return index === this.chart.data.labels.indexOf(label) ? label : '';
-                    }
+                    drawTicks: false
                 }
             },
             y: {

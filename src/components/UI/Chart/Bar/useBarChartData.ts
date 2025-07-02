@@ -41,6 +41,7 @@ export function useBarChartData(DATA: IChartBar) {
       },
       y: {
         beginAtZero: true,
+        type: 'logarithmic',
         border: {
           display: false,
         },

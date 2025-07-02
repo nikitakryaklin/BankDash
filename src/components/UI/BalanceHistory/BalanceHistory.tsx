@@ -7,7 +7,7 @@ import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useBalanceHistoryCalculator } from './useBalanceHistoryCalculator'
 
 const BalanceHistory = () => {
-  const { data: transactions, isLoading } = useTransactionsByDate(7)
+  const { data: transactions, isLoading } = useTransactionsByDate()
 
   if (!transactions && !isLoading) {
     return <NotEnougtData />

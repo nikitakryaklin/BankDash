@@ -3,7 +3,7 @@ import { IUser } from '@/types/User.type'
 import { getDateByDays } from '@/utiles/getDateByDays'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 
-export const useTransactionsByDate = (day: number) => {
+export const useTransactionsByDate = (day = 6) => {
   const user = useQueryClient().getQueryData(['user']) as IUser
 
   const result: string[] = []
