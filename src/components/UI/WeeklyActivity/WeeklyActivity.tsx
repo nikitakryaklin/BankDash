@@ -7,14 +7,8 @@ import { useWeeklyActivityCalculator } from './useWeeklyActivityCalculator'
 
 const WeeklyActivity = () => {
   const { data: transactions, isLoading } = useTransactionsByDate()
-
-  if (!transactions && !isLoading) {
-    return <NotEnougtData />
-  }
-
   const { result } = useWeeklyActivityCalculator(transactions)
 
-  console.log(result)
   return (
     <div className={styles.wrapper}>
       <h2>Weekly Activity</h2>

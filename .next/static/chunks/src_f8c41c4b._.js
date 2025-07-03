@@ -316,8 +316,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e
 class Transactions {
     URL = 'http://localhost:1337/api/transactions';
     async get(numbers, limit) {
+        const filter = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
-            const result = await fetch(this.URL + `?${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers)}&pagination[limit]=${limit}&sort=createdAt:desc`, {
+            const result = await fetch(this.URL + `?${filter}&pagination[limit]=${limit}&sort=createdAt:desc`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -336,8 +337,9 @@ class Transactions {
         }
     }
     async getByDate(numbers, date) {
+        const filter = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
-            const result = await fetch(this.URL + `?${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers)}&filters[createdAt][$gte]=${date}`, {
+            const result = await fetch(this.URL + `?${filter}&[createdAt][$gte]=${date}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -358,8 +360,9 @@ class Transactions {
     async getAll(numbers, page, filter) {
         const help = 'createdAt:desc';
         const filterString = filter !== '' ? `&filters[type]=${filter}` : '';
+        const cards = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
-            const result = await fetch(this.URL + `?populate=*&${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers)}${filterString}&pagination[page]=${page}&pagination[pageSize]=5&sort=${help}`, {
+            const result = await fetch(this.URL + `?populate=*&${cards}${filterString}&pagination[page]=${page}&pagination[pageSize]=5&sort=${help}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

@@ -9,10 +9,6 @@ import { useBalanceHistoryCalculator } from './useBalanceHistoryCalculator'
 const BalanceHistory = () => {
   const { data: transactions, isLoading } = useTransactionsByDate()
 
-  if (!transactions && !isLoading) {
-    return <NotEnougtData />
-  }
-
   const { labels, data } = useBalanceHistoryCalculator(transactions)
 
   return (

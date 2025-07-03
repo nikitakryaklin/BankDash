@@ -28,7 +28,8 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       credentials: 'include',
     })
     localStorage.removeItem('token')
-    localStorage.removeItem('id')
+    localStorage.removeItem('User_id')
+    await queryClient.clear()
     setAuthenticated(false)
     router.replace('/auth/login')
   }

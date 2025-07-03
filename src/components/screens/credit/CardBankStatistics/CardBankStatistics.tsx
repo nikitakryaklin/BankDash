@@ -4,11 +4,11 @@ import { NotEnougtData } from '@/components/UI/NotEnougtData/NotEnougtData'
 import { useBankСalculator } from './useBankСalculator'
 
 const CardBankStatistics = ({ cards }: { cards: ICard[] }) => {
+  const { BANK_CARDS_STATISTICS_DATA } = useBankСalculator({ cards })
+
   if (!cards) {
     return <NotEnougtData />
   }
-  const { BANK_CARDS_STATISTICS_DATA } = useBankСalculator({ cards })
-
   return (
     <>
       <CircleChart chartData={BANK_CARDS_STATISTICS_DATA} />

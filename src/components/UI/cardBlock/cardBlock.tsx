@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { CONSTANTS } from '@/config/constants'
 import { useEffect } from 'react'
 import { useUser } from '@/hooks/useUser'
+import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 
 interface ICardBlock {
   buttomText: string
@@ -25,9 +26,9 @@ const CardBlock = ({ buttomText, flug = false }: ICardBlock) => {
         <Link href={CONSTANTS.credit}>{buttomText}</Link>
       </div>
       <div className={styles.cards}>
-        {!cards && (
+        {cards?.length === 0 && (
           <div className={styles.noCard}>
-            <p>you do not have any card</p>
+            <NotEnougtData text="You do not have any card" />
           </div>
         )}
         {!flug &&
@@ -54,17 +55,17 @@ const CardBlock = ({ buttomText, flug = false }: ICardBlock) => {
               primery={true}
             />
             <div className={styles.oneCard}>
-              <p>create one more card</p>
+              <NotEnougtData text="Create one more card" />
             </div>
           </>
         )}
-        {cards && flug && (
+        {cards.length > 0 && flug && (
           <Card
-            balance={cards?.[0].balance || ''}
+            balance={cards?.[0]?.balance || ''}
             holder={fullName}
-            period={cards?.[0].period || ''}
-            cvc={cards?.[0].cvc}
-            number={cards?.[0].number || ''}
+            period={cards?.[0]?.period || ''}
+            cvc={cards?.[0]?.cvc}
+            number={cards?.[0]?.number || ''}
             primery={true}
           />
         )}

@@ -30,7 +30,7 @@ export const useAccountPageCalculator = (
       {
         id: 1,
         title: 'My Balance',
-        text: '$' + getCardValues.balance(String(balance)),
+        text: '$' + getCardValues.balance(String(balance || 0)),
         color: '#FFBB38',
         icon: <LucideReceipt style={{ fill: 'none', stroke: '#FFBB38' }} />,
       },

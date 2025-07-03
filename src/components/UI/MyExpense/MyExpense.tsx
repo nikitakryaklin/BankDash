@@ -13,10 +13,6 @@ import { useMyExpenseCalculator } from './useMyExpenseCalculator'
 const MyExpense = () => {
   const { data: transactions, isLoading } = useTransactionsByDate()
 
-  if (!transactions && !isLoading) {
-    return <NotEnougtData />
-  }
-
   const { MY_EXPENSE_DATA } = useMyExpenseCalculator(transactions)
 
   return (

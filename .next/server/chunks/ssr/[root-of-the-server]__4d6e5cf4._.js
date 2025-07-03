@@ -835,7 +835,8 @@ const AuthProvider = ({ children })=>{
             credentials: 'include'
         });
         localStorage.removeItem('token');
-        localStorage.removeItem('id');
+        localStorage.removeItem('User_id');
+        await queryClient.clear();
         setAuthenticated(false);
         router.replace('/auth/login');
     };
@@ -850,12 +851,12 @@ const AuthProvider = ({ children })=>{
             children: children
         }, void 0, false, {
             fileName: "[project]/src/authContext/authContext.tsx",
-            lineNumber: 38,
+            lineNumber: 39,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/authContext/authContext.tsx",
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 5
     }, this);
 };

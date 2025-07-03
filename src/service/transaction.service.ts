@@ -6,10 +6,10 @@ class Transactions {
   private URL: string = 'http://localhost:1337/api/transactions'
 
   async get(numbers: string[], limit: number) {
+    const filter = getArray('card', 'number', numbers)
     try {
       const result = await fetch(
-        this.URL +
-          `?${getArray('card', 'number', numbers)}&pagination[limit]=${limit}&sort=createdAt:desc`,
+        this.URL + `?${filter}&pagination[limit]=${limit}&sort=createdAt:desc`,
         {
           method: 'GET',
           headers: {
@@ -30,10 +30,10 @@ class Transactions {
     }
   }
   async getByDate(numbers: string[], date: string) {
+    const filter = getArray('card', 'number', numbers)
     try {
       const result = await fetch(
-        this.URL +
-          `?${getArray('card', 'number', numbers)}&filters[createdAt][$gte]=${date}`,
+        this.URL + `?${filter}&[createdAt][$gte]=${date}`,
         {
           method: 'GET',
           headers: {
@@ -57,11 +57,12 @@ class Transactions {
   async getAll(numbers: string[], page: number, filter?: string) {
     const help = 'createdAt:desc'
     const filterString = filter !== '' ? `&filters[type]=${filter}` : ''
+    const cards = getArray('card', 'number', numbers)
 
     try {
       const result = await fetch(
         this.URL +
-          `?populate=*&${getArray('card', 'number', numbers)}${filterString}&pagination[page]=${page}&pagination[pageSize]=5&sort=${help}`,
+          `?populate=*&${cards}${filterString}&pagination[page]=${page}&pagination[pageSize]=5&sort=${help}`,
         {
           method: 'GET',
           headers: {

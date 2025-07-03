@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/nikita/Desktop/bankDash/BankDash/src/components/UI/ExpenseStatistics/ExpenseStatistics.module.scss.module.css"],"sourcesContent":[".wrapper{height:max(285px,23vw);max-height:367px;width:100%;max-width:380px}.card{display:flex;align-items:center;justify-content:center}"],"names":[],"mappings":"AAAA;;;;;;;AAA4E","debugId":null}}]
+}

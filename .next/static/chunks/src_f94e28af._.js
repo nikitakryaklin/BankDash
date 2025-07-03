@@ -184,15 +184,15 @@ class Card {
                 cvc: cardData.cvc,
                 bank: cardData.bank,
                 type: cardData.type,
-                host: localStorage.getItem("User_id")
+                host: localStorage.getItem('User_id')
             }
         };
         try {
-            const response = await fetch("http://localhost:1337/api/cards", {
-                method: "POST",
+            const response = await fetch('http://localhost:1337/api/cards', {
+                method: 'POST',
                 headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${localStorage.getItem("token")}`
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${localStorage.getItem('token')}`
                 },
                 body: JSON.stringify(body)
             }).catch((error)=>{

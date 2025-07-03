@@ -38,7 +38,7 @@ const CreditPage = () => {
         </div>
         <div className={styles.cardList}>
           <h2>Card List</h2>
-          {cards !== undefined && (
+          {cards.length > 0 && (
             <CardWrapper className={styles.CardList_wrapper}>
               {cards.map((el: ICard, index: number) => (
                 <ListItem
@@ -88,7 +88,7 @@ const CreditPage = () => {
               ))}
             </CardWrapper>
           )}
-          {cards === undefined && (
+          {cards.length === 0 && (
             <CardWrapper>
               <NotEnougtData />
             </CardWrapper>

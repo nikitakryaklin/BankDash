@@ -1,0 +1,391 @@
+/* [project]/src/components/UI/Widget/Widget.module.scss.module.css [app-client] (css) */
+.Widget-module-scss-module__N2daNW__wrapper {
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  height: clamp(5.3125rem, 4.54225rem + 3.28639vw, 7.5rem);
+  padding: 1.5625rem .9375rem;
+}
+
+.Widget-module-scss-module__N2daNW__content {
+  width: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(.625rem, .514965rem + .469484vw, .9375rem);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Widget-module-scss-module__N2daNW__content > div > h3 {
+  color: var(--text-color);
+  margin: 0 0 clamp(.25rem, .183979rem + .28169vw, .4375rem);
+  font-size: clamp(.75rem, .661972rem + .375587vw, 1rem);
+  font-weight: 400;
+}
+
+.Widget-module-scss-module__N2daNW__content > div > p {
+  color: var(--black);
+  margin: 0;
+  font-size: clamp(.75rem, .661972rem + .375587vw, 1rem);
+  font-weight: 600;
+}
+
+.Widget-module-scss-module__N2daNW__icon {
+  aspect-ratio: 1;
+  border-radius: 100px;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.Widget-module-scss-module__N2daNW__icon > svg {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+
+/* [project]/src/components/screens/investments/InvestmentsPage.module.scss.module.css [app-client] (css) */
+.InvestmentsPage-module-scss-module__ahKUDa__page {
+  width: 100%;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__widget_wrapper {
+  justify-content: space-between;
+  gap: clamp(.9375rem, .607394rem + 1.40845vw, 1.875rem);
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__widget_wrapper > div {
+  width: 100%;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper {
+  gap: clamp(.9375rem, .607394rem + 1.40845vw, 1.875rem);
+  min-height: 256px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper > div {
+  width: 100%;
+  max-width: 50%;
+  height: clamp(16rem, 14.3935rem + 6.85446vw, 20.5625rem);
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper {
+  grid-template-columns: 1.5fr 1fr;
+  gap: clamp(.9375rem, .607394rem + 1.40845vw, 1.875rem);
+  margin-bottom: 25px;
+  display: grid;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper > div {
+  width: 100%;
+  height: clamp(16rem, 14.3935rem + 6.85446vw, 20.5625rem);
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper_list {
+  flex-direction: column;
+  row-gap: clamp(.625rem, .514965rem + .469484vw, .9375rem);
+  width: 100%;
+  max-height: 84%;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__tbody > tr {
+  border: none !important;
+  height: clamp(2rem, 1.77993rem + .938967vw, 2.625rem) !important;
+}
+
+@media (width <= 768px) {
+  .InvestmentsPage-module-scss-module__ahKUDa__widget_wrapper, .InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper {
+    flex-direction: column;
+  }
+
+  .InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper > div {
+    max-width: 100%;
+  }
+
+  .InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 568px) {
+  .InvestmentsPage-module-scss-module__ahKUDa__listElement {
+    gap: 20px;
+  }
+
+  .InvestmentsPage-module-scss-module__ahKUDa__listElement > :not(:first-child, :last-child) {
+    display: none;
+  }
+
+  .InvestmentsPage-module-scss-module__ahKUDa__listElement > :last-child {
+    width: max(60px, 20%);
+  }
+}
+
+
+/* [project]/src/components/loayout/CardWrapper/CardWrapper.module.scss.module.css [app-client] (css) */
+.CardWrapper-module-scss-module__tpMZxq__wrapper {
+  background-color: var(--white);
+  border-radius: 25px;
+  width: 100%;
+  height: 85%;
+  padding: max(.9375rem, 1.5vw);
+}
+
+
+/* [project]/src/components/UI/ListItem/ListItem.module.scss.module.css [app-client] (css) */
+.ListItem-module-scss-module__2v9cqW__wrapper {
+  background-color: var(--white);
+  border-radius: clamp(.625rem, .40493rem + .938967vw, 1.25rem);
+  align-items: center;
+  gap: clamp(.75rem, .573944rem + .751174vw, 1.25rem);
+  width: 100%;
+  height: clamp(4.3125rem, 3.85035rem + 1.97183vw, 5.625rem);
+  padding: 0 clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  display: flex;
+}
+
+.ListItem-module-scss-module__2v9cqW__wrapper > button {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  white-space: nowrap;
+  height: 40%;
+  transition: background, color, border, var(--transition);
+  background: none;
+  border-radius: 50px;
+  padding: 0 clamp(.3125rem, 2.44131vw - .259683rem, 1.9375rem);
+  font-size: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  font-weight: 400;
+}
+
+@media (any-hover: hover) {
+  .ListItem-module-scss-module__2v9cqW__wrapper > button:hover {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+@media (any-hover: none) {
+  .ListItem-module-scss-module__2v9cqW__wrapper > button:active {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+.ListItem-module-scss-module__2v9cqW__icon {
+  aspect-ratio: 1;
+  border-radius: clamp(.75rem, .573944rem + .751174vw, 1.25rem);
+  align-items: center;
+  height: clamp(2.8125rem, 2.48239rem + 1.40845vw, 3.75rem);
+  display: flex;
+}
+
+.ListItem-module-scss-module__2v9cqW__icon > svg {
+  margin: 0 auto;
+}
+
+.ListItem-module-scss-module__2v9cqW__info {
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 10px;
+  display: flex;
+}
+
+.ListItem-module-scss-module__2v9cqW__info > div {
+  padding-right: 15px;
+}
+
+.ListItem-module-scss-module__2v9cqW__info > div > h3, .ListItem-module-scss-module__2v9cqW__info > div > p {
+  text-overflow: ellipsis;
+  max-width: 200px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ListItem-module-scss-module__2v9cqW__info > div > h3 {
+  white-space: nowrap;
+  color: var(--black);
+  font-size: clamp(.875rem, .830986rem + .187793vw, 1rem);
+  font-weight: 500;
+}
+
+.ListItem-module-scss-module__2v9cqW__info > div > p {
+  white-space: nowrap;
+  color: var(--text-color);
+  font-size: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  font-weight: 400;
+}
+
+
+/* [project]/src/components/UI/Modal/Modal.module.scss.module.css [app-client] (css) */
+.Modal-module-scss-module__XZkUgG__wrapper {
+  backdrop-filter: blur(5px);
+  background-color: #718ebf80;
+  width: 100vw;
+  height: 100vh;
+  padding: clamp(5.3125rem, 4.98239rem + 1.40845vw, 6.25rem) 0 100px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Modal-module-scss-module__XZkUgG__modal {
+  background-color: var(--background);
+  border-radius: 25px;
+  flex-direction: column;
+  width: 85%;
+  min-width: 250px;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  padding: clamp(.9375rem, .71743rem + .938967vw, 1.5625rem);
+  display: flex;
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button {
+  background-color: var(--white);
+  width: 44px;
+  height: 44px;
+  transition: background var(--transition);
+  border: none;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  position: relative;
+  box-shadow: 3px 3px 10px 3px #f5f7fa;
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button > span {
+  background-color: var(--text-color);
+  width: 55%;
+  height: 2px;
+  transition: width var(--transition);
+  border-radius: 25px;
+  display: block;
+  position: absolute;
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button > :first-child {
+  transform: rotate(45deg);
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button > :last-child {
+  transform: rotate(-45deg);
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button:hover {
+  background-color: var(--text-color);
+}
+
+.Modal-module-scss-module__XZkUgG__modal > button:hover > span {
+  background-color: var(--background);
+}
+
+.Modal-module-scss-module__XZkUgG__body {
+  width: 100%;
+  margin-top: -44px;
+}
+
+
+/* [project]/src/components/UI/TableBlock/TableBlock.module.scss.module.css [app-client] (css) */
+.TableBlock-module-scss-module__b7f_bG__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > :first-child {
+  border-bottom: 1px solid #e6eff5;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > thead > tr {
+  border-bottom: 1px solid #e6eff5;
+  height: 35px;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > thead > tr > td {
+  vertical-align: top;
+  color: var(--text-color);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr {
+  border-bottom: 1px solid #e6eff5;
+  height: 60px;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td {
+  color: var(--black);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: .8px;
+  overflow: hidden;
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  white-space: nowrap;
+  height: 35px;
+  transition: background, color, border, var(--transition);
+  background: none;
+  border-radius: 25px;
+  padding: 0 clamp(0rem, 2.53521vw - .59419rem, 1.6875rem);
+  font-size: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  font-weight: 400;
+}
+
+@media (any-hover: hover) {
+  .TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button:hover {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+@media (any-hover: none) {
+  .TableBlock-module-scss-module__b7f_bG__table > tbody > tr > td > button:active {
+    color: var(--background);
+    background-color: #539bff;
+    border: none;
+  }
+}
+
+.TableBlock-module-scss-module__b7f_bG__table > tfoot {
+  color: var(--red);
+  vertical-align: bottom;
+  height: 35px;
+}
+
+
+/* [project]/src/components/UI/NotEnougtData/NotEnougtData.module.scss.module.css [app-client] (css) */
+.NotEnougtData-module-scss-module__m60WCq__wrapper {
+  background: #e7edff;
+  border-radius: 100px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-shadow: inset 0 0 40px 35px #fff;
+}
+
+.NotEnougtData-module-scss-module__m60WCq__wrapper > .NotEnougtData-module-scss-module__m60WCq__text {
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+
+/*# sourceMappingURL=src_components_fbcec720._.css.map*/

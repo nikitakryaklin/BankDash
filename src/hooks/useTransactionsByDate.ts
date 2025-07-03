@@ -14,6 +14,7 @@ export const useTransactionsByDate = (day = 6) => {
   const { data, isLoading, isSuccess } = useQuery({
     queryKey: ['transactions', 'byDate'],
     queryFn: () => transactionsService.getByDate(result, date),
+    enabled: !!user && result.length > 0,
     select: (data) => data.data,
   })
 

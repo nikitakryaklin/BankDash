@@ -1,4 +1,4 @@
-const qs = require("qs");
+const qs = require('qs')
 
 export const getArray = (fild: string, options: string, arr: string[]) => {
   const query = qs.stringify(
@@ -11,8 +11,8 @@ export const getArray = (fild: string, options: string, arr: string[]) => {
         },
       },
     },
-    { encodeValuesOnly: true },
-  );
+    { encodeValuesOnly: true }
+  )
 
-  return query;
-};
+  return query
+}

@@ -12,6 +12,7 @@ import {
   Legend,
 } from 'chart.js'
 import { Bar } from 'react-chartjs-2'
+import { NotEnougtData } from '../../NotEnougtData/NotEnougtData'
 
 ChartJS.register(
   CategoryScale,
@@ -25,6 +26,9 @@ ChartJS.register(
 export const BarChart = ({ chartData }: { chartData: IChartBar }) => {
   const { options, data } = useBarChartData({ ...chartData })
 
+  if (chartData.labels.length === 0) {
+    return <NotEnougtData />
+  }
   return (
     <>
       {/* @ts-ignore */}

@@ -456,7 +456,7 @@ const CardBlock = ({ buttomText, flug = false })=>{
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].cards,
                 children: [
-                    !cards && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    cards?.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].noCard,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "you do not have any card"
@@ -513,11 +513,11 @@ const CardBlock = ({ buttomText, flug = false })=>{
                         ]
                     }, void 0, true),
                     cards && flug && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        balance: cards?.[0].balance || '',
+                        balance: cards?.[0]?.balance || '',
                         holder: fullName,
-                        period: cards?.[0].period || '',
-                        cvc: cards?.[0].cvc,
-                        number: cards?.[0].number || '',
+                        period: cards?.[0]?.period || '',
+                        cvc: cards?.[0]?.cvc,
+                        number: cards?.[0]?.number || '',
                         primery: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
@@ -627,20 +627,20 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/NotEnougtData/NotEnougtData.module.scss.module.css [app-client] (css module)");
 ;
 ;
-const NotEnougtData = ()=>{
+const NotEnougtData = ({ text = 'Not enougt data to display statistics' })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].text,
-            children: "Not enougt data to display statistics"
+            children: text
         }, void 0, false, {
             fileName: "[project]/src/components/UI/NotEnougtData/NotEnougtData.tsx",
-            lineNumber: 6,
+            lineNumber: 10,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/UI/NotEnougtData/NotEnougtData.tsx",
-        lineNumber: 5,
+        lineNumber: 9,
         columnNumber: 5
     }, this);
 };
@@ -1256,8 +1256,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e
 class Transactions {
     URL = 'http://localhost:1337/api/transactions';
     async get(numbers, limit) {
+        const filter = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
-            const result = await fetch(this.URL + `?${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers)}&pagination[limit]=${limit}&sort=createdAt:desc`, {
+            const result = await fetch(this.URL + `?${filter}&pagination[limit]=${limit}&sort=createdAt:desc`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -1276,8 +1277,9 @@ class Transactions {
         }
     }
     async getByDate(numbers, date) {
+        const filter = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
-            const result = await fetch(this.URL + `?${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers)}&filters[createdAt][$gte]=${date}`, {
+            const result = await fetch(this.URL + `?${filter}&filters[createdAt][$gte]=${date}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -1298,8 +1300,9 @@ class Transactions {
     async getAll(numbers, page, filter) {
         const help = 'createdAt:desc';
         const filterString = filter !== '' ? `&filters[type]=${filter}` : '';
+        const cards = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
-            const result = await fetch(this.URL + `?populate=*&${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers)}${filterString}&pagination[page]=${page}&pagination[pageSize]=5&sort=${help}`, {
+            const result = await fetch(this.URL + `?populate=*&${cards}${filterString}&pagination[page]=${page}&pagination[pageSize]=5&sort=${help}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -1380,8 +1383,10 @@ const useTransactionsAll = (user, page, filter)=>{
         ],
         queryFn: {
             "useTransactionsAll.useQuery": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$service$2f$transaction$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["transactionsService"].getAll(result, page, filter)
-        }["useTransactionsAll.useQuery"]
+        }["useTransactionsAll.useQuery"],
+        enabled: !!user && result.length > 0
     });
+    console.log(result, 'from hook');
     return {
         data,
         isLoading,
