@@ -13,8 +13,7 @@ export const useTransactionsAll = (
   const { data, isLoading, isSuccess } = useQuery({
     queryKey: ['transactions', page, filter],
     queryFn: () => transactionsService.getAll(result, page, filter),
-    enabled: !!user && result.length > 0,
+    enabled: result.length > 0,
   })
-  console.log(result, 'from hook')
   return { data, isLoading, isSuccess }
 }

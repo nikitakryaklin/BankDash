@@ -22,7 +22,7 @@ export const useBalanceHistoryCalculator = (transactions: ITransaction[]) => {
 
     treansactions_reverse?.forEach((el: ITransaction) => {
       const date = new Date(el.date)
-      const day = DAYS[date.getDay() - 1]
+      const day = DAYS[date.getDay()]
 
       if (el.type !== TRANSACTIONS.type.cancelled) {
         if (el.type === TRANSACTIONS.type.incoming) {

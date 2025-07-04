@@ -559,7 +559,7 @@ const CardBlock = ({ buttomText, flug = false })=>{
                             }, this)
                         ]
                     }, void 0, true),
-                    cards.length > 0 && flug && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    cards?.length > 0 && flug && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         balance: cards?.[0]?.balance || '',
                         holder: fullName,
                         period: cards?.[0]?.period || '',
@@ -1281,7 +1281,7 @@ class Transactions {
     async getByDate(numbers, date) {
         const filter = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
-            const result = await fetch(this.URL + `?${filter}&[createdAt][$gte]=${date}`, {
+            const result = await fetch(this.URL + `?${filter}&filters[createdAt][$gte]=${date}&pagination[limit]=1000`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -1386,9 +1386,8 @@ const useTransactionsAll = (user, page, filter)=>{
         queryFn: {
             "useTransactionsAll.useQuery": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$service$2f$transaction$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["transactionsService"].getAll(result, page, filter)
         }["useTransactionsAll.useQuery"],
-        enabled: !!user && result.length > 0
+        enabled: result.length > 0
     });
-    console.log(result, 'from hook');
     return {
         data,
         isLoading,

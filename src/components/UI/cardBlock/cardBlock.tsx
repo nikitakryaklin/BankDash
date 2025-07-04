@@ -59,7 +59,7 @@ const CardBlock = ({ buttomText, flug = false }: ICardBlock) => {
             </div>
           </>
         )}
-        {cards.length > 0 && flug && (
+        {cards?.length > 0 && flug && (
           <Card
             balance={cards?.[0]?.balance || ''}
             holder={fullName}

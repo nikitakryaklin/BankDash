@@ -33,7 +33,8 @@ class Transactions {
     const filter = getArray('card', 'number', numbers)
     try {
       const result = await fetch(
-        this.URL + `?${filter}&[createdAt][$gte]=${date}`,
+        this.URL +
+          `?${filter}&filters[createdAt][$gte]=${date}&pagination[limit]=1000`,
         {
           method: 'GET',
           headers: {

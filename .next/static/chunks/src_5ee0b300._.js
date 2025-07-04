@@ -204,7 +204,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const useTransactionsByDate = (day = 6)=>{
+const useTransactionsByDate = (day = 7)=>{
     _s();
     const user = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQueryClient"])().getQueryData([
         'user'
@@ -262,7 +262,7 @@ function useWeeklyActivityCalculator(transactions) {
             transactions?.forEach({
                 "useWeeklyActivityCalculator.useMemo[result]": (el)=>{
                     const date = new Date(el.date);
-                    const day = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DAYS"][date.getDay() - 1];
+                    const day = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DAYS"][date.getDay()];
                     if (!data[day]) {
                         data[day] = {
                             expenses: 0,

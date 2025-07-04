@@ -909,6 +909,7 @@ const CONSTANTS = {
     transactions: '/transactions'
 };
 const DAYS = [
+    '',
     'Mon',
     'Tue',
     'Wed',

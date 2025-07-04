@@ -13,7 +13,7 @@ export function useWeeklyActivityCalculator(transactions: ITransaction[]) {
 
     transactions?.forEach((el) => {
       const date = new Date(el.date)
-      const day = DAYS[date.getDay() - 1]
+      const day = DAYS[date.getDay()]
 
       if (!data[day]) {
         data[day] = { expenses: 0, replenishments: 0 }
