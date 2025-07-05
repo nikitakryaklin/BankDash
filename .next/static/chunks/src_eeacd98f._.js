@@ -197,11 +197,10 @@ const LineChart = ({ chartData, isPlugin = false })=>{
     const { data, options } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Chart$2f$Line$2f$useLineChartData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLineChartData"])({
         ...chartData
     });
-    console.log(chartData.labes, 'line');
     if (chartData.labes.length === 0) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
             fileName: "[project]/src/components/UI/Chart/Line/Line-chart.tsx",
-            lineNumber: 39,
+            lineNumber: 38,
             columnNumber: 12
         }, this);
     }
@@ -214,7 +213,7 @@ const LineChart = ({ chartData, isPlugin = false })=>{
             ] : []
         }, void 0, false, {
             fileName: "[project]/src/components/UI/Chart/Line/Line-chart.tsx",
-            lineNumber: 43,
+            lineNumber: 42,
             columnNumber: 7
         }, this)
     }, void 0, false);

@@ -33,7 +33,6 @@ export const LineChart = ({
   isPlugin?: boolean
 }) => {
   const { data, options } = useLineChartData({ ...chartData })
-  console.log(chartData.labes, 'line')
 
   if (chartData.labes.length === 0) {
     return <NotEnougtData />

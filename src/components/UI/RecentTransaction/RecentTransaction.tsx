@@ -22,7 +22,6 @@ const RecentTransaction = ({
 }) => {
   const user = useQueryClient().getQueryData(['user']) as IUser
   const { data, isLoading } = useTransactions(user, 3)
-  console.log(data, 'RT')
   return (
     <div className={clsx(styles.wrapper, className)}>
       <h2>{title}</h2>

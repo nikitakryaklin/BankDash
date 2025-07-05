@@ -4,8 +4,8 @@
     "files": [
       "static/chunks/1ab64_components_UI_ExpenseStatistics_ExpenseStatistics_module_scss_module_982b0b69.css",
       "static/chunks/node_modules_97acc635._.js",
-      "static/chunks/src_8c3eff17._.js",
-      "static/chunks/src_components_UI_ExpenseStatistics_ExpenseStatistics_tsx_d8e1708a._.js"
+      "static/chunks/src_c9378ef6._.js",
+      "static/chunks/src_components_UI_ExpenseStatistics_ExpenseStatistics_tsx_4e317184._.js"
     ]
   },
   "[project]/src/components/UI/BalanceHistory/BalanceHistory.tsx [app-client] (ecmascript, next/dynamic entry)": {
@@ -14,7 +14,7 @@
       "static/chunks/src_components_UI_BalanceHistory_BalanceHistory_module_scss_module_ab26f163.css",
       "static/chunks/node_modules_97acc635._.js",
       "static/chunks/src_eeacd98f._.js",
-      "static/chunks/src_components_UI_BalanceHistory_BalanceHistory_tsx_d8e1708a._.js"
+      "static/chunks/src_components_UI_BalanceHistory_BalanceHistory_tsx_4e317184._.js"
     ]
   },
   "[project]/src/components/UI/WeeklyActivity/WeeklyActivity.tsx [app-client] (ecmascript, next/dynamic entry)": {
@@ -23,7 +23,7 @@
       "static/chunks/src_components_UI_WeeklyActivity_WeeklyActivity_module_scss_module_1d470159.css",
       "static/chunks/node_modules_97acc635._.js",
       "static/chunks/src_5ee0b300._.js",
-      "static/chunks/src_components_UI_WeeklyActivity_WeeklyActivity_tsx_d8e1708a._.js"
+      "static/chunks/src_components_UI_WeeklyActivity_WeeklyActivity_tsx_4e317184._.js"
     ]
   }
 }

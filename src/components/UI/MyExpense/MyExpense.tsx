@@ -14,7 +14,6 @@ const MyExpense = () => {
   const { data: transactions, isLoading } = useTransactionsByDate()
 
   const { MY_EXPENSE_DATA } = useMyExpenseCalculator(transactions)
-  console.log(MY_EXPENSE_DATA)
   return (
     <div className={styles.wrapper}>
       <h2>My Expense</h2>

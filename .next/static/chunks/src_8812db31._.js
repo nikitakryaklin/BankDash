@@ -263,13 +263,11 @@ const useMyExpenseCalculator = (transactions)=>{
                     if (el.type === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TRANSACTIONS"].type.outgoing) {
                         const date = new Date(el.date);
                         const isoDate = date.toISOString().split('T')[0];
-                        // const day = days[date.getDay()]
-                        const label = date.toLocaleDateString('ru-Ru', {
+                        const label = date.toLocaleDateString('en-EN', {
                             weekday: 'short',
                             day: 'numeric',
                             month: 'short'
                         });
-                        // DATA_MAP.set(dayKey, (DATA_MAP.get(dayKey) || 0) + Number(el.amount))
                         if (!DATA_MAP.has(isoDate)) {
                             DATA_MAP.set(isoDate, {
                                 label,
@@ -279,11 +277,6 @@ const useMyExpenseCalculator = (transactions)=>{
                             DATA_MAP.get(isoDate).amount += el.amount;
                         }
                     }
-                // while (DATA_MAP.size > 7) {
-                //   const first = DATA_MAP.keys().next().value
-                //   console.log('dsa')
-                //   DATA_MAP.delete(first!)
-                // }
                 }
             }["useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA]"]);
             const sorted = [
@@ -291,23 +284,19 @@ const useMyExpenseCalculator = (transactions)=>{
             ].sort({
                 "useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA].sorted": ([a], [b])=>a.localeCompare(b)
             }["useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA].sorted"]);
-            // const lastWeek = sorted.slice(-7)
-            console.log(transactions);
             return {
                 isTitle: false,
                 isLegend: false,
                 isGrid: false,
                 labels: sorted.map({
-                    "useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA]": ([, entry])=>entry.label
+                    "useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA]": ([, entry])=>entry.label.slice(0, 3)
                 }["useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA]"]),
-                // labels: Array.from(DATA_MAP.keys()),
                 datasets: [
                     {
                         label: 'Dataset 2',
                         data: sorted.map({
                             "useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA]": ([, entry])=>entry.amount
                         }["useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA]"]),
-                        // data: Array.from(DATA_MAP.values()),
                         backgroundColor: '#EDF0F7',
                         borderRadius: 10,
                         borderSkipped: false,
@@ -326,12 +315,7 @@ const useMyExpenseCalculator = (transactions)=>{
     return {
         MY_EXPENSE_DATA
     };
-} // if (!DATA[day]) {
- //           DATA[day] = Number(el.amount)
- //         } else {
- //           DATA[day] += Number(el.amount)
- //         }
-;
+};
 _s(useMyExpenseCalculator, "iayK4tt9nGXDm07stz8MnZyIJKI=");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
@@ -363,7 +347,6 @@ const MyExpense = ()=>{
     _s();
     const { data: transactions, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionsByDate"])();
     const { MY_EXPENSE_DATA } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$MyExpense$2f$useMyExpenseCalculator$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMyExpenseCalculator"])(transactions);
-    console.log(MY_EXPENSE_DATA);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$MyExpense$2f$MyExpense$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper,
         children: [
@@ -371,7 +354,7 @@ const MyExpense = ()=>{
                 children: "My Expense"
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-                lineNumber: 20,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -379,18 +362,18 @@ const MyExpense = ()=>{
                     chartData: MY_EXPENSE_DATA
                 }, void 0, false, {
                     fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-                    lineNumber: 22,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/MyExpense/MyExpense.tsx",
-        lineNumber: 19,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 };

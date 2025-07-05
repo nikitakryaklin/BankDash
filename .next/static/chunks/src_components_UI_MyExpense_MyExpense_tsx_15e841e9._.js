@@ -13,7 +13,7 @@ __turbopack_context__.v((parentImport) => {
     ]
   },
   "static/chunks/node_modules_97acc635._.js",
-  "static/chunks/src_8812db31._.js",
+  "static/chunks/src_3aeaa5f7._.js",
   "static/chunks/src_components_UI_MyExpense_MyExpense_tsx_b540680f._.js"
 ].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
         return parentImport("[project]/src/components/UI/MyExpense/MyExpense.tsx [app-client] (ecmascript, next/dynamic entry)");
