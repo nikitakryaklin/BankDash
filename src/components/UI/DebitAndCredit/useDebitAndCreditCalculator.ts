@@ -4,9 +4,10 @@ import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { ITransaction } from '@/types/Transactions.type'
 import { useMemo } from 'react'
 
-export function useWeeklyActivityCalculator() {
-  const { data: transactions, isLoading } = useTransactionsByDate()
-  const WEEKLY_ACTIVITY_DATA = useMemo(() => {
+export const useDebitAndCreditCalculator = () => {
+  const { data: transactions } = useTransactionsByDate()
+
+  const DEBIT_AND_CREDIT_DATA = useMemo(() => {
     const result = new Map()
     transactions?.forEach((el: ITransaction) => {
       if (el.type !== TRANSACTIONS.type.cancelled) {
@@ -19,7 +20,6 @@ export function useWeeklyActivityCalculator() {
               data: { expenses: el.amount, replenishment: 0 },
             })
           }
-
           if (el.type === TRANSACTIONS.type.incoming) {
             result.set(date, {
               day,
@@ -30,7 +30,6 @@ export function useWeeklyActivityCalculator() {
           if (el.type === TRANSACTIONS.type.outgoing) {
             result.get(date).data.expenses += el.amount
           }
-
           if (el.type === TRANSACTIONS.type.incoming) {
             result.get(date).data.replenishment += el.amount
           }
@@ -41,40 +40,38 @@ export function useWeeklyActivityCalculator() {
     const sorted = [...result.entries()].sort(([a], [b]) => a.localeCompare(b))
 
     const labels = sorted.map(([, el]) => el.day.slice(0, 3))
-    const expenses = sorted.map(([, el]) => el.data.expenses)
+    const debit = sorted.map(([, el]) => el.data.expenses)
     const replenishment = sorted.map(([, el]) => el.data.replenishment)
+
     return {
       isTitle: false,
       isLegend: true,
-      isGrid: true,
+      isGrid: false,
+      title: '$7,560 Debited & $5,420 Credited in this Week',
       labels: labels,
       datasets: [
         {
-          label: 'Expenses',
-          data: expenses,
-          backgroundColor: '#1814F3',
-          borderRadius: 25,
+          label: 'Debit',
+          data: debit,
+          backgroundColor: '#1A16F3',
+          borderRadius: 14,
           borderSkipped: false,
-          borderWidth: 7,
-          hoverBorderWidth: 6,
+          borderWidth: 4,
           borderColor: '#fff',
-          hoverBackgroundColor: '#1814F3',
-          hoverBorderColor: '#fff',
+          hoverBorderColor: '#EDF0F7',
         },
         {
-          label: 'Replenishments',
+          label: 'Credit',
           data: replenishment,
-          backgroundColor: '#16DBCC',
-          borderRadius: 25,
+          backgroundColor: '#FCAA0B',
+          borderRadius: 14,
           borderSkipped: false,
-          borderWidth: 7,
+          borderWidth: 4,
           borderColor: '#fff',
-          hoverBorderWidth: 6,
-          hoverBackgroundColor: '#16DBCC',
+          hoverBorderColor: '#EDF0F7',
         },
       ],
     }
   }, [transactions])
-
-  return { WEEKLY_ACTIVITY_DATA, isLoading }
+  return { DEBIT_AND_CREDIT_DATA }
 }

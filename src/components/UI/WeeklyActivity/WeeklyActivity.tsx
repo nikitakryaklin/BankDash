@@ -1,19 +1,17 @@
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
-import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 import styles from './WeeklyActivity.module.scss'
 import { BarChart } from '../Chart/Bar/Bar-chart'
-import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useWeeklyActivityCalculator } from './useWeeklyActivityCalculator'
+import { Loader } from '../Loader/loader'
 
 const WeeklyActivity = () => {
-  const { data: transactions, isLoading } = useTransactionsByDate()
-  const { result } = useWeeklyActivityCalculator(transactions)
+  const { WEEKLY_ACTIVITY_DATA, isLoading } = useWeeklyActivityCalculator()
 
   return (
     <div className={styles.wrapper}>
       <h2>Weekly Activity</h2>
       <CardWrapper className={styles.card}>
-        <BarChart chartData={{ ...result }} />
+        <BarChart chartData={{ ...WEEKLY_ACTIVITY_DATA }} />
       </CardWrapper>
     </div>
   )

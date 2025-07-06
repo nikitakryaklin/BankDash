@@ -1,4 +1,4 @@
-export const useDateTranscript = (date_arg: Date) => {
+export const useDateTranscript = (date_arg: Date | string) => {
   const date = new Date(date_arg)
   const isoDate = date.toISOString().split('T')[0]
   const day = date.toLocaleDateString('en-EN', {

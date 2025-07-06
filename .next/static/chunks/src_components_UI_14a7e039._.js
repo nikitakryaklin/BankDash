@@ -33,7 +33,7 @@ __turbopack_context__.v((parentImport) => {
     ]
   },
   "static/chunks/node_modules_97acc635._.js",
-  "static/chunks/src_5ee0b300._.js",
+  "static/chunks/src_e2ee41f2._.js",
   "static/chunks/src_components_UI_WeeklyActivity_WeeklyActivity_tsx_4e317184._.js"
 ].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
         return parentImport("[project]/src/components/UI/WeeklyActivity/WeeklyActivity.tsx [app-client] (ecmascript, next/dynamic entry)");
