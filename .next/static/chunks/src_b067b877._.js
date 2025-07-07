@@ -250,7 +250,7 @@ const useDebitAndCreditCalculator = ()=>{
                     if (el.type === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TRANSACTIONS"].type.outgoing) {
                         const { day, isoDate: date } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useDateTranscript$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDateTranscript"])(el.date);
                         if (!result.has(date)) {
-                            if (el.card.type === 'Dedit') {
+                            if (el.card.type === 'Debit') {
                                 result.set(date, {
                                     day,
                                     data: {

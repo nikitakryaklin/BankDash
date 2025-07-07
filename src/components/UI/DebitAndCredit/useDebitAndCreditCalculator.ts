@@ -40,7 +40,7 @@ export const useDebitAndCreditCalculator = () => {
       if (el.type === TRANSACTIONS.type.outgoing) {
         const { day, isoDate: date } = useDateTranscript(el.date)
         if (!result.has(date)) {
-          if (el.card.type === 'Dedit') {
+          if (el.card.type === 'Debit') {
             result.set(date, {
               day,
               data: { debit: el.amount, credit: 0 },
