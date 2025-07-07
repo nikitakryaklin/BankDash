@@ -5,12 +5,21 @@ import Widget from '@/components/UI/Widget/Widget'
 // import { WIDGET_ACCOUNT_DATA } from './AccountPage.data'
 import RecentTransaction from '@/components/UI/RecentTransaction/RecentTransaction'
 import CardBlock from '@/components/UI/cardBlock/cardBlock'
-import { DebitAndCredit } from '@/components/UI/DebitAndCredit/DebitAndCredit'
 import { Invoice } from '@/components/UI/Invoice/Invoice'
 import { useUserBalance } from '@/hooks/useUserBalance'
 import { getCardValues } from '@/utiles/getCardValues'
 import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useAccountPageCalculator } from './useAccountPageCalculator'
+import dynamic from 'next/dynamic'
+import { Loader } from 'lucide-react'
+
+const DynamicDebitAndCredit = dynamic(
+  () => import('@/components/UI/DebitAndCredit/DebitAndCredit'),
+  {
+    ssr: false,
+    loading: () => <Loader />,
+  }
+)
 
 const AccountPage = () => {
   const { balance } = useUserBalance()
@@ -36,7 +45,7 @@ const AccountPage = () => {
           flug={true}
         />
         <CardBlock buttomText="See All" flug={true} />
-        <DebitAndCredit />
+        <DynamicDebitAndCredit />
         <Invoice />
       </div>
     </div>

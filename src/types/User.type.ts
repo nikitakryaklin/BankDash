@@ -1,4 +1,4 @@
-import { ITransaction } from "./Transactions.type";
+import { ITransaction } from './Transactions.type'
 
 export interface IAboutData {
   fullname?: string
@@ -11,39 +11,39 @@ export interface IAboutData {
 }
 
 export interface ICard {
-  id: number;
-  number: string;
-  period: string;
-  cvc: number;
-  balance: string;
-  bank?: string;
-  transactions?: ITransaction[];
-  type?: string; 
+  id: number
+  number: string
+  period: string
+  cvc: number
+  balance: string
+  bank: string
+  transactions?: ITransaction[]
+  type: string
 }
 
 export interface avatar {
-  url: string;
+  url: string
 }
 
 export interface IUser {
-  id: number;
-  email: string;
-  userName: string;
-  cards?: ICard[];
-  avatar?: avatar;
-  about?: IAboutData; 
+  id: number
+  email: string
+  userName: string
+  cards?: ICard[]
+  avatar?: avatar
+  about?: IAboutData
 }
 
 export interface IUserData {
-  blocked: boolean;
-  confirmed: boolean;
-  createdAt: string;
-  documentId: string;
-  email: string;
-  fullname?: null;
-  id: number;
-  provider: string;
-  publishedAt: string;
-  updatedAt: string;
-  username: string;
+  blocked: boolean
+  confirmed: boolean
+  createdAt: string
+  documentId: string
+  email: string
+  fullname?: null
+  id: number
+  provider: string
+  publishedAt: string
+  updatedAt: string
+  username: string
 }

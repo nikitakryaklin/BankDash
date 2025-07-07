@@ -10,28 +10,55 @@ export const useDebitAndCreditCalculator = () => {
   const DEBIT_AND_CREDIT_DATA = useMemo(() => {
     const result = new Map()
     transactions?.forEach((el: ITransaction) => {
-      if (el.type !== TRANSACTIONS.type.cancelled) {
+      if (!el.card) {
+        return null
+      }
+      // if (el.type !== TRANSACTIONS.type.cancelled) {
+      //   const { day, isoDate: date } = useDateTranscript(el.date)
+      //   if (!result.has(date)) {
+      //     if (el.type === TRANSACTIONS.type.outgoing) {
+      //       result.set(date, {
+      //         day,
+      //         data: { expenses: el.amount, replenishment: 0 },
+      //       })
+      //     }
+      //     if (el.type === TRANSACTIONS.type.incoming) {
+      //       result.set(date, {
+      //         day,
+      //         data: { expenses: 0, replenishment: el.amount },
+      //       })
+      //     }
+      //   } else {
+      //     if (el.type === TRANSACTIONS.type.outgoing) {
+      //       result.get(date).data.expenses += el.amount
+      //     }
+      //     if (el.type === TRANSACTIONS.type.incoming) {
+      //       result.get(date).data.replenishment += el.amount
+      //     }
+      //   }
+      // }
+      if (el.type === TRANSACTIONS.type.outgoing) {
         const { day, isoDate: date } = useDateTranscript(el.date)
-
         if (!result.has(date)) {
-          if (el.type === TRANSACTIONS.type.outgoing) {
+          if (el.card.type === 'Dedit') {
             result.set(date, {
               day,
-              data: { expenses: el.amount, replenishment: 0 },
+              data: { debit: el.amount, credit: 0 },
             })
           }
-          if (el.type === TRANSACTIONS.type.incoming) {
+
+          if (el.card.type === 'Credit') {
             result.set(date, {
               day,
-              data: { expenses: 0, replenishment: el.amount },
+              data: { debit: 0, credit: el.amount },
             })
           }
         } else {
-          if (el.type === TRANSACTIONS.type.outgoing) {
-            result.get(date).data.expenses += el.amount
+          if (el.card.type === 'Debit') {
+            result.get(date).data.debit += el.amount
           }
-          if (el.type === TRANSACTIONS.type.incoming) {
-            result.get(date).data.replenishment += el.amount
+          if (el.card.type === 'Credit') {
+            result.get(date).data.credit += el.amount
           }
         }
       }
@@ -40,9 +67,10 @@ export const useDebitAndCreditCalculator = () => {
     const sorted = [...result.entries()].sort(([a], [b]) => a.localeCompare(b))
 
     const labels = sorted.map(([, el]) => el.day.slice(0, 3))
-    const debit = sorted.map(([, el]) => el.data.expenses)
-    const replenishment = sorted.map(([, el]) => el.data.replenishment)
+    const debit = sorted.map(([, el]) => el.data.debit)
+    const credit = sorted.map(([, el]) => el.data.credit)
 
+    console.log(sorted)
     return {
       isTitle: false,
       isLegend: true,
@@ -62,7 +90,7 @@ export const useDebitAndCreditCalculator = () => {
         },
         {
           label: 'Credit',
-          data: replenishment,
+          data: credit,
           backgroundColor: '#FCAA0B',
           borderRadius: 14,
           borderSkipped: false,

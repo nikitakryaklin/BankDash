@@ -1,8 +1,11 @@
+import { ICard } from './User.type'
+
 export interface ITransaction {
-  title: string;
-  date: string | Date;
-  type: "incoming" | "outgoing" | "cancelled";
-  category: string;
-  amount: number;
-  id: number;
+  title: string
+  date: string | Date
+  type: 'incoming' | 'outgoing' | 'cancelled'
+  category: string
+  amount: number
+  id: number
+  card?: ICard
 }

@@ -34,7 +34,7 @@ class Transactions {
     try {
       const result = await fetch(
         this.URL +
-          `?${filter}&filters[createdAt][$gte]=${date}&pagination[limit]=1000`,
+          `?${filter}&filters[createdAt][$gte]=${date}&pagination[limit]=1000&populate=*`,
         {
           method: 'GET',
           headers: {

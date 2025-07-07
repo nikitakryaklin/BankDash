@@ -1,1 +1,11 @@
-{}
+{
+  "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_components_UI_DebitAndCredit_DebitAndCredit_module_scss_module_06a17a75.css",
+      "static/chunks/node_modules_97acc635._.js",
+      "static/chunks/src_b067b877._.js",
+      "static/chunks/src_components_UI_DebitAndCredit_DebitAndCredit_tsx_f18499c7._.js"
+    ]
+  }
+}

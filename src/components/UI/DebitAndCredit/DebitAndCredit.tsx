@@ -4,7 +4,7 @@ import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 import { BarChart } from '../Chart/Bar/Bar-chart'
 import { useDebitAndCreditCalculator } from './useDebitAndCreditCalculator'
 
-export const DebitAndCredit = () => {
+const DebitAndCredit = () => {
   const { DEBIT_AND_CREDIT_DATA } = useDebitAndCreditCalculator()
 
   return (
@@ -17,3 +17,5 @@ export const DebitAndCredit = () => {
     </div>
   )
 }
+
+export default DebitAndCredit
