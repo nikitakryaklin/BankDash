@@ -1,7 +1,7 @@
 'use client'
-import Fild from '@/components/UI/fild/fild'
+import { Fild } from '@/components/UI/fild/fild'
 import styles from './login.module.scss'
-import Button from '@/components/UI/Button/Button'
+import { Button } from '@/components/UI/Button/Button'
 import { useAuthLocal } from './useAuthLocal'
 import { getValidateError } from '@/utiles/getValidateError'
 

@@ -4,7 +4,7 @@ import { Switcher } from '@/components/UI/Switcher/Switcher'
 import styles from './Preferences.module.scss'
 import { useState } from 'react'
 
-import Fild from '@/components/UI/fild/fild'
+import { Fild } from '@/components/UI/fild/fild'
 
 export const Preferences = () => {
   const { 0: a, 1: setA } = useState<boolean>(false)

@@ -1,7 +1,7 @@
-import ServicesPage from "@/components/screens/services/ServicesPage";
+import { ServicesPage } from '@/components/screens/services/ServicesPage'
 
 const Page = () => {
-  return <ServicesPage />;
-};
+  return <ServicesPage />
+}
 
-export default Page;
+export default Page

@@ -1,12 +1,12 @@
-"use client";
+'use client'
 
-import Fild from "@/components/UI/fild/fild";
-import styles from "./Security.module.scss";
-import { Switcher } from "@/components/UI/Switcher/Switcher";
-import { useState } from "react";
+import { Fild } from '@/components/UI/fild/fild'
+import styles from './Security.module.scss'
+import { Switcher } from '@/components/UI/Switcher/Switcher'
+import { useState } from 'react'
 
 export const Security = () => {
-  const { 0: toggle, 1: setToggle } = useState<boolean>(false);
+  const { 0: toggle, 1: setToggle } = useState<boolean>(false)
 
   return (
     <div className={styles.wrapper}>
@@ -21,5 +21,5 @@ export const Security = () => {
         <Fild type="text" placeholder="*******" title="New password" />
       </form>
     </div>
-  );
-};
+  )
+}

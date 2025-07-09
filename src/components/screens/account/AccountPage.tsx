@@ -1,27 +1,29 @@
 'use client'
 import styles from './AccountPage.module.scss'
 
-import Widget from '@/components/UI/Widget/Widget'
-// import { WIDGET_ACCOUNT_DATA } from './AccountPage.data'
-import RecentTransaction from '@/components/UI/RecentTransaction/RecentTransaction'
-import CardBlock from '@/components/UI/cardBlock/cardBlock'
+import { Widget } from '@/components/UI/Widget/Widget'
+import { RecentTransaction } from '@/components/UI/RecentTransaction/RecentTransaction'
+import { CardBlock } from '@/components/UI/cardBlock/cardBlock'
 import { Invoice } from '@/components/UI/Invoice/Invoice'
 import { useUserBalance } from '@/hooks/useUserBalance'
 import { getCardValues } from '@/utiles/getCardValues'
 import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useAccountPageCalculator } from './useAccountPageCalculator'
 import dynamic from 'next/dynamic'
-import { Loader } from 'lucide-react'
+import { Loader } from '@/components/UI/Loader/loader'
 
 const DynamicDebitAndCredit = dynamic(
-  () => import('@/components/UI/DebitAndCredit/DebitAndCredit'),
+  () =>
+    import('@/components/UI/DebitAndCredit/DebitAndCredit').then(
+      (D) => D.DebitAndCredit
+    ),
   {
     ssr: false,
     loading: () => <Loader />,
   }
 )
 
-const AccountPage = () => {
+export const AccountPage = () => {
   const { balance } = useUserBalance()
   const { data: transactions } = useTransactionsByDate()
   const { WIDGET_ACCOUNT_DATA } = useAccountPageCalculator(
@@ -51,5 +53,3 @@ const AccountPage = () => {
     </div>
   )
 }
-
-export default AccountPage

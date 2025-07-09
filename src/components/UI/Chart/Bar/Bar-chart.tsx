@@ -4,7 +4,6 @@ import { useBarChartData } from './useBarChartData'
 import {
   Chart as ChartJS,
   CategoryScale,
-  // LinearScale,
   LogarithmicScale,
   BarElement,
   Title,
@@ -16,7 +15,6 @@ import { NotEnougtData } from '../../NotEnougtData/NotEnougtData'
 
 ChartJS.register(
   CategoryScale,
-  // LinearScale,
   LogarithmicScale,
   BarElement,
   Title,

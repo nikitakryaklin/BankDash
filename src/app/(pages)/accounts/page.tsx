@@ -1,7 +1,7 @@
-import AccountPage from "@/components/screens/account/AccountPage";
+import { AccountPage } from '@/components/screens/account/AccountPage'
 
 const Page = () => {
-  return <AccountPage />;
-};
+  return <AccountPage />
+}
 
-export default Page;
+export default Page

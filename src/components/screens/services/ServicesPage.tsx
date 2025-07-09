@@ -1,11 +1,11 @@
-import Widget from "@/components/UI/Widget/Widget";
-import styles from "./ServicesPage.module.scss";
-import { SERVICES_LIST, WIDGET_DATA } from "./ServicesPage.data";
-import { WidgetWrapper } from "@/components/UI/widgetWrapper/widgetWrapper";
-import { ListItem } from "@/components/UI/ListItem/ListItem";
-import { ListItemElement } from "@/components/UI/ListItem/ListItem.element";
+import { Widget } from '@/components/UI/Widget/Widget'
+import styles from './ServicesPage.module.scss'
+import { SERVICES_LIST, WIDGET_DATA } from './ServicesPage.data'
+import { WidgetWrapper } from '@/components/UI/widgetWrapper/widgetWrapper'
+import { ListItem } from '@/components/UI/ListItem/ListItem'
+import { ListItemElement } from '@/components/UI/ListItem/ListItem.element'
 
-const ServicesPage = () => {
+export const ServicesPage = () => {
   return (
     <div className={styles.wrapper}>
       <WidgetWrapper>
@@ -48,7 +48,5 @@ const ServicesPage = () => {
         ))}
       </div>
     </div>
-  );
-};
-
-export default ServicesPage;
+  )
+}

@@ -2,7 +2,7 @@
 
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import { RadioBlock } from '../../../UI/RadioBlock/RadioBlock'
-import Fild from '@/components/UI/fild/fild'
+import { Fild } from '@/components/UI/fild/fild'
 import styles from './TransactionsManagement.module.scss'
 import clsx from 'clsx'
 import { useManagementForm } from './useManagementTrans.Form'

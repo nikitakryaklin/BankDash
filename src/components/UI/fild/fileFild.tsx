@@ -3,7 +3,7 @@ import { forwardRef, Ref, useState } from 'react'
 import { IFild } from './fild.interface'
 import clsx from 'clsx'
 
-const FileFild = forwardRef(
+export const FileFild = forwardRef(
   (
     { title, error, placeholder, ...inputProps }: IFild,
     ref: Ref<HTMLInputElement>
@@ -35,5 +35,3 @@ const FileFild = forwardRef(
     )
   }
 )
-
-export default FileFild

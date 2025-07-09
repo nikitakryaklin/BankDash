@@ -10,10 +10,10 @@ export const useTransactionsAll = (
   const result: string[] = []
   user?.cards?.map((card) => result.push(card.number))
 
-  const { data, isLoading, isSuccess } = useQuery({
+  const { data, isPending, isSuccess } = useQuery({
     queryKey: ['transactions', page, filter],
     queryFn: () => transactionsService.getAll(result, page, filter),
     enabled: result.length > 0,
   })
-  return { data, isLoading, isSuccess }
+  return { data, isLoading: isPending, isSuccess }
 }

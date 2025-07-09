@@ -1,7 +1,7 @@
 'use client'
 
 import { ChevronRightIcon, Send } from 'lucide-react'
-import ContactItem from './ContactItem/contactItem'
+import { ContactItem } from './ContactItem/contactItem'
 import styles from './Contacts.module.scss'
 import { useContacts } from '@/hooks/useContacts'
 import { IContact } from './Contacts.type'
@@ -12,7 +12,7 @@ import clsx from 'clsx'
 import { Loader } from '../Loader/loader'
 import { getValidateError } from '@/utiles/getValidateError'
 
-const Contacts = () => {
+export const Contacts = () => {
   const [isAdd, setIsAdd] = useState(false)
   const [name, setName] = useState('')
   const [ActiveId, setActiveId] = useState(0)
@@ -101,5 +101,3 @@ const Contacts = () => {
     </div>
   )
 }
-
-export default Contacts

@@ -1,16 +1,15 @@
-import Widget from "@/components/UI/Widget/Widget";
+import { Widget } from '@/components/UI/Widget/Widget'
 import {
   BODY_TABLE_DATA,
   LOANS_HEADER_TABLE_DATA,
   WIDGET_LOANS_DATA,
-} from "./LoansPage.data";
-import styles from "./LoansPage.module.scss";
-import { TableBlock } from "@/components/UI/TableBlock/TableBlock";
-import { getCardValues } from "@/utiles/getCardValues";
-import { WidgetWrapper } from "@/components/UI/widgetWrapper/widgetWrapper";
+} from './LoansPage.data'
+import styles from './LoansPage.module.scss'
+import { TableBlock } from '@/components/UI/TableBlock/TableBlock'
+import { getCardValues } from '@/utiles/getCardValues'
+import { WidgetWrapper } from '@/components/UI/widgetWrapper/widgetWrapper'
 
-const LoansPage = () => {
-
+export const LoansPage = () => {
   return (
     <div className={styles.page}>
       <WidgetWrapper>
@@ -47,17 +46,40 @@ const LoansPage = () => {
           <tfoot>
             <tr>
               <td>Total</td>
-              <td>${getCardValues.balance(String(BODY_TABLE_DATA.reduce((a, b) => Number(b.total) + a, 0)))}</td>
-              <td>${getCardValues.balance(String(BODY_TABLE_DATA.reduce((a, b) => Number(b.remainder) + a, 0)))}</td>
+              <td>
+                $
+                {getCardValues.balance(
+                  String(
+                    BODY_TABLE_DATA.reduce((a, b) => Number(b.total) + a, 0)
+                  )
+                )}
+              </td>
+              <td>
+                $
+                {getCardValues.balance(
+                  String(
+                    BODY_TABLE_DATA.reduce((a, b) => Number(b.remainder) + a, 0)
+                  )
+                )}
+              </td>
               <td></td>
               <td></td>
-              <td>${getCardValues.balance(String(BODY_TABLE_DATA.reduce((a, b) => Number(b.Installment) + a, 0)))} / month</td>
+              <td>
+                $
+                {getCardValues.balance(
+                  String(
+                    BODY_TABLE_DATA.reduce(
+                      (a, b) => Number(b.Installment) + a,
+                      0
+                    )
+                  )
+                )}{' '}
+                / month
+              </td>
             </tr>
           </tfoot>
         </TableBlock>
       </div>
     </div>
-  );
-};
-
-export default LoansPage;
+  )
+}

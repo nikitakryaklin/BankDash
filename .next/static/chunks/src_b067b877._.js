@@ -133,8 +133,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Chart"].register(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["CategoryScale"], // LinearScale,
-__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["LogarithmicScale"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["BarElement"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Title"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Tooltip"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Legend"]);
+__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Chart"].register(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["CategoryScale"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["LogarithmicScale"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["BarElement"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Title"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Tooltip"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Legend"]);
 const BarChart = ({ chartData })=>{
     _s();
     const { options, data } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Chart$2f$Bar$2f$useBarChartData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBarChartData"])({
@@ -143,7 +142,7 @@ const BarChart = ({ chartData })=>{
     if (chartData.labels.length === 0) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
             fileName: "[project]/src/components/UI/Chart/Bar/Bar-chart.tsx",
-            lineNumber: 30,
+            lineNumber: 28,
             columnNumber: 12
         }, this);
     }
@@ -153,7 +152,7 @@ const BarChart = ({ chartData })=>{
             data: data
         }, void 0, false, {
             fileName: "[project]/src/components/UI/Chart/Bar/Bar-chart.tsx",
-            lineNumber: 35,
+            lineNumber: 33,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -223,30 +222,6 @@ const useDebitAndCreditCalculator = ()=>{
                     if (!el.card) {
                         return null;
                     }
-                    // if (el.type !== TRANSACTIONS.type.cancelled) {
-                    //   const { day, isoDate: date } = useDateTranscript(el.date)
-                    //   if (!result.has(date)) {
-                    //     if (el.type === TRANSACTIONS.type.outgoing) {
-                    //       result.set(date, {
-                    //         day,
-                    //         data: { expenses: el.amount, replenishment: 0 },
-                    //       })
-                    //     }
-                    //     if (el.type === TRANSACTIONS.type.incoming) {
-                    //       result.set(date, {
-                    //         day,
-                    //         data: { expenses: 0, replenishment: el.amount },
-                    //       })
-                    //     }
-                    //   } else {
-                    //     if (el.type === TRANSACTIONS.type.outgoing) {
-                    //       result.get(date).data.expenses += el.amount
-                    //     }
-                    //     if (el.type === TRANSACTIONS.type.incoming) {
-                    //       result.get(date).data.replenishment += el.amount
-                    //     }
-                    //   }
-                    // }
                     if (el.type === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TRANSACTIONS"].type.outgoing) {
                         const { day, isoDate: date } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useDateTranscript$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDateTranscript"])(el.date);
                         if (!result.has(date)) {
@@ -346,7 +321,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "DebitAndCredit": (()=>DebitAndCredit)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/loayout/CardWrapper/CardWrapper.tsx [app-client] (ecmascript)");
@@ -369,7 +344,7 @@ const DebitAndCredit = ()=>{
                 children: "Debit & Credit Overview"
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx",
-                lineNumber: 12,
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -377,18 +352,18 @@ const DebitAndCredit = ()=>{
                     chartData: DEBIT_AND_CREDIT_DATA
                 }, void 0, false, {
                     fileName: "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx",
-                    lineNumber: 14,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx",
-                lineNumber: 13,
+                lineNumber: 12,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx",
-        lineNumber: 11,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 };
@@ -398,7 +373,6 @@ _s(DebitAndCredit, "ivcpAuRmE3Nyk+g4k2VPSHbXhzE=", false, function() {
     ];
 });
 _c = DebitAndCredit;
-const __TURBOPACK__default__export__ = DebitAndCredit;
 var _c;
 __turbopack_context__.k.register(_c, "DebitAndCredit");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {

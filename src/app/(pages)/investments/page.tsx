@@ -1,7 +1,7 @@
-import InvestmentsPage from "@/components/screens/investments/InvestmentsPage";
+import { InvestmentsPage } from '@/components/screens/investments/InvestmentsPage'
 
 const Page = () => {
-  return <InvestmentsPage />;
-};
+  return <InvestmentsPage />
+}
 
-export default Page;
+export default Page

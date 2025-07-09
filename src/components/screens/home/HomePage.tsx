@@ -1,29 +1,37 @@
 'use client'
-import CardBlock from '@/components/UI/cardBlock/cardBlock'
+import { CardBlock } from '@/components/UI/cardBlock/cardBlock'
 import styles from './HomePage.module.scss'
 import { useUser } from '@/hooks/useUser'
 import { useAuth } from '@/authContext/authContext'
-import RecentTransaction from '@/components/UI/RecentTransaction/RecentTransaction'
-import ExpenseStatistics from '@/components/UI/ExpenseStatistics/ExpenseStatistics'
-import Contacts from '@/components/UI/Contacts/Contacts'
+import { RecentTransaction } from '@/components/UI/RecentTransaction/RecentTransaction'
+import { Contacts } from '@/components/UI/Contacts/Contacts'
 import dynamic from 'next/dynamic'
 import { Loader } from '@/components/UI/Loader/loader'
 
 const DynamicBalanceHistory = dynamic(
-  () => import('@/components/UI/BalanceHistory/BalanceHistory'),
+  () =>
+    import('@/components/UI/BalanceHistory/BalanceHistory').then(
+      (D) => D.BalanceHistory
+    ),
   { ssr: false, loading: () => <Loader /> }
 )
 const DynamicWeeklyActivity = dynamic(
-  () => import('@/components/UI/WeeklyActivity/WeeklyActivity'),
+  () =>
+    import('@/components/UI/WeeklyActivity/WeeklyActivity').then(
+      (D) => D.WeeklyActivity
+    ),
   { ssr: false, loading: () => <Loader /> }
 )
 
 const DynamicExpenseStatistics = dynamic(
-  () => import('@/components/UI/ExpenseStatistics/ExpenseStatistics'),
+  () =>
+    import('@/components/UI/ExpenseStatistics/ExpenseStatistics').then(
+      (D) => D.ExpenseStatistics
+    ),
   { ssr: false, loading: () => <Loader /> }
 )
 
-const HomePage = () => {
+export const HomePage = () => {
   const { isLogin } = useAuth()
   const { isLoading } = useUser()
 
@@ -44,5 +52,3 @@ const HomePage = () => {
     </>
   )
 }
-
-export default HomePage

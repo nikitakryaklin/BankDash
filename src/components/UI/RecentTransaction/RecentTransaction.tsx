@@ -1,5 +1,4 @@
 'use client'
-import { useEffect, useState } from 'react'
 import styles from './RecentTransaction.module.scss'
 import TransactionItem from './TransactionItem/TransactionItem'
 import { useTransactions } from '@/hooks/useTransactions'
@@ -11,7 +10,7 @@ import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 import clsx from 'clsx'
 import { Loader } from '../Loader/loader'
 
-const RecentTransaction = ({
+export const RecentTransaction = ({
   title = 'Recent Transaction',
   className,
   flug = false,
@@ -48,5 +47,3 @@ const RecentTransaction = ({
     </div>
   )
 }
-
-export default RecentTransaction

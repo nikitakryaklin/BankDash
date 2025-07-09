@@ -1,7 +1,7 @@
-import CreditPage from "@/components/screens/credit/CreditPage";
+import { CreditPage } from '@/components/screens/credit/CreditPage'
 
 const Page = () => {
-  return <CreditPage />;
-};
+  return <CreditPage />
+}
 
-export default Page;
+export default Page

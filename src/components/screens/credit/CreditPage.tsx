@@ -14,15 +14,21 @@ import { getCardValues } from '@/utiles/getCardValues'
 import dynamic from 'next/dynamic'
 
 const DynamicCardBankStatistics = dynamic(
-  () => import('./CardBankStatistics/CardBankStatistics'),
+  () =>
+    import('./CardBankStatistics/CardBankStatistics').then(
+      (D) => D.CardBankStatistics
+    ),
   { ssr: false, loading: () => <Loader /> }
 )
-const DynamicCreditPageForm = dynamic(() => import('./CreditPageForm'), {
-  ssr: false,
-  loading: () => <Loader />,
-})
+const DynamicCreditPageForm = dynamic(
+  () => import('./CreditPageForm').then((D) => D.CreditPageForm),
+  {
+    ssr: false,
+    loading: () => <Loader />,
+  }
+)
 
-const CreditPage = () => {
+export const CreditPage = () => {
   const user = useUser()
 
   const cards = user.data?.cards
@@ -38,7 +44,7 @@ const CreditPage = () => {
         </div>
         <div className={styles.cardList}>
           <h2>Card List</h2>
-          {cards.length > 0 && (
+          {cards?.length > 0 && (
             <CardWrapper className={styles.CardList_wrapper}>
               {cards.map((el: ICard, index: number) => (
                 <ListItem
@@ -88,7 +94,7 @@ const CreditPage = () => {
               ))}
             </CardWrapper>
           )}
-          {cards.length === 0 && (
+          {cards?.length === 0 && (
             <CardWrapper>
               <NotEnougtData />
             </CardWrapper>
@@ -126,5 +132,3 @@ const CreditPage = () => {
     </div>
   )
 }
-
-export default CreditPage

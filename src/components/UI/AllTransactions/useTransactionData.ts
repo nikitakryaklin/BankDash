@@ -4,10 +4,10 @@ import { IPagination } from '@/types/Pagination.type'
 import { IUser } from '@/types/User.type'
 import { useQueryClient } from '@tanstack/react-query'
 import { ITransaction } from './AllTransactions.interface'
+import { useUser } from '@/hooks/useUser'
 
 export const useTransactionData = (page: number, filfer: string) => {
-  const user = useQueryClient().getQueryData(['user']) as IUser
-
+  const { data: user } = useUser()
   const { data, isLoading } = useTransactionsAll(user, page, filfer)
 
   const transList = data?.data as ITransaction[]

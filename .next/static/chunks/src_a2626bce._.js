@@ -26,7 +26,7 @@ __turbopack_context__.v({
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>Widget)
+    "Widget": (()=>Widget)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
@@ -34,7 +34,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$W
 ;
 ;
 ;
-function Widget({ children, title, text, color, className }) {
+const Widget = ({ children, title, text, color, className })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper, className),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -84,7 +84,7 @@ function Widget({ children, title, text, color, className }) {
         lineNumber: 21,
         columnNumber: 5
     }, this);
-}
+};
 _c = Widget;
 var _c;
 __turbopack_context__.k.register(_c, "Widget");
@@ -911,7 +911,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "RecentTransaction": (()=>RecentTransaction)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/RecentTransaction/RecentTransaction.module.scss.module.css [app-client] (css module)");
@@ -946,7 +946,7 @@ const RecentTransaction = ({ title = 'Recent Transaction', className, flug = fal
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                lineNumber: 27,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -962,31 +962,31 @@ const RecentTransaction = ({ title = 'Recent Transaction', className, flug = fal
                                 flug: flug
                             }, trans.id, false, {
                                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                                lineNumber: 32,
+                                lineNumber: 31,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                        lineNumber: 44,
+                        lineNumber: 43,
                         columnNumber: 11
                     }, this),
                     isLoading ?? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Loader"], {
                         color: "var(--text-color)"
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                        lineNumber: 46,
+                        lineNumber: 45,
                         columnNumber: 23
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                lineNumber: 28,
+                lineNumber: 27,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-        lineNumber: 26,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 };
@@ -997,7 +997,6 @@ _s(RecentTransaction, "sOdrBHp3H7VRt1ikspG9dKjXMeE=", false, function() {
     ];
 });
 _c = RecentTransaction;
-const __TURBOPACK__default__export__ = RecentTransaction;
 var _c;
 __turbopack_context__.k.register(_c, "RecentTransaction");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -1027,7 +1026,7 @@ __turbopack_context__.v({
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "Card": (()=>Card)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
@@ -1056,7 +1055,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                         children: "Balance"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/UI/card/card.tsx",
-                                        lineNumber: 20,
+                                        lineNumber: 27,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1067,13 +1066,13 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/UI/card/card.tsx",
-                                        lineNumber: 21,
+                                        lineNumber: 28,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/UI/card/card.tsx",
-                                lineNumber: 19,
+                                lineNumber: 26,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1090,7 +1089,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 31,
+                                            lineNumber: 38,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1098,7 +1097,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 35,
+                                            lineNumber: 42,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1106,7 +1105,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 39,
+                                            lineNumber: 46,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1114,7 +1113,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 43,
+                                            lineNumber: 50,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1122,7 +1121,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 54,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1132,7 +1131,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 51,
+                                            lineNumber: 58,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1140,7 +1139,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1148,7 +1147,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1156,7 +1155,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 72,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1166,7 +1165,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 76,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1176,7 +1175,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 82,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1184,7 +1183,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 88,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1194,7 +1193,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 85,
+                                            lineNumber: 92,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1204,7 +1203,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 98,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1214,24 +1213,24 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UI/card/card.tsx",
-                                            lineNumber: 97,
+                                            lineNumber: 104,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/UI/card/card.tsx",
-                                    lineNumber: 24,
+                                    lineNumber: 31,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/UI/card/card.tsx",
-                                lineNumber: 23,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/UI/card/card.tsx",
-                        lineNumber: 18,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1244,7 +1243,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                         children: "CARD HOLDER"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/UI/card/card.tsx",
-                                        lineNumber: 108,
+                                        lineNumber: 115,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1252,13 +1251,13 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCardValues"].holder(holder)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/UI/card/card.tsx",
-                                        lineNumber: 109,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/UI/card/card.tsx",
-                                lineNumber: 107,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1268,7 +1267,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                         children: "VALID THRU"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/UI/card/card.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 119,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1276,25 +1275,25 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCardValues"].pediod(period)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/UI/card/card.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 120,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/UI/card/card.tsx",
-                                lineNumber: 111,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/UI/card/card.tsx",
-                        lineNumber: 106,
+                        lineNumber: 113,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/card/card.tsx",
-                lineNumber: 17,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1305,7 +1304,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCardValues"].number(number)
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/card/card.tsx",
-                        lineNumber: 118,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1323,7 +1322,7 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                 fillOpacity: "0.5"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/UI/card/card.tsx",
-                                lineNumber: 126,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1334,30 +1333,29 @@ const Card = ({ balance, holder, period, number, primery, cvc })=>{
                                 fillOpacity: "0.5"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/UI/card/card.tsx",
-                                lineNumber: 127,
+                                lineNumber: 134,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/UI/card/card.tsx",
-                        lineNumber: 119,
+                        lineNumber: 126,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/card/card.tsx",
-                lineNumber: 117,
+                lineNumber: 124,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/card/card.tsx",
-        lineNumber: 16,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 };
 _c = Card;
-const __TURBOPACK__default__export__ = Card;
 var _c;
 __turbopack_context__.k.register(_c, "Card");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -1382,7 +1380,7 @@ __turbopack_context__.v({
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "CardBlock": (()=>CardBlock)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/card/card.tsx [app-client] (ecmascript)");
@@ -1415,7 +1413,7 @@ const CardBlock = ({ buttomText, flug = false })=>{
                         children: "My Cards"
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                        lineNumber: 25,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1423,13 +1421,13 @@ const CardBlock = ({ buttomText, flug = false })=>{
                         children: buttomText
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                        lineNumber: 26,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                lineNumber: 24,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1441,15 +1439,15 @@ const CardBlock = ({ buttomText, flug = false })=>{
                             text: "You do not have any card"
                         }, void 0, false, {
                             fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                            lineNumber: 31,
+                            lineNumber: 29,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                        lineNumber: 30,
+                        lineNumber: 28,
                         columnNumber: 11
                     }, this),
-                    !flug && cards?.length > 1 && cards.map((card, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    !flug && cards?.length > 1 && cards.map((card, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
                             balance: card.balance,
                             holder: fullName,
                             cvc: card.cvc,
@@ -1458,12 +1456,12 @@ const CardBlock = ({ buttomText, flug = false })=>{
                             primery: index === 0
                         }, card.id, false, {
                             fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                            lineNumber: 37,
+                            lineNumber: 35,
                             columnNumber: 13
                         }, this)),
                     !flug && cards?.length === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
                                 balance: cards[0].balance,
                                 holder: fullName,
                                 period: cards[0].period,
@@ -1472,7 +1470,7 @@ const CardBlock = ({ buttomText, flug = false })=>{
                                 primery: true
                             }, void 0, false, {
                                 fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                                lineNumber: 49,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1481,17 +1479,17 @@ const CardBlock = ({ buttomText, flug = false })=>{
                                     text: "Create one more card"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 56,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                                lineNumber: 57,
+                                lineNumber: 55,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true),
-                    cards?.length > 0 && flug && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    cards?.length > 0 && flug && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$card$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
                         balance: cards?.[0]?.balance || '',
                         holder: fullName,
                         period: cards?.[0]?.period || '',
@@ -1500,19 +1498,19 @@ const CardBlock = ({ buttomText, flug = false })=>{
                         primery: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                        lineNumber: 63,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-                lineNumber: 28,
+                lineNumber: 26,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/cardBlock/cardBlock.tsx",
-        lineNumber: 23,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 };
@@ -1522,7 +1520,6 @@ _s(CardBlock, "j+B6bS0KwwAshe4Iinmk0NND7UI=", false, function() {
     ];
 });
 _c = CardBlock;
-const __TURBOPACK__default__export__ = CardBlock;
 var _c;
 __turbopack_context__.k.register(_c, "CardBlock");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -1971,12 +1968,11 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "AccountPage": (()=>AccountPage)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$account$2f$AccountPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/screens/account/AccountPage.module.scss.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Widget/Widget.tsx [app-client] (ecmascript)");
-// import { WIDGET_ACCOUNT_DATA } from './AccountPage.data'
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/cardBlock/cardBlock.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Invoice$2f$Invoice$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Invoice/Invoice.tsx [app-client] (ecmascript)");
@@ -1984,7 +1980,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUserBalan
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTransactionsByDate.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$account$2f$useAccountPageCalculator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/screens/account/useAccountPageCalculator.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader.js [app-client] (ecmascript) <export default as Loader>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Loader/loader.tsx [app-client] (ecmascript)");
 ;
 ;
 var _s = __turbopack_context__.k.signature();
@@ -1999,16 +1995,16 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const DynamicDebitAndCredit = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.r("[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx [app-client] (ecmascript, next/dynamic entry, async loader)")(__turbopack_context__.i), {
+const DynamicDebitAndCredit = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.r("[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx [app-client] (ecmascript, next/dynamic entry, async loader)")(__turbopack_context__.i).then((D)=>D.DebitAndCredit), {
     loadableGenerated: {
         modules: [
             "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx [app-client] (ecmascript, next/dynamic entry)"
         ]
     },
     ssr: false,
-    loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader$3e$__["Loader"], {}, void 0, false, {
+    loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Loader"], {}, void 0, false, {
             fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-            lineNumber: 20,
+            lineNumber: 22,
             columnNumber: 20
         }, this)
 });
@@ -2023,61 +2019,61 @@ const AccountPage = ()=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$account$2f$AccountPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].widget_wrapper,
-                children: WIDGET_ACCOUNT_DATA.map((el)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                children: WIDGET_ACCOUNT_DATA.map((el)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Widget"], {
                         title: el.title,
                         text: el.text,
                         color: el.color,
                         children: el.icon
                     }, el.id, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                lineNumber: 34,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$account$2f$AccountPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].card_wrapper,
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RecentTransaction"], {
                         title: "Last Transaction",
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$account$2f$AccountPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].transBlock,
                         flug: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 42,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardBlock"], {
                         buttomText: "See All",
                         flug: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicDebitAndCredit, {}, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 48,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Invoice$2f$Invoice$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Invoice"], {}, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 49,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                lineNumber: 41,
+                lineNumber: 43,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 };
@@ -2089,7 +2085,6 @@ _s(AccountPage, "s4okcslF7qJCEIDDn9j3v3RxkbE=", false, function() {
     ];
 });
 _c1 = AccountPage;
-const __TURBOPACK__default__export__ = AccountPage;
 var _c, _c1;
 __turbopack_context__.k.register(_c, "DynamicDebitAndCredit");
 __turbopack_context__.k.register(_c1, "AccountPage");

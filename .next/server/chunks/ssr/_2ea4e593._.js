@@ -27,7 +27,7 @@ __turbopack_context__.v({
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>Widget)
+    "Widget": (()=>Widget)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-rsc] (ecmascript)");
@@ -35,7 +35,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$W
 ;
 ;
 ;
-function Widget({ children, title, text, color, className }) {
+const Widget = ({ children, title, text, color, className })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].wrapper, className),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -85,7 +85,7 @@ function Widget({ children, title, text, color, className }) {
         lineNumber: 21,
         columnNumber: 5
     }, this);
-}
+};
 }}),
 "[project]/src/utiles/getCardValues.ts [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -425,7 +425,7 @@ const WidgetWrapper = ({ children })=>{
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "LoansPage": (()=>LoansPage)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Widget/Widget.tsx [app-rsc] (ecmascript)");
@@ -446,7 +446,7 @@ const LoansPage = ()=>{
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$loans$2f$LoansPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].page,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$widgetWrapper$2f$widgetWrapper$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["WidgetWrapper"], {
-                children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$loans$2f$LoansPage$2e$data$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["WIDGET_LOANS_DATA"].map((el)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$loans$2f$LoansPage$2e$data$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["WIDGET_LOANS_DATA"].map((el)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Widget"], {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$loans$2f$LoansPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].widget,
                         text: el.text,
                         title: el.title,
@@ -454,12 +454,12 @@ const LoansPage = ()=>{
                         children: el.icon
                     }, el.id, false, {
                         fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                        lineNumber: 18,
+                        lineNumber: 17,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                lineNumber: 16,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -468,7 +468,7 @@ const LoansPage = ()=>{
                         children: "Active Loans Overview"
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                        lineNumber: 30,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["TableBlock"], {
@@ -481,7 +481,7 @@ const LoansPage = ()=>{
                                                 children: el.id
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                                lineNumber: 35,
+                                                lineNumber: 34,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -491,7 +491,7 @@ const LoansPage = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                                lineNumber: 36,
+                                                lineNumber: 35,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -501,21 +501,21 @@ const LoansPage = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                                lineNumber: 37,
+                                                lineNumber: 36,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 children: el.duration
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                                lineNumber: 38,
+                                                lineNumber: 37,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 children: el.rate
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                                lineNumber: 39,
+                                                lineNumber: 38,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -526,7 +526,7 @@ const LoansPage = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                                lineNumber: 40,
+                                                lineNumber: 39,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -534,23 +534,23 @@ const LoansPage = ()=>{
                                                     children: "Repay"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                                    lineNumber: 42,
+                                                    lineNumber: 41,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                                lineNumber: 41,
+                                                lineNumber: 40,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, el.id, true, {
                                         fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                        lineNumber: 34,
+                                        lineNumber: 33,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                lineNumber: 32,
+                                lineNumber: 31,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tfoot", {
@@ -560,7 +560,7 @@ const LoansPage = ()=>{
                                             children: "Total"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                            lineNumber: 49,
+                                            lineNumber: 48,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -570,7 +570,7 @@ const LoansPage = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                            lineNumber: 50,
+                                            lineNumber: 49,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -580,61 +580,61 @@ const LoansPage = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                            lineNumber: 51,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {}, void 0, false, {
                                             fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                            lineNumber: 52,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {}, void 0, false, {
                                             fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                            lineNumber: 53,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                             children: [
                                                 "$",
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getCardValues"].balance(String(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$loans$2f$LoansPage$2e$data$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["BODY_TABLE_DATA"].reduce((a, b)=>Number(b.Installment) + a, 0))),
-                                                " / month"
+                                                ' ',
+                                                "/ month"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                                lineNumber: 47,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                        lineNumber: 31,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-                lineNumber: 29,
+                lineNumber: 28,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/screens/loans/LoansPage.tsx",
-        lineNumber: 15,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 };
-const __TURBOPACK__default__export__ = LoansPage;
 }}),
 "[project]/src/app/(pages)/loans/page.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -649,7 +649,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens
 ;
 ;
 const Page = ()=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$loans$2f$LoansPage$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$loans$2f$LoansPage$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LoansPage"], {}, void 0, false, {
         fileName: "[project]/src/app/(pages)/loans/page.tsx",
         lineNumber: 4,
         columnNumber: 10

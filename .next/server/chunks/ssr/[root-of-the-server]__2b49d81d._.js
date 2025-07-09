@@ -1284,7 +1284,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2
 const useTransactionsAll = (user, page, filter)=>{
     const result = [];
     user?.cards?.map((card)=>result.push(card.number));
-    const { data, isLoading, isSuccess } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
+    const { data, isPending, isSuccess } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
         queryKey: [
             'transactions',
             page,
@@ -1295,7 +1295,7 @@ const useTransactionsAll = (user, page, filter)=>{
     });
     return {
         data,
-        isLoading,
+        isLoading: isPending,
         isSuccess
     };
 };
@@ -1309,13 +1309,11 @@ __turbopack_context__.s({
     "useTransactionData": (()=>useTransactionData)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsAll$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTransactionsAll.ts [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useUser.tsx [app-ssr] (ecmascript)");
 ;
 ;
 const useTransactionData = (page, filfer)=>{
-    const user = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])().getQueryData([
-        'user'
-    ]);
+    const { data: user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUser"])();
     const { data, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsAll$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransactionsAll"])(user, page, filfer);
     const transList = data?.data;
     const pagination = data?.meta.pagination;
@@ -1382,6 +1380,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$A
 const AllTransactions = ()=>{
     const { filfer, page, setFilter, setPage } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$useTransactionState$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransactionState"])();
     const { isLoading, transList, pagination } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$useTransactionData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransactionData"])(page, filfer);
+    console.log(transList);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$AllTransactions$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].wrapper,
         children: [
@@ -1389,33 +1388,36 @@ const AllTransactions = ()=>{
                 children: "Recent Transactions"
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsFilters$2f$TransactionsFilters$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TransactionsFilters"], {
                 filter: setFilter
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$AllTransactions$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].card,
-                children: transList !== undefined && transList.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsCard$2f$TransactionsCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TransactionsCard"], {
-                    isLoading: isLoading,
-                    data: transList
-                }, void 0, false, {
-                    fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                    lineNumber: 22,
-                    columnNumber: 11
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
-                    fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                    lineNumber: 24,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
+                children: [
+                    transList?.length === 0 && !isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
+                        fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
+                        lineNumber: 22,
+                        columnNumber: 51
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsCard$2f$TransactionsCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TransactionsCard"], {
+                        isLoading: isLoading,
+                        data: transList
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             pagination && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Pagination$2f$Pagination$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Pagination"], {
@@ -1432,7 +1434,7 @@ const AllTransactions = ()=>{
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 };

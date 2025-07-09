@@ -13,30 +13,7 @@ export const useDebitAndCreditCalculator = () => {
       if (!el.card) {
         return null
       }
-      // if (el.type !== TRANSACTIONS.type.cancelled) {
-      //   const { day, isoDate: date } = useDateTranscript(el.date)
-      //   if (!result.has(date)) {
-      //     if (el.type === TRANSACTIONS.type.outgoing) {
-      //       result.set(date, {
-      //         day,
-      //         data: { expenses: el.amount, replenishment: 0 },
-      //       })
-      //     }
-      //     if (el.type === TRANSACTIONS.type.incoming) {
-      //       result.set(date, {
-      //         day,
-      //         data: { expenses: 0, replenishment: el.amount },
-      //       })
-      //     }
-      //   } else {
-      //     if (el.type === TRANSACTIONS.type.outgoing) {
-      //       result.get(date).data.expenses += el.amount
-      //     }
-      //     if (el.type === TRANSACTIONS.type.incoming) {
-      //       result.get(date).data.replenishment += el.amount
-      //     }
-      //   }
-      // }
+
       if (el.type === TRANSACTIONS.type.outgoing) {
         const { day, isoDate: date } = useDateTranscript(el.date)
         if (!result.has(date)) {
@@ -57,6 +34,7 @@ export const useDebitAndCreditCalculator = () => {
           if (el.card.type === 'Debit') {
             result.get(date).data.debit += el.amount
           }
+
           if (el.card.type === 'Credit') {
             result.get(date).data.credit += el.amount
           }

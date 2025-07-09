@@ -2,9 +2,8 @@ import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import styles from './WeeklyActivity.module.scss'
 import { BarChart } from '../Chart/Bar/Bar-chart'
 import { useWeeklyActivityCalculator } from './useWeeklyActivityCalculator'
-import { Loader } from '../Loader/loader'
 
-const WeeklyActivity = () => {
+export const WeeklyActivity = () => {
   const { WEEKLY_ACTIVITY_DATA, isLoading } = useWeeklyActivityCalculator()
 
   return (
@@ -16,5 +15,3 @@ const WeeklyActivity = () => {
     </div>
   )
 }
-
-export default WeeklyActivity

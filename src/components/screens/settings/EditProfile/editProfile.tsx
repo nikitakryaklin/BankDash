@@ -1,4 +1,4 @@
-import Fild from '@/components/UI/fild/fild'
+import { Fild } from '@/components/UI/fild/fild'
 import styles from './EditProfile.module.scss'
 import { UserAvatar } from '@/components/UI/userAvatar/UserAvatar'
 import { PencilIcon } from 'lucide-react'

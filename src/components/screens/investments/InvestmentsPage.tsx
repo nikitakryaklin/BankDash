@@ -1,5 +1,5 @@
 'use client'
-import Widget from '@/components/UI/Widget/Widget'
+import { Widget } from '@/components/UI/Widget/Widget'
 import {
   INVEST_BODY_TABLE_DATA,
   INVEST_DATA,
@@ -17,7 +17,7 @@ import { TableBlock } from '@/components/UI/TableBlock/TableBlock'
 
 import { LineChart } from '@/components/UI/Chart/Line/Line-chart'
 
-const InvestmentsPage = () => {
+export const InvestmentsPage = () => {
   return (
     <div className={styles.page}>
       <div className={styles.widget_wrapper}>
@@ -86,5 +86,3 @@ const InvestmentsPage = () => {
     </div>
   )
 }
-
-export default InvestmentsPage

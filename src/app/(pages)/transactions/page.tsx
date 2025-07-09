@@ -1,7 +1,7 @@
-import TransactionsPage from "@/components/screens/transactions/TransactionsPage";
+import { TransactionsPage } from '@/components/screens/transactions/TransactionsPage'
 
 const Page = () => {
-  return <TransactionsPage />;
-};
+  return <TransactionsPage />
+}
 
-export default Page;
+export default Page

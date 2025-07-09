@@ -1,11 +1,9 @@
 'use client'
-import { useQueryClient } from '@tanstack/react-query'
-import Card from '../card/card'
+import { Card } from '../card/card'
 import styles from './cardBlock.module.scss'
-import { ICard, IUser } from '@/types/User.type'
+import { ICard } from '@/types/User.type'
 import Link from 'next/link'
 import { CONSTANTS } from '@/config/constants'
-import { useEffect } from 'react'
 import { useUser } from '@/hooks/useUser'
 import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 
@@ -14,7 +12,7 @@ interface ICardBlock {
   flug?: boolean
 }
 
-const CardBlock = ({ buttomText, flug = false }: ICardBlock) => {
+export const CardBlock = ({ buttomText, flug = false }: ICardBlock) => {
   const { data } = useUser()
   const cards = data?.cards as ICard[]
   const fullName = data?.about?.fullname || ''
@@ -73,5 +71,3 @@ const CardBlock = ({ buttomText, flug = false }: ICardBlock) => {
     </div>
   )
 }
-
-export default CardBlock

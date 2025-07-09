@@ -1,12 +1,12 @@
 import { RadioBlock } from '@/components/UI/RadioBlock/RadioBlock'
 import { useCreateCard } from './useCreateCard'
-import Fild from '@/components/UI/fild/fild'
+import { Fild } from '@/components/UI/fild/fild'
 import { getValidateError } from '@/utiles/getValidateError'
 import clsx from 'clsx'
 import { Loader } from '@/components/UI/Loader/loader'
 import styles from './CreditPage.module.scss'
 
-const CreditPageForm = () => {
+export const CreditPageForm = () => {
   const { formSubmit, isPending, register, errors } = useCreateCard()
 
   return (
@@ -74,5 +74,3 @@ const CreditPageForm = () => {
     </>
   )
 }
-
-export default CreditPageForm

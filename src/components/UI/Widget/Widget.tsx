@@ -1,22 +1,22 @@
-import clsx from "clsx";
-import styles from "./Widget.module.scss";
+import clsx from 'clsx'
+import styles from './Widget.module.scss'
 
-import type { PropsWithChildren } from "react";
+import type { PropsWithChildren } from 'react'
 
 interface IProp {
-  title: string;
-  text: string;
-  color: string;
-  className?: string;
+  title: string
+  text: string
+  color: string
+  className?: string
 }
 
-export default function Widget({
+export const Widget = ({
   children,
   title,
   text,
   color,
   className,
-}: PropsWithChildren<IProp>) {
+}: PropsWithChildren<IProp>) => {
   return (
     <div className={clsx(styles.wrapper, className)}>
       <div className={styles.content}>
@@ -29,5 +29,5 @@ export default function Widget({
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-import LoansPage from "@/components/screens/loans/LoansPage";
+import { LoansPage } from '@/components/screens/loans/LoansPage'
 
 const Page = () => {
-  return <LoansPage />;
-};
+  return <LoansPage />
+}
 
-export default Page;
+export default Page

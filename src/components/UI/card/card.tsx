@@ -1,17 +1,24 @@
-import clsx from "clsx";
-import styles from "./card.module.scss";
-import { getCardValues } from "@/utiles/getCardValues";
+import clsx from 'clsx'
+import styles from './card.module.scss'
+import { getCardValues } from '@/utiles/getCardValues'
 
 interface ICard {
-  balance: string;
-  holder: string;
-  period: string;
-  number: string;
-  primery: boolean;
-  cvc?: number;
+  balance: string
+  holder: string
+  period: string
+  number: string
+  primery: boolean
+  cvc?: number
 }
 
-const Card = ({ balance, holder, period, number, primery, cvc }: ICard) => {
+export const Card = ({
+  balance,
+  holder,
+  period,
+  number,
+  primery,
+  cvc,
+}: ICard) => {
   return (
     <div className={clsx(styles.wrapper, primery && [styles.isActive])}>
       <div className={styles.info}>
@@ -128,7 +135,5 @@ const Card = ({ balance, holder, period, number, primery, cvc }: ICard) => {
         </svg>
       </div>
     </div>
-  );
-};
-
-export default Card;
+  )
+}

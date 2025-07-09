@@ -2,15 +2,11 @@
 
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import styles from './MyExpense.module.scss'
-import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 import { BarChart } from '../Chart/Bar/Bar-chart'
-import { useQueryClient } from '@tanstack/react-query'
-import { IUser } from '@/types/User.type'
-import { getDateByDays } from '@/utiles/getDateByDays'
 import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useMyExpenseCalculator } from './useMyExpenseCalculator'
 
-const MyExpense = () => {
+export const MyExpense = () => {
   const { data: transactions, isLoading } = useTransactionsByDate()
 
   const { MY_EXPENSE_DATA } = useMyExpenseCalculator(transactions)
@@ -23,5 +19,3 @@ const MyExpense = () => {
     </div>
   )
 }
-
-export default MyExpense

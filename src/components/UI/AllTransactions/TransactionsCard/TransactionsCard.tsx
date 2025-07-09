@@ -1,3 +1,4 @@
+import { Loader } from '../../Loader/loader'
 import { ITransaction } from '../AllTransactions.interface'
 import { HEADER_ELEMENTS } from './TransactionsCard.data'
 import styles from './TransactionsCard.module.scss'
@@ -30,7 +31,7 @@ export const TransactionsCard = ({ isLoading, data }: IProps) => {
           />
         ))
       ) : (
-        <div>загрузка...</div>
+        <Loader />
       )}
     </div>
   )

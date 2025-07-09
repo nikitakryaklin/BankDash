@@ -8,21 +8,21 @@ import { TransactionsCard } from './TransactionsCard/TransactionsCard'
 import { Pagination } from '../Pagination/Pagination'
 import { useTransactionData } from './useTransactionData'
 import { useTransactionState } from './useTransactionState'
+import { Loader } from '../Loader/loader'
 
 export const AllTransactions = () => {
   const { filfer, page, setFilter, setPage } = useTransactionState()
   const { isLoading, transList, pagination } = useTransactionData(page, filfer)
-
+  console.log(transList)
   return (
     <div className={styles.wrapper}>
       <h2>Recent Transactions</h2>
       <TransactionsFilters filter={setFilter} />
       <CardWrapper className={styles.card}>
-        {transList !== undefined && transList.length > 0 ? (
-          <TransactionsCard isLoading={isLoading} data={transList} />
-        ) : (
-          <NotEnougtData />
-        )}
+        {transList?.length === 0 && !isLoading && <NotEnougtData />}
+        {/* {transList?.length > 0 && ( */}
+        <TransactionsCard isLoading={isLoading} data={transList} />
+        {/* )} */}
       </CardWrapper>
       {pagination && (
         <Pagination

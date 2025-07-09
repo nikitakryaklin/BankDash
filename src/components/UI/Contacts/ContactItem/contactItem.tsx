@@ -16,7 +16,7 @@ interface IContact {
   goBack?: () => void
 }
 
-const ContactItem = ({
+export const ContactItem = ({
   avatar,
   name,
   role,
@@ -65,5 +65,3 @@ const ContactItem = ({
     </div>
   )
 }
-
-export default ContactItem

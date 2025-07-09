@@ -1,9 +1,9 @@
 'use client'
 
 import { SubmitHandler, useForm } from 'react-hook-form'
-import Fild from '../../fild/fild'
+import { Fild } from '../../fild/fild'
 import styles from './addContact.module.scss'
-import FileFild from '../../fild/fileFild'
+import { FileFild } from '../../fild/fileFild'
 import { useFormContact } from './useFormContact'
 import type { IAddContact } from './addContact.interface'
 import { getValidateError } from '@/utiles/getValidateError'

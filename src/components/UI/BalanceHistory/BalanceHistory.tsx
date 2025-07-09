@@ -6,7 +6,7 @@ import { LineChart } from '../Chart/Line/Line-chart'
 import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useBalanceHistoryCalculator } from './useBalanceHistoryCalculator'
 
-const BalanceHistory = () => {
+export const BalanceHistory = () => {
   const { data: transactions, isLoading } = useTransactionsByDate()
 
   const { labels, data } = useBalanceHistoryCalculator(transactions)
@@ -27,5 +27,3 @@ const BalanceHistory = () => {
     </div>
   )
 }
-
-export default BalanceHistory
