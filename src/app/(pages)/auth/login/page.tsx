@@ -59,7 +59,7 @@ const Page = () => {
           </p>
         )}
         <Button
-          text={!isLogin ? 'sing in' : 'register'}
+          text={!isLogin ? 'Sing In' : 'Register'}
           type="submit"
           isPending={false}
         />

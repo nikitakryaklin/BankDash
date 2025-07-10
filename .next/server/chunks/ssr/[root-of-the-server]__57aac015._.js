@@ -11,7 +11,6 @@ __turbopack_context__.v({
   "addCard_wrapper": "CreditPage-module-scss-module__sR2CNa__addCard_wrapper",
   "cardBlock": "CreditPage-module-scss-module__sR2CNa__cardBlock",
   "cardList": "CreditPage-module-scss-module__sR2CNa__cardList",
-  "disabled": "CreditPage-module-scss-module__sR2CNa__disabled",
   "expense": "CreditPage-module-scss-module__sR2CNa__expense",
   "form": "CreditPage-module-scss-module__sR2CNa__form",
   "icon": "CreditPage-module-scss-module__sR2CNa__icon",

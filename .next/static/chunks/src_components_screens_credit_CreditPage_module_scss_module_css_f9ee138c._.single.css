@@ -109,20 +109,6 @@
   width: 100%;
 }
 
-.CreditPage-module-scss-module__sR2CNa__form > form > button {
-  background-color: var(--primery);
-  color: var(--white);
-  border: none;
-  border-radius: clamp(.5625rem, .430458rem + .56338vw, .9375rem);
-  width: clamp(7.5rem, 6.61972rem + 3.75587vw, 10rem);
-  height: clamp(2.5rem, 2.27993rem + .938967vw, 3.125rem);
-  margin-bottom: clamp(.625rem, .294894rem + 1.40845vw, 1.5625rem);
-}
-
-.CreditPage-module-scss-module__sR2CNa__disabled {
-  background-color: var(--text-color) !important;
-}
-
 .CreditPage-module-scss-module__sR2CNa__settings > div, .CreditPage-module-scss-module__sR2CNa__addCard > div {
   padding: clamp(.9375rem, .827465rem + .469484vw, 1.25rem);
   height: auto !important;

@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/Button/Button.module.scss.module.css"],"sourcesContent":[".button{text-align:center;background-color:var(--primery);border:none;color:var(--white);width:fluid(160, 120);height:fluid(50, 40);border-radius:fluid(15, 9);margin-bottom:fluid(25, 10)}.disabled{background-color:var(--text-color) !important}"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAA2L"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/UI/Button/Button.module.scss.module.css"],"sourcesContent":[".button{text-align:center;background-color:var(--primery);border:none;color:var(--white);width:clamp(7.5rem,6.6197183099rem + 3.7558685446vw,10rem);height:clamp(2.5rem,2.2799295775rem + 0.9389671362vw,3.125rem);border-radius:clamp(0.5625rem,0.4304577465rem + 0.5633802817vw,0.9375rem);margin-bottom:clamp(0.625rem,0.2948943662rem + 1.4084507042vw,1.5625rem)}.disabled{background-color:var(--text-color) !important}"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAAsW"}}]
 }
