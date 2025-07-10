@@ -7,33 +7,24 @@ import { getTitle } from './header.data'
 import Link from 'next/link'
 import { useBurgerStore } from '@/store/useBurgerStore'
 import clsx from 'clsx'
-import { useQueryClient } from '@tanstack/react-query'
-import { IUser } from '@/types/User.type'
-import { getAvaterUrl } from '@/utiles/getAvatar'
 import { CONSTANTS } from '@/config/constants'
 import { UserAvatar } from '@/components/UI/userAvatar/UserAvatar'
 import toast from 'react-hot-toast'
 import { useState } from 'react'
+import { useNotifyStore } from '@/store/useNotifyStore'
+import { useNotify } from '@/hooks/useNotify'
 
 const Header = () => {
   const { isLogin } = useAuth()
   const pathname = usePathname() || ''
   const { isBurger, setIsBurger } = useBurgerStore()
-  const [isNotify, setIsNotify] = useState(true)
-  if (pathname === CONSTANTS.login) return null
 
+  const { isNotify, toggleNotify, isPanding } = useNotify()
   const henderClick = () => {
     setIsBurger()
   }
 
-  const notify = () => {
-    if (isNotify) {
-      toast.success('Notifications are active')
-    } else {
-      toast.error('Notifications aren`t active')
-    }
-    setIsNotify(!isNotify)
-  }
+  if (pathname === CONSTANTS.login) return null
 
   return (
     <header className={styles.header}>
@@ -66,7 +57,14 @@ const Header = () => {
                 height={15}
               />
             </Link>
-            <button onClick={notify} className={styles.item}>
+            <button
+              onClick={toggleNotify}
+              className={clsx(
+                styles.item,
+                (isPanding || !isNotify) && styles.isNotify
+              )}
+              disabled={isPanding}
+            >
               <Image
                 src={'/header/bell.svg'}
                 alt="searchIcon"

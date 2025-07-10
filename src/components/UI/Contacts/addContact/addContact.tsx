@@ -21,15 +21,18 @@ const AddContact = ({ goBack }: IAddContact) => {
         <Fild
           placeholder={errors.name?.message || 'name'}
           error={errors.name?.message}
+          className={styles.input}
           {...register('name', { ...getValidateError('Name') })}
         />
         <Fild
           placeholder={errors.role?.message || 'role'}
           error={errors.role?.message}
+          className={styles.input}
           {...register('role', { ...getValidateError('Role') })}
         />
         <FileFild
           error={errors.avatar?.message}
+          className={styles.input}
           placeholder={errors.avatar?.message || 'choose an avatar'}
           {...register('avatar', { ...getValidateError('Avatar', false) })}
         />

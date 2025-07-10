@@ -11,7 +11,7 @@
   background-color: var(--white);
   min-width: 11.25rem;
   max-width: 100%;
-  height: 2.5rem;
+  height: clamp(2.5rem, 2.27993rem + .938967vw, 3.125rem);
   transition: border var(--transition);
   border: .0625rem solid #dfeaf2;
   border-radius: 15px;
@@ -68,7 +68,7 @@
 
 .fild-module-scss-module__u8qaRG__selector {
   background-color: var(--white);
-  height: clamp(1.875rem, 1.65493rem + .938967vw, 2.5rem);
+  height: clamp(2.5rem, 2.27993rem + .938967vw, 3.125rem);
   color: var(--text-color);
   transition: color, background, border var(--transition);
   border: .0625rem solid #dfeaf2;

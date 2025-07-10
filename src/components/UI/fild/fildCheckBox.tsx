@@ -5,13 +5,13 @@ import clsx from 'clsx'
 
 export const FildCheckBox = forwardRef(
   (
-    { id, title, error, ...inputProps }: IFild & { error?: string },
+    { id, title, error, className, ...inputProps }: IFild & { error?: string },
     ref: Ref<HTMLInputElement>
   ) => {
     return (
       <label
         htmlFor={id}
-        className={clsx(styles.selector, !!error && styles.isError)}
+        className={clsx(styles.selector, className, !!error && styles.isError)}
       >
         <span>{title}</span>
         <input

@@ -11,17 +11,8 @@
 
 .TransactionsManagement-module-scss-module__D8AefG__button {
   white-space: nowrap;
-  color: var(--white);
-  background-color: var(--primery);
-  border: none;
-  border-radius: clamp(.75rem, .683979rem + .28169vw, .9375rem);
-  width: clamp(9.375rem, 8.93486rem + 1.87793vw, 10.625rem);
-  height: clamp(1.875rem, 1.65493rem + .938967vw, 2.5rem);
   margin-top: clamp(.9375rem, .827465rem + .469484vw, 1.25rem);
-}
-
-.TransactionsManagement-module-scss-module__D8AefG__isPanding {
-  background-color: var(--text-color) !important;
+  width: clamp(9.375rem, 8.93486rem + 1.87793vw, 10.625rem) !important;
 }
 
 .TransactionsManagement-module-scss-module__D8AefG__isError {

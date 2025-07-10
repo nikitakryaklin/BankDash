@@ -6,10 +6,10 @@ import { Fild } from '@/components/UI/fild/fild'
 import styles from './TransactionsManagement.module.scss'
 import clsx from 'clsx'
 import { useManagementForm } from './useManagementTrans.Form'
-import { Loader } from '@/components/UI/Loader/loader'
 import { useManagementTransData } from './useManagementTrans.data'
 import { IManagementTransForm } from './TransactionsManagement.interface'
 import { getValidateError } from '@/utiles/getValidateError'
+import { Button } from '@/components/UI/Button/Button'
 
 export const TransactionsManagement = () => {
   const { cards_numbers, type, category } = useManagementTransData()
@@ -77,13 +77,11 @@ export const TransactionsManagement = () => {
               ...getValidateError('Anount', true, 1, 9),
             })}
           />
-          <button
-            className={clsx(styles.button, isPanding && styles.isPanding)}
-            disabled={isPanding}
-          >
-            {!isPanding && 'Create transaction'}
-            {isPanding && <Loader color="var(--white)" />}
-          </button>
+          <Button
+            className={clsx(styles.button)}
+            text="Create transaction"
+            isPending={isPanding}
+          />
         </form>
       </CardWrapper>
     </div>

@@ -505,6 +505,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   }
 }
 
+.header-module-scss-module__7d5-Xq__isNotify {
+  border: 1px solid red;
+}
+
 
 /* [project]/src/app/page.module.scss.module.css [app-client] (css) */
 .page-module-scss-module__rcUngW__page {

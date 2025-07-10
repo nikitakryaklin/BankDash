@@ -5,13 +5,13 @@ import clsx from 'clsx'
 
 export const Fild = forwardRef(
   (
-    { title, error, type = 'text', ...inputProps }: IFild,
+    { title, error, className, type = 'text', ...inputProps }: IFild,
     ref: Ref<HTMLInputElement>
   ) => {
     return (
       <div className={clsx(styles.wrapper, !!error && styles.error)}>
         {title && <legend className={styles.title}>{title}</legend>}
-        <div className={styles.input}>
+        <div className={clsx(styles.input, className)}>
           <input type={type} ref={ref} {...inputProps} />
         </div>
       </div>

@@ -14,7 +14,7 @@
   background-color: var(--white);
   border: rem(1) solid #dfeaf2;
   border-radius: 15px;
-  height: rem(40);
+  height: fluid(50, 40);
   display: flex;
   align-items: center;
   padding-inline: rem(15);
@@ -69,7 +69,7 @@
   background-color: var(--white);
   border: rem(1) solid #dfeaf2;
   border-radius: fluid(15, 12);
-  height: fluid(40, 30);
+  height: fluid(50, 40);
   padding: 10px fluid(15, 10);
   color: var(--text-color);
   @include fluid-text(14, 12);
