@@ -1,7 +1,6 @@
-@use "@/styles/helpers" as *;
+@use '@/styles/helpers' as *;
 
 .wrapper {
-  height: 270px;
   & > :not(:last-child) {
     border-bottom: 1px solid var(--borderLine);
   }

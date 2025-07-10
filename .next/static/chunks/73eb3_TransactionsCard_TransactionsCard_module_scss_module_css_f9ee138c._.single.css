@@ -1,8 +1,4 @@
 /* [project]/src/components/UI/AllTransactions/TransactionsCard/TransactionsCard.module.scss.module.css [app-client] (css) */
-.TransactionsCard-module-scss-module___HDVYa__wrapper {
-  height: 270px;
-}
-
 .TransactionsCard-module-scss-module___HDVYa__wrapper > :not(:last-child) {
   border-bottom: 1px solid var(--borderLine);
 }

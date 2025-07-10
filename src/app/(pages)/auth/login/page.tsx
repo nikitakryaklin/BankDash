@@ -58,7 +58,11 @@ const Page = () => {
             email or password is not correct
           </p>
         )}
-        <Button text={!isLogin ? 'sing in' : 'register'} type="submit" />
+        <Button
+          text={!isLogin ? 'sing in' : 'register'}
+          type="submit"
+          isPending={false}
+        />
         <p onClick={() => setIsLogin(!isLogin)}>
           {isLogin ? 'has account' : 'no account'}
         </p>

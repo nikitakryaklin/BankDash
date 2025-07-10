@@ -1420,15 +1420,20 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2
 var _s = __turbopack_context__.k.signature();
 ;
 ;
-const useTransactionsAll = (user, page, filter)=>{
+const useTransactionsAll = (user, page, filter, cardNumber)=>{
     _s();
     const result = [];
-    user?.cards?.map((card)=>result.push(card.number));
+    if (!cardNumber) {
+        user?.cards?.map((card)=>result.push(card.number));
+    } else {
+        result.push(cardNumber);
+    }
     const { data, isPending, isSuccess } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"])({
         queryKey: [
             'transactions',
             page,
-            filter
+            filter,
+            !!cardNumber
         ],
         queryFn: {
             "useTransactionsAll.useQuery": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$service$2f$transaction$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["transactionsService"].getAll(result, page, filter)
@@ -1463,10 +1468,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$t
 var _s = __turbopack_context__.k.signature();
 ;
 ;
-const useTransactionData = (page, filfer)=>{
+const useTransactionData = (page, filfer, cardNumber)=>{
     _s();
     const { data: user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"])();
-    const { data, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsAll$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionsAll"])(user, page, filfer);
+    const { data, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsAll$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionsAll"])(user, page, filfer, cardNumber ? cardNumber : '');
     const transList = data?.data;
     const pagination = data?.meta.pagination;
     return {
@@ -1547,11 +1552,10 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const AllTransactions = ()=>{
+const AllTransactions = ({ cardNumber })=>{
     _s();
     const { filfer, page, setFilter, setPage } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$useTransactionState$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionState"])();
-    const { isLoading, transList, pagination } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$useTransactionData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionData"])(page, filfer);
-    console.log(transList);
+    const { isLoading, transList, pagination } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$useTransactionData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionData"])(page, filfer, cardNumber);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$AllTransactions$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper,
         children: [
@@ -1559,14 +1563,14 @@ const AllTransactions = ()=>{
                 children: "Recent Transactions"
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                lineNumber: 19,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsFilters$2f$TransactionsFilters$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TransactionsFilters"], {
                 filter: setFilter
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                lineNumber: 20,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1574,7 +1578,7 @@ const AllTransactions = ()=>{
                 children: [
                     transList?.length === 0 && !isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
                         fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                        lineNumber: 22,
+                        lineNumber: 28,
                         columnNumber: 51
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsCard$2f$TransactionsCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TransactionsCard"], {
@@ -1582,13 +1586,13 @@ const AllTransactions = ()=>{
                         data: transList
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                        lineNumber: 24,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                lineNumber: 21,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             pagination && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Pagination$2f$Pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Pagination"], {
@@ -1599,13 +1603,13 @@ const AllTransactions = ()=>{
                 setPage: setPage
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-                lineNumber: 28,
+                lineNumber: 34,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/AllTransactions/AllTransactions.tsx",
-        lineNumber: 18,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 };

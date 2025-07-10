@@ -10,6 +10,7 @@
   background-color: rgba(113, 142, 191, 0.5);
   padding: fluid(100, 85) 0 100px 0;
   backdrop-filter: blur(5px);
+  overflow-y: auto;
 }
 
 .modal {
@@ -18,11 +19,10 @@
   width: 85%;
   min-width: 250px;
   background-color: var(--background);
-  height: 500px;
+  // height: auto;
+  // min-height: 500px;
   border-radius: 25px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 
   > button {
     margin-left: auto;
@@ -67,4 +67,5 @@
 .body {
   margin-top: -44px;
   width: 100%;
+  // min-height: 850px;
 }

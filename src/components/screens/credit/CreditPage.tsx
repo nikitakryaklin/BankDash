@@ -12,6 +12,7 @@ import { ICard } from '@/types/User.type'
 import { getColorByIndex } from '@/utiles/getColorByIndex'
 import { getCardValues } from '@/utiles/getCardValues'
 import dynamic from 'next/dynamic'
+import { CardDetails } from './CardDetails/CardDetails'
 
 const DynamicCardBankStatistics = dynamic(
   () =>
@@ -50,7 +51,7 @@ export const CreditPage = () => {
                 <ListItem
                   className={styles.CardList_item}
                   key={el.id}
-                  modal={<p>modal</p>}
+                  modal={<CardDetails card={el} />}
                   icon={
                     <svg
                       width="20"

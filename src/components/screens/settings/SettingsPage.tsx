@@ -12,6 +12,7 @@ import { Security } from './Security/Security'
 import { EditProfile } from './EditProfile/editProfile'
 import { useEditForm } from './EditProfile/useEditForm'
 import { Loader } from '@/components/UI/Loader/loader'
+import { Button } from '@/components/UI/Button/Button'
 
 export const SettingsPage = () => {
   const { 0: isHeaderActive, 1: setIsHeaderActive } = useState(1)
@@ -51,16 +52,26 @@ export const SettingsPage = () => {
         {isHeaderActive === 3 && <Security />}
       </div>
       <div className={styles.footer}>
-        <button
+        {/* <button
           className={clsx(styles.save, isPanding && styles.isPanding)}
           onClick={() => formRef.current?.requestSubmit()}
           disabled={isPanding}
         >
           {isPanding === true ? <Loader color={'#fff'} /> : 'Save'}
-        </button>
-        <button onClick={henderClick} className={styles.logOut}>
-          Log out
-        </button>
+        </button> */}
+        <Button
+          text="Save"
+          type="submit"
+          onClick={() => formRef.current?.requestSubmit()}
+          isPending={isPanding}
+        />
+        <Button
+          text="Log out"
+          type="button"
+          onClick={henderClick}
+          className={styles.logOut}
+          isPending={false}
+        />
       </div>
     </CardWrapper>
   )

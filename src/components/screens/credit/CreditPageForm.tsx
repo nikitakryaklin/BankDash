@@ -5,6 +5,7 @@ import { getValidateError } from '@/utiles/getValidateError'
 import clsx from 'clsx'
 import { Loader } from '@/components/UI/Loader/loader'
 import styles from './CreditPage.module.scss'
+import { Button } from '@/components/UI/Button/Button'
 
 export const CreditPageForm = () => {
   const { formSubmit, isPending, register, errors } = useCreateCard()
@@ -62,14 +63,7 @@ export const CreditPageForm = () => {
             />
           </div>
         </div>
-        <button
-          type="submit"
-          disabled={isPending}
-          className={clsx(isPending && styles.disabled)}
-        >
-          {isPending === false && 'Add Card'}
-          {isPending && <Loader color="#fff" />}
-        </button>
+        <Button text="Add Card" isPending={isPending} type="submit" />
       </form>
     </>
   )

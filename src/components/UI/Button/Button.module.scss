@@ -3,7 +3,12 @@
   background-color: var(--primery);
   border: none;
   color: var(--white);
-  border-radius: 18px;
-  width: 160px;
-  height: 50px;
+  width: fluid(160, 120);
+  height: fluid(50, 40);
+  border-radius: fluid(15, 9);
+  margin-bottom: fluid(25, 10);
+}
+
+.disabled {
+  background-color: var(--text-color) !important;
 }

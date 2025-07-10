@@ -30,14 +30,6 @@ class Card {
       }).catch((error) => {
         throw new Error(error)
       })
-
-      // if (response.ok) {
-      //     return await response.json()
-
-      // } else {
-      //     const errorMessage = await response.text()
-      //     throw new Error('ошибка запроса ' + errorMessage)
-      // }
     } catch (error) {
       throw Error
     }
