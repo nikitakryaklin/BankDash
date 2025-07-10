@@ -1381,29 +1381,52 @@ var _s = __turbopack_context__.k.signature();
 function useNotify() {
     _s();
     const { isNotify, setIsNotify } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useNotifyStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useNotifyStore"])();
-    const [isPanding, setIsPending] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [status, setStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('on');
+    const [isActive, setIsActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(isNotify);
+    const timeOut = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useNotify.useEffect": ()=>{
+            return ({
+                "useNotify.useEffect": ()=>{
+                    if (timeOut.current) clearTimeout(timeOut.current);
+                }
+            })["useNotify.useEffect"];
+        }
+    }["useNotify.useEffect"], []);
     const toggleNotify = ()=>{
-        if (!isNotify) {
-            setIsNotify();
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success('Notifications are active');
-        } else {
-            setIsPending(true);
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error('Notifications aren`t active', {
-                duration: 500
-            });
-            setTimeout(()=>{
+        if (status === 'on') {
+            setIsActive(false);
+            setStatus('isPending');
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error('Notifications aren`t active');
+            timeOut.current = setTimeout(()=>{
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].dismiss();
+                setStatus('off');
+                setIsActive(false);
                 setIsNotify();
-                setIsPending(false);
-            }, 1000);
+                timeOut.current = null;
+            }, 5000);
+        }
+        if (status === 'isPending') {
+            clearTimeout(timeOut.current);
+            timeOut.current = null;
+            setStatus('on');
+            setIsActive(true);
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success('Notifications are active');
+            return;
+        }
+        if (status === 'off') {
+            setIsNotify();
+            setIsActive(true);
+            setStatus('on');
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success('Notifications are active');
         }
     };
     return {
-        isPanding,
-        toggleNotify,
-        isNotify
+        isActive,
+        toggleNotify
     };
 }
-_s(useNotify, "1ydpPs75korvvej4b5ycasJzHw4=", false, function() {
+_s(useNotify, "qwRe1/LpTTLrg2IcMcj6gmEF6CY=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useNotifyStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useNotifyStore"]
     ];
@@ -1451,7 +1474,7 @@ const Header = ()=>{
     const { isLogin } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$authContext$2f$authContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])() || '';
     const { isBurger, setIsBurger } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useBurgerStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBurgerStore"])();
-    const { isNotify, toggleNotify, isPanding } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useNotify$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useNotify"])();
+    const { toggleNotify, isActive } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useNotify$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useNotify"])();
     const henderClick = ()=>{
         setIsBurger();
     };
@@ -1547,8 +1570,7 @@ const Header = ()=>{
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: toggleNotify,
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$header$2f$header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].item, (isPanding || !isNotify) && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$header$2f$header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].isNotify),
-                                        disabled: isPanding,
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$header$2f$header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].item, !isActive && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$header$2f$header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].isNotify),
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: '/header/bell.svg',
                                             alt: "searchIcon",
@@ -1556,7 +1578,7 @@ const Header = ()=>{
                                             height: 15
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/loayout/header/header.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
@@ -1578,12 +1600,12 @@ const Header = ()=>{
                                     height: 60
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/loayout/header/header.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/loayout/header/header.tsx",
-                                lineNumber: 76,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1610,7 +1632,7 @@ const Header = ()=>{
                             height: 15
                         }, void 0, false, {
                             fileName: "[project]/src/components/loayout/header/header.tsx",
-                            lineNumber: 83,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1618,18 +1640,18 @@ const Header = ()=>{
                             placeholder: "Search for something"
                         }, void 0, false, {
                             fileName: "[project]/src/components/loayout/header/header.tsx",
-                            lineNumber: 89,
+                            lineNumber: 85,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/loayout/header/header.tsx",
-                    lineNumber: 82,
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/loayout/header/header.tsx",
-                lineNumber: 81,
+                lineNumber: 77,
                 columnNumber: 7
             }, this)
         ]
@@ -1639,7 +1661,7 @@ const Header = ()=>{
         columnNumber: 5
     }, this);
 };
-_s(Header, "L6M5seJanez926p0sdcvartTCtM=", false, function() {
+_s(Header, "hTQNuJosiLXNFvqy1JMdJEKPQ9g=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$authContext$2f$authContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"],

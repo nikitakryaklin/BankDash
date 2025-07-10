@@ -215,7 +215,7 @@
   background-color: var(--white);
   min-width: 11.25rem;
   max-width: 100%;
-  height: 2.5rem;
+  height: clamp(2.5rem, 2.27993rem + .938967vw, 3.125rem);
   transition: border var(--transition);
   border: .0625rem solid #dfeaf2;
   border-radius: 15px;
@@ -272,7 +272,7 @@
 
 .fild-module-scss-module__u8qaRG__selector {
   background-color: var(--white);
-  height: clamp(1.875rem, 1.65493rem + .938967vw, 2.5rem);
+  height: clamp(2.5rem, 2.27993rem + .938967vw, 3.125rem);
   color: var(--text-color);
   transition: color, background, border var(--transition);
   border: .0625rem solid #dfeaf2;
@@ -428,11 +428,11 @@
   text-align: center;
   background-color: var(--primery);
   color: var(--white);
-  width: fluid(160, 120);
-  height: fluid(50, 40);
-  border-radius: fluid(15, 9);
-  margin-bottom: fluid(25, 10);
   border: none;
+  border-radius: clamp(.5625rem, .430458rem + .56338vw, .9375rem);
+  width: clamp(7.5rem, 6.61972rem + 3.75587vw, 10rem);
+  height: clamp(2.5rem, 2.27993rem + .938967vw, 3.125rem);
+  margin-bottom: clamp(.625rem, .294894rem + 1.40845vw, 1.5625rem);
 }
 
 .Button-module-scss-module__yP-Rqa__disabled {
