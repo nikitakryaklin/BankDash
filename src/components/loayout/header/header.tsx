@@ -19,7 +19,7 @@ const Header = () => {
   const pathname = usePathname() || ''
   const { isBurger, setIsBurger } = useBurgerStore()
 
-  const { toggleNotify, isActive } = useNotify()
+  const { toggleNotify, isActive, isNotify } = useNotify()
   const henderClick = () => {
     setIsBurger()
   }
@@ -59,7 +59,10 @@ const Header = () => {
             </Link>
             <button
               onClick={toggleNotify}
-              className={clsx(styles.item, !isActive && styles.isNotify)}
+              className={clsx(
+                styles.item,
+                (!isActive || !isNotify) && styles.isNotify
+              )}
             >
               <Image
                 src={'/header/bell.svg'}

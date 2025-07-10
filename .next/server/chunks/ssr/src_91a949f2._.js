@@ -196,8 +196,8 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Switcher$2f$Switcher$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Switcher/Switcher.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$settings$2f$Preferences$2f$Preferences$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/screens/settings/Preferences/Preferences.module.scss.module.css [app-ssr] (css module)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/fild/fild.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useNotifyStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useNotifyStore.ts [app-ssr] (ecmascript)");
 'use client';
 ;
 ;
@@ -205,10 +205,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$f
 ;
 ;
 const Preferences = ()=>{
-    const { 0: a, 1: setA } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const toggle = ()=>{
-        setA(!a);
-    };
+    const { setIsNotify, isNotify } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useNotifyStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNotifyStore"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$settings$2f$Preferences$2f$Preferences$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].wrapper,
         children: [
@@ -221,7 +218,7 @@ const Preferences = ()=>{
                         type: "text"
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                        lineNumber: 19,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fild"], {
@@ -230,95 +227,49 @@ const Preferences = ()=>{
                         type: "text"
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                        lineNumber: 20,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                lineNumber: 18,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                 children: "Notification"
             }, void 0, false, {
                 fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                lineNumber: 26,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Switcher$2f$Switcher$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Switcher"], {
-                        arg: a,
-                        toggle: toggle
+                        arg: isNotify,
+                        toggle: setIsNotify
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                        lineNumber: 28,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        children: "I send or receive digita currency"
+                        children: "I receive notifications"
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                        lineNumber: 29,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Switcher$2f$Switcher$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Switcher"], {
-                        arg: a,
-                        toggle: toggle
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        children: "I receive merchant order"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Switcher$2f$Switcher$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Switcher"], {
-                        arg: a,
-                        toggle: toggle
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        children: "There are recommendation for my account"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-                lineNumber: 35,
+                lineNumber: 24,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/screens/settings/Preferences/Preferences.tsx",
-        lineNumber: 17,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 };
@@ -960,7 +911,7 @@ const SettingsPage = ()=>{
                         isPending: isPanding
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/settings/SettingsPage.tsx",
-                        lineNumber: 62,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Button$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -971,7 +922,7 @@ const SettingsPage = ()=>{
                         isPending: false
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/settings/SettingsPage.tsx",
-                        lineNumber: 68,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this)
                 ]

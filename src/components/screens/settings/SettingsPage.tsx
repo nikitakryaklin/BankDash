@@ -52,13 +52,6 @@ export const SettingsPage = () => {
         {isHeaderActive === 3 && <Security />}
       </div>
       <div className={styles.footer}>
-        {/* <button
-          className={clsx(styles.save, isPanding && styles.isPanding)}
-          onClick={() => formRef.current?.requestSubmit()}
-          disabled={isPanding}
-        >
-          {isPanding === true ? <Loader color={'#fff'} /> : 'Save'}
-        </button> */}
         <Button
           text="Save"
           type="submit"

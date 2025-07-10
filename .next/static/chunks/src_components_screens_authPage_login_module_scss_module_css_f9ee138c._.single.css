@@ -1,0 +1,47 @@
+/* [project]/src/components/screens/authPage/login.module.scss.module.css [app-client] (css) */
+.login-module-scss-module__6Ph8Ia__page {
+  background-color: var(--background);
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.login-module-scss-module__6Ph8Ia__form {
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  min-width: 250px;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  padding: clamp(2.1875rem, 1.85739rem + 1.40845vw, 3.125rem);
+  display: flex;
+}
+
+.login-module-scss-module__6Ph8Ia__form > h2 {
+  text-align: center;
+  color: var(--title);
+  margin: 0;
+  font-size: clamp(1.25rem, 1.07394rem + .751174vw, 1.75rem);
+  font-weight: 600;
+}
+
+.login-module-scss-module__6Ph8Ia__form > button {
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.login-module-scss-module__6Ph8Ia__form > p {
+  text-align: center;
+  color: var(--title);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=src_components_screens_authPage_login_module_scss_module_css_f9ee138c._.single.css.map*/

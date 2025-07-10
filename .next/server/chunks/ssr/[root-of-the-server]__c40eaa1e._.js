@@ -1323,7 +1323,8 @@ function useNotify() {
     };
     return {
         isActive,
-        toggleNotify
+        toggleNotify,
+        isNotify
     };
 }
 }}),
@@ -1364,7 +1365,7 @@ const Header = ()=>{
     const { isLogin } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$authContext$2f$authContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAuth"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])() || '';
     const { isBurger, setIsBurger } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useBurgerStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useBurgerStore"])();
-    const { toggleNotify, isActive } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useNotify$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNotify"])();
+    const { toggleNotify, isActive, isNotify } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useNotify$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNotify"])();
     const henderClick = ()=>{
         setIsBurger();
     };
@@ -1460,7 +1461,7 @@ const Header = ()=>{
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: toggleNotify,
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$header$2f$header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].item, !isActive && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$header$2f$header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].isNotify),
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$header$2f$header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].item, (!isActive || !isNotify) && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$header$2f$header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].isNotify),
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             src: '/header/bell.svg',
                                             alt: "searchIcon",
@@ -1468,7 +1469,7 @@ const Header = ()=>{
                                             height: 15
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/loayout/header/header.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
@@ -1490,12 +1491,12 @@ const Header = ()=>{
                                     height: 60
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/loayout/header/header.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/loayout/header/header.tsx",
-                                lineNumber: 72,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1522,7 +1523,7 @@ const Header = ()=>{
                             height: 15
                         }, void 0, false, {
                             fileName: "[project]/src/components/loayout/header/header.tsx",
-                            lineNumber: 79,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1530,18 +1531,18 @@ const Header = ()=>{
                             placeholder: "Search for something"
                         }, void 0, false, {
                             fileName: "[project]/src/components/loayout/header/header.tsx",
-                            lineNumber: 85,
+                            lineNumber: 88,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/loayout/header/header.tsx",
-                    lineNumber: 78,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/loayout/header/header.tsx",
-                lineNumber: 77,
+                lineNumber: 80,
                 columnNumber: 7
             }, this)
         ]

@@ -55,5 +55,5 @@ export function useNotify() {
       toast.success('Notifications are active')
     }
   }
-  return { isActive, toggleNotify }
+  return { isActive, toggleNotify, isNotify }
 }

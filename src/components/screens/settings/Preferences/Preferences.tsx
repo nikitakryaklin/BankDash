@@ -5,13 +5,10 @@ import styles from './Preferences.module.scss'
 import { useState } from 'react'
 
 import { Fild } from '@/components/UI/fild/fild'
+import { useNotifyStore } from '@/store/useNotifyStore'
 
 export const Preferences = () => {
-  const { 0: a, 1: setA } = useState<boolean>(false)
-
-  const toggle = () => {
-    setA(!a)
-  }
+  const { setIsNotify, isNotify } = useNotifyStore()
 
   return (
     <div className={styles.wrapper}>
@@ -25,16 +22,8 @@ export const Preferences = () => {
       </form>
       <h3>Notification</h3>
       <div>
-        <Switcher arg={a} toggle={toggle} />
-        <p>I send or receive digita currency</p>
-      </div>
-      <div>
-        <Switcher arg={a} toggle={toggle} />
-        <p>I receive merchant order</p>
-      </div>
-      <div>
-        <Switcher arg={a} toggle={toggle} />
-        <p>There are recommendation for my account</p>
+        <Switcher arg={isNotify} toggle={setIsNotify} />
+        <p>I receive notifications</p>
       </div>
     </div>
   )

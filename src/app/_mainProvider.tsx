@@ -3,7 +3,7 @@
 import Aside from '@/components/loayout/aside/aside'
 import Header from '@/components/loayout/header/header'
 import { PropsWithChildren, useEffect, useRef, useState } from 'react'
-import styles from './page.module.scss'
+import styles from './(pages)/page.module.scss'
 import AuthProvider, { useAuth } from '@/authContext/authContext'
 import nProgress from 'nprogress'
 import { usePathname } from 'next/navigation'
