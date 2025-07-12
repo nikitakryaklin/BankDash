@@ -196,4 +196,8 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=src_app_globals_scss_css_f9ee138c._.single.css.map*/

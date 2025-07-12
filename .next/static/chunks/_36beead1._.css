@@ -254,6 +254,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* [project]/src/components/loayout/aside/aside.module.scss.module.css [app-client] (css) */
 .aside-module-scss-module__k8vOkq__aside {

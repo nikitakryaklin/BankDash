@@ -1,5 +1,6 @@
 export const CONSTANTS = {
   API: process.env.NEXT_PUBLIC_API || 'http://localhost:1337/api',
+  home: '/',
   accounts: '/accounts',
   credit: '/credit',
   investments: '/investments',

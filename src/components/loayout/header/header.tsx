@@ -9,9 +9,6 @@ import { useBurgerStore } from '@/store/useBurgerStore'
 import clsx from 'clsx'
 import { CONSTANTS } from '@/config/constants'
 import { UserAvatar } from '@/components/UI/userAvatar/UserAvatar'
-import toast from 'react-hot-toast'
-import { useState } from 'react'
-import { useNotifyStore } from '@/store/useNotifyStore'
 import { useNotify } from '@/hooks/useNotify'
 
 const Header = () => {
