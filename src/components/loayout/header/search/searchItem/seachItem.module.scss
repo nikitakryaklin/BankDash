@@ -1,0 +1,11 @@
+@use '@/styles/helpers' as *;
+
+.wrapper {
+  width: 100%;
+  padding-right: clamp(rem(20), 1.5vw, rem(25));
+  & > a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 clamp(rem(20), 1.5vw, rem(25));
+  }
+}

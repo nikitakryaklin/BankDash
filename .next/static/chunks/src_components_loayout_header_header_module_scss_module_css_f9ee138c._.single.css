@@ -50,28 +50,64 @@
 
 .header-module-scss-module__7d5-Xq__search {
   border-radius: 100px;
+  flex-direction: column;
   gap: .9375rem;
-  padding: 0 clamp(1.25rem, 1.5vw, 1.5625rem);
+  padding: .4375rem clamp(1.25rem, 1.5vw, 1.5625rem);
+  display: flex;
+  position: relative;
 }
 
-.header-module-scss-module__7d5-Xq__search > input {
+.header-module-scss-module__7d5-Xq__search_isActive:after {
+  content: "";
+  background-color: var(--text-color);
+  border-radius: 100px;
+  width: 92%;
+  height: 1px;
+  position: absolute;
+  top: 35px;
+}
+
+.header-module-scss-module__7d5-Xq__searchFild {
+  gap: .9375rem;
+  display: flex;
+}
+
+.header-module-scss-module__7d5-Xq__searchFild > input {
   color: var(--text-color);
   background-color: #0000;
   border: none;
   outline: none;
+  width: 100%;
   overflow: hidden;
 }
 
-.header-module-scss-module__7d5-Xq__search > input::placeholder {
+.header-module-scss-module__7d5-Xq__searchFild > input::placeholder {
   color: var(--text-color);
   font-size: .875rem;
+}
+
+.header-module-scss-module__7d5-Xq__searchResult {
+  background-color: var(--background);
+  width: 100%;
+  height: auto;
+  max-height: 30vh;
+  padding: .625rem 0 .9375rem clamp(1.25rem, 1.5vw, 1.5625rem);
+  position: absolute;
+  top: 27px;
+  left: 0;
+}
+
+.header-module-scss-module__7d5-Xq__scroll {
+  width: 100%;
+  max-height: calc(30vh - 1.875rem);
+  overflow-y: scroll;
 }
 
 .header-module-scss-module__7d5-Xq__text, .header-module-scss-module__7d5-Xq__wrapper {
   display: contents;
 }
 
-.header-module-scss-module__7d5-Xq__searchWrapper {
+.header-module-scss-module__7d5-Xq__searchMobile {
   display: none;
 }
 
@@ -138,12 +174,12 @@
     display: none;
   }
 
-  .header-module-scss-module__7d5-Xq__searchWrapper {
+  .header-module-scss-module__7d5-Xq__searchMobile {
     width: 100%;
     display: block;
   }
 
-  .header-module-scss-module__7d5-Xq__searchWrapper > .header-module-scss-module__7d5-Xq__search {
+  .header-module-scss-module__7d5-Xq__searchMobile > .header-module-scss-module__7d5-Xq__searchWrapper {
     width: 70%;
     margin: 0 auto;
   }

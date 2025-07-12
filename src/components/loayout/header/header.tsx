@@ -10,6 +10,7 @@ import clsx from 'clsx'
 import { CONSTANTS } from '@/config/constants'
 import { UserAvatar } from '@/components/UI/userAvatar/UserAvatar'
 import { useNotify } from '@/hooks/useNotify'
+import { Search } from './search/search'
 
 const Header = () => {
   const { isLogin } = useAuth()
@@ -37,15 +38,7 @@ const Header = () => {
         <h2>{getTitle(pathname)}</h2>
         <div className={styles.controles}>
           <div className={styles.text}>
-            <div className={styles.search}>
-              <Image
-                src={'/header/search.svg'}
-                alt="searchIcon"
-                width={15}
-                height={15}
-              />
-              <input type="text" placeholder="Search for something" />
-            </div>
+            <Search />
             <Link href={'/settings'} className={styles.item}>
               <Image
                 src={'/header/setting.svg'}
@@ -74,16 +67,8 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.searchWrapper}>
-        <div className={styles.search}>
-          <Image
-            src={'/header/search.svg'}
-            alt="searchIcon"
-            width={15}
-            height={15}
-          />
-          <input type="text" placeholder="Search for something" />
-        </div>
+      <div className={styles.searchMobile}>
+        <Search />
       </div>
     </header>
   )
