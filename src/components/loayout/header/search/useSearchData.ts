@@ -93,7 +93,7 @@ export const useSearchData = () => {
       {
         id: nanoid(),
         title: 'total saving',
-        htmlID: 'total saving',
+        htmlID: 'total_saving',
         link: CONSTANTS.accounts,
       },
       {
@@ -117,7 +117,7 @@ export const useSearchData = () => {
       {
         id: nanoid(),
         title: 'invoices sent',
-        htmlID: 'invoices_Sent',
+        htmlID: 'invoices_sent',
         link: CONSTANTS.accounts,
       },
       {
@@ -226,7 +226,7 @@ export const useSearchData = () => {
         id: nanoid(),
         title: 'settings',
         htmlID: 'settings',
-        link: CONSTANTS.services,
+        link: CONSTANTS.settings,
       },
     ]
   }, [])

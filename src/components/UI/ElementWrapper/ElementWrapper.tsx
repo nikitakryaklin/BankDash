@@ -2,6 +2,7 @@
 
 import {
   useEffect,
+  useLayoutEffect,
   useRef,
   useState,
   type HTMLProps,
@@ -9,6 +10,7 @@ import {
 } from 'react'
 import styles from './ElementWrapper.module.scss'
 import clsx from 'clsx'
+import { useHashAnchor } from '@/hooks/useHashAnchor'
 
 export const ElementWrapper = ({
   children,
@@ -16,26 +18,15 @@ export const ElementWrapper = ({
   id,
   ...props
 }: PropsWithChildren<HTMLProps<HTMLDivElement>>) => {
-  const [isFind, setIsFind] = useState(false)
   const ref = useRef<HTMLDivElement | null>(null)
-  let timeOut: NodeJS.Timeout
-
-  useEffect(() => {
-    if (ref.current && window.location.hash === `#${id}`) {
-      window.history.replaceState(null, '', window.location.pathname)
-      setIsFind(true)
-
-      timeOut = setTimeout(() => {
-        setIsFind(false)
-      }, 2000)
-    }
-  }, [])
+  const { isFind } = useHashAnchor(ref, id)
 
   return (
     <div
       id={id}
       className={clsx(className, isFind && styles.isFind)}
       ref={ref}
+      style={{ scrollMarginTop: '30px' }}
       {...props}
     >
       {children}

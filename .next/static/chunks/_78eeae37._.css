@@ -254,10 +254,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 
 /* [project]/src/components/loayout/aside/aside.module.scss.module.css [app-client] (css) */
 .aside-module-scss-module__k8vOkq__aside {
@@ -413,16 +409,6 @@ html {
   position: relative;
 }
 
-.header-module-scss-module__7d5-Xq__search_isActive:after {
-  content: "";
-  background-color: var(--text-color);
-  border-radius: 100px;
-  width: 92%;
-  height: 1px;
-  position: absolute;
-  top: 35px;
-}
-
 .header-module-scss-module__7d5-Xq__searchFild {
   gap: .9375rem;
   display: flex;
@@ -443,19 +429,25 @@ html {
 }
 
 .header-module-scss-module__7d5-Xq__searchResult {
+  z-index: 4;
   background-color: var(--background);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
   width: 100%;
   height: auto;
   max-height: 30vh;
-  padding: .625rem 0 .9375rem clamp(1.25rem, 1.5vw, 1.5625rem);
+  padding: .625rem;
   position: absolute;
   top: 27px;
   left: 0;
 }
 
 .header-module-scss-module__7d5-Xq__scroll {
+  background-color: var(--white);
+  border-radius: 20px;
   width: 100%;
   max-height: calc(30vh - 1.875rem);
+  padding-top: 5px;
   overflow-y: scroll;
 }
 
@@ -553,13 +545,29 @@ html {
 /* [project]/src/components/loayout/header/search/searchItem/seachItem.module.scss.module.css [app-client] (css) */
 .seachItem-module-scss-module__2Ao-PG__wrapper {
   width: 100%;
-  padding-right: clamp(1.25rem, 1.5vw, 1.5625rem);
+  padding: 5px clamp(.625rem, 1.5vw, .625rem);
+  display: flex;
 }
 
 .seachItem-module-scss-module__2Ao-PG__wrapper > a {
+  border: 1px solid var(--grey);
+  border-radius: 15px;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 5px;
   padding: 0 clamp(1.25rem, 1.5vw, 1.5625rem);
+  text-decoration: none;
   display: flex;
+}
+
+.seachItem-module-scss-module__2Ao-PG__wrapper > a > h3 {
+  color: var(--text-color);
+  font-size: clamp(.875rem, .830986rem + .187793vw, 1rem);
+}
+
+.seachItem-module-scss-module__2Ao-PG__wrapper > a > p {
+  color: var(--text-color);
 }
 
 

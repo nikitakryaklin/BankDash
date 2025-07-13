@@ -30,6 +30,7 @@ export const useAccountPageCalculator = (
       {
         id: 1,
         title: 'My Balance',
+        HTMLID: 'my_balance',
         text: '$' + getCardValues.balance(String(balance || 0)),
         color: '#FFBB38',
         icon: <LucideReceipt style={{ fill: 'none', stroke: '#FFBB38' }} />,
@@ -37,6 +38,7 @@ export const useAccountPageCalculator = (
       {
         id: 2,
         title: 'Income',
+        HTMLID: 'income',
         color: '#396AFF',
         text: '$' + getCardValues.balance(String(income)),
         icon: <BanknoteArrowUp style={{ fill: 'none', stroke: '#396AFF' }} />,
@@ -44,6 +46,7 @@ export const useAccountPageCalculator = (
       {
         id: 3,
         title: 'Expense',
+        HTMLID: 'expense',
         color: '#FF82AC',
         text: '$' + getCardValues.balance(String(expense)),
 
@@ -54,6 +57,7 @@ export const useAccountPageCalculator = (
       {
         id: 4,
         title: 'Total Saving',
+        HTMLID: 'total_saving',
         color: '#16DBCC',
         text: '$' + getCardValues.balance(String(income - expense)),
         icon: <PiggyBankIcon style={{ fill: 'none', stroke: '#16DBCC' }} />,

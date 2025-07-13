@@ -13,6 +13,7 @@ import { getColorByIndex } from '@/utiles/getColorByIndex'
 import { getCardValues } from '@/utiles/getCardValues'
 import dynamic from 'next/dynamic'
 import { CardDetails } from './CardDetails/CardDetails'
+import { ElementWrapper } from '@/components/UI/ElementWrapper/ElementWrapper'
 
 const DynamicCardBankStatistics = dynamic(
   () =>
@@ -37,13 +38,13 @@ export const CreditPage = () => {
   return (
     <div>
       <div className={styles.statistic}>
-        <div className={styles.expense}>
+        <ElementWrapper id="bank_statistics" className={styles.expense}>
           <h2>Bank Statistics</h2>
           <CardWrapper>
             <DynamicCardBankStatistics cards={cards} />
           </CardWrapper>
-        </div>
-        <div className={styles.cardList}>
+        </ElementWrapper>
+        <ElementWrapper id="card_list" className={styles.cardList}>
           <h2>Card List</h2>
           {cards?.length > 0 && (
             <CardWrapper className={styles.CardList_wrapper}>
@@ -100,16 +101,16 @@ export const CreditPage = () => {
               <NotEnougtData />
             </CardWrapper>
           )}
-        </div>
+        </ElementWrapper>
       </div>
       <div className={styles.addCard_wrapper}>
-        <div className={styles.addCard}>
+        <ElementWrapper id="add_new_card" className={styles.addCard}>
           <h2>Add New Card</h2>
           <CardWrapper className={styles.form}>
             <DynamicCreditPageForm />
           </CardWrapper>
-        </div>
-        <div className={styles.settings}>
+        </ElementWrapper>
+        <ElementWrapper id="card_setting" className={styles.settings}>
           <h2>Card Setting</h2>
           <CardWrapper>
             {CARD_SETTINGS_DATA.map((el) => (
@@ -128,7 +129,7 @@ export const CreditPage = () => {
             ))}
             {/* <NotEnougtData /> */}
           </CardWrapper>
-        </div>
+        </ElementWrapper>
       </div>
     </div>
   )

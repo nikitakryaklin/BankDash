@@ -121,6 +121,13 @@
   margin: 0 auto;
 }
 
+.Widget-module-scss-module__N2daNW__isFind {
+  outline: 1px dashed var(--text-color);
+  outline-offset: 10px;
+  border-radius: 25px;
+  scroll-margin-top: 30px;
+}
+
 
 /* [project]/src/components/UI/RecentTransaction/RecentTransaction.module.scss.module.css [app-client] (css) */
 .RecentTransaction-module-scss-module__mRszra__wrapper {
@@ -421,9 +428,10 @@
 
 /* [project]/src/components/UI/ElementWrapper/ElementWrapper.module.scss.module.css [app-client] (css) */
 .ElementWrapper-module-scss-module__N9f2Xa__isFind {
-  outline: 2px dashed var(--text-color);
+  outline: 1px dashed var(--text-color);
   outline-offset: 15px;
   border-radius: 25px;
+  scroll-margin-top: 30px;
 }
 
 

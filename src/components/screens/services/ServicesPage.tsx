@@ -4,6 +4,7 @@ import { SERVICES_LIST, WIDGET_DATA } from './ServicesPage.data'
 import { WidgetWrapper } from '@/components/UI/widgetWrapper/widgetWrapper'
 import { ListItem } from '@/components/UI/ListItem/ListItem'
 import { ListItemElement } from '@/components/UI/ListItem/ListItem.element'
+import { ElementWrapper } from '@/components/UI/ElementWrapper/ElementWrapper'
 
 export const ServicesPage = () => {
   return (
@@ -11,6 +12,7 @@ export const ServicesPage = () => {
       <WidgetWrapper>
         {WIDGET_DATA.map((el) => (
           <Widget
+            id=""
             key={el.id}
             title={el.text}
             text={el.title}
@@ -21,32 +23,34 @@ export const ServicesPage = () => {
           </Widget>
         ))}
       </WidgetWrapper>
-      <h2>Bank Services List</h2>
-      <div className={styles.listWrapper}>
-        {SERVICES_LIST.map((el) => (
-          <ListItem
-            icon={el.icon}
-            color={el.color}
-            isButton={true}
-            key={el.id}
-            className={styles.listElement}
-          >
-            <ListItemElement title={el.title} text={el.text} />
-            <ListItemElement
-              title={el.description_title}
-              text={el.discription_text}
-            />
-            <ListItemElement
-              title={el.description_title}
-              text={el.discription_text}
-            />
-            <ListItemElement
-              title={el.description_title}
-              text={el.discription_text}
-            />
-          </ListItem>
-        ))}
-      </div>
+      <ElementWrapper id="bank_services_list">
+        <h2>Bank Services List</h2>
+        <div className={styles.listWrapper}>
+          {SERVICES_LIST.map((el) => (
+            <ListItem
+              icon={el.icon}
+              color={el.color}
+              isButton={true}
+              key={el.id}
+              className={styles.listElement}
+            >
+              <ListItemElement title={el.title} text={el.text} />
+              <ListItemElement
+                title={el.description_title}
+                text={el.discription_text}
+              />
+              <ListItemElement
+                title={el.description_title}
+                text={el.discription_text}
+              />
+              <ListItemElement
+                title={el.description_title}
+                text={el.discription_text}
+              />
+            </ListItem>
+          ))}
+        </div>
+      </ElementWrapper>
     </div>
   )
 }

@@ -474,19 +474,23 @@ const ElementWrapper = ({ children, className, id, ...props })=>{
     const [isFind, setIsFind] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let timeOut;
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "ElementWrapper.useEffect": ()=>{
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])({
+        "ElementWrapper.useLayoutEffect": ()=>{
             if (ref.current && window.location.hash === `#${id}`) {
                 window.history.replaceState(null, '', window.location.pathname);
                 setIsFind(true);
+                ref.current.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'end'
+                });
                 timeOut = setTimeout({
-                    "ElementWrapper.useEffect": ()=>{
+                    "ElementWrapper.useLayoutEffect": ()=>{
                         setIsFind(false);
                     }
-                }["ElementWrapper.useEffect"], 2000);
+                }["ElementWrapper.useLayoutEffect"], 2000);
             }
         }
-    }["ElementWrapper.useEffect"], []);
+    }["ElementWrapper.useLayoutEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         id: id,
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(className, isFind && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ElementWrapper$2f$ElementWrapper$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].isFind),
@@ -495,11 +499,11 @@ const ElementWrapper = ({ children, className, id, ...props })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/UI/ElementWrapper/ElementWrapper.tsx",
-        lineNumber: 35,
+        lineNumber: 40,
         columnNumber: 5
     }, this);
 };
-_s(ElementWrapper, "iFsnyp2SD4qRFzKaqH0B8ECFdRQ=");
+_s(ElementWrapper, "yxeDsNBhG6BwcZ06AwBV+X9puhk=");
 _c = ElementWrapper;
 var _c;
 __turbopack_context__.k.register(_c, "ElementWrapper");

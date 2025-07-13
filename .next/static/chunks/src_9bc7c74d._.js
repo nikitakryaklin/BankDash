@@ -1394,9 +1394,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ElementWrapper$2f$ElementWrapper$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/ElementWrapper/ElementWrapper.module.scss.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useWindowHashStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useWindowHashStore.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -1404,12 +1406,23 @@ const ElementWrapper = ({ children, className, id, ...props })=>{
     _s();
     const [isFind, setIsFind] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const hash = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useWindowHashStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useWindowHashStore"])({
+        "ElementWrapper.useWindowHashStore[hash]": (S)=>S.hash
+    }["ElementWrapper.useWindowHashStore[hash]"]);
+    const setHash = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useWindowHashStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useWindowHashStore"])({
+        "ElementWrapper.useWindowHashStore[setHash]": (S)=>S.setHash
+    }["ElementWrapper.useWindowHashStore[setHash]"]);
     let timeOut;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ElementWrapper.useEffect": ()=>{
             if (ref.current && window.location.hash === `#${id}`) {
                 window.history.replaceState(null, '', window.location.pathname);
                 setIsFind(true);
+                ref.current.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'end'
+                });
+                setHash('');
                 timeOut = setTimeout({
                     "ElementWrapper.useEffect": ()=>{
                         setIsFind(false);
@@ -1426,11 +1439,16 @@ const ElementWrapper = ({ children, className, id, ...props })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/UI/ElementWrapper/ElementWrapper.tsx",
-        lineNumber: 35,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 };
-_s(ElementWrapper, "iFsnyp2SD4qRFzKaqH0B8ECFdRQ=");
+_s(ElementWrapper, "JLVMfyI9kdA7X5Vw7HcxsxlI/u0=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useWindowHashStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useWindowHashStore"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useWindowHashStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useWindowHashStore"]
+    ];
+});
 _c = ElementWrapper;
 var _c;
 __turbopack_context__.k.register(_c, "ElementWrapper");

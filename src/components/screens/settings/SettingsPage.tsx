@@ -13,6 +13,7 @@ import { EditProfile } from './EditProfile/editProfile'
 import { useEditForm } from './EditProfile/useEditForm'
 import { Loader } from '@/components/UI/Loader/loader'
 import { Button } from '@/components/UI/Button/Button'
+import { ElementWrapper } from '@/components/UI/ElementWrapper/ElementWrapper'
 
 export const SettingsPage = () => {
   const { 0: isHeaderActive, 1: setIsHeaderActive } = useState(1)
@@ -27,45 +28,47 @@ export const SettingsPage = () => {
   }
 
   return (
-    <CardWrapper className={styles.settings_wrapper}>
-      <div className={styles.header}>
-        <ul>
-          {HEADER_CONTROLES.map((el) => (
-            <li
-              className={clsx(
-                styles.header_item,
-                el.id === isHeaderActive && styles.isHeaderActive
-              )}
-              onClick={() => setIsHeaderActive(el.id)}
-              key={el.id}
-            >
-              {el.text}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className={styles.main}>
-        {isHeaderActive === 1 && (
-          <EditProfile formRef={formRef} pending={setIsPanding} />
-        )}
-        {isHeaderActive === 2 && <Preferences />}
-        {isHeaderActive === 3 && <Security />}
-      </div>
-      <div className={styles.footer}>
-        <Button
-          text="Save"
-          type="submit"
-          onClick={() => formRef.current?.requestSubmit()}
-          isPending={isPanding}
-        />
-        <Button
-          text="Log out"
-          type="button"
-          onClick={henderClick}
-          className={styles.logOut}
-          isPending={false}
-        />
-      </div>
-    </CardWrapper>
+    <ElementWrapper id="settings">
+      <CardWrapper className={styles.settings_wrapper}>
+        <div className={styles.header}>
+          <ul>
+            {HEADER_CONTROLES.map((el) => (
+              <li
+                className={clsx(
+                  styles.header_item,
+                  el.id === isHeaderActive && styles.isHeaderActive
+                )}
+                onClick={() => setIsHeaderActive(el.id)}
+                key={el.id}
+              >
+                {el.text}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={styles.main}>
+          {isHeaderActive === 1 && (
+            <EditProfile formRef={formRef} pending={setIsPanding} />
+          )}
+          {isHeaderActive === 2 && <Preferences />}
+          {isHeaderActive === 3 && <Security />}
+        </div>
+        <div className={styles.footer}>
+          <Button
+            text="Save"
+            type="submit"
+            onClick={() => formRef.current?.requestSubmit()}
+            isPending={isPanding}
+          />
+          <Button
+            text="Log out"
+            type="button"
+            onClick={henderClick}
+            className={styles.logOut}
+            isPending={false}
+          />
+        </div>
+      </CardWrapper>
+    </ElementWrapper>
   )
 }

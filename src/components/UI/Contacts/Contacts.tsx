@@ -11,6 +11,7 @@ import { useFormSendContact } from './useFormSendContact'
 import clsx from 'clsx'
 import { Loader } from '../Loader/loader'
 import { getValidateError } from '@/utiles/getValidateError'
+import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
 
 export const Contacts = () => {
   const [isAdd, setIsAdd] = useState(false)
@@ -30,7 +31,7 @@ export const Contacts = () => {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <ElementWrapper id="quick_transfer" className={styles.wrapper}>
       <h2>Quick Transfer</h2>
       <div className={styles.card}>
         {isAdd ? (
@@ -98,6 +99,6 @@ export const Contacts = () => {
           </>
         )}
       </div>
-    </div>
+    </ElementWrapper>
   )
 }

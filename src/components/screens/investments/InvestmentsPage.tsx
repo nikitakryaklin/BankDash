@@ -16,35 +16,42 @@ import { ListItemElement } from '@/components/UI/ListItem/ListItem.element'
 import { TableBlock } from '@/components/UI/TableBlock/TableBlock'
 
 import { LineChart } from '@/components/UI/Chart/Line/Line-chart'
+import { ElementWrapper } from '@/components/UI/ElementWrapper/ElementWrapper'
 
 export const InvestmentsPage = () => {
   return (
     <div className={styles.page}>
       <div className={styles.widget_wrapper}>
         {WIDGET_INVEST_DATA.map((el) => (
-          <Widget key={el.id} title={el.title} text={el.text} color={el.color}>
+          <Widget
+            key={el.id}
+            id={el.HTMLId}
+            title={el.title}
+            text={el.text}
+            color={el.color}
+          >
             {el.icon}
           </Widget>
         ))}
       </div>
       <div className={styles.graf_wrapper}>
-        <div>
+        <ElementWrapper id="yearly_total_investment">
           <h2>Yearly Total Investment</h2>
           <CardWrapper>
             <LineChart chartData={YEARLY_TOTAL_INVESTMENTS_DATA} />
             {/* <NotEnougtData /> */}
           </CardWrapper>
-        </div>
-        <div>
+        </ElementWrapper>
+        <ElementWrapper id="monthly_revenue">
           <h2>Monthly Revenue</h2>
           <CardWrapper>
             <LineChart chartData={MONTHLY_REVENUE_DATA} />
             {/* <NotEnougtData /> */}
           </CardWrapper>
-        </div>
+        </ElementWrapper>
       </div>
       <div className={styles.invest_wrapper}>
-        <div>
+        <ElementWrapper id="my_investment">
           <h2>My Investment</h2>
           <div className={styles.invest_wrapper_list}>
             {INVEST_DATA.map((el) => (
@@ -66,8 +73,8 @@ export const InvestmentsPage = () => {
               </ListItem>
             ))}
           </div>
-        </div>
-        <div className={styles.trending_wrapper}>
+        </ElementWrapper>
+        <ElementWrapper id="trending_stock" className={styles.trending_wrapper}>
           <h2>Trending Stock</h2>
           <TableBlock header={INVEST_HEADER_TABLE_DATA}>
             <tbody className={styles.tbody}>
@@ -81,7 +88,7 @@ export const InvestmentsPage = () => {
               ))}
             </tbody>
           </TableBlock>
-        </div>
+        </ElementWrapper>
       </div>
     </div>
   )

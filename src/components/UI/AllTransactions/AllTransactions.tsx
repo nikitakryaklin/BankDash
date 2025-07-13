@@ -9,6 +9,7 @@ import { Pagination } from '../Pagination/Pagination'
 import { useTransactionData } from './useTransactionData'
 import { useTransactionState } from './useTransactionState'
 import { Loader } from '../Loader/loader'
+import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
 
 export const AllTransactions = ({ cardNumber }: { cardNumber?: string }) => {
   const { filfer, page, setFilter, setPage } = useTransactionState()
@@ -19,7 +20,7 @@ export const AllTransactions = ({ cardNumber }: { cardNumber?: string }) => {
   )
 
   return (
-    <div className={styles.wrapper}>
+    <ElementWrapper id="recent_transactions" className={styles.wrapper}>
       <h2>Recent Transactions</h2>
 
       <TransactionsFilters filter={setFilter} />
@@ -39,6 +40,6 @@ export const AllTransactions = ({ cardNumber }: { cardNumber?: string }) => {
           setPage={setPage}
         />
       )}
-    </div>
+    </ElementWrapper>
   )
 }

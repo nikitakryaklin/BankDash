@@ -44,6 +44,13 @@
   margin: 0 auto;
 }
 
+.Widget-module-scss-module__N2daNW__isFind {
+  outline: 1px dashed var(--text-color);
+  outline-offset: 10px;
+  border-radius: 25px;
+  scroll-margin-top: 30px;
+}
+
 
 /* [project]/src/components/screens/investments/InvestmentsPage.module.scss.module.css [app-client] (css) */
 .InvestmentsPage-module-scss-module__ahKUDa__page {

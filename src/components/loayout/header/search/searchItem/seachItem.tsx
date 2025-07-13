@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { ISearch } from '../useSearchData'
 import styles from './seachItem.module.scss'
@@ -8,7 +10,7 @@ export const SeachItem = ({ searchElement }: { searchElement: ISearch }) => {
   return (
     <li className={styles.wrapper}>
       <Link href={searchElement.link + '#' + searchElement.htmlID}>
-        <p>{searchElement.title}</p>
+        <h3 className={styles.title}>{searchElement.title}</h3>
         <p>{page.length > 0 ? page : 'home'}</p>
       </Link>
     </li>

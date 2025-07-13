@@ -1,13 +1,29 @@
 /* [project]/src/components/loayout/header/search/searchItem/seachItem.module.scss.module.css [app-client] (css) */
 .seachItem-module-scss-module__2Ao-PG__wrapper {
   width: 100%;
-  padding-right: clamp(1.25rem, 1.5vw, 1.5625rem);
+  padding: 5px clamp(.625rem, 1.5vw, .625rem);
+  display: flex;
 }
 
 .seachItem-module-scss-module__2Ao-PG__wrapper > a {
+  border: 1px solid var(--grey);
+  border-radius: 15px;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 5px;
   padding: 0 clamp(1.25rem, 1.5vw, 1.5625rem);
+  text-decoration: none;
   display: flex;
+}
+
+.seachItem-module-scss-module__2Ao-PG__wrapper > a > h3 {
+  color: var(--text-color);
+  font-size: clamp(.875rem, .830986rem + .187793vw, 1rem);
+}
+
+.seachItem-module-scss-module__2Ao-PG__wrapper > a > p {
+  color: var(--text-color);
 }
 
 /*# sourceMappingURL=35525_loayout_header_search_searchItem_seachItem_module_scss_module_css_f9ee138c._.single.css.map*/

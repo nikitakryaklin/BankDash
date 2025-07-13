@@ -8,6 +8,7 @@ import styles from './LoansPage.module.scss'
 import { TableBlock } from '@/components/UI/TableBlock/TableBlock'
 import { getCardValues } from '@/utiles/getCardValues'
 import { WidgetWrapper } from '@/components/UI/widgetWrapper/widgetWrapper'
+import { ElementWrapper } from '@/components/UI/ElementWrapper/ElementWrapper'
 
 export const LoansPage = () => {
   return (
@@ -15,6 +16,7 @@ export const LoansPage = () => {
       <WidgetWrapper>
         {WIDGET_LOANS_DATA.map((el) => (
           <Widget
+            id={el.HTMLId}
             className={styles.widget}
             text={el.text}
             title={el.title}
@@ -25,7 +27,7 @@ export const LoansPage = () => {
           </Widget>
         ))}
       </WidgetWrapper>
-      <div>
+      <ElementWrapper id="active_loans_overview">
         <h2>Active Loans Overview</h2>
         <TableBlock header={LOANS_HEADER_TABLE_DATA}>
           <tbody>
@@ -79,7 +81,7 @@ export const LoansPage = () => {
             </tr>
           </tfoot>
         </TableBlock>
-      </div>
+      </ElementWrapper>
     </div>
   )
 }

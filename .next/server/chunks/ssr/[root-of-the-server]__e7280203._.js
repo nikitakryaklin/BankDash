@@ -1320,7 +1320,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ElementWrapper$2f$ElementWrapper$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/ElementWrapper/ElementWrapper.module.scss.module.css [app-ssr] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useWindowHashStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useWindowHashStore.ts [app-ssr] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -1328,11 +1330,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist
 const ElementWrapper = ({ children, className, id, ...props })=>{
     const [isFind, setIsFind] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const hash = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useWindowHashStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useWindowHashStore"])((S)=>S.hash);
+    const setHash = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useWindowHashStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useWindowHashStore"])((S)=>S.setHash);
     let timeOut;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (ref.current && window.location.hash === `#${id}`) {
             window.history.replaceState(null, '', window.location.pathname);
             setIsFind(true);
+            ref.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'end'
+            });
+            setHash('');
             timeOut = setTimeout(()=>{
                 setIsFind(false);
             }, 2000);
@@ -1346,7 +1355,7 @@ const ElementWrapper = ({ children, className, id, ...props })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/UI/ElementWrapper/ElementWrapper.tsx",
-        lineNumber: 35,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 };

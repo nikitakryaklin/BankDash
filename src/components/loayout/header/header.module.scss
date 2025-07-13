@@ -60,15 +60,15 @@
 }
 
 .search_isActive {
-  &::after {
-    content: '';
-    position: absolute;
-    background-color: var(--text-color);
-    width: 92%;
-    height: 1px;
-    top: 35;
-    border-radius: 100px;
-  }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   background-color: var(--text-color);
+  //   width: 92%;
+  //   height: 1px;
+  //   top: 35;
+  //   border-radius: 100px;
+  // }
 }
 
 .searchFild {
@@ -94,16 +94,22 @@
   max-height: 30vh;
   height: auto;
   position: absolute;
+  z-index: 4;
   left: 0;
   top: 27;
-  padding: rem(10) 0 rem(15) clamp(rem(20), 1.5vw, rem(25));
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: rem(10);
   background-color: var(--background);
 }
 
 .scroll {
   overflow-y: scroll;
   width: 100%;
+  padding-top: 5px;
   max-height: calc(30vh - rem(30));
+  border-radius: 20px;
+  background-color: var(--white);
 }
 
 .text {

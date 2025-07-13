@@ -5,6 +5,7 @@ import { BALANCE_HISTORY_DATA } from './BalanceHistory.data'
 import { LineChart } from '../Chart/Line/Line-chart'
 import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
 import { useBalanceHistoryCalculator } from './useBalanceHistoryCalculator'
+import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
 
 export const BalanceHistory = () => {
   const { data: transactions, isLoading } = useTransactionsByDate()
@@ -12,7 +13,7 @@ export const BalanceHistory = () => {
   const { labels, data } = useBalanceHistoryCalculator(transactions)
 
   return (
-    <div className={styles.wrapper}>
+    <ElementWrapper id="balance_history" className={styles.wrapper}>
       <h2>Balance History</h2>
       <CardWrapper className={styles.card}>
         <LineChart
@@ -24,6 +25,6 @@ export const BalanceHistory = () => {
           isPlugin={true}
         />
       </CardWrapper>
-    </div>
+    </ElementWrapper>
   )
 }

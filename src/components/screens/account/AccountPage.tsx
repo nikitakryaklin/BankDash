@@ -35,7 +35,13 @@ export const AccountPage = () => {
     <div className={styles.page}>
       <div className={styles.widget_wrapper}>
         {WIDGET_ACCOUNT_DATA.map((el) => (
-          <Widget key={el.id} title={el.title} text={el.text} color={el.color}>
+          <Widget
+            key={el.id}
+            id={el.HTMLID}
+            title={el.title}
+            text={el.text}
+            color={el.color}
+          >
             {el.icon}
           </Widget>
         ))}

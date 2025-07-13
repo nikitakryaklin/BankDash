@@ -12,6 +12,7 @@ export const WIDGET_INVEST_DATA = [
   {
     id: 1,
     title: 'Total Invested Amount',
+    HTMLId: 'total_invested_amount',
     color: '#16DBCC',
     text: '$150,000',
     icon: <LucideReceipt style={{ fill: 'none', stroke: '#16DBCC' }} />,
@@ -19,6 +20,7 @@ export const WIDGET_INVEST_DATA = [
   {
     id: 2,
     title: 'Number of Investments',
+    HTMLId: 'number_of_investments',
     color: '#FF82AC',
     text: '1,250',
     icon: <ArrowUp10 style={{ fill: 'none', stroke: '#FF82AC' }} />,
@@ -26,6 +28,7 @@ export const WIDGET_INVEST_DATA = [
   {
     id: 3,
     title: 'Rate of Return',
+    HTMLId: 'rate_of_return',
     color: '#396AFF',
     text: '+5.80$',
     icon: <Repeat style={{ fill: 'none', stroke: '#396AFF' }} />,

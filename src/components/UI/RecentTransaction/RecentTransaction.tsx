@@ -9,6 +9,7 @@ import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 import clsx from 'clsx'
 import { Loader } from '../Loader/loader'
+import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
 
 export const RecentTransaction = ({
   title = 'Recent Transaction',
@@ -22,7 +23,10 @@ export const RecentTransaction = ({
   const user = useQueryClient().getQueryData(['user']) as IUser
   const { data, isLoading } = useTransactions(user, 3)
   return (
-    <div className={clsx(styles.wrapper, className)}>
+    <ElementWrapper
+      id="recent_transactions"
+      className={clsx(styles.wrapper, className)}
+    >
       <h2>{title}</h2>
       <CardWrapper className={styles.card}>
         {!isLoading && data ? (
@@ -44,6 +48,6 @@ export const RecentTransaction = ({
         )}
         {isLoading ?? <Loader color="var(--text-color)" />}
       </CardWrapper>
-    </div>
+    </ElementWrapper>
   )
 }

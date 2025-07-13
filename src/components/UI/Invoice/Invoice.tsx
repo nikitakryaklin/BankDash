@@ -1,10 +1,11 @@
-import CardWrapper from "@/components/loayout/CardWrapper/CardWrapper";
-import styles from "./Invoice.module.scss";
-import { INVOICE_DATA } from "./Invoice.data";
+import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
+import styles from './Invoice.module.scss'
+import { INVOICE_DATA } from './Invoice.data'
+import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
 
 export const Invoice = () => {
   return (
-    <div className={styles.wrapper}>
+    <ElementWrapper id="invoices_sent" className={styles.wrapper}>
       <h2>Invoices Sent</h2>
       <CardWrapper className={styles.invoice_card}>
         {INVOICE_DATA.map((el, index) => (
@@ -23,6 +24,6 @@ export const Invoice = () => {
           </div>
         ))}
       </CardWrapper>
-    </div>
-  );
-};
+    </ElementWrapper>
+  )
+}
