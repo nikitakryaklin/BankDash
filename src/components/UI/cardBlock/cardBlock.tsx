@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { CONSTANTS } from '@/config/constants'
 import { useUser } from '@/hooks/useUser'
 import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
+import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
 
 interface ICardBlock {
   buttomText: string
@@ -18,7 +19,7 @@ export const CardBlock = ({ buttomText, flug = false }: ICardBlock) => {
   const fullName = data?.about?.fullname || ''
 
   return (
-    <div className={styles.wrapper}>
+    <ElementWrapper className={styles.wrapper} id="my_cards">
       <div className={styles.header}>
         <h2>My Cards</h2>
         <Link href={CONSTANTS.credit}>{buttomText}</Link>
@@ -68,6 +69,6 @@ export const CardBlock = ({ buttomText, flug = false }: ICardBlock) => {
           />
         )}
       </div>
-    </div>
+    </ElementWrapper>
   )
 }
