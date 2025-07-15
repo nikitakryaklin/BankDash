@@ -3,7 +3,7 @@ import { CONSTANTS } from '@/config/constants'
 class Avatar {
   URL = CONSTANTS.API + `/`
 
-  public post = async (FormData: FormData) => {
+  public post = async (FormData: FormData | undefined) => {
     try {
       const response = await fetch(this.URL + 'upload', {
         method: 'POST',

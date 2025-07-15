@@ -8,6 +8,7 @@ export interface IAboutData {
   postalCode?: string
   country?: string
   city?: string
+  avatar?: FormData
 }
 
 export interface ICard {

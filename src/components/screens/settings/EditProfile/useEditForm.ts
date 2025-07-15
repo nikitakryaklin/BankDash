@@ -5,6 +5,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 
 interface IEditForm {
+  avatarFile: FileList
   fullname: string
   email: string
   dateOfBirth: string
@@ -22,8 +23,11 @@ export const useEditForm = (formValues: IEditForm) => {
 
     async onSettled() {
       await queryClient.invalidateQueries({
-        queryKey: ['user'],
-      })
+        queryKey: ['about'],
+      }),
+        await queryClient.invalidateQueries({
+          queryKey: ['user'],
+        })
     },
   })
 
@@ -41,9 +45,15 @@ export const useEditForm = (formValues: IEditForm) => {
   })
 
   const onSubmit: SubmitHandler<IEditForm> = (data) => {
-    toast.promise(createUserAboutMutation.mutateAsync({ ...data }), {
-      ...getToasterPromisSuccess('Profile has been update'),
-    })
+    const { avatarFile, ...withOutAvatrData } = data
+    const avatar = new FormData()
+    avatar.append('files', avatarFile[0])
+    toast.promise(
+      createUserAboutMutation.mutateAsync({ ...withOutAvatrData, avatar }),
+      {
+        ...getToasterPromisSuccess('Profile has been update'),
+      }
+    )
     reset()
   }
 

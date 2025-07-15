@@ -3,10 +3,8 @@ import styles from './EditProfile.module.scss'
 import { UserAvatar } from '@/components/UI/userAvatar/UserAvatar'
 import { PencilIcon } from 'lucide-react'
 import { useUser } from '@/hooks/useUser'
-import { Controller, get } from 'react-hook-form'
 import { useEditForm } from './useEditForm'
 import { useEffect, type RefObject } from 'react'
-import { register } from 'module'
 import { getValidateError } from '@/utiles/getValidateError'
 
 interface IForm {
@@ -18,6 +16,7 @@ export const EditProfile = ({ formRef, pending }: IForm) => {
   const { data } = useUser()
 
   const { register, isPending, reset, formSubmit, errors } = useEditForm({
+    avatarFile: data?.abort?.avatar,
     fullname: data?.about?.fullname,
     email: data?.about?.email,
     dateOfBirth: data?.about?.dateOfBirth,
@@ -45,14 +44,24 @@ export const EditProfile = ({ formRef, pending }: IForm) => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.avatar}>
-        <UserAvatar width={110} height={110} />
-        <button>
-          <PencilIcon style={{ fill: 'none', stroke: 'white' }} />
-        </button>
-      </div>
       <form ref={formRef} onSubmit={formSubmit}>
-        <div>
+        <div className={styles.avatar}>
+          <UserAvatar width={110} height={110} />
+          <label htmlFor="avatar">
+            <input
+              type="file"
+              id="avatar"
+              accept=".jpg, .jpeg, .png"
+              hidden
+              {...register('avatarFile', {
+                ...getValidateError('Avatar', false),
+              })}
+            />
+            <PencilIcon style={{ fill: 'none', stroke: 'white' }} />
+          </label>
+        </div>
+
+        <div className={styles.inputWrapper}>
           <Fild
             title={errors.fullname?.message || 'Your Name'}
             placeholder={data?.about?.fullname || 'Name'}
@@ -90,7 +99,8 @@ export const EditProfile = ({ formRef, pending }: IForm) => {
             {...register('postalCode', { ...getValidateError('Postal Code') })}
           />
         </div>
-        <div>
+
+        <div className={styles.inputWrapper}>
           <Fild
             title="User Name"
             placeholder={data?.about?.username || 'User Name'}

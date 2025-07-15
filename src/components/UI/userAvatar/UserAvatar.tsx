@@ -2,7 +2,8 @@
 
 import { getAvaterUrl } from '@/utiles/getAvatar'
 import Image from 'next/image'
-import { useUser } from '@/hooks/useUser'
+import { useUserAbout } from '@/hooks/useUserAbout'
+import { Loader } from '../Loader/loader'
 
 export const UserAvatar = ({
   width,
@@ -11,19 +12,22 @@ export const UserAvatar = ({
   width: number
   height: number
 }) => {
-  const { data } = useUser()
-  const avatar = data?.avatar?.url
+  const { data, isLoading } = useUserAbout()
+  const avatar = data?.data[0].avatar?.url
 
   return (
     <>
-      <Image
-        src={avatar ? getAvaterUrl(avatar) : '/noAvatar.svg'}
-        width={width}
-        height={height}
-        alt="avatar"
-        priority={true}
-        draggable={false}
-      />
+      {isLoading && <Loader />}
+      {!isLoading && (
+        <Image
+          src={avatar ? getAvaterUrl(avatar) : '/noAvatar.svg'}
+          width={width}
+          height={height}
+          alt="avatar"
+          priority={true}
+          draggable={false}
+        />
+      )}
     </>
   )
 }
