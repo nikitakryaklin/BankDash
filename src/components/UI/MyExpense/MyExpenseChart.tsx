@@ -9,10 +9,6 @@ import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
 export const MyExpenseChart = () => {
   const { MY_EXPENSE_DATA } = useMyExpenseCalculator()
 
-  if (!MY_EXPENSE_DATA.labels) {
-    return <div>u lox</div>
-  }
-
   return (
     <ElementWrapper className={styles.wrapper} id="my_expense">
       <h2>My Expense</h2>

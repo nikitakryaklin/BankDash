@@ -1,4 +1,4 @@
-@use "@/styles/helpers" as *;
+@use '@/styles/helpers' as *;
 
 @media (width > 768px) {
   .wrapper {
@@ -13,7 +13,5 @@
 @media (width <= 768px) {
   .wrapper {
     aspect-ratio: 1 / 0.7;
-    // max-width: 688px;
-    // width: fluid-text(688, 325);
   }
 }

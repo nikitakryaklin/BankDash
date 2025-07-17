@@ -5,22 +5,6 @@ export const useMyExpenseCalculator = () => {
   const { myExpense } = useStatistics()
 
   const MY_EXPENSE_DATA = useMemo(() => {
-    //   const DATA_MAP = new Map()
-    //   transactions?.forEach((el) => {
-    //     if (el.type === TRANSACTIONS.type.outgoing) {
-    //       const { day, isoDate: date } = useDateTranscript(el.date)
-
-    //       if (!DATA_MAP.has(date)) {
-    //         DATA_MAP.set(date, { day, amount: 0 })
-    //       } else {
-    //         DATA_MAP.get(date).amount += el.amount
-    //       }
-    //     }
-    //   })
-    //   const sorted = [...DATA_MAP.entries()].sort(([a], [b]) =>
-    //     a.localeCompare(b)
-    //   )
-
     return {
       isTitle: false,
       isLegend: false,
