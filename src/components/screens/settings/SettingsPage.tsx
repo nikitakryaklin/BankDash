@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './SettingsPage.module.scss'
-import { useAuth } from '@/authContext/authContext'
+import { useAuth } from '@/context/authContext'
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import { useRouter } from 'next/navigation'
 import { RefObject, useEffect, useRef, useState } from 'react'

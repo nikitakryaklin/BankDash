@@ -18,7 +18,7 @@ export interface ICard {
   cvc: number
   balance: string
   bank: string
-  transactions?: ITransaction[]
+  transactions: ITransaction[]
   type: string
 }
 

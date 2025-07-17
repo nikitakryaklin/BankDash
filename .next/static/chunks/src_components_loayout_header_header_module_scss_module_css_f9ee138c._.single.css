@@ -51,6 +51,7 @@
 .header-module-scss-module__7d5-Xq__search {
   border-radius: 100px;
   flex-direction: column;
+  justify-content: center;
   gap: .9375rem;
   padding: .4375rem clamp(1.25rem, 1.5vw, 1.5625rem);
   display: flex;
@@ -67,6 +68,7 @@
   background-color: #0000;
   border: none;
   outline: none;
+  align-self: center;
   width: 100%;
   overflow: hidden;
 }

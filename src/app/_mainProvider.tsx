@@ -4,10 +4,11 @@ import Aside from '@/components/loayout/aside/aside'
 import Header from '@/components/loayout/header/header'
 import { PropsWithChildren, useEffect, useRef, useState } from 'react'
 import styles from './(pages)/page.module.scss'
-import AuthProvider, { useAuth } from '@/authContext/authContext'
+import AuthProvider, { useAuth } from '@/context/authContext'
 import nProgress from 'nprogress'
 import { usePathname } from 'next/navigation'
 import ToasterProvider from '@/components/loayout/toast/toast'
+import StatsProvider from '@/context/statsContext/statsContext'
 
 const MainProvider = ({ children }: PropsWithChildren) => {
   const pathname = usePathname()

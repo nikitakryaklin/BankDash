@@ -1,6 +1,6 @@
 'use client'
 import styles from './header.module.scss'
-import { useAuth } from '@/authContext/authContext'
+import { useAuth } from '@/context/authContext'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { getTitle } from './header.data'

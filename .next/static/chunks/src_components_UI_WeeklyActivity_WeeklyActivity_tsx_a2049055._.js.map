@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/nikita/Desktop/bankDash/BankDash/src/components/UI/WeeklyActivity/WeeklyActivity.tsx"],"sourcesContent":["import { useWeeklyActivityCalculator } from './useWeeklyActivityCalculator'\nimport StatsProvider from '@/context/statsContext/statsContext'\n\nexport const WeeklyActivityChart = () => {\n  return (\n    <StatsProvider>\n      <WeeklyActivityChart />\n    </StatsProvider>\n  )\n}\n"],"names":[],"mappings":";;;;AACA;;;AAEO,MAAM,sBAAsB;IACjC,qBACE,6LAAC,kJAAA,CAAA,UAAa;kBACZ,cAAA,6LAAC;;;;;;;;;;AAGP;KANa","debugId":null}}]
+}

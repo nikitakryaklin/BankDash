@@ -1,57 +1,19 @@
-import { TRANSACTIONS } from '@/config/constants'
-import { useDateTranscript } from '@/hooks/useDateTranscript'
-import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
-import { ITransaction } from '@/types/Transactions.type'
+import { useStatistics } from '@/context/statsContext/statsContext'
 import { useMemo } from 'react'
 
 export function useWeeklyActivityCalculator() {
-  const { data: transactions, isLoading } = useTransactionsByDate()
+  const { weeklyActivity } = useStatistics()
+
   const WEEKLY_ACTIVITY_DATA = useMemo(() => {
-    const result = new Map()
-    transactions?.forEach((el: ITransaction) => {
-      if (el.type !== TRANSACTIONS.type.cancelled) {
-        const { day, isoDate: date } = useDateTranscript(el.date)
-
-        if (!result.has(date)) {
-          if (el.type === TRANSACTIONS.type.outgoing) {
-            result.set(date, {
-              day,
-              data: { expenses: el.amount, replenishment: 0 },
-            })
-          }
-
-          if (el.type === TRANSACTIONS.type.incoming) {
-            result.set(date, {
-              day,
-              data: { expenses: 0, replenishment: el.amount },
-            })
-          }
-        } else {
-          if (el.type === TRANSACTIONS.type.outgoing) {
-            result.get(date).data.expenses += el.amount
-          }
-
-          if (el.type === TRANSACTIONS.type.incoming) {
-            result.get(date).data.replenishment += el.amount
-          }
-        }
-      }
-    })
-
-    const sorted = [...result.entries()].sort(([a], [b]) => a.localeCompare(b))
-
-    const labels = sorted.map(([, el]) => el.day.slice(0, 3))
-    const expenses = sorted.map(([, el]) => el.data.expenses)
-    const replenishment = sorted.map(([, el]) => el.data.replenishment)
     return {
       isTitle: false,
       isLegend: true,
       isGrid: true,
-      labels: labels,
+      labels: weeklyActivity.labels,
       datasets: [
         {
           label: 'Expenses',
-          data: expenses,
+          data: weeklyActivity.expenses,
           backgroundColor: '#1814F3',
           borderRadius: 25,
           borderSkipped: false,
@@ -63,7 +25,7 @@ export function useWeeklyActivityCalculator() {
         },
         {
           label: 'Replenishments',
-          data: replenishment,
+          data: weeklyActivity.replenishment,
           backgroundColor: '#16DBCC',
           borderRadius: 25,
           borderSkipped: false,
@@ -74,7 +36,7 @@ export function useWeeklyActivityCalculator() {
         },
       ],
     }
-  }, [transactions])
+  }, [weeklyActivity])
 
-  return { WEEKLY_ACTIVITY_DATA, isLoading }
+  return { WEEKLY_ACTIVITY_DATA }
 }

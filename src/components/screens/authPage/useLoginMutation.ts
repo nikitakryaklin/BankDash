@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
 import { Auth } from '@/service/auth.service'
 import { useRouter } from 'next/navigation'
-import { useAuth } from '@/authContext/authContext'
+import { useAuth } from '@/context/authContext'
 
 export const useLoginMutation = () => {
   const router = useRouter()

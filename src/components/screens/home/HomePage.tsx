@@ -2,7 +2,7 @@
 import { CardBlock } from '@/components/UI/cardBlock/cardBlock'
 import styles from './HomePage.module.scss'
 import { useUser } from '@/hooks/useUser'
-import { useAuth } from '@/authContext/authContext'
+import { useAuth } from '@/context/authContext'
 import { RecentTransaction } from '@/components/UI/RecentTransaction/RecentTransaction'
 import { Contacts } from '@/components/UI/Contacts/Contacts'
 import dynamic from 'next/dynamic'

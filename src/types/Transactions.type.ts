@@ -7,5 +7,5 @@ export interface ITransaction {
   category: string
   amount: number
   id: number
-  card?: ICard
+  card: ICard
 }
