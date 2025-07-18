@@ -2,12 +2,12 @@
   "pages": {
     "/(pages)/loans/page": [
       "static/chunks/_2e8ad698._.css",
-      "static/chunks/src_20185ff7._.js",
-      "static/chunks/node_modules_304c40a8._.js",
+      "static/chunks/src_aefc0702._.js",
+      "static/chunks/node_modules_8ee85765._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
       "static/chunks/src_components_e7369865._.css",
       "static/chunks/src_40819710._.js",
-      "static/chunks/src_app_(pages)_loans_page_tsx_80c586d2._.js",
+      "static/chunks/src_app_(pages)_loans_page_tsx_a51c4289._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",

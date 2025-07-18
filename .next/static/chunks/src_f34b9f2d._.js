@@ -398,44 +398,9 @@ var _s = __turbopack_context__.k.signature();
 ;
 const useDebitAndCreditCalculator = ()=>{
     _s();
-    // const { data: transactions } = useTransactionsByDate()
     const { debitAndCredit: { labels, debit, credit } } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$statsContext$2f$statsContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useStatistics"])();
     const DEBIT_AND_CREDIT_DATA = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "useDebitAndCreditCalculator.useMemo[DEBIT_AND_CREDIT_DATA]": ()=>{
-            // const result = new Map()
-            // transactions?.forEach((el: ITransaction) => {
-            //   if (!el.card) {
-            //     return null
-            //   }
-            //   if (el.type === TRANSACTIONS.type.outgoing) {
-            //     const { day, isoDate: date } = useDateTranscript(el.date)
-            //     if (!result.has(date)) {
-            //       if (el.card.type === 'Debit') {
-            //         result.set(date, {
-            //           day,
-            //           data: { debit: el.amount, credit: 0 },
-            //         })
-            //       }
-            //       if (el.card.type === 'Credit') {
-            //         result.set(date, {
-            //           day,
-            //           data: { debit: 0, credit: el.amount },
-            //         })
-            //       }
-            //     } else {
-            //       if (el.card.type === 'Debit') {
-            //         result.get(date).data.debit += el.amount
-            //       }
-            //       if (el.card.type === 'Credit') {
-            //         result.get(date).data.credit += el.amount
-            //       }
-            //     }
-            //   }
-            // })
-            // const sorted = [...result.entries()].sort(([a], [b]) => a.localeCompare(b))
-            // const labels = sorted.map(([, el]) => el.day.slice(0, 3))
-            // const debit = sorted.map(([, el]) => el.data.debit)
-            // const credit = sorted.map(([, el]) => el.data.credit)
             return {
                 isTitle: false,
                 isLegend: true,

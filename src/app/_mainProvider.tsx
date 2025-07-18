@@ -2,13 +2,13 @@
 
 import Aside from '@/components/loayout/aside/aside'
 import Header from '@/components/loayout/header/header'
-import { PropsWithChildren, useEffect, useRef, useState } from 'react'
+import { PropsWithChildren, useEffect } from 'react'
 import styles from './(pages)/page.module.scss'
-import AuthProvider, { useAuth } from '@/context/authContext'
+import AuthProvider from '@/context/authContext'
 import nProgress from 'nprogress'
 import { usePathname } from 'next/navigation'
 import ToasterProvider from '@/components/loayout/toast/toast'
-import StatsProvider from '@/context/statsContext/statsContext'
+import { QueryClientCastomProvider } from '@/context/queryClient'
 
 const MainProvider = ({ children }: PropsWithChildren) => {
   const pathname = usePathname()
@@ -23,15 +23,17 @@ const MainProvider = ({ children }: PropsWithChildren) => {
   }, [pathname])
 
   return (
-    <AuthProvider>
-      <ToasterProvider>
-        <Aside />
-        <main className="main">
-          <Header />
-          <section className={styles.page}>{children}</section>
-        </main>
-      </ToasterProvider>
-    </AuthProvider>
+    <QueryClientCastomProvider>
+      <AuthProvider>
+        <ToasterProvider>
+          <Aside />
+          <main className="main">
+            <Header />
+            <section className={styles.page}>{children}</section>
+          </main>
+        </ToasterProvider>
+      </AuthProvider>
+    </QueryClientCastomProvider>
   )
 }
 

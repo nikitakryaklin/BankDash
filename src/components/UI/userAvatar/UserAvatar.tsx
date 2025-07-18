@@ -15,19 +15,20 @@ export const UserAvatar = ({
   const { data, isLoading } = useUserAbout()
   const avatar = data?.data[0].avatar?.url
 
+  if (isLoading && !avatar) {
+    return <Loader />
+  }
+
   return (
     <>
-      {isLoading && <Loader />}
-      {!isLoading && (
-        <Image
-          src={avatar ? getAvaterUrl(avatar) : '/noAvatar.svg'}
-          width={width}
-          height={height}
-          alt="avatar"
-          priority={true}
-          draggable={false}
-        />
-      )}
+      <Image
+        src={avatar ? getAvaterUrl(avatar) : '/noAvatar.svg'}
+        width={width}
+        height={height}
+        alt="avatar"
+        priority={true}
+        draggable={false}
+      />
     </>
   )
 }

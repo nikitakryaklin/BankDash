@@ -471,20 +471,6 @@ const useMyExpenseCalculator = ()=>{
     const { myExpense } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$statsContext$2f$statsContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useStatistics"])();
     const MY_EXPENSE_DATA = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "useMyExpenseCalculator.useMemo[MY_EXPENSE_DATA]": ()=>{
-            //   const DATA_MAP = new Map()
-            //   transactions?.forEach((el) => {
-            //     if (el.type === TRANSACTIONS.type.outgoing) {
-            //       const { day, isoDate: date } = useDateTranscript(el.date)
-            //       if (!DATA_MAP.has(date)) {
-            //         DATA_MAP.set(date, { day, amount: 0 })
-            //       } else {
-            //         DATA_MAP.get(date).amount += el.amount
-            //       }
-            //     }
-            //   })
-            //   const sorted = [...DATA_MAP.entries()].sort(([a], [b]) =>
-            //     a.localeCompare(b)
-            //   )
             return {
                 isTitle: false,
                 isLegend: false,
@@ -547,15 +533,6 @@ var _s = __turbopack_context__.k.signature();
 const MyExpenseChart = ()=>{
     _s();
     const { MY_EXPENSE_DATA } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$MyExpense$2f$useMyExpenseCalculator$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMyExpenseCalculator"])();
-    if (!MY_EXPENSE_DATA.labels) {
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            children: "u lox"
-        }, void 0, false, {
-            fileName: "[project]/src/components/UI/MyExpense/MyExpenseChart.tsx",
-            lineNumber: 13,
-            columnNumber: 12
-        }, this);
-    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ElementWrapper$2f$ElementWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ElementWrapper"], {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$MyExpense$2f$MyExpense$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper,
         id: "my_expense",
@@ -564,7 +541,7 @@ const MyExpenseChart = ()=>{
                 children: "My Expense"
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/MyExpense/MyExpenseChart.tsx",
-                lineNumber: 18,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -572,18 +549,18 @@ const MyExpenseChart = ()=>{
                     chartData: MY_EXPENSE_DATA
                 }, void 0, false, {
                     fileName: "[project]/src/components/UI/MyExpense/MyExpenseChart.tsx",
-                    lineNumber: 20,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/MyExpense/MyExpenseChart.tsx",
-                lineNumber: 19,
+                lineNumber: 15,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/MyExpense/MyExpenseChart.tsx",
-        lineNumber: 17,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 };

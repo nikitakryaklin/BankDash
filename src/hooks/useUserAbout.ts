@@ -1,5 +1,5 @@
 import { User } from '@/service/user.service'
-import { useQuery } from '@tanstack/react-query'
+import { keepPreviousData, useQuery } from '@tanstack/react-query'
 
 export const useUserAbout = () => {
   const { data, isLoading, isSuccess } = useQuery({

@@ -1,8 +1,8 @@
 'use client'
 
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { useRouter } from 'next/navigation'
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useContext, useState } from 'react'
+import { useQueryClient } from '@tanstack/react-query'
 
 type AuthContextType = {
   isLogin: boolean
@@ -10,10 +10,10 @@ type AuthContextType = {
   logOut: () => void
 }
 const AuthContext = createContext<AuthContextType | null>(null)
-const queryClient = new QueryClient()
 
 const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [isLogin, setAuthenticated] = useState(false)
+  const queryClient = useQueryClient()
   const router = useRouter()
 
   const logIn = (token: string, id: number) => {
@@ -36,7 +36,7 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <AuthContext.Provider value={{ isLogin, logIn, logOut }}>
-      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+      {children}
     </AuthContext.Provider>
   )
 }
