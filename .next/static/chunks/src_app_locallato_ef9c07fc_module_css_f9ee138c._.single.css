@@ -1,0 +1,31 @@
+/* [project]/src/app/locallato_ef9c07fc.module.css [app-client] (css) */
+@font-face {
+  font-family: localLato;
+  src: url("../media/Lato_Bold-s.p.f75fd3b7.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: localLato;
+  src: url("../media/Lato_Regular-s.p.5f35dd24.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: localLato Fallback;
+  src: local(Arial);
+  ascent-override: 100.88%;
+  descent-override: 21.77%;
+  line-gap-override: 0.0%;
+  size-adjust: 97.84%;
+}
+
+.locallato_ef9c07fc-module__c1ruQW__className {
+  font-family: localLato, localLato Fallback;
+}
+
+/*# sourceMappingURL=src_app_locallato_ef9c07fc_module_css_f9ee138c._.single.css.map*/

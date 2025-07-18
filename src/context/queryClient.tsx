@@ -29,7 +29,7 @@ export const QueryClientCastomProvider = ({
 
   useEffect(() => {
     const persister = createAsyncStoragePersister({
-      storage: window.localStorage,
+      storage: window.sessionStorage,
     })
     persistQueryClient({
       queryClient,

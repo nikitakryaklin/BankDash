@@ -1,4 +1,4 @@
-@use "@/styles/helpers" as *;
+@use '@/styles/helpers' as *;
 
 .isActive {
   background: linear-gradient(136deg, #4c49ed 0%, #0a06f4 100%);
@@ -38,7 +38,7 @@
   max-width: 350px;
   aspect-ratio: 3/2;
   border-radius: 25px !important;
-  font-family: "lato";
+  font-family: 'lato';
   font-weight: 500;
 }
 
@@ -69,11 +69,16 @@
 .values {
   color: var(--title);
   @include fluid-text(15, 13);
+  font-family: var(--font-lato);
+  font-weight: 700;
 }
 
 .dscr {
   color: var(--text-color);
   font-size: 12px;
+  font-family: var(--font-lato);
+  font-weight: 400;
+  opacity: 0.7;
 }
 
 .icon > svg > path {
@@ -103,7 +108,8 @@
   margin: 0;
   @include fluid-text(22, 16);
   color: var(--title);
-
+  font-family: var(--font-lato) !important;
+  font-weight: 600;
   > svg > circle {
     fill: rgba($color: #fff, $alpha: 0.5);
   }

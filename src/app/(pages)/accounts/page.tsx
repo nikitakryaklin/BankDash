@@ -1,17 +1,11 @@
 import { AccountPage } from '@/components/screens/account/AccountPage'
-import { Loader } from '@/components/UI/Loader/loader'
-import dynamic from 'next/dynamic'
 
-const DynamicAccountPage = dynamic(
-  () =>
-    import('@/components/screens/account/AccountPage').then(
-      (D) => D.AccountPage
-    ),
-  { loading: () => <Loader /> }
-)
+export const metadata = {
+  title: 'Account',
+}
 
 const Page = () => {
-  return <DynamicAccountPage />
+  return <AccountPage />
 }
 
 export default Page

@@ -64,11 +64,16 @@
 .card-module-scss-module__DN01vW__values {
   color: var(--title);
   font-size: clamp(.8125rem, .768486rem + .187793vw, .9375rem);
+  font-family: var(--font-lato);
+  font-weight: 700;
 }
 
 .card-module-scss-module__DN01vW__dscr {
   color: var(--text-color);
   font-size: 12px;
+  font-family: var(--font-lato);
+  opacity: .7;
+  font-weight: 400;
 }
 
 .card-module-scss-module__DN01vW__icon > svg > path {
@@ -94,6 +99,8 @@
   color: var(--title);
   margin: 0;
   font-size: clamp(1rem, .867958rem + .56338vw, 1.375rem);
+  font-weight: 600;
+  font-family: var(--font-lato) !important;
 }
 
 .card-module-scss-module__DN01vW__cardNumber > svg > circle {

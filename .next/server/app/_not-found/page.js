@@ -2,7 +2,7 @@ const CHUNK_PUBLIC_PATH = "server/app/_not-found/page.js";
 const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_a17f26a9._.js");
 runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__50a7c09c._.js");
-runtime.loadChunk("server/chunks/ssr/_5b2504ab._.js");
+runtime.loadChunk("server/chunks/ssr/_ecdd3696._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_96715ba7._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_forbidden-error_ea7ea172.js");
 runtime.loadChunk("server/chunks/ssr/_a7eca4fb._.js");

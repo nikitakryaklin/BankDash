@@ -1,0 +1,51 @@
+/* [project]/src/app/localinter_62c1d9b3.module.css [app-client] (css) */
+@font-face {
+  font-family: localInter;
+  src: url("../media/Inter_Bold-s.p.15b52194.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: localInter;
+  src: url("../media/Inter_SemiBold-s.p.08be189e.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: localInter;
+  src: url("../media/Inter_Medium-s.p.d8f871df.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: localInter;
+  src: url("../media/Inter_Regular-s.p.e0476761.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: localInter Fallback;
+  src: local(Arial);
+  ascent-override: 94.46%;
+  descent-override: 23.52%;
+  line-gap-override: 0.0%;
+  size-adjust: 102.55%;
+}
+
+.localinter_62c1d9b3-module__PtbfTq__className {
+  font-family: localInter, localInter Fallback;
+}
+
+.localinter_62c1d9b3-module__PtbfTq__variable {
+  --font-inter: "localInter", "localInter Fallback";
+}
+
+/*# sourceMappingURL=src_app_localinter_62c1d9b3_module_css_f9ee138c._.single.css.map*/

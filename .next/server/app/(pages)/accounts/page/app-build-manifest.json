@@ -1,15 +1,15 @@
 {
   "pages": {
     "/(pages)/accounts/page": [
-      "static/chunks/_2e8ad698._.css",
+      "static/chunks/_51f2cefa._.css",
       "static/chunks/src_aefc0702._.js",
       "static/chunks/node_modules_8ee85765._.js",
-      "static/chunks/src_app_layout_tsx_c0237562._.js",
-      "static/chunks/src_components_5fbc3b9e._.css",
-      "static/chunks/src_components_UI_DebitAndCredit_DebitAndCredit_tsx_973d3074._.js",
+      "static/chunks/src_app_layout_tsx_a1abcdbe._.js",
+      "static/chunks/src_components_9298dbb8._.css",
+      "static/chunks/src_components_UI_DebitAndCredit_DebitAndCredit_tsx_6be44140._.js",
       "static/chunks/src_de41a792._.js",
-      "static/chunks/node_modules_6a62c1e6._.js",
-      "static/chunks/src_app_(pages)_accounts_page_tsx_a51c4289._.js",
+      "static/chunks/node_modules_493ecc17._.js",
+      "static/chunks/src_app_(pages)_accounts_page_tsx_c6abedd8._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
