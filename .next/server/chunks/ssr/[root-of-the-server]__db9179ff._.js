@@ -677,8 +677,8 @@ const CardBlock = ({ buttomText, flug = false })=>{
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.v({
-  "card": "HomePage-module-scss-module__bZfz1q__card",
-  "card_fild": "HomePage-module-scss-module__bZfz1q__card_fild",
+  "cardBlok_recentTransactions": "HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions",
+  "contacts_balanceHistiry": "HomePage-module-scss-module__bZfz1q__contacts_balanceHistiry",
   "wrapper": "HomePage-module-scss-module__bZfz1q__wrapper",
 });
 }}),
@@ -1036,10 +1036,10 @@ const TransactionItem = ({ title, date, type, category, amount, flug })=>{
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$TransactionItem$2f$TransactionItem$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].info,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                        style: type === "cancelled" ? {
+                        style: type === 'cancelled' ? {
                             color: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$Amount$2e$type$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["typeCategory"][type].color}`
                         } : {
-                            color: "var(--title)"
+                            color: 'var(--title)'
                         },
                         children: title
                     }, void 0, false, {
@@ -1048,12 +1048,12 @@ const TransactionItem = ({ title, date, type, category, amount, flug })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        style: type === "cancelled" ? {
+                        style: type === 'cancelled' ? {
                             color: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$Amount$2e$type$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["typeCategory"][type].color}`
                         } : {
-                            color: "var(--text-color)"
+                            color: 'var(--text-color)'
                         },
-                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getFormatDate$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFormatDate"])(date, "D MMMM HH:mm")
+                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getFormatDate$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFormatDate"])(date, 'D MMMM HH:mm')
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/TransactionItem/TransactionItem.tsx",
                         lineNumber: 46,
@@ -1069,10 +1069,10 @@ const TransactionItem = ({ title, date, type, category, amount, flug })=>{
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$TransactionItem$2f$TransactionItem$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].main_info,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        style: type === "cancelled" ? {
+                        style: type === 'cancelled' ? {
                             color: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$Amount$2e$type$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["typeCategory"][type].color}`
                         } : {
-                            color: "var(--text-color)"
+                            color: 'var(--text-color)'
                         },
                         children: category
                     }, void 0, false, {
@@ -1081,24 +1081,24 @@ const TransactionItem = ({ title, date, type, category, amount, flug })=>{
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        style: type === "cancelled" ? {
+                        style: type === 'cancelled' ? {
                             color: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$Amount$2e$type$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["typeCategory"][type].color}`
                         } : {
-                            color: "var(--text-color)"
+                            color: 'var(--text-color)'
                         },
-                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getCardValues"].number("1111222233334444").slice(0, 8)
+                        children: "Completed"
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/TransactionItem/TransactionItem.tsx",
                         lineNumber: 67,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        style: type === "cancelled" ? {
+                        style: type === 'cancelled' ? {
                             color: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$Amount$2e$type$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["typeCategory"][type].color}`
                         } : {
-                            color: "var(--text-color)"
+                            color: 'var(--text-color)'
                         },
-                        children: "Completed"
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getCardValues"].number('1111222233334444').slice(0, 8)
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/TransactionItem/TransactionItem.tsx",
                         lineNumber: 76,
@@ -1353,12 +1353,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/RecentTransaction/RecentTransaction.module.scss.module.css [app-ssr] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$TransactionItem$2f$TransactionItem$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/RecentTransaction/TransactionItem/TransactionItem.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactions$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTransactions.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/loayout/CardWrapper/CardWrapper.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/NotEnougtData/NotEnougtData.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Loader/loader.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ElementWrapper$2f$ElementWrapper$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/ElementWrapper/ElementWrapper.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useUser.tsx [app-ssr] (ecmascript)");
 'use client';
 ;
 ;
@@ -1371,9 +1371,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$E
 ;
 ;
 const RecentTransaction = ({ title = 'Recent Transaction', className, flug = false })=>{
-    const user = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])().getQueryData([
-        'user'
-    ]);
+    const { data: user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUser"])();
     const { data, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactions$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransactions"])(user, 3);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ElementWrapper$2f$ElementWrapper$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ElementWrapper"], {
         id: "recent_transactions",
@@ -1383,7 +1381,7 @@ const RecentTransaction = ({ title = 'Recent Transaction', className, flug = fal
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1399,31 +1397,31 @@ const RecentTransaction = ({ title = 'Recent Transaction', className, flug = fal
                                 flug: flug
                             }, trans.id, false, {
                                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                                lineNumber: 35,
+                                lineNumber: 36,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                        lineNumber: 47,
+                        lineNumber: 48,
                         columnNumber: 11
                     }, this),
                     isLoading ?? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Loader"], {
                         color: "var(--text-color)"
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 23
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                lineNumber: 31,
+                lineNumber: 32,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 };
@@ -2431,8 +2429,6 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/cardBlock/cardBlock.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$home$2f$HomePage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/screens/home/HomePage.module.scss.module.css [app-ssr] (css module)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useUser.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$authContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/authContext.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Contacts$2f$Contacts$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Contacts/Contacts.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-ssr] (ecmascript)");
@@ -2441,8 +2437,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$L
 ;
 ;
 'use client';
-;
-;
 ;
 ;
 ;
@@ -2459,7 +2453,7 @@ const DynamicBalanceHistory = (0, __TURBOPACK__imported__module__$5b$project$5d2
     ssr: false,
     loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Loader"], {}, void 0, false, {
             fileName: "[project]/src/components/screens/home/HomePage.tsx",
-            lineNumber: 16,
+            lineNumber: 14,
             columnNumber: 32
         }, this)
 });
@@ -2472,7 +2466,7 @@ const DynamicWeeklyActivity = (0, __TURBOPACK__imported__module__$5b$project$5d2
     ssr: false,
     loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Loader"], {}, void 0, false, {
             fileName: "[project]/src/components/screens/home/HomePage.tsx",
-            lineNumber: 23,
+            lineNumber: 21,
             columnNumber: 32
         }, this)
 });
@@ -2485,60 +2479,69 @@ const DynamicExpenseStatistics = (0, __TURBOPACK__imported__module__$5b$project$
     ssr: false,
     loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Loader"], {}, void 0, false, {
             fileName: "[project]/src/components/screens/home/HomePage.tsx",
-            lineNumber: 31,
+            lineNumber: 29,
             columnNumber: 32
         }, this)
 });
 const HomePage = ()=>{
-    const { isLogin } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$authContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAuth"])();
-    const { isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUser"])();
-    if (isLoading) {
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Loader"], {}, void 0, false, {
-            fileName: "[project]/src/components/screens/home/HomePage.tsx",
-            lineNumber: 39,
-            columnNumber: 12
-        }, this);
-    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$home$2f$HomePage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].wrapper,
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardBlock"], {
-                    buttomText: "See All"
-                }, void 0, false, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$home$2f$HomePage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].cardBlok_recentTransactions,
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardBlock"], {
+                            buttomText: "See All"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/screens/home/HomePage.tsx",
+                            lineNumber: 37,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RecentTransaction"], {}, void 0, false, {
+                            fileName: "[project]/src/components/screens/home/HomePage.tsx",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicWeeklyActivity, {}, void 0, false, {
+                            fileName: "[project]/src/components/screens/home/HomePage.tsx",
+                            lineNumber: 39,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicExpenseStatistics, {}, void 0, false, {
+                            fileName: "[project]/src/components/screens/home/HomePage.tsx",
+                            lineNumber: 40,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/components/screens/home/HomePage.tsx",
-                    lineNumber: 45,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RecentTransaction"], {}, void 0, false, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$home$2f$HomePage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].contacts_balanceHistiry,
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Contacts$2f$Contacts$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Contacts"], {}, void 0, false, {
+                            fileName: "[project]/src/components/screens/home/HomePage.tsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicBalanceHistory, {}, void 0, false, {
+                            fileName: "[project]/src/components/screens/home/HomePage.tsx",
+                            lineNumber: 44,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/components/screens/home/HomePage.tsx",
-                    lineNumber: 46,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicWeeklyActivity, {}, void 0, false, {
-                    fileName: "[project]/src/components/screens/home/HomePage.tsx",
-                    lineNumber: 47,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicExpenseStatistics, {}, void 0, false, {
-                    fileName: "[project]/src/components/screens/home/HomePage.tsx",
-                    lineNumber: 48,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Contacts$2f$Contacts$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Contacts"], {}, void 0, false, {
-                    fileName: "[project]/src/components/screens/home/HomePage.tsx",
-                    lineNumber: 49,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicBalanceHistory, {}, void 0, false, {
-                    fileName: "[project]/src/components/screens/home/HomePage.tsx",
-                    lineNumber: 50,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/screens/home/HomePage.tsx",
-            lineNumber: 44,
+            lineNumber: 35,
             columnNumber: 7
         }, this)
     }, void 0, false);

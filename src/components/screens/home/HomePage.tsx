@@ -1,8 +1,6 @@
 'use client'
 import { CardBlock } from '@/components/UI/cardBlock/cardBlock'
 import styles from './HomePage.module.scss'
-import { useUser } from '@/hooks/useUser'
-import { useAuth } from '@/context/authContext'
 import { RecentTransaction } from '@/components/UI/RecentTransaction/RecentTransaction'
 import { Contacts } from '@/components/UI/Contacts/Contacts'
 import dynamic from 'next/dynamic'
@@ -32,22 +30,19 @@ const DynamicExpenseStatistics = dynamic(
 )
 
 export const HomePage = () => {
-  const { isLogin } = useAuth()
-  const { isLoading } = useUser()
-
-  if (isLoading) {
-    return <Loader />
-  }
-
   return (
     <>
       <div className={styles.wrapper}>
-        <CardBlock buttomText="See All" />
-        <RecentTransaction />
-        <DynamicWeeklyActivity />
-        <DynamicExpenseStatistics />
-        <Contacts />
-        <DynamicBalanceHistory />
+        <div className={styles.cardBlok_recentTransactions}>
+          <CardBlock buttomText="See All" />
+          <RecentTransaction />
+          <DynamicWeeklyActivity />
+          <DynamicExpenseStatistics />
+        </div>
+        <div className={styles.contacts_balanceHistiry}>
+          <Contacts />
+          <DynamicBalanceHistory />
+        </div>
       </div>
     </>
   )

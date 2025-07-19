@@ -1,7 +1,7 @@
 /* [project]/src/components/UI/AllTransactions/TransactionsFilters/TransactionsFilters.module.scss.module.css [app-client] (css) */
 .TransactionsFilters-module-scss-module__tCQ8WW__wrapper {
   border-bottom: 1px solid var(--borderLine);
-  gap: 25px;
+  gap: clamp(1.25rem, 1.13996rem + .469484vw, 1.5625rem);
   width: 100%;
   margin-bottom: clamp(.4375rem, .0413732rem + 1.69014vw, 1.5625rem);
   display: flex;
@@ -14,7 +14,7 @@
   background-color: #0000;
   border: none;
   margin: 0;
-  padding: 0 10px 5px;
+  padding: 0 clamp(.375rem, .286972rem + .375587vw, .625rem) 5px;
   font-size: .875rem;
   position: relative;
 }

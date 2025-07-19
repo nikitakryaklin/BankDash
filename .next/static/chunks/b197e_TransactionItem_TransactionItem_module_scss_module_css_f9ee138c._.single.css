@@ -1,13 +1,18 @@
 /* [project]/src/components/UI/RecentTransaction/TransactionItem/TransactionItem.module.scss.module.css [app-client] (css) */
 .TransactionItem-module-scss-module__3j9oLW__wrapper {
+  text-overflow: ellipsis;
   align-items: center;
-  gap: max(.5rem, 1vw);
+  gap: clamp(.5rem, .345951rem + .657277vw, .9375rem);
   width: 100%;
   display: flex;
+  overflow: hidden;
+  container: resentWrapper / inline-size;
 }
 
 .TransactionItem-module-scss-module__3j9oLW__wrapper > p {
   color: var(--green);
+  text-overflow: ellipsis;
+  flex-shrink: 0;
   margin: auto 0 auto auto;
   font-size: clamp(.875rem, .830986rem + .187793vw, 1rem);
   font-weight: 500;
@@ -16,6 +21,7 @@
 .TransactionItem-module-scss-module__3j9oLW__icon {
   border-radius: 100px;
   width: max(2.5rem, 3.5vw);
+  min-width: 2.5rem;
   max-width: 3.4375rem;
   height: max(2.5rem, 3.5vw);
   max-height: 3.4375rem;
@@ -47,25 +53,30 @@
 }
 
 .TransactionItem-module-scss-module__3j9oLW__main_info {
-  justify-content: space-around;
-  width: 60%;
-  margin: 0 auto;
+  justify-content: space-between;
+  gap: clamp(.5rem, .345951rem + .657277vw, .9375rem);
+  width: 70%;
   display: flex;
+  overflow: hidden;
 }
 
 .TransactionItem-module-scss-module__3j9oLW__main_info > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
-@media (width <= 420px) {
+@media (width <= 400px) {
   .TransactionItem-module-scss-module__3j9oLW__main_info {
     display: none;
   }
 }
 
-@media (width <= 588px) {
-  .TransactionItem-module-scss-module__3j9oLW__main_info :last-child {
-    display: none;
+@container resentWrapper (width <= 255px) {
+  .TransactionItem-module-scss-module__3j9oLW__wrapper > p {
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 

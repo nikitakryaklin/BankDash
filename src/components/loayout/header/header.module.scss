@@ -51,6 +51,7 @@
 }
 
 .search {
+  width: 355px;
   border-radius: 100px;
   padding: rem(7) clamp(rem(20), 1.5vw, rem(25));
   gap: rem(15);
@@ -60,8 +61,11 @@
   justify-content: center;
 }
 
-// .search_isActive {
-// }
+.search_isActive {
+  border-radius: 0;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
 
 .searchFild {
   display: flex;
@@ -89,7 +93,7 @@
   position: absolute;
   z-index: 4;
   left: 0;
-  top: 27;
+  top: 35;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: rem(10);
@@ -185,6 +189,9 @@
     & > .searchWrapper {
       width: 70%;
       margin: 0 auto;
+      & > .search {
+        width: 100%;
+      }
     }
   }
 

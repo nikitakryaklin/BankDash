@@ -1,29 +1,23 @@
 export const HEADER_ELEMENTS = [
   {
-    title: "Description",
+    title: 'Description',
   },
   {
-    title: "Transaction ID",
+    title: 'Transaction ID',
   },
   {
-    title: "Shopping",
+    title: 'Shopping',
   },
   {
-    title: "Card",
+    title: 'Card',
   },
   {
-    title: "Date",
+    title: 'Date',
   },
   {
-    title: "Amount",
+    title: 'Amount',
   },
   {
-    title: "Receipt",
+    title: 'Receipt',
   },
-];
-
-const TRANS_DATA = [
-  {
-    // title:
-  },
-];
+]

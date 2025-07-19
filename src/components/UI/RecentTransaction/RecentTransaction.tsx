@@ -10,6 +10,7 @@ import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 import clsx from 'clsx'
 import { Loader } from '../Loader/loader'
 import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import { useUser } from '@/hooks/useUser'
 
 export const RecentTransaction = ({
   title = 'Recent Transaction',
@@ -20,7 +21,7 @@ export const RecentTransaction = ({
   className?: string
   flug?: boolean
 }) => {
-  const user = useQueryClient().getQueryData(['user']) as IUser
+  const { data: user } = useUser()
   const { data, isLoading } = useTransactions(user, 3)
   return (
     <ElementWrapper

@@ -64,6 +64,9 @@
 
 .bottom {
   width: 90%;
+  & > :first-child {
+    margin-right: rem(10);
+  }
 }
 
 .values {
@@ -79,6 +82,9 @@
   font-family: var(--font-lato);
   font-weight: 400;
   opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .icon > svg > path {
@@ -109,6 +115,9 @@
   @include fluid-text(22, 16);
   color: var(--title);
   font-family: var(--font-lato) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 600;
   > svg > circle {
     fill: rgba($color: #fff, $alpha: 0.5);

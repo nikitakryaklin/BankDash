@@ -61,6 +61,10 @@
   width: 90%;
 }
 
+.card-module-scss-module__DN01vW__bottom > :first-child {
+  margin-right: .625rem;
+}
+
 .card-module-scss-module__DN01vW__values {
   color: var(--title);
   font-size: clamp(.8125rem, .768486rem + .187793vw, .9375rem);
@@ -73,7 +77,10 @@
   font-size: 12px;
   font-family: var(--font-lato);
   opacity: .7;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-weight: 400;
+  overflow: hidden;
 }
 
 .card-module-scss-module__DN01vW__icon > svg > path {
@@ -97,9 +104,12 @@
 
 .card-module-scss-module__DN01vW__cardNumber {
   color: var(--title);
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin: 0;
   font-size: clamp(1rem, .867958rem + .56338vw, 1.375rem);
   font-weight: 600;
+  overflow: hidden;
   font-family: var(--font-lato) !important;
 }
 

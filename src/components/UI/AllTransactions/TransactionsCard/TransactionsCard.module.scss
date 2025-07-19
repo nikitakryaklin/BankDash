@@ -67,11 +67,28 @@
     gap: 10px;
     align-items: center;
 
-    > p {
+    & > .trans_title_wrapper {
       width: 70%;
-      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      height: auto;
       overflow: hidden;
       text-overflow: ellipsis;
+      & > p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: start;
+        width: 99%;
+        white-space: nowrap;
+        margin: 0;
+      }
+      & > .data {
+        display: none;
+      }
+    }
+
+    & > svg {
+      max-width: rem(35);
     }
   }
 
@@ -88,7 +105,8 @@
     border: 1px solid var(--title);
     border-radius: 150px;
     font-size: rem(15);
-    height: 45px;
+    padding: 0 rem(10);
+    height: 40px;
     font-weight: 400;
     letter-spacing: 1;
     transition: background, color, border, var(--transition);
@@ -107,4 +125,71 @@
 
 .red {
   color: var(--red);
+}
+
+@media (width <= 768px) {
+  .header {
+    display: none;
+    justify-content: space-between;
+    & > :last-child {
+      display: none;
+    }
+    & > :nth-child(2) {
+      display: none;
+    }
+    & > :nth-child(3) {
+      display: none;
+    }
+    & > :nth-child(4) {
+      display: none;
+    }
+    & > :nth-child(5) {
+      display: none;
+    }
+  }
+
+  .transactionsElement {
+    justify-content: space-between;
+
+    & > :nth-child(3) {
+      display: none;
+    }
+    & > :nth-child(2) {
+      display: none;
+    }
+    & > :nth-child(4) {
+      display: none;
+    }
+    & > :nth-child(5) {
+      display: none;
+    }
+    & > :nth-child(6) {
+      flex-shrink: 0;
+      min-width: 30%;
+      text-align: end;
+    }
+
+    & > :last-child {
+      display: none;
+    }
+    & > .trans_title {
+      width: 80% !important;
+      & > .trans_title_wrapper {
+        align-items: start;
+        & > p {
+          max-width: 100%;
+        }
+        & > .data {
+          display: block;
+          color: var(--text-color);
+        }
+      }
+
+      & > svg {
+        width: 40px !important;
+        height: 40px !important;
+        max-width: 40px !important;
+      }
+    }
+  }
 }

@@ -1,19 +1,19 @@
-import { ArrowDownCircle, ArrowUpCircle } from "lucide-react";
-import styles from "./TransactionsCard.module.scss";
-import clsx from "clsx";
-import { typeCategory } from "@/types/Amount.type";
-import { getCardValues } from "@/utiles/getCardValues";
-import { getFormatDate } from "@/utiles/getFormatDate";
-import { downloadReport } from "@/utiles/downloadReport";
+import { ArrowDownCircle, ArrowUpCircle } from 'lucide-react'
+import styles from './TransactionsCard.module.scss'
+import clsx from 'clsx'
+import { typeCategory } from '@/types/Amount.type'
+import { getCardValues } from '@/utiles/getCardValues'
+import { getFormatDate } from '@/utiles/getFormatDate'
+import { downloadReport } from '@/utiles/downloadReport'
 
 interface IProps {
-  title: string;
-  id: number;
-  category: string;
-  cardNumber: string;
-  date: Date;
-  amount: string;
-  type: string;
+  title: string
+  id: number
+  category: string
+  cardNumber: string
+  date: Date
+  amount: string
+  type: string
 }
 
 export const TransactionsElement = ({
@@ -33,36 +33,41 @@ export const TransactionsElement = ({
       category,
       `${getCardValues.number(cardNumber)}`,
       `${typeCategory[type].mark}` +
-        "$" +
+        '$' +
         `${getCardValues.balance(amount.toString())}`,
-      type,
-    );
-  };
+      type
+    )
+  }
 
   return (
     <div className={styles.transactionsElement}>
       <div className={styles.trans_title}>
-        {type === "incoming" ? (
+        {type === 'incoming' ? (
           <ArrowDownCircle
-            style={{ fill: "none", stroke: "var(--text-color)" }}
+            style={{ fill: 'none', stroke: 'var(--text-color)' }}
             size={30}
           />
         ) : (
           <ArrowUpCircle
-            style={{ fill: "none", stroke: "var(--text-color)" }}
+            style={{ fill: 'none', stroke: 'var(--text-color)' }}
             size={30}
           />
         )}
-        <p>{title}</p>
+        <div className={styles.trans_title_wrapper}>
+          <p>{title}</p>
+          <p className={styles.data}>
+            {getFormatDate(date.toString(), 'D MMMM HH:mm')}
+          </p>
+        </div>
       </div>
       <p>#{id}</p>
       <p>{category}</p>
       <p>{getCardValues.number(cardNumber).slice(0, 8)}</p>
-      <p>{getFormatDate(date.toString(), "D MMMM HH:mm")}</p>
+      <p>{getFormatDate(date.toString(), 'D MMMM HH:mm')}</p>
       <p style={{ color: `${typeCategory[type].color}` }}>
         {typeCategory[type].mark}${getCardValues.balance(amount.toString())}
       </p>
       <button onClick={() => hendleClick()}>Download</button>
     </div>
-  );
-};
+  )
+}

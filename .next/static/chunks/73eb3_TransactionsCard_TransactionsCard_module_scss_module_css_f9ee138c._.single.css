@@ -56,11 +56,30 @@
   display: flex;
 }
 
-.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > p {
-  white-space: nowrap;
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper {
   text-overflow: ellipsis;
+  flex-direction: column;
   width: 70%;
+  height: auto;
+  display: flex;
   overflow: hidden;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper > p {
+  text-overflow: ellipsis;
+  text-align: start;
+  white-space: nowrap;
+  width: 99%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper > .TransactionsCard-module-scss-module___HDVYa__data {
+  display: none;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > svg {
+  max-width: 2.1875rem;
 }
 
 .TransactionsCard-module-scss-module___HDVYa__transactionsElement > p {
@@ -74,10 +93,11 @@
   color: var(--title);
   border: 1px solid var(--title);
   letter-spacing: 1px;
-  height: 45px;
+  height: 40px;
   transition: background, color, border, var(--transition);
   background-color: #0000;
   border-radius: 150px;
+  padding: 0 .625rem;
   font-size: .9375rem;
   font-weight: 400;
 }
@@ -104,6 +124,58 @@
 
 .TransactionsCard-module-scss-module___HDVYa__red {
   color: var(--red);
+}
+
+@media (width <= 768px) {
+  .TransactionsCard-module-scss-module___HDVYa__header {
+    justify-content: space-between;
+    display: none;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__header > :last-child, .TransactionsCard-module-scss-module___HDVYa__header > :nth-child(2), .TransactionsCard-module-scss-module___HDVYa__header > :nth-child(3), .TransactionsCard-module-scss-module___HDVYa__header > :nth-child(4), .TransactionsCard-module-scss-module___HDVYa__header > :nth-child(5) {
+    display: none;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement {
+    justify-content: space-between;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(3), .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(2), .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(4), .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(5) {
+    display: none;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(6) {
+    text-align: end;
+    flex-shrink: 0;
+    min-width: 30%;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :last-child {
+    display: none;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title {
+    width: 80% !important;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper {
+    align-items: start;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper > p {
+    max-width: 100%;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper > .TransactionsCard-module-scss-module___HDVYa__data {
+    color: var(--text-color);
+    display: block;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > svg {
+    width: 40px !important;
+    max-width: 40px !important;
+    height: 40px !important;
+  }
 }
 
 /*# sourceMappingURL=73eb3_TransactionsCard_TransactionsCard_module_scss_module_css_f9ee138c._.single.css.map*/

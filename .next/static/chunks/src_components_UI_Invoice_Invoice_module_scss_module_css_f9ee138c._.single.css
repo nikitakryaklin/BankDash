@@ -8,7 +8,7 @@
 .Invoice-module-scss-module__L8zbsW__invoice_card {
   flex-direction: column;
   justify-content: space-between;
-  gap: 15px;
+  gap: clamp(.625rem, .514965rem + .469484vw, .9375rem);
   display: flex;
 }
 
@@ -21,10 +21,10 @@
 
 .Invoice-module-scss-module__L8zbsW__icon {
   background-color: #dcfaf8;
-  border-radius: 12px;
+  border-radius: clamp(.75rem, .573944rem + .751174vw, 1.25rem);
   align-items: center;
-  width: 45px;
-  height: 45px;
+  width: clamp(2.8125rem, 2.48239rem + 1.40845vw, 3.75rem);
+  height: clamp(2.8125rem, 2.48239rem + 1.40845vw, 3.75rem);
   display: flex;
 }
 
@@ -33,14 +33,15 @@
 }
 
 .Invoice-module-scss-module__L8zbsW__info {
-  flex-grow: 1;
+  width: 70%;
+  overflow: hidden;
 }
 
 .Invoice-module-scss-module__L8zbsW__info > h3 {
+  max-width: 100%;
   color: var(--title);
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 75%;
   margin: 0;
   font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
   font-weight: 500;
@@ -49,12 +50,18 @@
 
 .Invoice-module-scss-module__L8zbsW__info > p {
   color: var(--text-color);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
   margin: 0;
   font-size: clamp(.75rem, .683979rem + .28169vw, .9375rem);
+  overflow: hidden;
 }
 
 .Invoice-module-scss-module__L8zbsW__amount {
+  text-align: end;
   color: var(--text-color);
+  flex-shrink: 0;
   margin: 0;
   font-size: clamp(.8125rem, .746479rem + .28169vw, 1rem);
 }

@@ -1064,6 +1064,7 @@ __turbopack_context__.v({
   "searchMobile": "header-module-scss-module__7d5-Xq__searchMobile",
   "searchResult": "header-module-scss-module__7d5-Xq__searchResult",
   "searchWrapper": "header-module-scss-module__7d5-Xq__searchWrapper",
+  "search_isActive": "header-module-scss-module__7d5-Xq__search_isActive",
   "text": "header-module-scss-module__7d5-Xq__text",
   "wrapper": "header-module-scss-module__7d5-Xq__wrapper",
 });

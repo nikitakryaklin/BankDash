@@ -1,83 +1,73 @@
 /* [project]/src/components/screens/home/HomePage.module.scss.module.css [app-client] (css) */
 .HomePage-module-scss-module__bZfz1q__wrapper {
-  grid-template-rows: auto;
-  grid-template-columns: 3fr 2fr 3fr;
-  gap: 24px 30px;
-  width: 100%;
-  height: 100%;
-  display: grid;
-}
-
-.HomePage-module-scss-module__bZfz1q__wrapper :first-child, .HomePage-module-scss-module__bZfz1q__wrapper :nth-child(3) {
-  grid-column: 1 / 3;
-}
-
-.HomePage-module-scss-module__bZfz1q__wrapper :last-child {
-  grid-column: 2 / 4;
-}
-
-.HomePage-module-scss-module__bZfz1q__card_fild {
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5rem;
+  width: 100%;
   height: 100%;
   display: flex;
 }
 
-.HomePage-module-scss-module__bZfz1q__card {
-  background-color: var(--white);
-  border-radius: 25px;
+.HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.875rem;
   width: 100%;
-  height: 20.1875vw;
-  min-height: 254px;
-  max-height: 323px;
+  display: grid;
+}
+
+.HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions > :first-child, .HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions > :nth-child(3) {
+  grid-column: 1 / 3;
+}
+
+.HomePage-module-scss-module__bZfz1q__contacts_balanceHistiry {
+  grid-template-columns: 3fr 2fr 3fr;
+  gap: 1.5rem;
+  display: grid;
+}
+
+.HomePage-module-scss-module__bZfz1q__contacts_balanceHistiry > :last-child {
+  grid-column: 2 / 4;
 }
 
 @media (width <= 768px) {
-  .HomePage-module-scss-module__bZfz1q__wrapper {
-    white-space: wrap;
+  .HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions {
     grid-template-columns: 1fr 1fr;
   }
 
-  .HomePage-module-scss-module__bZfz1q__wrapper :first-child {
-    order: 1;
+  .HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions > :last-child {
     grid-column: 1 / 3;
   }
 
-  .HomePage-module-scss-module__bZfz1q__wrapper :nth-child(2) {
-    order: 2;
+  .HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions :nth-child(4) {
+    order: 3;
+    grid-column: 2 / 3;
   }
 
-  .HomePage-module-scss-module__bZfz1q__wrapper :nth-child(3) {
+  .HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions :nth-child(3) {
     order: 4;
     grid-column: 1 / 3;
   }
 
-  .HomePage-module-scss-module__bZfz1q__wrapper :nth-child(4) {
-    order: 3;
-  }
-
-  .HomePage-module-scss-module__bZfz1q__wrapper :nth-child(5) {
-    order: 5;
-    grid-column: 1 / 3;
-  }
-
-  .HomePage-module-scss-module__bZfz1q__wrapper :last-child {
-    order: 6;
-    grid-column: 1 / 3;
+  .HomePage-module-scss-module__bZfz1q__contacts_balanceHistiry {
+    flex-direction: column;
+    display: flex;
   }
 }
 
 @media (width <= 520px) {
-  .HomePage-module-scss-module__bZfz1q__wrapper :nth-child(2) {
-    order: 2;
-    grid-column: 1 / 3;
+  .HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions, .HomePage-module-scss-module__bZfz1q__contacts_balanceHistiry {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions > :nth-child(2) > div {
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
   }
 
-  .HomePage-module-scss-module__bZfz1q__wrapper :nth-child(4) {
-    order: 3;
-    grid-column: 1 / 3;
-    margin: 0 auto;
+  .HomePage-module-scss-module__bZfz1q__cardBlok_recentTransactions > :last-child {
+    width: 100%;
+    max-width: 100%;
   }
 }
 

@@ -53,9 +53,14 @@
   flex-direction: column;
   justify-content: center;
   gap: .9375rem;
+  width: 355px;
   padding: .4375rem clamp(1.25rem, 1.5vw, 1.5625rem);
   display: flex;
   position: relative;
+}
+
+.header-module-scss-module__7d5-Xq__search_isActive {
+  border-radius: 25px 25px 0 0;
 }
 
 .header-module-scss-module__7d5-Xq__searchFild {
@@ -88,7 +93,7 @@
   max-height: 30vh;
   padding: .625rem;
   position: absolute;
-  top: 27px;
+  top: 35px;
   left: 0;
 }
 
@@ -180,6 +185,10 @@
   .header-module-scss-module__7d5-Xq__searchMobile > .header-module-scss-module__7d5-Xq__searchWrapper {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .header-module-scss-module__7d5-Xq__searchMobile > .header-module-scss-module__7d5-Xq__searchWrapper > .header-module-scss-module__7d5-Xq__search {
+    width: 100%;
   }
 
   .header-module-scss-module__7d5-Xq__burger {

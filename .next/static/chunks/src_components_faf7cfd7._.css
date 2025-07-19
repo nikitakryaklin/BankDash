@@ -466,14 +466,26 @@
   width: 90%;
 }
 
+.card-module-scss-module__DN01vW__bottom > :first-child {
+  margin-right: .625rem;
+}
+
 .card-module-scss-module__DN01vW__values {
   color: var(--title);
   font-size: clamp(.8125rem, .768486rem + .187793vw, .9375rem);
+  font-family: var(--font-lato);
+  font-weight: 700;
 }
 
 .card-module-scss-module__DN01vW__dscr {
   color: var(--text-color);
   font-size: 12px;
+  font-family: var(--font-lato);
+  opacity: .7;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  overflow: hidden;
 }
 
 .card-module-scss-module__DN01vW__icon > svg > path {
@@ -497,8 +509,13 @@
 
 .card-module-scss-module__DN01vW__cardNumber {
   color: var(--title);
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin: 0;
   font-size: clamp(1rem, .867958rem + .56338vw, 1.375rem);
+  font-weight: 600;
+  overflow: hidden;
+  font-family: var(--font-lato) !important;
 }
 
 .card-module-scss-module__DN01vW__cardNumber > svg > circle {
@@ -520,7 +537,7 @@
 /* [project]/src/components/UI/AllTransactions/TransactionsFilters/TransactionsFilters.module.scss.module.css [app-client] (css) */
 .TransactionsFilters-module-scss-module__tCQ8WW__wrapper {
   border-bottom: 1px solid var(--borderLine);
-  gap: 25px;
+  gap: clamp(1.25rem, 1.13996rem + .469484vw, 1.5625rem);
   width: 100%;
   margin-bottom: clamp(.4375rem, .0413732rem + 1.69014vw, 1.5625rem);
   display: flex;
@@ -533,7 +550,7 @@
   background-color: #0000;
   border: none;
   margin: 0;
-  padding: 0 10px 5px;
+  padding: 0 clamp(.375rem, .286972rem + .375587vw, .625rem) 5px;
   font-size: .875rem;
   position: relative;
 }
@@ -625,11 +642,30 @@
   display: flex;
 }
 
-.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > p {
-  white-space: nowrap;
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper {
   text-overflow: ellipsis;
+  flex-direction: column;
   width: 70%;
+  height: auto;
+  display: flex;
   overflow: hidden;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper > p {
+  text-overflow: ellipsis;
+  text-align: start;
+  white-space: nowrap;
+  width: 99%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper > .TransactionsCard-module-scss-module___HDVYa__data {
+  display: none;
+}
+
+.TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > svg {
+  max-width: 2.1875rem;
 }
 
 .TransactionsCard-module-scss-module___HDVYa__transactionsElement > p {
@@ -643,10 +679,11 @@
   color: var(--title);
   border: 1px solid var(--title);
   letter-spacing: 1px;
-  height: 45px;
+  height: 40px;
   transition: background, color, border, var(--transition);
   background-color: #0000;
   border-radius: 150px;
+  padding: 0 .625rem;
   font-size: .9375rem;
   font-weight: 400;
 }
@@ -673,6 +710,58 @@
 
 .TransactionsCard-module-scss-module___HDVYa__red {
   color: var(--red);
+}
+
+@media (width <= 768px) {
+  .TransactionsCard-module-scss-module___HDVYa__header {
+    justify-content: space-between;
+    display: none;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__header > :last-child, .TransactionsCard-module-scss-module___HDVYa__header > :nth-child(2), .TransactionsCard-module-scss-module___HDVYa__header > :nth-child(3), .TransactionsCard-module-scss-module___HDVYa__header > :nth-child(4), .TransactionsCard-module-scss-module___HDVYa__header > :nth-child(5) {
+    display: none;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement {
+    justify-content: space-between;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(3), .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(2), .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(4), .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(5) {
+    display: none;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :nth-child(6) {
+    text-align: end;
+    flex-shrink: 0;
+    min-width: 30%;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > :last-child {
+    display: none;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title {
+    width: 80% !important;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper {
+    align-items: start;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper > p {
+    max-width: 100%;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > .TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper > .TransactionsCard-module-scss-module___HDVYa__data {
+    color: var(--text-color);
+    display: block;
+  }
+
+  .TransactionsCard-module-scss-module___HDVYa__transactionsElement > .TransactionsCard-module-scss-module___HDVYa__trans_title > svg {
+    width: 40px !important;
+    max-width: 40px !important;
+    height: 40px !important;
+  }
 }
 
 

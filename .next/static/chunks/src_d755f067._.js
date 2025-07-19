@@ -950,29 +950,25 @@ __turbopack_context__.s({
 });
 const HEADER_ELEMENTS = [
     {
-        title: "Description"
+        title: 'Description'
     },
     {
-        title: "Transaction ID"
+        title: 'Transaction ID'
     },
     {
-        title: "Shopping"
+        title: 'Shopping'
     },
     {
-        title: "Card"
+        title: 'Card'
     },
     {
-        title: "Date"
+        title: 'Date'
     },
     {
-        title: "Amount"
+        title: 'Amount'
     },
     {
-        title: "Receipt"
-    }
-];
-const TRANS_DATA = [
-    {
+        title: 'Receipt'
     }
 ];
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -984,10 +980,12 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.v({
+  "data": "TransactionsCard-module-scss-module___HDVYa__data",
   "green": "TransactionsCard-module-scss-module___HDVYa__green",
   "header": "TransactionsCard-module-scss-module___HDVYa__header",
   "red": "TransactionsCard-module-scss-module___HDVYa__red",
   "trans_title": "TransactionsCard-module-scss-module___HDVYa__trans_title",
+  "trans_title_wrapper": "TransactionsCard-module-scss-module___HDVYa__trans_title_wrapper",
   "transactionsElement": "TransactionsCard-module-scss-module___HDVYa__transactionsElement",
   "wrapper": "TransactionsCard-module-scss-module___HDVYa__wrapper",
 });
@@ -1094,7 +1092,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$downloadRep
 ;
 const TransactionsElement = ({ title, id, category, cardNumber, date, amount, type })=>{
     const hendleClick = ()=>{
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$downloadReport$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["downloadReport"])(title, date, id, category, `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCardValues"].number(cardNumber)}`, `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$Amount$2e$type$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["typeCategory"][type].mark}` + "$" + `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCardValues"].balance(amount.toString())}`, type);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$downloadReport$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["downloadReport"])(title, date, id, category, `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCardValues"].number(cardNumber)}`, `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$Amount$2e$type$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["typeCategory"][type].mark}` + '$' + `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCardValues"].balance(amount.toString())}`, type);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsCard$2f$TransactionsCard$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].transactionsElement,
@@ -1102,10 +1100,10 @@ const TransactionsElement = ({ title, id, category, cardNumber, date, amount, ty
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsCard$2f$TransactionsCard$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].trans_title,
                 children: [
-                    type === "incoming" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$arrow$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDownCircle$3e$__["ArrowDownCircle"], {
+                    type === 'incoming' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$arrow$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDownCircle$3e$__["ArrowDownCircle"], {
                         style: {
-                            fill: "none",
-                            stroke: "var(--text-color)"
+                            fill: 'none',
+                            stroke: 'var(--text-color)'
                         },
                         size: 30
                     }, void 0, false, {
@@ -1114,8 +1112,8 @@ const TransactionsElement = ({ title, id, category, cardNumber, date, amount, ty
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$arrow$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpCircle$3e$__["ArrowUpCircle"], {
                         style: {
-                            fill: "none",
-                            stroke: "var(--text-color)"
+                            fill: 'none',
+                            stroke: 'var(--text-color)'
                         },
                         size: 30
                     }, void 0, false, {
@@ -1123,9 +1121,26 @@ const TransactionsElement = ({ title, id, category, cardNumber, date, amount, ty
                         lineNumber: 51,
                         columnNumber: 11
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        children: title
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsCard$2f$TransactionsCard$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].trans_title_wrapper,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                children: title
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
+                                lineNumber: 57,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$AllTransactions$2f$TransactionsCard$2f$TransactionsCard$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].data,
+                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getFormatDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFormatDate"])(date.toString(), 'D MMMM HH:mm')
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
+                                lineNumber: 58,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
                         lineNumber: 56,
                         columnNumber: 9
@@ -1143,28 +1158,28 @@ const TransactionsElement = ({ title, id, category, cardNumber, date, amount, ty
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
-                lineNumber: 58,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: category
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
-                lineNumber: 59,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getCardValues$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCardValues"].number(cardNumber).slice(0, 8)
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
-                lineNumber: 60,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getFormatDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFormatDate"])(date.toString(), "D MMMM HH:mm")
+                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getFormatDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFormatDate"])(date.toString(), 'D MMMM HH:mm')
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
-                lineNumber: 61,
+                lineNumber: 66,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1178,7 +1193,7 @@ const TransactionsElement = ({ title, id, category, cardNumber, date, amount, ty
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
-                lineNumber: 62,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1186,7 +1201,7 @@ const TransactionsElement = ({ title, id, category, cardNumber, date, amount, ty
                 children: "Download"
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/AllTransactions/TransactionsCard/transactionsElement.tsx",
-                lineNumber: 65,
+                lineNumber: 70,
                 columnNumber: 7
             }, this)
         ]

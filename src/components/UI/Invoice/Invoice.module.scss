@@ -1,4 +1,4 @@
-@use "@/styles/helpers" as *;
+@use '@/styles/helpers' as *;
 
 .wrapper {
   width: 100%;
@@ -8,7 +8,7 @@
 
 .invoice_card {
   display: flex;
-  gap: 15px;
+  gap: fluid(15, 10);
   flex-direction: column;
   justify-content: space-between;
 }
@@ -18,12 +18,13 @@
   height: 45px;
   display: flex;
   gap: 5px;
+  // justify-content: space-between;
 }
 
 .icon {
-  border-radius: 12px;
-  height: 45px;
-  width: 45px;
+  border-radius: fluid(20, 12);
+  height: fluid(60, 45);
+  width: fluid(60, 45);
   display: flex;
   align-items: center;
   background-color: #dcfaf8;
@@ -33,14 +34,15 @@
 }
 
 .info {
-  flex-grow: 1;
+  overflow: hidden;
+  width: 70%;
 
   > h3 {
     margin: 0;
     @include fluid-text(16, 13);
     font-weight: 500;
+    max-width: 100%;
     color: var(--title);
-    max-width: 75%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -50,11 +52,18 @@
     margin: 0;
     @include fluid-text(15, 12);
     color: var(--text-color);
+    width: 100%;
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
 .amount {
   margin: 0;
+  text-align: end;
+  flex-shrink: 0;
   @include fluid-text(16, 13);
   color: var(--text-color);
 }
