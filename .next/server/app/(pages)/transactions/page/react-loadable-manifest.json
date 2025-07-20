@@ -1,11 +1,17 @@
 {
-  "[project]/src/components/UI/MyExpense/MyExpense.tsx [app-client] (ecmascript, next/dynamic entry)": {
-    "id": "[project]/src/components/UI/MyExpense/MyExpense.tsx [app-client] (ecmascript, next/dynamic entry)",
+  "[project]/src/context/statsContext/statsContext.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/context/statsContext/statsContext.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_46aa9b49._.js",
+      "static/chunks/src_context_statsContext_statsContext_tsx_032d975e._.js"
+    ]
+  },
+  "[project]/src/components/UI/MyExpense/MyExpenseChart.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/UI/MyExpense/MyExpenseChart.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/node_modules_97acc635._.js",
-      "static/chunks/src_010359f9._.js",
-      "static/chunks/src_components_UI_MyExpense_MyExpense_module_scss_module_6da6cf8e.css",
-      "static/chunks/src_components_UI_MyExpense_MyExpense_tsx_32114233._.js"
+      "static/chunks/src_ce5b5b82._.js",
+      "static/chunks/src_components_UI_MyExpense_MyExpenseChart_tsx_032d975e._.js"
     ]
   }
 }

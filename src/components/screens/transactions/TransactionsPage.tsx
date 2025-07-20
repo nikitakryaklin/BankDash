@@ -2,23 +2,14 @@
 
 import { CardBlock } from '@/components/UI/cardBlock/cardBlock'
 import styles from './transactionsPage.module.scss'
-// import { MyExpense } from '@/components/UI/MyExpense/MyExpense'
+import { MyExpense } from '@/components/UI/MyExpense/MyExpense'
 import { AllTransactions } from '@/components/UI/AllTransactions/AllTransactions'
-import dynamic from 'next/dynamic'
-import { Loader } from '@/components/UI/Loader/loader'
 
-const DynamicMyExpense = dynamic(
-  () => import('@/components/UI/MyExpense/MyExpense').then((D) => D.MyExpense),
-  {
-    ssr: false,
-    loading: () => <Loader />,
-  }
-)
 export const TransactionsPage = () => {
   return (
     <div className={styles.wrapper}>
       <CardBlock buttomText="+ Add Card" />
-      <DynamicMyExpense />
+      <MyExpense />
       <AllTransactions />
     </div>
   )

@@ -348,6 +348,7 @@
   color: var(--text-color);
   border: 1px solid var(--text-color);
   white-space: nowrap;
+  width: clamp(4.375rem, 3.71479rem + 2.8169vw, 6.25rem);
   height: 35px;
   transition: background, color, border, var(--transition);
   background: none;

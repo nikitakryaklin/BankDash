@@ -44,6 +44,7 @@ export const CreditPage = () => {
             <DynamicCardBankStatistics cards={cards} />
           </CardWrapper>
         </ElementWrapper>
+
         <ElementWrapper id="card_list" className={styles.cardList}>
           <h2>Card List</h2>
           {cards?.length > 0 && (

@@ -2102,9 +2102,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$I
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUserBalance$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useUserBalance.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTransactionsByDate.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$account$2f$useAccountPageCalculator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/screens/account/useAccountPageCalculator.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Loader/loader.tsx [app-client] (ecmascript)");
-;
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -2116,22 +2113,6 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-;
-;
-const DynamicDebitAndCredit = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.r("[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx [app-client] (ecmascript, next/dynamic entry, async loader)")(__turbopack_context__.i).then((D)=>D.DebitAndCredit), {
-    loadableGenerated: {
-        modules: [
-            "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx [app-client] (ecmascript, next/dynamic entry)"
-        ]
-    },
-    ssr: false,
-    loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Loader"], {}, void 0, false, {
-            fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-            lineNumber: 22,
-            columnNumber: 20
-        }, this)
-});
-_c = DynamicDebitAndCredit;
 const AccountPage = ()=>{
     _s();
     const { balance } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUserBalance$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUserBalance"])();
@@ -2150,12 +2131,12 @@ const AccountPage = ()=>{
                         children: el.icon
                     }, el.id, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 38,
+                        lineNumber: 27,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                lineNumber: 36,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2167,7 +2148,7 @@ const AccountPage = ()=>{
                         flug: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 50,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardBlock"], {
@@ -2175,29 +2156,29 @@ const AccountPage = ()=>{
                         flug: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 55,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicDebitAndCredit, {}, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 56,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Invoice$2f$Invoice$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Invoice"], {}, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 57,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                lineNumber: 49,
+                lineNumber: 38,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-        lineNumber: 35,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 };
@@ -2208,10 +2189,9 @@ _s(AccountPage, "s4okcslF7qJCEIDDn9j3v3RxkbE=", false, function() {
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$account$2f$useAccountPageCalculator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAccountPageCalculator"]
     ];
 });
-_c1 = AccountPage;
-var _c, _c1;
-__turbopack_context__.k.register(_c, "DynamicDebitAndCredit");
-__turbopack_context__.k.register(_c1, "AccountPage");
+_c = AccountPage;
+var _c;
+__turbopack_context__.k.register(_c, "AccountPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }

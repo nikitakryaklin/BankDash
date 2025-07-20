@@ -1,29 +1,19 @@
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
-import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 import styles from './BalanceHistory.module.scss'
-import { BALANCE_HISTORY_DATA } from './BalanceHistory.data'
-import { LineChart } from '../Chart/Line/Line-chart'
-import { useTransactionsByDate } from '@/hooks/useTransactionsByDate'
-import { useBalanceHistoryCalculator } from './useBalanceHistoryCalculator'
 import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import dynamic from 'next/dynamic'
+import { Loader } from '../Loader/loader'
 
+const DynamicBalanceHistory = dynamic(
+  () => import('./BalanceHistoryChart').then((D) => D.BalanceHistoryChart),
+  { ssr: false, loading: () => <Loader /> }
+)
 export const BalanceHistory = () => {
-  const { data: transactions, isLoading } = useTransactionsByDate()
-
-  const { labels, data } = useBalanceHistoryCalculator(transactions)
-
   return (
     <ElementWrapper id="balance_history" className={styles.wrapper}>
       <h2>Balance History</h2>
       <CardWrapper className={styles.card}>
-        <LineChart
-          chartData={{
-            ...BALANCE_HISTORY_DATA,
-            labes: labels,
-            data: data,
-          }}
-          isPlugin={true}
-        />
+        <DynamicBalanceHistory />
       </CardWrapper>
     </ElementWrapper>
   )

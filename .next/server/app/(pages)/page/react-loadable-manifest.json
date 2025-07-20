@@ -1,16 +1,18 @@
 {
-  "[project]/src/components/UI/WeeklyActivity/WeeklyActivity.tsx [app-client] (ecmascript, next/dynamic entry)": {
-    "id": "[project]/src/components/UI/WeeklyActivity/WeeklyActivity.tsx [app-client] (ecmascript, next/dynamic entry)",
+  "[project]/src/components/UI/ExpenseStatistics/ExpenseStatisticsChart.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/UI/ExpenseStatistics/ExpenseStatisticsChart.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
-      "static/chunks/src_components_UI_WeeklyActivity_WeeklyActivity_tsx_10e9549d._.js",
-      "static/chunks/src_components_UI_WeeklyActivity_WeeklyActivity_tsx_30c3db44._.js"
+      "static/chunks/node_modules_97acc635._.js",
+      "static/chunks/src_c78e42b1._.js",
+      "static/chunks/src_components_UI_ExpenseStatistics_ExpenseStatisticsChart_tsx_eb309694._.js"
     ]
   },
-  "[project]/src/context/statsContext/statsContext.tsx [app-client] (ecmascript, next/dynamic entry)": {
-    "id": "[project]/src/context/statsContext/statsContext.tsx [app-client] (ecmascript, next/dynamic entry)",
+  "[project]/src/components/UI/BalanceHistory/BalanceHistoryChart.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/UI/BalanceHistory/BalanceHistoryChart.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
-      "static/chunks/src_46aa9b49._.js",
-      "static/chunks/src_context_statsContext_statsContext_tsx_30c3db44._.js"
+      "static/chunks/node_modules_97acc635._.js",
+      "static/chunks/src_22770a50._.js",
+      "static/chunks/src_components_UI_BalanceHistory_BalanceHistoryChart_tsx_eb309694._.js"
     ]
   },
   "[project]/src/components/UI/WeeklyActivity/WeeklyActivityChart.tsx [app-client] (ecmascript, next/dynamic entry)": {
@@ -18,25 +20,14 @@
     "files": [
       "static/chunks/node_modules_97acc635._.js",
       "static/chunks/src_f87ee593._.js",
-      "static/chunks/src_components_UI_WeeklyActivity_WeeklyActivityChart_tsx_30c3db44._.js"
+      "static/chunks/src_components_UI_WeeklyActivity_WeeklyActivityChart_tsx_eb309694._.js"
     ]
   },
-  "[project]/src/components/UI/ExpenseStatistics/ExpenseStatistics.tsx [app-client] (ecmascript, next/dynamic entry)": {
-    "id": "[project]/src/components/UI/ExpenseStatistics/ExpenseStatistics.tsx [app-client] (ecmascript, next/dynamic entry)",
+  "[project]/src/context/statsContext/statsContext.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/context/statsContext/statsContext.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
-      "static/chunks/node_modules_97acc635._.js",
-      "static/chunks/src_89de9d7f._.js",
-      "static/chunks/1ab64_components_UI_ExpenseStatistics_ExpenseStatistics_module_scss_module_982b0b69.css",
-      "static/chunks/src_components_UI_ExpenseStatistics_ExpenseStatistics_tsx_30c3db44._.js"
-    ]
-  },
-  "[project]/src/components/UI/BalanceHistory/BalanceHistory.tsx [app-client] (ecmascript, next/dynamic entry)": {
-    "id": "[project]/src/components/UI/BalanceHistory/BalanceHistory.tsx [app-client] (ecmascript, next/dynamic entry)",
-    "files": [
-      "static/chunks/src_components_UI_BalanceHistory_BalanceHistory_module_scss_module_ab26f163.css",
-      "static/chunks/node_modules_97acc635._.js",
-      "static/chunks/src_eeacd98f._.js",
-      "static/chunks/src_components_UI_BalanceHistory_BalanceHistory_tsx_30c3db44._.js"
+      "static/chunks/src_46aa9b49._.js",
+      "static/chunks/src_context_statsContext_statsContext_tsx_eb309694._.js"
     ]
   }
 }

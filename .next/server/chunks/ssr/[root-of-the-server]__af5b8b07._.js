@@ -1932,9 +1932,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$I
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUserBalance$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useUserBalance.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTransactionsByDate.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$account$2f$useAccountPageCalculator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/screens/account/useAccountPageCalculator.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Loader/loader.tsx [app-ssr] (ecmascript)");
-;
 'use client';
 ;
 ;
@@ -1945,21 +1942,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$L
 ;
 ;
 ;
-;
-;
-const DynamicDebitAndCredit = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(async ()=>{}, {
-    loadableGenerated: {
-        modules: [
-            "[project]/src/components/UI/DebitAndCredit/DebitAndCredit.tsx [app-client] (ecmascript, next/dynamic entry)"
-        ]
-    },
-    ssr: false,
-    loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Loader"], {}, void 0, false, {
-            fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-            lineNumber: 22,
-            columnNumber: 20
-        }, this)
-});
 const AccountPage = ()=>{
     const { balance } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUserBalance$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUserBalance"])();
     const { data: transactions } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTransactionsByDate$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransactionsByDate"])();
@@ -1977,12 +1959,12 @@ const AccountPage = ()=>{
                         children: el.icon
                     }, el.id, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 38,
+                        lineNumber: 27,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                lineNumber: 36,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1994,7 +1976,7 @@ const AccountPage = ()=>{
                         flug: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 50,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$cardBlock$2f$cardBlock$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardBlock"], {
@@ -2002,29 +1984,29 @@ const AccountPage = ()=>{
                         flug: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 55,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DynamicDebitAndCredit, {}, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 56,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Invoice$2f$Invoice$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Invoice"], {}, void 0, false, {
                         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                        lineNumber: 57,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-                lineNumber: 49,
+                lineNumber: 38,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/screens/account/AccountPage.tsx",
-        lineNumber: 35,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 };
