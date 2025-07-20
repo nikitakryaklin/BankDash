@@ -6,6 +6,10 @@
   max-height: 367px;
 }
 
+.WeeklyActivity-module-scss-module__WGEfja__wrapper:target {
+  background-color: red;
+}
+
 .WeeklyActivity-module-scss-module__WGEfja__card {
   flex-direction: column;
   justify-content: space-between;

@@ -15,21 +15,21 @@
 }
 
 .graf_wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: fluid(30, 15);
-  // height: auto;
   min-height: 256px;
   margin-bottom: 25px;
   > div {
     height: fluid(329, 256);
     width: 100%;
-    max-width: 50%;
+    max-width: 100%;
   }
 }
 
 .invest_wrapper {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
   gap: fluid(30, 15);
   margin-bottom: 25px;
 
@@ -46,6 +46,11 @@
     row-gap: fluid(15, 10);
     overflow-y: scroll;
   }
+}
+
+.listElement {
+  container-type: inline-size;
+  container-name: investList;
 }
 
 .tbody {
@@ -72,22 +77,16 @@
   }
 }
 
-@media (width <= 568px) {
+@container investList (width <= 400) {
   .listElement {
     gap: 20px;
 
-    // & > :first-child {
-    //     max-width: 50%;
-    // }
-
-    & > :not(:first-child, :last-child) {
-      display: none;
+    & > :first-child {
+      max-width: 65%;
     }
 
-    & > :last-child {
-      width: max(60px, 20%);
-      // > p {
-      // }
+    & > :nth-child(2) {
+      display: none;
     }
   }
 }

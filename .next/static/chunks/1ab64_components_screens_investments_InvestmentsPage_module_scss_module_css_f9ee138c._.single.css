@@ -15,20 +15,21 @@
 }
 
 .InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: clamp(.9375rem, .607394rem + 1.40845vw, 1.875rem);
   min-height: 256px;
   margin-bottom: 25px;
-  display: flex;
+  display: grid;
 }
 
 .InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper > div {
   width: 100%;
-  max-width: 50%;
+  max-width: 100%;
   height: clamp(16rem, 14.3935rem + 6.85446vw, 20.5625rem);
 }
 
 .InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper {
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
   gap: clamp(.9375rem, .607394rem + 1.40845vw, 1.875rem);
   margin-bottom: 25px;
   display: grid;
@@ -46,6 +47,10 @@
   max-height: 84%;
   display: flex;
   overflow-y: scroll;
+}
+
+.InvestmentsPage-module-scss-module__ahKUDa__listElement {
+  container: investList / inline-size;
 }
 
 .InvestmentsPage-module-scss-module__ahKUDa__tbody > tr {
@@ -67,17 +72,17 @@
   }
 }
 
-@media (width <= 568px) {
+@container investList (width <= 400px) {
   .InvestmentsPage-module-scss-module__ahKUDa__listElement {
     gap: 20px;
   }
 
-  .InvestmentsPage-module-scss-module__ahKUDa__listElement > :not(:first-child, :last-child) {
-    display: none;
+  .InvestmentsPage-module-scss-module__ahKUDa__listElement > :first-child {
+    max-width: 65%;
   }
 
-  .InvestmentsPage-module-scss-module__ahKUDa__listElement > :last-child {
-    width: max(60px, 20%);
+  .InvestmentsPage-module-scss-module__ahKUDa__listElement > :nth-child(2) {
+    display: none;
   }
 }
 

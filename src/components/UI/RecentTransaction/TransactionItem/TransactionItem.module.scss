@@ -7,8 +7,6 @@
   align-items: center;
   container-type: inline-size;
   container-name: resentWrapper;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   & > p {
     margin: auto;
@@ -38,6 +36,9 @@
 }
 
 .info {
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   & > h4 {
     @include fluid-text(16, 14);
     font-size: rem(13);
@@ -45,6 +46,7 @@
     color: var(--black);
     margin: 0;
     overflow: hidden;
+
     white-space: nowrap;
     text-overflow: ellipsis;
   }
@@ -55,11 +57,12 @@
     color: var(--text-color);
     margin: 0;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
 .main_info {
-  // margin: 0 auto;
   width: 70%;
   overflow: hidden;
   display: flex;

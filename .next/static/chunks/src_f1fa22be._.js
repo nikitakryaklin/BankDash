@@ -431,7 +431,7 @@ const INVEST_BODY_TABLE_DATA = [
     },
     {
         id: '03.',
-        name: 'Uber Food',
+        name: 'Uber',
         price: '350',
         ruturn: '-3%',
         color: 'var(--red)'
@@ -832,6 +832,8 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/loayout/CardWrapper/CardWrapper.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/TableBlock/TableBlock.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+;
 ;
 ;
 ;
@@ -846,33 +848,52 @@ const TableBlock = ({ children, header })=>{
                                 children: el.text
                             }, indx, false, {
                                 fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
-                                lineNumber: 16,
+                                lineNumber: 18,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
-                        lineNumber: 14,
+                        lineNumber: 16,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
-                    lineNumber: 13,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this),
                 children
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
-            lineNumber: 12,
+            lineNumber: 14,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
-        lineNumber: 11,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 };
 _c = TableBlock;
+TableBlock.body = function TableBlockBody({ children, className }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].tbody, className),
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+        lineNumber: 35,
+        columnNumber: 10
+    }, this);
+};
+TableBlock.foot = function TableBlockFoot({ children }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tfoot", {
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+        lineNumber: 43,
+        columnNumber: 10
+    }, this);
+};
 var _c;
 __turbopack_context__.k.register(_c, "TableBlock");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -1387,7 +1408,7 @@ const InvestmentsPage = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBlock"], {
                                 header: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["INVEST_HEADER_TABLE_DATA"],
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBlock"].body, {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].tbody,
                                     children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["INVEST_BODY_TABLE_DATA"].map((el)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                             children: [

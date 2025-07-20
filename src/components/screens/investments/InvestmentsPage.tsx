@@ -10,7 +10,6 @@ import {
 } from './InvestmentsPage.data'
 import styles from './InvestmentsPage.module.scss'
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
-import { NotEnougtData } from '@/components/UI/NotEnougtData/NotEnougtData'
 import { ListItem } from '@/components/UI/ListItem/ListItem'
 import { ListItemElement } from '@/components/UI/ListItem/ListItem.element'
 import { TableBlock } from '@/components/UI/TableBlock/TableBlock'
@@ -34,22 +33,23 @@ export const InvestmentsPage = () => {
           </Widget>
         ))}
       </div>
+
       <div className={styles.graf_wrapper}>
         <ElementWrapper id="yearly_total_investment">
           <h2>Yearly Total Investment</h2>
           <CardWrapper>
             <LineChart chartData={YEARLY_TOTAL_INVESTMENTS_DATA} />
-            {/* <NotEnougtData /> */}
           </CardWrapper>
         </ElementWrapper>
+
         <ElementWrapper id="monthly_revenue">
           <h2>Monthly Revenue</h2>
           <CardWrapper>
             <LineChart chartData={MONTHLY_REVENUE_DATA} />
-            {/* <NotEnougtData /> */}
           </CardWrapper>
         </ElementWrapper>
       </div>
+
       <div className={styles.invest_wrapper}>
         <ElementWrapper id="my_investment">
           <h2>My Investment</h2>
@@ -74,10 +74,11 @@ export const InvestmentsPage = () => {
             ))}
           </div>
         </ElementWrapper>
+
         <ElementWrapper id="trending_stock" className={styles.trending_wrapper}>
           <h2>Trending Stock</h2>
           <TableBlock header={INVEST_HEADER_TABLE_DATA}>
-            <tbody className={styles.tbody}>
+            <TableBlock.body className={styles.tbody}>
               {INVEST_BODY_TABLE_DATA.map((el) => (
                 <tr key={el.id}>
                   <td>{el.id}</td>
@@ -86,7 +87,7 @@ export const InvestmentsPage = () => {
                   <td style={{ color: el.color }}>{el.ruturn}</td>
                 </tr>
               ))}
-            </tbody>
+            </TableBlock.body>
           </TableBlock>
         </ElementWrapper>
       </div>

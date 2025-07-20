@@ -1,0 +1,81 @@
+/* [project]/src/components/screens/loans/LoansPage.module.scss.module.css [app-client] (css) */
+.LoansPage-module-scss-module__FYed5q__page {
+  width: 100%;
+}
+
+.LoansPage-module-scss-module__FYed5q__widget {
+  width: 100%;
+  min-width: 167px;
+  max-width: 265px;
+}
+
+.LoansPage-module-scss-module__FYed5q__table {
+  background-color: #ffebcd;
+}
+
+
+/* [project]/src/components/UI/Widget/Widget.module.scss.module.css [app-client] (css) */
+.Widget-module-scss-module__N2daNW__wrapper {
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  height: clamp(5.3125rem, 4.54225rem + 3.28639vw, 7.5rem);
+  padding: 1.5625rem .9375rem;
+}
+
+.Widget-module-scss-module__N2daNW__content {
+  width: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(.625rem, .514965rem + .469484vw, .9375rem);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Widget-module-scss-module__N2daNW__content > div > h3 {
+  color: var(--text-color);
+  margin: 0 0 clamp(.25rem, .183979rem + .28169vw, .4375rem);
+  font-size: clamp(.75rem, .661972rem + .375587vw, 1rem);
+  font-weight: 400;
+}
+
+.Widget-module-scss-module__N2daNW__content > div > p {
+  color: var(--black);
+  margin: 0;
+  font-size: clamp(.75rem, .661972rem + .375587vw, 1rem);
+  font-weight: 600;
+}
+
+.Widget-module-scss-module__N2daNW__icon {
+  aspect-ratio: 1;
+  border-radius: 100px;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.Widget-module-scss-module__N2daNW__icon > svg {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.Widget-module-scss-module__N2daNW__isFind {
+  outline: 1px dashed var(--text-color);
+  outline-offset: 10px;
+  border-radius: 25px;
+  scroll-margin-top: 30px;
+}
+
+
+/* [project]/src/components/UI/widgetWrapper/widgetWrapper.module.scss.module.css [app-client] (css) */
+.widgetWrapper-module-scss-module__tdWzNq__wrapper {
+  gap: 1.5625rem;
+  max-width: 1150px;
+  margin-bottom: .9375rem;
+  display: flex;
+  overflow: scroll;
+}
+
+
+/*# sourceMappingURL=src_components_c79918ec._.css.map*/

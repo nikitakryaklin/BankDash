@@ -1,4 +1,4 @@
-@use "@/styles/helpers" as *;
+@use '@/styles/helpers' as *;
 
 .widget {
   min-width: rem(230);
@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   gap: fluid(20, 10);
+  container-type: inline-size;
+  container-name: listWrapper;
 }
 
 .listElement {
@@ -18,30 +20,29 @@
   }
 }
 
-@media (width <= 768px) {
+@container listWrapper (width <= 820) {
   .listElement {
     & > :nth-child(2) {
       display: none;
     }
-
-    & > :nth-child(3) {
-      display: none;
-    }
-
-    & > :last-child {
-      margin: 0 auto;
-    }
   }
 }
 
-@media (width <= 520px) {
+@container listWrapper (width <= 600) {
   .listElement {
-    & > div {
-      max-width: 90%;
-      padding: 0 !important;
+    & > :nth-child(4) {
+      display: none;
+    }
+  }
+}
+@container listWrapper (width <= 460) {
+  .listElement {
+    & > :first-child {
+      padding: 0;
+      max-width: 80%;
     }
 
-    & > :last-child {
+    & > :nth-child(3) {
       display: none;
     }
   }

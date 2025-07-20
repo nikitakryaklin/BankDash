@@ -134,12 +134,10 @@
 
 /* [project]/src/components/UI/RecentTransaction/TransactionItem/TransactionItem.module.scss.module.css [app-client] (css) */
 .TransactionItem-module-scss-module__3j9oLW__wrapper {
-  text-overflow: ellipsis;
   align-items: center;
   gap: clamp(.5rem, .345951rem + .657277vw, .9375rem);
   width: 100%;
   display: flex;
-  overflow: hidden;
   container: resentWrapper / inline-size;
 }
 
@@ -169,6 +167,12 @@
   margin: 0 auto;
 }
 
+.TransactionItem-module-scss-module__3j9oLW__info {
+  text-overflow: ellipsis;
+  max-width: 90%;
+  overflow: hidden;
+}
+
 .TransactionItem-module-scss-module__3j9oLW__info > h4 {
   color: var(--black);
   white-space: nowrap;
@@ -182,8 +186,10 @@
 .TransactionItem-module-scss-module__3j9oLW__info > p {
   color: var(--text-color);
   white-space: nowrap;
+  text-overflow: ellipsis;
   margin: 0;
   font-size: .8125rem;
+  overflow: hidden;
 }
 
 .TransactionItem-module-scss-module__3j9oLW__main_info {

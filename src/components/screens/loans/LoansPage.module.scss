@@ -1,4 +1,4 @@
-@use "@/styles/helpers" as *;
+@use '@/styles/helpers' as *;
 
 .page {
   width: 100%;
@@ -8,4 +8,42 @@
   max-width: 265px;
   width: 100%;
   min-width: 167px;
+}
+
+.tableBlock {
+  container-type: inline-size;
+  container-name: loansTable;
+}
+
+@container loansTable (width <= 668) {
+  .table {
+    & > tr {
+      & > :nth-child(6) {
+        display: none;
+      }
+    }
+  }
+}
+
+@container loansTable (width <= 500) {
+  .table {
+    & > tr {
+      & > :nth-child(4) {
+        display: none;
+      }
+      & > :nth-child(5) {
+        display: none;
+      }
+    }
+  }
+}
+
+@container loansTable (width <= 350) {
+  .table {
+    & > tr {
+      & > :first-child {
+        display: none;
+      }
+    }
+  }
 }

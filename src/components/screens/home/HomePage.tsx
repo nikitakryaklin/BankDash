@@ -5,6 +5,7 @@ import { RecentTransaction } from '@/components/UI/RecentTransaction/RecentTrans
 import { Contacts } from '@/components/UI/Contacts/Contacts'
 import dynamic from 'next/dynamic'
 import { Loader } from '@/components/UI/Loader/loader'
+import { WeeklyActivity } from '@/components/UI/WeeklyActivity/WeeklyActivity'
 
 const DynamicBalanceHistory = dynamic(
   () =>
@@ -36,7 +37,7 @@ export const HomePage = () => {
         <div className={styles.cardBlok_recentTransactions}>
           <CardBlock buttomText="See All" />
           <RecentTransaction />
-          <DynamicWeeklyActivity />
+          <WeeklyActivity />
           <DynamicExpenseStatistics />
         </div>
         <div className={styles.contacts_balanceHistiry}>

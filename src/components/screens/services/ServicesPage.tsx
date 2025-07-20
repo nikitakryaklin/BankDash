@@ -23,6 +23,7 @@ export const ServicesPage = () => {
           </Widget>
         ))}
       </WidgetWrapper>
+
       <ElementWrapper id="bank_services_list">
         <h2>Bank Services List</h2>
         <div className={styles.listWrapper}>

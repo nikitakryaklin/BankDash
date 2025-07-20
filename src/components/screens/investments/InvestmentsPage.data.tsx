@@ -201,7 +201,7 @@ export const INVEST_BODY_TABLE_DATA = [
   },
   {
     id: '03.',
-    name: 'Uber Food',
+    name: 'Uber',
     price: '350',
     ruturn: '-3%',
     color: 'var(--red)',

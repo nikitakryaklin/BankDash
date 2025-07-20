@@ -9,4 +9,26 @@
   max-width: 265px;
 }
 
+.LoansPage-module-scss-module__FYed5q__tableBlock {
+  container: loansTable / inline-size;
+}
+
+@container loansTable (width <= 668px) {
+  .LoansPage-module-scss-module__FYed5q__table > tr > :nth-child(6) {
+    display: none;
+  }
+}
+
+@container loansTable (width <= 500px) {
+  .LoansPage-module-scss-module__FYed5q__table > tr > :nth-child(4), .LoansPage-module-scss-module__FYed5q__table > tr > :nth-child(5) {
+    display: none;
+  }
+}
+
+@container loansTable (width <= 350px) {
+  .LoansPage-module-scss-module__FYed5q__table > tr > :first-child {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=src_components_screens_loans_LoansPage_module_scss_module_css_f9ee138c._.single.css.map*/

@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/screens/loans/LoansPage.module.scss.module.css"],"sourcesContent":[".page{width:100%}.widget{max-width:265px;width:100%;min-width:167px}"],"names":[],"mappings":"AAAA;;;;AAAiB"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/screens/loans/LoansPage.module.scss.module.css"],"sourcesContent":[".page{width:100%}.widget{max-width:265px;width:100%;min-width:167px}.tableBlock{container-type:inline-size;container-name:loansTable}@container loansTable (width <= 668){.table>tr>:nth-child(6){display:none}}@container loansTable (width <= 500){.table>tr>:nth-child(4){display:none}.table>tr>:nth-child(5){display:none}}@container loansTable (width <= 350){.table>tr>:first-child{display:none}}"],"names":[],"mappings":"AAAA;;;;AAAiB;;;;;;AAAmD;;;;AAAiE;EAAqC;;;;;AAAsC;EAAqC;;;;;AAA2E;EAAqC"}}]
 }
