@@ -59,7 +59,7 @@
 }
 
 .TransactionItem-module-scss-module__3j9oLW__main_info {
-  justify-content: space-between;
+  justify-content: space-around;
   gap: clamp(.5rem, .345951rem + .657277vw, .9375rem);
   width: 70%;
   display: flex;

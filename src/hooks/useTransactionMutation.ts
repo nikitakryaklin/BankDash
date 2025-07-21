@@ -7,14 +7,17 @@ export const useTransactionMutation = () => {
   const createTransactionMutation = useMutation({
     mutationKey: ['create_transaction'],
     mutationFn: transactionsService.post,
+
     onSettled: async () => {
       await queryClient.invalidateQueries({
         queryKey: ['transactions'],
       })
     },
+
     onSuccess: () => {
       console.log('Транзакция успешно проведенна')
     },
+
     onError: () => {
       console.log('Ошибка в совершении транзакции')
     },

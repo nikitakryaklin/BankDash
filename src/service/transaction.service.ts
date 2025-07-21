@@ -1,9 +1,10 @@
+import { CONSTANTS } from '@/config/constants'
 import { ITransaction } from '@/types/Transactions.type'
 import { checkResponse } from '@/utiles/checkResponse'
 import { getArray } from '@/utiles/getArray'
 
 class Transactions {
-  private URL: string = 'http://localhost:1337/api/transactions'
+  private URL: string = CONSTANTS.API + '/transactions'
 
   async get(numbers: string[], limit: number) {
     const filter = getArray('card', 'number', numbers)
@@ -72,7 +73,6 @@ class Transactions {
           },
         }
       )
-      // checkResponse(result)
       if (result.ok) {
         return result.json()
       } else {

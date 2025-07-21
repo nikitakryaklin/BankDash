@@ -7,6 +7,7 @@ export const useBalanceMutation = () => {
   const createBalanceMutation = useMutation({
     mutationKey: ['balance'],
     mutationFn: balance,
+
     onSettled: async () => {
       await queryClient.invalidateQueries({
         queryKey: ['user'],

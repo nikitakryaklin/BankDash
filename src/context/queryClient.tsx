@@ -31,10 +31,12 @@ export const QueryClientCastomProvider = ({
     const persister = createAsyncStoragePersister({
       storage: window.sessionStorage,
     })
+
     persistQueryClient({
       queryClient,
       persister: persister,
     })
+
     setIsPersistor(true)
     setPersister(persister)
   }, [])
@@ -42,6 +44,7 @@ export const QueryClientCastomProvider = ({
   if (!isPersistor || !persister) {
     return null
   }
+
   return (
     <PersistQueryClientProvider
       client={queryClient}

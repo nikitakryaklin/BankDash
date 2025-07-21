@@ -56,7 +56,7 @@ class UserService {
   private createAboutTable = async (user_id: string, data: IAboutData) => {
     const { avatar, ...oredData } = data
 
-    const avatarId = await AvatarService.post(avatar)
+    const avatarId = avatar ? await AvatarService.post(avatar) : ''
 
     try {
       await fetch('http://localhost:1337/api/abouts', {
@@ -81,7 +81,7 @@ class UserService {
   private addAboutData = async (id: string, data: IAboutData) => {
     const { avatar, ...oredData } = data
 
-    const avatarId = await AvatarService.post(avatar)
+    const avatarId = avatar ? await AvatarService.post(avatar) : ''
 
     try {
       await fetch(`http://localhost:1337/api/abouts/${id}`, {
@@ -89,7 +89,7 @@ class UserService {
         body: JSON.stringify({
           data: {
             ...oredData,
-            avatar: avatarId,
+            ...(avatarId && { avatar: avatarId }),
             user: localStorage.getItem('User_id'),
           },
         }),

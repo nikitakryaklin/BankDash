@@ -523,7 +523,7 @@ const MyExpenseChart = ()=>{
         chartData: MY_EXPENSE_DATA
     }, void 0, false, {
         fileName: "[project]/src/components/UI/MyExpense/MyExpenseChart.tsx",
-        lineNumber: 12,
+        lineNumber: 9,
         columnNumber: 10
     }, this);
 };

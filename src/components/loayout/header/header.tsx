@@ -35,10 +35,13 @@ const Header = () => {
           <span></span>
           <span></span>
         </button>
+
         <h2>{getTitle(pathname)}</h2>
+
         <div className={styles.controles}>
           <div className={styles.text}>
             <Search />
+
             <Link href={'/settings'} className={styles.item}>
               <Image
                 src={'/header/setting.svg'}
@@ -47,6 +50,7 @@ const Header = () => {
                 height={15}
               />
             </Link>
+
             <button
               onClick={toggleNotify}
               className={clsx(
@@ -62,11 +66,13 @@ const Header = () => {
               />
             </button>
           </div>
+
           <Link href={'/accounts'} className={styles.avatar}>
             <UserAvatar width={60} height={60} />
           </Link>
         </div>
       </div>
+
       <div className={styles.searchMobile}>
         <Search />
       </div>

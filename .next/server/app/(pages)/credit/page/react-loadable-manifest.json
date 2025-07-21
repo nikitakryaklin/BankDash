@@ -5,7 +5,7 @@
       "static/chunks/src_components_UI_cb136581._.css",
       "static/chunks/node_modules_62c4fb29._.js",
       "static/chunks/src_064c017b._.js",
-      "static/chunks/src_components_screens_credit_CreditPageForm_tsx_7a12ecd8._.js"
+      "static/chunks/src_components_screens_credit_CreditPageForm_tsx_f6347824._.js"
     ]
   },
   "[project]/src/components/screens/credit/CardBankStatistics/CardBankStatistics.tsx [app-client] (ecmascript, next/dynamic entry)": {
@@ -13,7 +13,7 @@
     "files": [
       "static/chunks/node_modules_97acc635._.js",
       "static/chunks/src_1ffb1354._.js",
-      "static/chunks/src_components_screens_credit_CardBankStatistics_CardBankStatistics_tsx_7a12ecd8._.js"
+      "static/chunks/src_components_screens_credit_CardBankStatistics_CardBankStatistics_tsx_f6347824._.js"
     ]
   }
 }

@@ -4,11 +4,16 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 
 export const useTransactions = (user: IUser, limit: number) => {
   const result: string[] = []
+
   user?.cards?.map((card) => result.push(card.number))
+
   const { data, isLoading, isSuccess } = useQuery({
     queryKey: ['transactions', limit],
+
     queryFn: () => transactionsService.get(result, limit),
+
     enabled: result.length > 0,
+
     select: (data) => data.data,
   })
 

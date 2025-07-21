@@ -46,15 +46,27 @@ export const useEditForm = (formValues: IEditForm) => {
 
   const onSubmit: SubmitHandler<IEditForm> = (data) => {
     const { avatarFile, ...withOutAvatrData } = data
-    const avatar = new FormData()
-    avatar.append('files', avatarFile[0])
+    if (avatarFile) {
+      const avatar = new FormData()
+
+      avatar.append('files', avatarFile[0])
+
+      toast.promise(
+        createUserAboutMutation.mutateAsync({ ...withOutAvatrData, avatar }),
+        {
+          ...getToasterPromisSuccess('Profile has been update'),
+        }
+      )
+      reset()
+      return
+    }
+
     toast.promise(
-      createUserAboutMutation.mutateAsync({ ...withOutAvatrData, avatar }),
+      createUserAboutMutation.mutateAsync({ ...withOutAvatrData }),
       {
         ...getToasterPromisSuccess('Profile has been update'),
       }
     )
-    reset()
   }
 
   return {

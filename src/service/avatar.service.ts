@@ -3,7 +3,7 @@ import { CONSTANTS } from '@/config/constants'
 class Avatar {
   URL = CONSTANTS.API + `/`
 
-  public post = async (FormData: FormData | undefined) => {
+  public post = async (FormData: FormData) => {
     try {
       const response = await fetch(this.URL + 'upload', {
         method: 'POST',
@@ -16,6 +16,7 @@ class Avatar {
       if (response.ok) {
         const responseJSON = await response.json()
         const avatarId = responseJSON[0].id
+
         return avatarId
       } else {
         const errorMessage = await response.text()

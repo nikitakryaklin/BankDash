@@ -2,14 +2,14 @@
   "pages": {
     "/(pages)/credit/page": [
       "static/chunks/_51f2cefa._.css",
-      "static/chunks/src_aefc0702._.js",
-      "static/chunks/node_modules_8ee85765._.js",
+      "static/chunks/src_4c7fd827._.js",
+      "static/chunks/node_modules_dc01e370._.js",
       "static/chunks/src_app_layout_tsx_a1abcdbe._.js",
       "static/chunks/src_components_faf7cfd7._.css",
-      "static/chunks/src_components_screens_credit_d3ee3b1c._.js",
+      "static/chunks/src_components_screens_credit_7cbe5a3f._.js",
       "static/chunks/src_3bb26a22._.js",
       "static/chunks/node_modules_b5af7b2e._.js",
-      "static/chunks/src_app_(pages)_credit_page_tsx_c6abedd8._.js",
+      "static/chunks/src_app_(pages)_credit_page_tsx_2308b9b9._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",

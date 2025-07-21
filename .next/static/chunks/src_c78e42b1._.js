@@ -481,7 +481,7 @@ const ExpenseStatisticsChart = ()=>{
         chartData: EXPENSE_STATISTICS_DATA
     }, void 0, false, {
         fileName: "[project]/src/components/UI/ExpenseStatistics/ExpenseStatisticsChart.tsx",
-        lineNumber: 10,
+        lineNumber: 7,
         columnNumber: 10
     }, this);
 };

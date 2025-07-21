@@ -17,8 +17,6 @@ export const useHashAnchor = (
       window.history.replaceState(null, '', window.location.pathname)
       setIsFind(true)
 
-      //   ref.current.scrollIntoView({ behavior: 'smooth' })
-
       setTimeout(() => {
         setIsFind(false)
       }, 2000)

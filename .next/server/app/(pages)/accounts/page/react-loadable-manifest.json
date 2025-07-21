@@ -4,14 +4,14 @@
     "files": [
       "static/chunks/node_modules_97acc635._.js",
       "static/chunks/src_4a434124._.js",
-      "static/chunks/src_components_UI_DebitAndCredit_DebitAndCreditChart_tsx_281097e7._.js"
+      "static/chunks/src_components_UI_DebitAndCredit_DebitAndCreditChart_tsx_1c2707a5._.js"
     ]
   },
   "[project]/src/context/statsContext/statsContext.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/src/context/statsContext/statsContext.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/src_7998b1f6._.js",
-      "static/chunks/src_context_statsContext_statsContext_tsx_281097e7._.js"
+      "static/chunks/src_context_statsContext_statsContext_tsx_1c2707a5._.js"
     ]
   }
 }

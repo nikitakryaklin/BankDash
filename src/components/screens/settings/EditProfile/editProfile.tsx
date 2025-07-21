@@ -53,9 +53,7 @@ export const EditProfile = ({ formRef, pending }: IForm) => {
               id="avatar"
               accept=".jpg, .jpeg, .png"
               hidden
-              {...register('avatarFile', {
-                ...getValidateError('Avatar', false),
-              })}
+              {...register('avatarFile')}
             />
             <PencilIcon style={{ fill: 'none', stroke: 'white' }} />
           </label>

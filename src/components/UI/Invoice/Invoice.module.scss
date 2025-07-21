@@ -23,8 +23,11 @@
 
 .icon {
   border-radius: fluid(20, 12);
-  height: fluid(60, 45);
   width: fluid(60, 45);
+  max-width: fluid(60, 45);
+  height: fluid(60, 45);
+  max-height: fluid(60, 45);
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   background-color: #dcfaf8;

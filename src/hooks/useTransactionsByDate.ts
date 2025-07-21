@@ -7,14 +7,18 @@ export const useTransactionsByDate = (day = 7) => {
   const user = useQueryClient().getQueryData(['user']) as IUser
 
   const result: string[] = []
+
   user?.cards?.forEach((card) => result.push(card.number))
 
   const date = getDateByDays(day)
 
   const { data, isLoading, isSuccess } = useQuery({
     queryKey: ['transactions', 'byDate'],
+
     queryFn: () => transactionsService.getByDate(result, date),
+
     enabled: !!user && result.length > 0,
+
     select: (data) => data.data,
   })
 

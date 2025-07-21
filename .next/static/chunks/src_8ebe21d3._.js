@@ -511,7 +511,6 @@ const useHashAnchor = (ref, id)=>{
                 console.log('hash - ', window.location.hash, 'id - ', id);
                 window.history.replaceState(null, '', window.location.pathname);
                 setIsFind(true);
-                //   ref.current.scrollIntoView({ behavior: 'smooth' })
                 setTimeout({
                     "useHashAnchor.useEffect": ()=>{
                         setIsFind(false);
@@ -1509,10 +1508,12 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 __turbopack_context__.s({
     "transactionsService": (()=>transactionsService)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/constants.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utiles/getArray.ts [app-client] (ecmascript)");
 ;
+;
 class Transactions {
-    URL = 'http://localhost:1337/api/transactions';
+    URL = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONSTANTS"].API + '/transactions';
     async get(numbers, limit) {
         const filter = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
@@ -1567,7 +1568,6 @@ class Transactions {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
             });
-            // checkResponse(result)
             if (result.ok) {
                 return result.json();
             } else {

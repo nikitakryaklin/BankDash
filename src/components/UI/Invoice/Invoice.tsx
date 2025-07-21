@@ -17,11 +17,7 @@ export const Invoice = () => {
               {el.icon}
             </div>
             <div className={styles.info}>
-              <h3>
-                {el.title}
-                {el.title}
-                {el.title}
-              </h3>
+              <h3>{el.title}</h3>
               <p>{el.time}</p>
             </div>
             <p className={styles.amount}>{el.amount}</p>

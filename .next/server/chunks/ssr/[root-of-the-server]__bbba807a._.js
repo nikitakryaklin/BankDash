@@ -525,10 +525,12 @@ var { g: global, __dirname } = __turbopack_context__;
 __turbopack_context__.s({
     "transactionsService": (()=>transactionsService)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/constants.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utiles/getArray.ts [app-ssr] (ecmascript)");
 ;
+;
 class Transactions {
-    URL = 'http://localhost:1337/api/transactions';
+    URL = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$constants$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CONSTANTS"].API + '/transactions';
     async get(numbers, limit) {
         const filter = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getArray$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getArray"])('card', 'number', numbers);
         try {
@@ -583,7 +585,6 @@ class Transactions {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
             });
-            // checkResponse(result)
             if (result.ok) {
                 return result.json();
             } else {
@@ -759,7 +760,6 @@ const useHashAnchor = (ref, id)=>{
             console.log('hash - ', window.location.hash, 'id - ', id);
             window.history.replaceState(null, '', window.location.pathname);
             setIsFind(true);
-            //   ref.current.scrollIntoView({ behavior: 'smooth' })
             setTimeout(()=>{
                 setIsFind(false);
             }, 2000);
@@ -1593,12 +1593,8 @@ const Invoice = ()=>{
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Invoice$2f$Invoice$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].info,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        children: [
-                                            el.title,
-                                            el.title,
-                                            el.title
-                                        ]
-                                    }, void 0, true, {
+                                        children: el.title
+                                    }, void 0, false, {
                                         fileName: "[project]/src/components/UI/Invoice/Invoice.tsx",
                                         lineNumber: 20,
                                         columnNumber: 15
@@ -1607,7 +1603,7 @@ const Invoice = ()=>{
                                         children: el.time
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/UI/Invoice/Invoice.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 21,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1621,7 +1617,7 @@ const Invoice = ()=>{
                                 children: el.amount
                             }, void 0, false, {
                                 fileName: "[project]/src/components/UI/Invoice/Invoice.tsx",
-                                lineNumber: 27,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this)
                         ]

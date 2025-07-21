@@ -139,7 +139,7 @@
 }
 
 .TransactionItem-module-scss-module__3j9oLW__main_info {
-  justify-content: space-between;
+  justify-content: space-around;
   gap: clamp(.5rem, .345951rem + .657277vw, .9375rem);
   width: 70%;
   display: flex;
@@ -401,11 +401,14 @@
 }
 
 .Invoice-module-scss-module__L8zbsW__icon {
+  aspect-ratio: 1;
   background-color: #dcfaf8;
   border-radius: clamp(.75rem, .573944rem + .751174vw, 1.25rem);
   align-items: center;
   width: clamp(2.8125rem, 2.48239rem + 1.40845vw, 3.75rem);
+  max-width: clamp(2.8125rem, 2.48239rem + 1.40845vw, 3.75rem);
   height: clamp(2.8125rem, 2.48239rem + 1.40845vw, 3.75rem);
+  max-height: clamp(2.8125rem, 2.48239rem + 1.40845vw, 3.75rem);
   display: flex;
 }
 

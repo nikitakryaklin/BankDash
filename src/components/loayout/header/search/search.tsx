@@ -48,6 +48,7 @@ export const Search = () => {
             value={searchValue}
           />
         </div>
+
         {searchData && searchData?.length > 0 && (
           <div className={styles.searchResult}>
             <ul

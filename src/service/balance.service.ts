@@ -21,7 +21,6 @@ export const balance = async (balanceData: {
       )
 
       const responceJSON = await responce.json()
-      console.log(responceJSON)
       const cardBalance = responceJSON.data[0].balance
       const cardDocumentId = responceJSON.data[0].documentId
 
@@ -42,6 +41,7 @@ export const balance = async (balanceData: {
           },
         }),
       })
+
       if (!responce.ok) {
         const errorMessage = responce.text()
         throw new Error('ошибка запроса ' + errorMessage)

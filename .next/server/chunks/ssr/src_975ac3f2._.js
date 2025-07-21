@@ -30,7 +30,6 @@ const useHashAnchor = (ref, id)=>{
             console.log('hash - ', window.location.hash, 'id - ', id);
             window.history.replaceState(null, '', window.location.pathname);
             setIsFind(true);
-            //   ref.current.scrollIntoView({ behavior: 'smooth' })
             setTimeout(()=>{
                 setIsFind(false);
             }, 2000);

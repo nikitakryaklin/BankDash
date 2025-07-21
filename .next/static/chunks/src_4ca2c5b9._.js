@@ -534,15 +534,23 @@ const useEditForm = (formValues)=>{
     });
     const onSubmit = (data)=>{
         const { avatarFile, ...withOutAvatrData } = data;
-        const avatar = new FormData();
-        avatar.append('files', avatarFile[0]);
+        if (avatarFile) {
+            const avatar = new FormData();
+            avatar.append('files', avatarFile[0]);
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].promise(createUserAboutMutation.mutateAsync({
+                ...withOutAvatrData,
+                avatar
+            }), {
+                ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getToasterPromisSuccess$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getToasterPromisSuccess"])('Profile has been update')
+            });
+            reset();
+            return;
+        }
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].promise(createUserAboutMutation.mutateAsync({
-            ...withOutAvatrData,
-            avatar
+            ...withOutAvatrData
         }), {
             ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getToasterPromisSuccess$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getToasterPromisSuccess"])('Profile has been update')
         });
-        reset();
     };
     return {
         register,
@@ -682,9 +690,7 @@ const EditProfile = ({ formRef, pending })=>{
                                     id: "avatar",
                                     accept: ".jpg, .jpeg, .png",
                                     hidden: true,
-                                    ...register('avatarFile', {
-                                        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getValidateError$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getValidateError"])('Avatar', false)
-                                    })
+                                    ...register('avatarFile')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
                                     lineNumber: 51,
@@ -697,7 +703,7 @@ const EditProfile = ({ formRef, pending })=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 58,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -724,7 +730,7 @@ const EditProfile = ({ formRef, pending })=>{
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 65,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
@@ -736,7 +742,7 @@ const EditProfile = ({ formRef, pending })=>{
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 71,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this),
                         !data?.about?.dateOfBirth ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
@@ -748,7 +754,7 @@ const EditProfile = ({ formRef, pending })=>{
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 79,
+                            lineNumber: 77,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
                             title: "Date of Birth",
@@ -756,7 +762,7 @@ const EditProfile = ({ formRef, pending })=>{
                             placeholder: String(data?.about?.dateOfBirth)
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 88,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
@@ -768,13 +774,13 @@ const EditProfile = ({ formRef, pending })=>{
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 95,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                    lineNumber: 64,
+                    lineNumber: 62,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -788,7 +794,7 @@ const EditProfile = ({ formRef, pending })=>{
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 104,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
@@ -797,7 +803,7 @@ const EditProfile = ({ formRef, pending })=>{
                             placeholder: data?.about?.city && data?.about?.country ? data?.about.city + ', ' + data?.about.country : 'City, Country'
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 109,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
@@ -808,7 +814,7 @@ const EditProfile = ({ formRef, pending })=>{
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 118,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
@@ -819,13 +825,13 @@ const EditProfile = ({ formRef, pending })=>{
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                            lineNumber: 123,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                    lineNumber: 103,
+                    lineNumber: 101,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -833,7 +839,7 @@ const EditProfile = ({ formRef, pending })=>{
                     hidden: true
                 }, void 0, false, {
                     fileName: "[project]/src/components/screens/settings/EditProfile/editProfile.tsx",
-                    lineNumber: 129,
+                    lineNumber: 127,
                     columnNumber: 9
                 }, this)
             ]
@@ -944,7 +950,6 @@ const useHashAnchor = (ref, id)=>{
                 console.log('hash - ', window.location.hash, 'id - ', id);
                 window.history.replaceState(null, '', window.location.pathname);
                 setIsFind(true);
-                //   ref.current.scrollIntoView({ behavior: 'smooth' })
                 setTimeout({
                     "useHashAnchor.useEffect": ()=>{
                         setIsFind(false);

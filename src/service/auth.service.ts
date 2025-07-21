@@ -14,6 +14,7 @@ class AuthService {
       credentials: 'include',
       body: JSON.stringify(data),
     })
+
     const responseJSON = await response.json()
 
     if (response.ok) {
