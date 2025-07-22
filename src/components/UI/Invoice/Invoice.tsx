@@ -1,7 +1,7 @@
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import styles from './Invoice.module.scss'
 import { INVOICE_DATA } from './Invoice.data'
-import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '../../loayout/ElementWrapper/ElementWrapper'
 
 export const Invoice = () => {
   return (

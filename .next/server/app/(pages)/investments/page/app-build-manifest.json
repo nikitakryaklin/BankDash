@@ -1,14 +1,14 @@
 {
   "pages": {
     "/(pages)/investments/page": [
-      "static/chunks/_51f2cefa._.css",
-      "static/chunks/src_4c7fd827._.js",
-      "static/chunks/node_modules_dc01e370._.js",
+      "static/chunks/_ae83b234._.css",
+      "static/chunks/src_f6aa7490._.js",
+      "static/chunks/node_modules_5ebe0e6d._.js",
       "static/chunks/src_app_layout_tsx_a1abcdbe._.js",
-      "static/chunks/src_components_db30ba49._.css",
+      "static/chunks/src_components_06fcfdd8._.css",
       "static/chunks/node_modules_5f4993c8._.js",
-      "static/chunks/src_f1fa22be._.js",
-      "static/chunks/src_app_(pages)_investments_page_tsx_2308b9b9._.js",
+      "static/chunks/src_0095be99._.js",
+      "static/chunks/src_app_(pages)_investments_page_tsx_34f7e5b8._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",

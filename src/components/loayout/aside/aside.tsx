@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image'
 import styles from './aside.module.scss'
 import { AsideConfig } from './Aside.data'

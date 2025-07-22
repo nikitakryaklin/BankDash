@@ -81,6 +81,7 @@
 }
 
 .CreditPage-module-scss-module__sR2CNa__form {
+  height: clamp(18.75rem, 16.1092rem + 11.2676vw, 26.25rem);
   min-height: clamp(18.75rem, 16.1092rem + 11.2676vw, 26.25rem);
 }
 

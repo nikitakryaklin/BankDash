@@ -2,7 +2,9 @@
 .NotEnougtData-module-scss-module__m60WCq__wrapper {
   background: #e7edff;
   border-radius: 100px;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -11,7 +13,13 @@
 
 .NotEnougtData-module-scss-module__m60WCq__wrapper > .NotEnougtData-module-scss-module__m60WCq__text {
   text-align: center;
+  text-align: center;
   max-width: 60%;
+  margin: 0 auto;
+}
+
+.NotEnougtData-module-scss-module__m60WCq__wrapper > a {
+  color: var(--text-color);
   margin: 0 auto;
 }
 

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { CONSTANTS } from '@/config/constants'
 import { useUser } from '@/hooks/useUser'
 import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
-import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '../../loayout/ElementWrapper/ElementWrapper'
 
 interface ICardBlock {
   buttomText: string

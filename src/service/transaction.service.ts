@@ -85,7 +85,7 @@ class Transactions {
     }
   }
 
-  public post = async (formData: ITransaction) => {
+  public post = async (formData: Omit<ITransaction, 'card'>) => {
     const data = {
       title: formData.title,
       date: formData.date,

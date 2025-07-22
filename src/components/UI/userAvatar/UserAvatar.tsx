@@ -13,7 +13,7 @@ export const UserAvatar = ({
   height: number
 }) => {
   const { data, isLoading } = useUserAbout()
-  const avatar = data?.data[0].avatar?.url
+  const avatar = data?.data[0]?.avatar?.url
 
   if (isLoading && !avatar) {
     return <Loader />

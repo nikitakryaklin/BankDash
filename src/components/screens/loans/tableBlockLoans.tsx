@@ -1,4 +1,4 @@
-import { ElementWrapper } from '@/components/UI/ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '@/components/loayout/ElementWrapper/ElementWrapper'
 import styles from './LoansPage.module.scss'
 import { TableBlock } from '@/components/UI/TableBlock/TableBlock'
 import { BODY_TABLE_DATA, LOANS_HEADER_TABLE_DATA } from './LoansPage.data'

@@ -99,7 +99,9 @@
 }
 
 .form {
+  height: fluid(420, 300);
   min-height: fluid(420, 300);
+
   & > p {
     color: var(--text-color);
     @include fluid-text(16, 12);

@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 import { Loader } from '../Loader/loader'
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import styles from './DebitAndCredit.module.scss'
-import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '../../loayout/ElementWrapper/ElementWrapper'
 
 const DynamicStatsProvider = dynamic(
   () => import('@/context/statsContext/statsContext').then((D) => D.default),

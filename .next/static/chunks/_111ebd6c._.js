@@ -1,0 +1,1339 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
+
+"[project]/src/components/screens/investments/InvestmentsPage.data.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "INVEST_BODY_TABLE_DATA": (()=>INVEST_BODY_TABLE_DATA),
+    "INVEST_DATA": (()=>INVEST_DATA),
+    "INVEST_HEADER_TABLE_DATA": (()=>INVEST_HEADER_TABLE_DATA),
+    "MONTHLY_REVENUE_DATA": (()=>MONTHLY_REVENUE_DATA),
+    "WIDGET_INVEST_DATA": (()=>WIDGET_INVEST_DATA),
+    "YEARLY_TOTAL_INVESTMENTS_DATA": (()=>YEARLY_TOTAL_INVESTMENTS_DATA)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$1$2d$0$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp10$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-1-0.js [app-client] (ecmascript) <export default as ArrowUp10>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$receipt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LucideReceipt$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/receipt.js [app-client] (ecmascript) <export default as LucideReceipt>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$repeat$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Repeat$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/repeat.js [app-client] (ecmascript) <export default as Repeat>");
+;
+;
+const WIDGET_INVEST_DATA = [
+    {
+        id: 1,
+        title: 'Total Invested Amount',
+        HTMLId: 'total_invested_amount',
+        color: '#16DBCC',
+        text: '$150,000',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$receipt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LucideReceipt$3e$__["LucideReceipt"], {
+            style: {
+                fill: 'none',
+                stroke: '#16DBCC'
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+            lineNumber: 18,
+            columnNumber: 11
+        }, this)
+    },
+    {
+        id: 2,
+        title: 'Number of Investments',
+        HTMLId: 'number_of_investments',
+        color: '#FF82AC',
+        text: '1,250',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$1$2d$0$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp10$3e$__["ArrowUp10"], {
+            style: {
+                fill: 'none',
+                stroke: '#FF82AC'
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+            lineNumber: 26,
+            columnNumber: 11
+        }, this)
+    },
+    {
+        id: 3,
+        title: 'Rate of Return',
+        HTMLId: 'rate_of_return',
+        color: '#396AFF',
+        text: '+5.80$',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$repeat$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Repeat$3e$__["Repeat"], {
+            style: {
+                fill: 'none',
+                stroke: '#396AFF'
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+            lineNumber: 34,
+            columnNumber: 11
+        }, this)
+    }
+];
+const INVEST_DATA = [
+    {
+        id: 1,
+        color: '#FF82AC',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: "25",
+            height: "25",
+            viewBox: "0 0 22 25",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                style: {
+                    fill: '#FF82AC'
+                },
+                d: "M20.6167 19.4826C20.2386 20.356 19.7911 21.16 19.2726 21.8992C18.5658 22.9069 17.9871 23.6044 17.5411 23.9917C16.8498 24.6275 16.1091 24.9531 15.3159 24.9716C14.7465 24.9716 14.0597 24.8096 13.2604 24.4809C12.4584 24.1537 11.7214 23.9917 11.0475 23.9917C10.3407 23.9917 9.58271 24.1537 8.77196 24.4809C7.95994 24.8096 7.3058 24.9809 6.80565 24.9979C6.04503 25.0303 5.28688 24.6954 4.53012 23.9917C4.04709 23.5704 3.44296 22.8482 2.7192 21.8251C1.94268 20.7325 1.30429 19.4656 0.804141 18.0212C0.26851 16.4611 0 14.9503 0 13.4877C0 11.8123 0.362029 10.3673 1.08716 9.15637C1.65705 8.18372 2.4152 7.41646 3.3641 6.85322C4.31297 6.28996 5.33826 6.00292 6.4424 5.98458C7.04655 5.98458 7.83879 6.17144 8.82334 6.53872C9.80511 6.90723 10.4355 7.0941 10.7119 7.0941C10.9185 7.0941 11.6188 6.87558 12.8059 6.43996C13.9286 6.03596 14.8761 5.86865 15.6523 5.93456C17.7556 6.10431 19.3358 6.93345 20.3867 8.42724C18.5056 9.56702 17.5751 11.1634 17.5936 13.2113C17.6106 14.8065 18.1893 16.1339 19.3266 17.1879C19.842 17.6771 20.4176 18.0552 21.058 18.3237C20.9191 18.7264 20.7725 19.1123 20.6167 19.4826V19.4826ZM15.7927 0.500148C15.7927 1.75042 15.3359 2.91782 14.4255 3.99834C13.3268 5.28288 11.9978 6.02513 10.5566 5.90801C10.5373 5.75083 10.5276 5.59261 10.5276 5.43425C10.5276 4.23398 11.0501 2.94945 11.978 1.89918C12.4413 1.3674 13.0305 0.925246 13.7449 0.572525C14.4579 0.225068 15.1323 0.0329136 15.7665 0C15.785 0.167137 15.7927 0.334296 15.7927 0.500127V0.500148Z",
+                fill: "#FF82AC"
+            }, void 0, false, {
+                fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+                lineNumber: 50,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+            lineNumber: 43,
+            columnNumber: 7
+        }, this),
+        info: [
+            {
+                id: 1,
+                title: 'Apple Store',
+                text: 'E-commerce, Marketplace'
+            },
+            {
+                id: 2,
+                title: '54000',
+                text: 'Envestment Value'
+            },
+            {
+                id: 3,
+                color: 'var(--green)',
+                title: '+16%',
+                text: 'Return Value'
+            }
+        ]
+    },
+    {
+        id: 2,
+        color: '#4471FF',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: "25",
+            height: "25",
+            viewBox: "0 0 25 25",
+            style: {
+                fill: '#4471FF'
+            },
+            xmlns: "http://www.w3.org/2000/svg",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    style: {
+                        fill: '#4471FF'
+                    },
+                    d: "M24.5021 12.7851C24.5032 11.9333 24.4311 11.083 24.2868 10.2435H12.499V15.0576H19.2505C19.1124 15.8265 18.82 16.5594 18.3909 17.2122C17.9619 17.8651 17.4051 18.4243 16.7541 18.8561V21.981H20.7835C23.1428 19.8057 24.5021 16.5888 24.5021 12.7851Z",
+                    fill: "#4471FF"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+                    lineNumber: 87,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    style: {
+                        fill: '#4471FF'
+                    },
+                    d: "M12.4991 25C15.8722 25 18.7124 23.8924 20.7835 21.9827L16.7542 18.8578C15.6327 19.6182 14.1883 20.0523 12.4991 20.0523C9.23878 20.0523 6.47151 17.8544 5.48196 14.8927H1.33105V18.1131C2.37141 20.1833 3.96669 21.9236 5.93879 23.1397C7.91088 24.3558 10.1822 24.9999 12.4991 25Z",
+                    fill: "#4471FF"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+                    lineNumber: 92,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    style: {
+                        fill: '#4471FF'
+                    },
+                    d: "M5.48189 14.8926C4.95875 13.3407 4.95875 11.66 5.48189 10.1081V6.8877H1.33098C0.455797 8.62922 0 10.5513 0 12.5004C0 14.4494 0.455797 16.3715 1.33098 18.113L5.48189 14.8926Z",
+                    fill: "#4471FF"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+                    lineNumber: 97,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    style: {
+                        fill: '#4471FF'
+                    },
+                    d: "M12.4991 4.94857C14.2816 4.91945 16.0041 5.59296 17.2941 6.82351L20.8617 3.25592C18.5994 1.13112 15.6025 -0.0354271 12.4991 0.00082009C10.1822 0.000925686 7.91088 0.644991 5.93879 1.86111C3.96669 3.07723 2.37141 4.81754 1.33105 6.88775L5.48196 10.1081C6.47151 7.14642 9.23878 4.94857 12.4991 4.94857Z",
+                    fill: "#4471FF"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+                    lineNumber: 102,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+            lineNumber: 80,
+            columnNumber: 7
+        }, this),
+        info: [
+            {
+                id: 1,
+                title: 'Samsung Mobile',
+                text: 'E-commerce, Marketplace'
+            },
+            {
+                id: 2,
+                title: '25300',
+                text: 'Envestment Value'
+            },
+            {
+                id: 3,
+                color: 'var(--red)',
+                title: '-4%',
+                text: 'Return Value'
+            }
+        ]
+    },
+    {
+        id: 3,
+        color: '#FFBB38',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: "26",
+            height: "25",
+            viewBox: "0 0 26 25",
+            style: {
+                fill: '#FFBB38'
+            },
+            xmlns: "http://www.w3.org/2000/svg",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    style: {
+                        fill: '#FFBB38'
+                    },
+                    d: "M12.555 24.9999L16.0675 5.24575C19.4155 5.24575 20.4715 5.61287 20.624 7.11138C20.624 7.11138 22.8699 6.27396 24.0027 4.57318C19.5823 2.52488 15.1409 2.4325 15.1409 2.4325L12.5492 5.58911L12.555 5.58871L9.96337 2.43201C9.96337 2.43201 5.52182 2.52448 1.10205 4.57278C2.23382 6.27356 4.48064 7.11098 4.48064 7.11098C4.634 5.61238 5.68875 5.24525 9.01427 5.24288L12.555 24.9999Z",
+                    fill: "#FFBB38"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+                    lineNumber: 139,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    style: {
+                        fill: '#FFBB38'
+                    },
+                    d: "M12.5536 1.52078C16.1268 1.49345 20.2168 2.07355 24.4037 3.89838C24.9633 2.89117 25.1071 2.44602 25.1071 2.44602C20.5302 0.635243 16.244 0.0155444 12.5531 0C8.86231 0.0155444 4.5763 0.635341 0 2.44602C0 2.44602 0.204157 2.99433 0.702965 3.89838C4.88907 2.07355 8.97973 1.49345 12.5531 1.52078H12.5536Z",
+                    fill: "#FFBB38"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+                    lineNumber: 144,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/screens/investments/InvestmentsPage.data.tsx",
+            lineNumber: 132,
+            columnNumber: 7
+        }, this),
+        info: [
+            {
+                id: 1,
+                title: 'Tesla Motors',
+                text: 'Electric Vehicles'
+            },
+            {
+                id: 2,
+                title: '8400',
+                text: 'Envestment Value'
+            },
+            {
+                id: 3,
+                color: 'var(--green)',
+                title: '+25%',
+                text: 'Return Value'
+            }
+        ]
+    }
+];
+const INVEST_HEADER_TABLE_DATA = [
+    {
+        text: 'SL No'
+    },
+    {
+        text: 'Name'
+    },
+    {
+        text: 'Price'
+    },
+    {
+        text: 'Return'
+    }
+];
+const INVEST_BODY_TABLE_DATA = [
+    {
+        id: '01.',
+        name: 'Trivago',
+        price: '520',
+        ruturn: '+5%',
+        color: 'var(--green)'
+    },
+    {
+        id: '02.',
+        name: 'Canon',
+        price: '480',
+        ruturn: '+10%',
+        color: 'var(--green)'
+    },
+    {
+        id: '03.',
+        name: 'Uber',
+        price: '350',
+        ruturn: '-3%',
+        color: 'var(--red)'
+    },
+    {
+        id: '04.',
+        name: 'Nokia',
+        price: '940',
+        ruturn: '+2%',
+        color: 'var(--green)'
+    },
+    {
+        id: '05.',
+        name: 'Tiktok',
+        price: '679',
+        ruturn: '-12%',
+        color: 'var(--red)'
+    }
+];
+const YEARLY_TOTAL_INVESTMENTS_DATA = {
+    scale: 0,
+    XGrid: false,
+    labes: [
+        '2020',
+        '2021',
+        '2022',
+        '2023',
+        '2024',
+        '2025'
+    ],
+    label: '',
+    data: [
+        9000,
+        23000,
+        17000,
+        38000,
+        21000,
+        30000
+    ],
+    pointBorderWidth: 2,
+    pointRadius: 5,
+    borderColor: '#FCAA0B'
+};
+const MONTHLY_REVENUE_DATA = {
+    scale: 0.4,
+    XGrid: false,
+    labes: [
+        '2020',
+        '2020',
+        '2020',
+        '2021',
+        '2021',
+        '2021',
+        '2022',
+        '2022',
+        '2022',
+        '2023',
+        '2023',
+        '2023',
+        '2024',
+        '2024',
+        '2024',
+        '2025',
+        '2025'
+    ],
+    label: '',
+    data: [
+        11000,
+        13000,
+        21000,
+        30000,
+        33000,
+        21000,
+        22000,
+        28000,
+        25000,
+        24000,
+        20000,
+        16000,
+        17000,
+        27000,
+        30000,
+        27000,
+        21000
+    ],
+    pointBorderWidth: 0,
+    pointRadius: 0,
+    borderColor: '#16DBCC'
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/screens/investments/InvestmentsPage.module.scss.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "graf_wrapper": "InvestmentsPage-module-scss-module__ahKUDa__graf_wrapper",
+  "invest_wrapper": "InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper",
+  "invest_wrapper_list": "InvestmentsPage-module-scss-module__ahKUDa__invest_wrapper_list",
+  "listElement": "InvestmentsPage-module-scss-module__ahKUDa__listElement",
+  "page": "InvestmentsPage-module-scss-module__ahKUDa__page",
+  "tbody": "InvestmentsPage-module-scss-module__ahKUDa__tbody",
+  "widget_wrapper": "InvestmentsPage-module-scss-module__ahKUDa__widget_wrapper",
+});
+}}),
+"[project]/src/components/UI/ListItem/ListItem.module.scss.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "icon": "ListItem-module-scss-module__2v9cqW__icon",
+  "info": "ListItem-module-scss-module__2v9cqW__info",
+  "wrapper": "ListItem-module-scss-module__2v9cqW__wrapper",
+});
+}}),
+"[project]/src/components/UI/Modal/Modal.module.scss.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "body": "Modal-module-scss-module__XZkUgG__body",
+  "modal": "Modal-module-scss-module__XZkUgG__modal",
+  "wrapper": "Modal-module-scss-module__XZkUgG__wrapper",
+});
+}}),
+"[project]/src/components/UI/Modal/Modal.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Modal": (()=>Modal)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Modal$2f$Modal$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/Modal/Modal.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react-dom/index.js [app-client] (ecmascript)");
+'use client';
+;
+;
+;
+;
+const Modal = ({ children, isOpen, className, onClose })=>{
+    const modalRoot = document.getElementById('modal-root');
+    if (!modalRoot) {
+        return null;
+    }
+    if (!isOpen) {
+        return null;
+    }
+    const handleClick = (e)=>{
+        const target = e.target;
+        if (!target.dataset.type) {
+            return null;
+        }
+        onClose();
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createPortal"])(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Modal$2f$Modal$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper,
+        onClick: handleClick,
+        "data-type": "modal",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Modal$2f$Modal$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].modal, !!className && className),
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: onClose,
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                            fileName: "[project]/src/components/UI/Modal/Modal.tsx",
+                            lineNumber: 41,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                            fileName: "[project]/src/components/UI/Modal/Modal.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/UI/Modal/Modal.tsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Modal$2f$Modal$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].body,
+                    children: children
+                }, void 0, false, {
+                    fileName: "[project]/src/components/UI/Modal/Modal.tsx",
+                    lineNumber: 44,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/UI/Modal/Modal.tsx",
+            lineNumber: 39,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/UI/Modal/Modal.tsx",
+        lineNumber: 38,
+        columnNumber: 5
+    }, this), modalRoot);
+};
+_c = Modal;
+var _c;
+__turbopack_context__.k.register(_c, "Modal");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/UI/ListItem/ListItem.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "ListItem": (()=>ListItem)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ListItem$2f$ListItem$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/ListItem/ListItem.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Modal$2f$Modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Modal/Modal.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+const ListItem = ({ children, icon, color, isButton = true, className, modal })=>{
+    _s();
+    const [isModalOpen, setIsModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const onClose = ()=>{
+        setIsModalOpen(false);
+    };
+    const handleClick = ()=>{
+        setIsModalOpen(true);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ListItem$2f$ListItem$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ListItem$2f$ListItem$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].icon,
+                style: {
+                    background: `${color}3a`
+                },
+                children: icon
+            }, void 0, false, {
+                fileName: "[project]/src/components/UI/ListItem/ListItem.tsx",
+                lineNumber: 37,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ListItem$2f$ListItem$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].info, className),
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/src/components/UI/ListItem/ListItem.tsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, this),
+            modal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Modal$2f$Modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Modal"], {
+                isOpen: isModalOpen,
+                onClose: onClose,
+                children: modal
+            }, void 0, false, {
+                fileName: "[project]/src/components/UI/ListItem/ListItem.tsx",
+                lineNumber: 42,
+                columnNumber: 9
+            }, this),
+            isButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: handleClick,
+                children: "View Details"
+            }, void 0, false, {
+                fileName: "[project]/src/components/UI/ListItem/ListItem.tsx",
+                lineNumber: 46,
+                columnNumber: 20
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/UI/ListItem/ListItem.tsx",
+        lineNumber: 36,
+        columnNumber: 5
+    }, this);
+};
+_s(ListItem, "mLsII5HRP5G63IA/8vjZ5YHXWr8=");
+_c = ListItem;
+ListItem.Element = function ListItemElement({ title, text, color }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                style: {
+                    color: `${color}`
+                },
+                children: title
+            }, void 0, false, {
+                fileName: "[project]/src/components/UI/ListItem/ListItem.tsx",
+                lineNumber: 62,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                children: text
+            }, void 0, false, {
+                fileName: "[project]/src/components/UI/ListItem/ListItem.tsx",
+                lineNumber: 63,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/UI/ListItem/ListItem.tsx",
+        lineNumber: 61,
+        columnNumber: 5
+    }, this);
+};
+var _c;
+__turbopack_context__.k.register(_c, "ListItem");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/loayout/CardWrapper/CardWrapper.module.scss.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "wrapper": "CardWrapper-module-scss-module__tpMZxq__wrapper",
+});
+}}),
+"[project]/src/components/loayout/CardWrapper/CardWrapper.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>CardWrapper)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/loayout/CardWrapper/CardWrapper.module.scss.module.css [app-client] (css module)");
+;
+;
+;
+function CardWrapper({ children, className }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper, className),
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/loayout/CardWrapper/CardWrapper.tsx",
+        lineNumber: 14,
+        columnNumber: 10
+    }, this);
+}
+_c = CardWrapper;
+var _c;
+__turbopack_context__.k.register(_c, "CardWrapper");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/UI/TableBlock/TableBlock.module.scss.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "table": "TableBlock-module-scss-module__b7f_bG__table",
+});
+}}),
+"[project]/src/components/UI/TableBlock/TableBlock.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "TableBlock": (()=>TableBlock)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/loayout/CardWrapper/CardWrapper.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/TableBlock/TableBlock.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+;
+;
+;
+;
+const TableBlock = ({ children, header, className })=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].table,
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+                    className: className,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                        children: header.map((el, indx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                children: el.text
+                            }, indx, false, {
+                                fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+                                lineNumber: 23,
+                                columnNumber: 15
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+                        lineNumber: 21,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, this),
+                children
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+            lineNumber: 19,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, this);
+};
+_c = TableBlock;
+TableBlock.body = function TableBlockBody({ children, className }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].tbody, className),
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+        lineNumber: 40,
+        columnNumber: 10
+    }, this);
+};
+TableBlock.foot = function TableBlockFoot({ children, className }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tfoot", {
+        className: className,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/UI/TableBlock/TableBlock.tsx",
+        lineNumber: 50,
+        columnNumber: 10
+    }, this);
+};
+var _c;
+__turbopack_context__.k.register(_c, "TableBlock");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/loayout/ElementWrapper/ElementWrapper.module.scss.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "isFind": "ElementWrapper-module-scss-module__ODBsFW__isFind",
+});
+}}),
+"[project]/src/hooks/useHashAnchor.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "useHashAnchor": (()=>useHashAnchor)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+const useHashAnchor = (ref, id)=>{
+    _s();
+    const [isFind, setIsFind] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    let timeOut;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useHashAnchor.useEffect": ()=>{
+            if (window.location.hash === `#${id}`) {
+                console.log('hash - ', window.location.hash, 'id - ', id);
+                window.history.replaceState(null, '', window.location.pathname);
+                setIsFind(true);
+                setTimeout({
+                    "useHashAnchor.useEffect": ()=>{
+                        setIsFind(false);
+                    }
+                }["useHashAnchor.useEffect"], 2000);
+            }
+        }
+    }["useHashAnchor.useEffect"], []);
+    return {
+        isFind
+    };
+};
+_s(useHashAnchor, "AL+j0unQfw196HjIKh8hm5G+sGA=");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/loayout/ElementWrapper/ElementWrapper.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "ElementWrapper": (()=>ElementWrapper)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$ElementWrapper$2f$ElementWrapper$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/loayout/ElementWrapper/ElementWrapper.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useHashAnchor$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useHashAnchor.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+const ElementWrapper = ({ children, className, id, ...props })=>{
+    _s();
+    const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const { isFind } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useHashAnchor$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useHashAnchor"])(ref, id);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        id: id,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(className, isFind && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$ElementWrapper$2f$ElementWrapper$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].isFind),
+        ref: ref,
+        style: {
+            scrollMarginTop: '30px'
+        },
+        ...props,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/loayout/ElementWrapper/ElementWrapper.tsx",
+        lineNumber: 25,
+        columnNumber: 5
+    }, this);
+};
+_s(ElementWrapper, "Lji4UNv1QbUYDm4Qck/9cv+n/5g=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useHashAnchor$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useHashAnchor"]
+    ];
+});
+_c = ElementWrapper;
+var _c;
+__turbopack_context__.k.register(_c, "ElementWrapper");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/UI/Widget/Widget.module.scss.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "content": "Widget-module-scss-module__N2daNW__content",
+  "icon": "Widget-module-scss-module__N2daNW__icon",
+  "isFind": "Widget-module-scss-module__N2daNW__isFind",
+  "wrapper": "Widget-module-scss-module__N2daNW__wrapper",
+});
+}}),
+"[project]/src/components/UI/Widget/Widget.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Widget": (()=>Widget)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/UI/Widget/Widget.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useHashAnchor$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useHashAnchor.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+const Widget = ({ children, title, text, color, className, id })=>{
+    _s();
+    const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const { isFind } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useHashAnchor$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useHashAnchor"])(ref, id);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wrapper, className, isFind && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].isFind),
+        id: id,
+        ref: ref,
+        style: {
+            scrollMarginTop: '30px'
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].content,
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].icon,
+                    style: {
+                        background: `${color}3a`
+                    },
+                    children: children
+                }, void 0, false, {
+                    fileName: "[project]/src/components/UI/Widget/Widget.tsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                            children: title
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/UI/Widget/Widget.tsx",
+                            lineNumber: 41,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            children: text
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/UI/Widget/Widget.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/UI/Widget/Widget.tsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/UI/Widget/Widget.tsx",
+            lineNumber: 36,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/UI/Widget/Widget.tsx",
+        lineNumber: 30,
+        columnNumber: 5
+    }, this);
+};
+_s(Widget, "Lji4UNv1QbUYDm4Qck/9cv+n/5g=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useHashAnchor$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useHashAnchor"]
+    ];
+});
+_c = Widget;
+var _c;
+__turbopack_context__.k.register(_c, "Widget");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/screens/investments/WidgetBlock.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "WidgetBlock": (()=>WidgetBlock)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/screens/investments/InvestmentsPage.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/Widget/Widget.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/screens/investments/InvestmentsPage.data.tsx [app-client] (ecmascript)");
+;
+;
+;
+;
+function WidgetBlock() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].widget_wrapper,
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WIDGET_INVEST_DATA"].map((el)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Widget$2f$Widget$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Widget"], {
+                id: el.HTMLId,
+                title: el.title,
+                text: el.text,
+                color: el.color,
+                children: el.icon
+            }, el.id, false, {
+                fileName: "[project]/src/components/screens/investments/WidgetBlock.tsx",
+                lineNumber: 10,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
+        fileName: "[project]/src/components/screens/investments/WidgetBlock.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+_c = WidgetBlock;
+var _c;
+__turbopack_context__.k.register(_c, "WidgetBlock");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/components/screens/investments/InvestmentsPage.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "InvestmentsPage": (()=>InvestmentsPage)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/screens/investments/InvestmentsPage.data.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/screens/investments/InvestmentsPage.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ListItem$2f$ListItem$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/ListItem/ListItem.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/UI/TableBlock/TableBlock.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$ElementWrapper$2f$ElementWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/loayout/ElementWrapper/ElementWrapper.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$WidgetBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/screens/investments/WidgetBlock.tsx [app-client] (ecmascript)");
+'use client';
+;
+;
+;
+;
+;
+;
+;
+const InvestmentsPage = ()=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].page,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$WidgetBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WidgetBlock"], {}, void 0, false, {
+                fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].invest_wrapper,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$ElementWrapper$2f$ElementWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ElementWrapper"], {
+                        id: "my_investment",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                children: "My Investment"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                lineNumber: 28,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].invest_wrapper_list,
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["INVEST_DATA"].map((el)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ListItem$2f$ListItem$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ListItem"], {
+                                        icon: el.icon,
+                                        color: el.color,
+                                        isButton: false,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listElement,
+                                        children: el.info.map((info)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$ListItem$2f$ListItem$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ListItem"].Element, {
+                                                title: info.title,
+                                                text: info.text,
+                                                color: info?.color || 'var(--black)'
+                                            }, info.id, false, {
+                                                fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                                lineNumber: 39,
+                                                columnNumber: 19
+                                            }, this))
+                                    }, el.id, false, {
+                                        fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                lineNumber: 29,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$ElementWrapper$2f$ElementWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ElementWrapper"], {
+                        id: "trending_stock",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].trending_wrapper,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                children: "Trending Stock"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                lineNumber: 52,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBlock"], {
+                                header: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["INVEST_HEADER_TABLE_DATA"],
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$TableBlock$2f$TableBlock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBlock"].body, {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].tbody,
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$investments$2f$InvestmentsPage$2e$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["INVEST_BODY_TABLE_DATA"].map((el)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    children: el.id
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                                    lineNumber: 57,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    children: el.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                                    lineNumber: 58,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    children: el.price
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                                    lineNumber: 59,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    style: {
+                                                        color: el.color
+                                                    },
+                                                    children: el.ruturn
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                                    lineNumber: 60,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, el.id, true, {
+                                            fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                            lineNumber: 56,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                    lineNumber: 54,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                                lineNumber: 53,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                        lineNumber: 51,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/screens/investments/InvestmentsPage.tsx",
+        lineNumber: 23,
+        columnNumber: 5
+    }, this);
+};
+_c = InvestmentsPage;
+var _c;
+__turbopack_context__.k.register(_c, "InvestmentsPage");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-1-0.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/**
+ * @license lucide-react v0.503.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s({
+    "__iconNode": (()=>__iconNode),
+    "default": (()=>ArrowUp10)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m3 8 4-4 4 4",
+            key: "11wl7u"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M7 4v16",
+            key: "1glfcx"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M17 10V4h-2",
+            key: "zcsr5x"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M15 10h4",
+            key: "id2lce"
+        }
+    ],
+    [
+        "rect",
+        {
+            x: "15",
+            y: "14",
+            width: "4",
+            height: "6",
+            ry: "2",
+            key: "33xykx"
+        }
+    ]
+];
+const ArrowUp10 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("arrow-up-1-0", __iconNode);
+;
+ //# sourceMappingURL=arrow-up-1-0.js.map
+}}),
+"[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-1-0.js [app-client] (ecmascript) <export default as ArrowUp10>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "ArrowUp10": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$1$2d$0$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$1$2d$0$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-1-0.js [app-client] (ecmascript)");
+}}),
+"[project]/node_modules/lucide-react/dist/esm/icons/receipt.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/**
+ * @license lucide-react v0.503.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s({
+    "__iconNode": (()=>__iconNode),
+    "default": (()=>Receipt)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z",
+            key: "q3az6g"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8",
+            key: "1h4pet"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M12 17.5v-11",
+            key: "1jc1ny"
+        }
+    ]
+];
+const Receipt = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("receipt", __iconNode);
+;
+ //# sourceMappingURL=receipt.js.map
+}}),
+"[project]/node_modules/lucide-react/dist/esm/icons/receipt.js [app-client] (ecmascript) <export default as LucideReceipt>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "LucideReceipt": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$receipt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$receipt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/receipt.js [app-client] (ecmascript)");
+}}),
+"[project]/node_modules/lucide-react/dist/esm/icons/repeat.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/**
+ * @license lucide-react v0.503.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s({
+    "__iconNode": (()=>__iconNode),
+    "default": (()=>Repeat)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m17 2 4 4-4 4",
+            key: "nntrym"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M3 11v-1a4 4 0 0 1 4-4h14",
+            key: "84bu3i"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m7 22-4-4 4-4",
+            key: "1wqhfi"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M21 13v1a4 4 0 0 1-4 4H3",
+            key: "1rx37r"
+        }
+    ]
+];
+const Repeat = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("repeat", __iconNode);
+;
+ //# sourceMappingURL=repeat.js.map
+}}),
+"[project]/node_modules/lucide-react/dist/esm/icons/repeat.js [app-client] (ecmascript) <export default as Repeat>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Repeat": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$repeat$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$repeat$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/repeat.js [app-client] (ecmascript)");
+}}),
+}]);
+
+//# sourceMappingURL=_111ebd6c._.js.map

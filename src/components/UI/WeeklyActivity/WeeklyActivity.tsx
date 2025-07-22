@@ -1,6 +1,6 @@
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import styles from './WeeklyActivity.module.scss'
-import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '../../loayout/ElementWrapper/ElementWrapper'
 import dynamic from 'next/dynamic'
 import { Loader } from '../Loader/loader'
 

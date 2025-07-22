@@ -1,9 +1,9 @@
 'use client'
+
 import clsx from 'clsx'
 import styles from './ListItem.module.scss'
 
 import { useState, type PropsWithChildren, type ReactNode } from 'react'
-import toast from 'react-hot-toast'
 import { Modal } from '../Modal/Modal'
 
 interface IProps {
@@ -29,7 +29,6 @@ export const ListItem = ({
   }
 
   const handleClick = () => {
-    toast('View Details')
     setIsModalOpen(true)
   }
 
@@ -45,6 +44,23 @@ export const ListItem = ({
         </Modal>
       )}
       {isButton && <button onClick={handleClick}>View Details</button>}
+    </div>
+  )
+}
+
+ListItem.Element = function ListItemElement({
+  title,
+  text,
+  color,
+}: {
+  title: string
+  text: string
+  color?: string
+}) {
+  return (
+    <div>
+      <h3 style={{ color: `${color}` }}>{title}</h3>
+      <p>{text}</p>
     </div>
   )
 }

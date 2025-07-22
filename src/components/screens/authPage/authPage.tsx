@@ -25,6 +25,7 @@ export const AuthPage = () => {
         onFocus={() => setIsError(false)}
       >
         <h2>{isLogin ? 'register' : 'login'}</h2>
+
         {isLogin && (
           <Fild
             title="User name"
@@ -37,6 +38,7 @@ export const AuthPage = () => {
             })}
           />
         )}
+
         <Fild
           title="Email"
           placeholder="email@gmail.com"
@@ -54,16 +56,19 @@ export const AuthPage = () => {
             minLength: 8,
           })}
         />
+
         {isError && (
           <p style={{ color: '#FE5C73', margin: 0 }}>
             email or password is not correct
           </p>
         )}
+
         <Button
           text={!isLogin ? 'Sing In' : 'Register'}
           type="submit"
           isPending={false}
         />
+
         <p onClick={() => setIsLogin(!isLogin)}>
           {isLogin ? 'has account' : 'no account'}
         </p>

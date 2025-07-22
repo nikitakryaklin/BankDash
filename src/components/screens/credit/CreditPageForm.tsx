@@ -2,13 +2,30 @@ import { RadioBlock } from '@/components/UI/RadioBlock/RadioBlock'
 import { useCreateCard } from './useCreateCard'
 import { Fild } from '@/components/UI/fild/fild'
 import { getValidateError } from '@/utiles/getValidateError'
-import clsx from 'clsx'
-import { Loader } from '@/components/UI/Loader/loader'
 import styles from './CreditPage.module.scss'
 import { Button } from '@/components/UI/Button/Button'
+import { useUser } from '@/hooks/useUser'
+import { useUserAbout } from '@/hooks/useUserAbout'
+import { NotEnougtData } from '@/components/UI/NotEnougtData/NotEnougtData'
+import Link from 'next/link'
+import { CONSTANTS } from '@/config/constants'
 
 export const CreditPageForm = () => {
+  const { data } = useUserAbout()
+
   const { formSubmit, isPending, register, errors } = useCreateCard()
+
+  console.log(data)
+
+  if (data.data.length === 0) {
+    return (
+      <NotEnougtData
+        text="
+        Сard creation is not possible, please fill in your information"
+        link={<Link href={CONSTANTS.settings}>Fill in the information</Link>}
+      />
+    )
+  }
 
   return (
     <>

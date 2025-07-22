@@ -3,56 +3,43 @@
 import styles from './SettingsPage.module.scss'
 import { useAuth } from '@/context/authContext'
 import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
-import { useRouter } from 'next/navigation'
-import { RefObject, useEffect, useRef, useState } from 'react'
-import { HEADER_CONTROLES } from './SettingsPage.data'
+import { useRef, useState } from 'react'
 import clsx from 'clsx'
 import { Preferences } from './Preferences/Preferences'
 import { Security } from './Security/Security'
 import { EditProfile } from './EditProfile/editProfile'
-import { useEditForm } from './EditProfile/useEditForm'
-import { Loader } from '@/components/UI/Loader/loader'
 import { Button } from '@/components/UI/Button/Button'
-import { ElementWrapper } from '@/components/UI/ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '@/components/loayout/ElementWrapper/ElementWrapper'
+import { useSettingViewStore } from '@/store/useSettingViewStore'
+import { Navigator } from './Navigator/Havigator'
 
 export const SettingsPage = () => {
-  const { 0: isHeaderActive, 1: setIsHeaderActive } = useState(1)
+  const viewElement = useSettingViewStore((s) => s.viewElement)
   const { 0: isPanding, 1: setIsPanding } = useState(false)
   const formRef = useRef<HTMLFormElement>(null)
 
   const { logOut } = useAuth()
-  const router = useRouter()
 
-  const henderClick = () => {
-    logOut()
+  const renderBlock = () => {
+    switch (viewElement) {
+      case 'edit':
+        return <EditProfile formRef={formRef} pending={setIsPanding} />
+      case 'preferences':
+        return <Preferences />
+      case 'security':
+        return <Security />
+      default:
+        null
+    }
   }
 
   return (
     <ElementWrapper id="settings">
       <CardWrapper className={styles.settings_wrapper}>
-        <div className={styles.header}>
-          <ul>
-            {HEADER_CONTROLES.map((el) => (
-              <li
-                className={clsx(
-                  styles.header_item,
-                  el.id === isHeaderActive && styles.isHeaderActive
-                )}
-                onClick={() => setIsHeaderActive(el.id)}
-                key={el.id}
-              >
-                {el.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.main}>
-          {isHeaderActive === 1 && (
-            <EditProfile formRef={formRef} pending={setIsPanding} />
-          )}
-          {isHeaderActive === 2 && <Preferences />}
-          {isHeaderActive === 3 && <Security />}
-        </div>
+        <Navigator />
+
+        <div className={styles.main}>{renderBlock()}</div>
+
         <div className={styles.footer}>
           <Button
             text="Save"
@@ -63,7 +50,7 @@ export const SettingsPage = () => {
           <Button
             text="Log out"
             type="button"
-            onClick={henderClick}
+            onClick={logOut}
             className={styles.logOut}
             isPending={false}
           />

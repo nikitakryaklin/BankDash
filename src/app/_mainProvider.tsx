@@ -7,7 +7,7 @@ import styles from './(pages)/page.module.scss'
 import AuthProvider from '@/context/authContext'
 import nProgress from 'nprogress'
 import { usePathname } from 'next/navigation'
-import ToasterProvider from '@/components/loayout/toast/toast'
+import { ToasterProvider } from '@/context/toast/toast'
 import { QueryClientCastomProvider } from '@/context/queryClient'
 
 const MainProvider = ({ children }: PropsWithChildren) => {

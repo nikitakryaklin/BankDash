@@ -9,7 +9,7 @@ import CardWrapper from '@/components/loayout/CardWrapper/CardWrapper'
 import { NotEnougtData } from '../NotEnougtData/NotEnougtData'
 import clsx from 'clsx'
 import { Loader } from '../Loader/loader'
-import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '../../loayout/ElementWrapper/ElementWrapper'
 import { useUser } from '@/hooks/useUser'
 
 export const RecentTransaction = ({

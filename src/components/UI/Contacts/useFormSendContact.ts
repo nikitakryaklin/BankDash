@@ -1,6 +1,7 @@
 import { TRANSACTIONS } from '@/config/constants'
 import { useBalanceMutation } from '@/hooks/useBalanceMutation'
 import { useTransactionMutation } from '@/hooks/useTransactionMutation'
+import { useUser } from '@/hooks/useUser'
 import { getToasterPromisSuccess } from '@/utiles/getToasterPromisSuccess'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
@@ -10,6 +11,10 @@ interface IAmound {
 }
 
 export const useFormSendContact = ({ name }: { name: string }) => {
+  const { data } = useUser()
+
+  const card = data?.cards[0]
+
   const {
     register,
     handleSubmit,
@@ -36,7 +41,7 @@ export const useFormSendContact = ({ name }: { name: string }) => {
         type: 'outgoing',
         category: 'Send',
         amount: Number(data.amound),
-        id: 1,
+        id: Number(card.id),
       }),
       { ...getToasterPromisSuccess('Transalation delivered') }
     )

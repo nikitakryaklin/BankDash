@@ -11,6 +11,7 @@ export const AccountPage = () => {
   return (
     <div className={styles.page}>
       <AccountWiggetBlock />
+
       <div className={styles.card_wrapper}>
         <RecentTransaction
           title="Last Transaction"

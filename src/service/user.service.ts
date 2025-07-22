@@ -64,7 +64,7 @@ class UserService {
         body: JSON.stringify({
           data: {
             ...oredData,
-            avatar: avatarId,
+            ...(avatarId && { avatar: avatarId }),
             user: user_id,
           },
         }),

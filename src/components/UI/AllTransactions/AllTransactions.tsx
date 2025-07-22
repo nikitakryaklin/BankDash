@@ -9,7 +9,7 @@ import { Pagination } from '../Pagination/Pagination'
 import { useTransactionData } from './useTransactionData'
 import { useTransactionState } from './useTransactionState'
 import { Loader } from '../Loader/loader'
-import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '../../loayout/ElementWrapper/ElementWrapper'
 
 export const AllTransactions = ({ cardNumber }: { cardNumber?: string }) => {
   const { filfer, page, setFilter, setPage } = useTransactionState()
@@ -26,9 +26,11 @@ export const AllTransactions = ({ cardNumber }: { cardNumber?: string }) => {
       <TransactionsFilters filter={setFilter} />
 
       <CardWrapper className={styles.card}>
-        {transList?.length === 0 && !isLoading && <NotEnougtData />}
+        {!transList && <NotEnougtData />}
 
-        <TransactionsCard isLoading={isLoading} data={transList} />
+        {transList && (
+          <TransactionsCard isLoading={isLoading} data={transList} />
+        )}
       </CardWrapper>
 
       {pagination && (

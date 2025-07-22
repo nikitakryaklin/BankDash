@@ -1,5 +1,5 @@
 import { Widget } from '@/components/UI/Widget/Widget'
-import { WidgetWrapper } from '@/components/UI/widgetWrapper/widgetWrapper'
+import { WidgetWrapper } from '@/components/loayout/widgetWrapper/widgetWrapper'
 import { WIDGET_LOANS_DATA } from './LoansPage.data'
 import styles from './LoansPage.module.scss'
 

@@ -20,7 +20,9 @@ export const Preferences = () => {
           type="text"
         />
       </form>
+
       <h3>Notification</h3>
+
       <div>
         <Switcher arg={isNotify} toggle={setIsNotify} />
         <p>I receive notifications</p>

@@ -11,7 +11,7 @@ import { useFormSendContact } from './useFormSendContact'
 import clsx from 'clsx'
 import { Loader } from '../Loader/loader'
 import { getValidateError } from '@/utiles/getValidateError'
-import { ElementWrapper } from '../ElementWrapper/ElementWrapper'
+import { ElementWrapper } from '../../loayout/ElementWrapper/ElementWrapper'
 
 export const Contacts = () => {
   const [isAdd, setIsAdd] = useState(false)

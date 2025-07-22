@@ -16,12 +16,12 @@ export const useTransactionsAll = (
     result.push(cardNumber)
   }
 
-  const { data, isPending, isSuccess } = useQuery({
+  const { data, isLoading, isSuccess } = useQuery({
     queryKey: ['transactions', page, filter, !!cardNumber],
 
     queryFn: () => transactionsService.getAll(result, page, filter),
 
     enabled: result.length > 0,
   })
-  return { data, isLoading: isPending, isSuccess }
+  return { data, isLoading: isLoading, isSuccess }
 }
