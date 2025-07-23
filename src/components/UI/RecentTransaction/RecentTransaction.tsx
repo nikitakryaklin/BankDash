@@ -23,14 +23,20 @@ export const RecentTransaction = ({
 }) => {
   const { data: user } = useUser()
   const { data, isLoading } = useTransactions(user, 3)
+
   return (
     <ElementWrapper
       id="recent_transactions"
       className={clsx(styles.wrapper, className)}
     >
       <h2>{title}</h2>
-      <CardWrapper className={styles.card}>
-        {!isLoading && data ? (
+      <CardWrapper
+        className={clsx(
+          styles.card,
+          data?.length === 2 && styles.card_twoElements
+        )}
+      >
+        {!isLoading && data?.length > 0 ? (
           <>
             {data.map((trans: ITransaction) => (
               <TransactionItem

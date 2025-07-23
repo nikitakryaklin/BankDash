@@ -6,7 +6,7 @@ export const useUser = () => {
   const { data, isLoading, isSuccess } = useQuery({
     queryKey: ['user'],
 
-    queryFn: () => User.getUser(),
+    queryFn: () => User.getUser<IUser>(),
   })
 
   return { data, isLoading, isSuccess }

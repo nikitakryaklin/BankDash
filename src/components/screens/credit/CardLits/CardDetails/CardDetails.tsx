@@ -6,17 +6,15 @@ import { useUser } from '@/hooks/useUser'
 import { AllTransactions } from '@/components/UI/AllTransactions/AllTransactions'
 
 export const CardDetails = ({ card }: { card: ICard }) => {
-  const {
-    data: {
-      about: { fullname },
-    },
-  } = useUser()
+  const { data } = useUser()
+
+  const fullName = data?.about?.fullname
 
   return (
     <div className={styles.wrapper}>
       <Card
         balance={card.balance}
-        holder={fullname}
+        holder={fullName || ''}
         period={card.period}
         number={card.number}
         primery={true}

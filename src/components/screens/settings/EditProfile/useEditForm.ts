@@ -5,7 +5,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 
 interface IEditForm {
-  avatarFile: FileList
+  avatarFile: FileList | null
   fullname: string
   email: string
   dateOfBirth: string

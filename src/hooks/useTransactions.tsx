@@ -2,7 +2,7 @@ import { transactionsService } from '@/service/transaction.service'
 import { IUser } from '@/types/User.type'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 
-export const useTransactions = (user: IUser, limit: number) => {
+export const useTransactions = (user: IUser | undefined, limit: number) => {
   const result: string[] = []
 
   user?.cards?.map((card) => result.push(card.number))

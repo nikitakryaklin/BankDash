@@ -461,8 +461,7 @@ const CreditPageForm = ()=>{
     _s();
     const { data } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUserAbout$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUserAbout"])();
     const { formSubmit, isPending, register, errors } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$credit$2f$useCreateCard$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCreateCard"])();
-    console.log(data);
-    if (data.data.length === 0) {
+    if (data?.data.length === 0 || !data) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotEnougtData"], {
             text: " Сard creation is not possible, please fill in your information",
             link: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -470,12 +469,12 @@ const CreditPageForm = ()=>{
                 children: "Fill in the information"
             }, void 0, false, {
                 fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                lineNumber: 25,
+                lineNumber: 22,
                 columnNumber: 15
             }, void 0)
         }, void 0, false, {
             fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-            lineNumber: 22,
+            lineNumber: 19,
             columnNumber: 7
         }, this);
     }
@@ -485,7 +484,7 @@ const CreditPageForm = ()=>{
                 children: "Credit Card generally means a plastic card issued by Scheduled Commercial Banks assigned to a Cardholder, with a credit limit, that can be used to purchase goods and services on credit or obtain cash advances."
             }, void 0, false, {
                 fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                lineNumber: 32,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -514,7 +513,7 @@ const CreditPageForm = ()=>{
                                         register: register
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                                        lineNumber: 41,
+                                        lineNumber: 38,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
@@ -528,13 +527,13 @@ const CreditPageForm = ()=>{
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 49,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                                lineNumber: 40,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -548,7 +547,7 @@ const CreditPageForm = ()=>{
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 61,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
@@ -561,19 +560,19 @@ const CreditPageForm = ()=>{
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 69,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                                lineNumber: 63,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                        lineNumber: 39,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Button$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -582,13 +581,13 @@ const CreditPageForm = ()=>{
                         type: "submit"
                     }, void 0, false, {
                         fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                        lineNumber: 83,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/screens/credit/CreditPageForm.tsx",
-                lineNumber: 38,
+                lineNumber: 35,
                 columnNumber: 7
             }, this)
         ]

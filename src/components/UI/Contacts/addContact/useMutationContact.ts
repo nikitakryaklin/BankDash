@@ -13,12 +13,6 @@ export const useMutationContact = () => {
         queryKey: ['contacts'],
       })
     },
-    onSuccess: () => {
-      console.log('контакт успешно добавлен')
-    },
-    onError: () => {
-      console.log('ошибка в добавлении контакта')
-    },
   })
 
   return { creacteContactMutation }

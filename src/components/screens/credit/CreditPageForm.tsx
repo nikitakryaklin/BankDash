@@ -4,7 +4,6 @@ import { Fild } from '@/components/UI/fild/fild'
 import { getValidateError } from '@/utiles/getValidateError'
 import styles from './CreditPage.module.scss'
 import { Button } from '@/components/UI/Button/Button'
-import { useUser } from '@/hooks/useUser'
 import { useUserAbout } from '@/hooks/useUserAbout'
 import { NotEnougtData } from '@/components/UI/NotEnougtData/NotEnougtData'
 import Link from 'next/link'
@@ -15,9 +14,7 @@ export const CreditPageForm = () => {
 
   const { formSubmit, isPending, register, errors } = useCreateCard()
 
-  console.log(data)
-
-  if (data.data.length === 0) {
+  if (data?.data.length === 0 || !data) {
     return (
       <NotEnougtData
         text="

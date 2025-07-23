@@ -77,6 +77,11 @@
   display: flex;
 }
 
+.RecentTransaction-module-scss-module__mRszra__card_twoElements {
+  justify-content: start;
+  gap: 10%;
+}
+
 
 /* [project]/src/components/UI/RecentTransaction/TransactionItem/TransactionItem.module.scss.module.css [app-client] (css) */
 .TransactionItem-module-scss-module__3j9oLW__wrapper {

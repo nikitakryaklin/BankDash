@@ -26,12 +26,15 @@ export const useFormSendContact = ({ name }: { name: string }) => {
 
   const onFormSubmit: SubmitHandler<IAmound> = (data) => {
     if (!name) {
-      return
+      return toast.error('choose contact')
+    }
+    if (!card) {
+      return toast.error('You do not have any cards')
     }
     createBalanceMutation.mutate({
       type: TRANSACTIONS.type.outgoing,
       amount: data.amound,
-      id: 1,
+      id: Number(card.id),
     })
 
     toast.promise(

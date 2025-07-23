@@ -16,14 +16,14 @@ export const EditProfile = ({ formRef, pending }: IForm) => {
   const { data } = useUser()
 
   const { register, isPending, reset, formSubmit, errors } = useEditForm({
-    avatarFile: data?.abort?.avatar,
-    fullname: data?.about?.fullname,
-    email: data?.about?.email,
-    dateOfBirth: data?.about?.dateOfBirth,
-    postalCode: data?.about?.poastalCode,
-    username: data?.about?.username,
-    city: data?.about?.city,
-    country: data?.about?.country,
+    avatarFile: null,
+    fullname: data?.about?.fullname || '',
+    email: data?.about?.email || '',
+    dateOfBirth: data?.about?.dateOfBirth || '',
+    postalCode: data?.about?.postalCode || '',
+    username: data?.about?.username || '',
+    city: data?.about?.city || '',
+    country: data?.about?.country || '',
   })
 
   useEffect(() => {
@@ -32,13 +32,13 @@ export const EditProfile = ({ formRef, pending }: IForm) => {
 
   useEffect(() => {
     reset({
-      fullname: data?.about?.fullname || 'Name',
-      email: data?.about?.email || 'Email',
+      fullname: data?.about?.fullname || '',
+      email: data?.about?.email || '',
       dateOfBirth: data?.about?.dateOfBirth || '00.00.0000',
-      postalCode: data?.about?.postalCode || '*****',
-      username: data?.about?.username || 'User Name',
-      city: data?.about?.city || 'City',
-      country: data?.about?.country || 'Country',
+      postalCode: data?.about?.postalCode || '',
+      username: data?.about?.username || '',
+      city: data?.about?.city || '',
+      country: data?.about?.country || '',
     })
   }, [isPending, data])
 
@@ -77,7 +77,7 @@ export const EditProfile = ({ formRef, pending }: IForm) => {
             <Fild
               title={errors.dateOfBirth?.message || 'Date of Birth'}
               type="date"
-              placeholder={data?.about?.dataOfBirth || '25 January 1990'}
+              placeholder={data?.about?.dateOfBirth || '25 January 1990'}
               {...register('dateOfBirth', {
                 ...getValidateError('Date Of Birdth'),
               })}

@@ -2,12 +2,12 @@
   "pages": {},
   "app": {
     "[project]/src/app/(pages)/credit/page": [
-      "static/media/Lato_Regular-s.p.5f35dd24.woff2",
       "static/media/Lato_Bold-s.p.f75fd3b7.woff2",
-      "static/media/Inter_SemiBold-s.p.08be189e.woff2",
-      "static/media/Inter_Bold-s.p.15b52194.woff2",
+      "static/media/Inter_Regular-s.p.e0476761.woff2",
+      "static/media/Lato_Regular-s.p.5f35dd24.woff2",
       "static/media/Inter_Medium-s.p.d8f871df.woff2",
-      "static/media/Inter_Regular-s.p.e0476761.woff2"
+      "static/media/Inter_SemiBold-s.p.08be189e.woff2",
+      "static/media/Inter_Bold-s.p.15b52194.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

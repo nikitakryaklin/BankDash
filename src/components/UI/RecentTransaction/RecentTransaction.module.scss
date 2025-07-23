@@ -1,4 +1,4 @@
-@use "@/styles/helpers" as *;
+@use '@/styles/helpers' as *;
 
 .wrapper {
   height: max(215px, 20vw);
@@ -8,13 +8,14 @@
 }
 
 .card {
-  // background-color: #fff;
   width: 100%;
   max-width: 370px;
-  // height: 85%;
-  // border-radius: 25px;
-  // padding: max(rem(15), 1.5vw);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card_twoElements {
+  justify-content: start;
+  gap: 10%;
 }

@@ -3,7 +3,7 @@ import { IUser } from '@/types/User.type'
 import { useQuery } from '@tanstack/react-query'
 
 export const useTransactionsAll = (
-  user: IUser,
+  user: IUser | undefined,
   page: number,
   filter: string,
   cardNumber?: string

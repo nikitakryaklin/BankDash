@@ -18,9 +18,9 @@ export const CardList = () => {
   return (
     <ElementWrapper id="card_list" className={styles.cardList}>
       <h2>Card List</h2>
-      {cards?.length > 0 && (
+      {cards && cards?.length > 0 && (
         <CardWrapper className={styles.CardList_wrapper}>
-          {cards.map((el: ICard, index: number) => (
+          {cards?.map((el: ICard, index: number) => (
             <ListItem
               className={styles.CardList_item}
               key={el.id}

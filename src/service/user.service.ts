@@ -4,7 +4,7 @@ import { AvatarService } from './avatar.service'
 class UserService {
   public URL = process.env.NEXT_PUBLIC_API
 
-  async getUser() {
+  async getUser<T>(): Promise<T> {
     try {
       const result = await fetch(this.URL + '/users/me?populate=*', {
         method: 'GET',

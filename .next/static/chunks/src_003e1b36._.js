@@ -16,6 +16,7 @@ var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.v({
   "card": "RecentTransaction-module-scss-module__mRszra__card",
+  "card_twoElements": "RecentTransaction-module-scss-module__mRszra__card_twoElements",
   "wrapper": "RecentTransaction-module-scss-module__mRszra__wrapper",
 });
 }}),
@@ -956,13 +957,13 @@ const RecentTransaction = ({ title = 'Recent Transaction', className, flug = fal
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                lineNumber: 31,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$loayout$2f$CardWrapper$2f$CardWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].card,
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].card, data?.length === 2 && __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$RecentTransaction$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].card_twoElements),
                 children: [
-                    !isLoading && data ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    !isLoading && data?.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: data.map((trans)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$RecentTransaction$2f$TransactionItem$2f$TransactionItem$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 title: trans.title,
                                 date: trans.date.toString(),
@@ -972,31 +973,31 @@ const RecentTransaction = ({ title = 'Recent Transaction', className, flug = fal
                                 flug: flug
                             }, trans.id, false, {
                                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                                lineNumber: 36,
+                                lineNumber: 42,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$NotEnougtData$2f$NotEnougtData$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotEnougtData"], {}, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                        lineNumber: 48,
+                        lineNumber: 54,
                         columnNumber: 11
                     }, this),
                     isLoading ?? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$Loader$2f$loader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Loader"], {
                         color: "var(--text-color)"
                     }, void 0, false, {
                         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                        lineNumber: 50,
+                        lineNumber: 56,
                         columnNumber: 23
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/UI/RecentTransaction/RecentTransaction.tsx",
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 5
     }, this);
 };

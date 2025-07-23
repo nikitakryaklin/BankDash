@@ -607,14 +607,14 @@ const EditProfile = ({ formRef, pending })=>{
     _s();
     const { data } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useUser$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"])();
     const { register, isPending, reset, formSubmit, errors } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$screens$2f$settings$2f$EditProfile$2f$useEditForm$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEditForm"])({
-        avatarFile: data?.abort?.avatar,
-        fullname: data?.about?.fullname,
-        email: data?.about?.email,
-        dateOfBirth: data?.about?.dateOfBirth,
-        postalCode: data?.about?.poastalCode,
-        username: data?.about?.username,
-        city: data?.about?.city,
-        country: data?.about?.country
+        avatarFile: null,
+        fullname: data?.about?.fullname || '',
+        email: data?.about?.email || '',
+        dateOfBirth: data?.about?.dateOfBirth || '',
+        postalCode: data?.about?.postalCode || '',
+        username: data?.about?.username || '',
+        city: data?.about?.city || '',
+        country: data?.about?.country || ''
     });
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "EditProfile.useEffect": ()=>{
@@ -626,13 +626,13 @@ const EditProfile = ({ formRef, pending })=>{
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "EditProfile.useEffect": ()=>{
             reset({
-                fullname: data?.about?.fullname || 'Name',
-                email: data?.about?.email || 'Email',
+                fullname: data?.about?.fullname || '',
+                email: data?.about?.email || '',
                 dateOfBirth: data?.about?.dateOfBirth || '00.00.0000',
-                postalCode: data?.about?.postalCode || '*****',
-                username: data?.about?.username || 'User Name',
-                city: data?.about?.city || 'City',
-                country: data?.about?.country || 'Country'
+                postalCode: data?.about?.postalCode || '',
+                username: data?.about?.username || '',
+                city: data?.about?.city || '',
+                country: data?.about?.country || ''
             });
         }
     }["EditProfile.useEffect"], [
@@ -722,7 +722,7 @@ const EditProfile = ({ formRef, pending })=>{
                         !data?.about?.dateOfBirth ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UI$2f$fild$2f$fild$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fild"], {
                             title: errors.dateOfBirth?.message || 'Date of Birth',
                             type: "date",
-                            placeholder: data?.about?.dataOfBirth || '25 January 1990',
+                            placeholder: data?.about?.dateOfBirth || '25 January 1990',
                             ...register('dateOfBirth', {
                                 ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utiles$2f$getValidateError$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getValidateError"])('Date Of Birdth')
                             })

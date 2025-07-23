@@ -4,7 +4,7 @@ import { useMemo } from 'react'
 export function useBankСalculator({ cards }: { cards: ICard[] }) {
   const BANK_CARDS_STATISTICS_DATA = useMemo(() => {
     let data: Record<string, number> = {}
-    cards.forEach((el) => {
+    cards?.forEach((el) => {
       const bank = el.bank + ' Bank'
       if (!data[bank]) {
         data[bank] = 1
